@@ -5,7 +5,7 @@ import re
 from tenacity import retry, stop_after_attempt, wait_fixed
 
 # 配置参数
-QUERY_TERMS = {
+QUERY_TERM_old= {
     'include': [
         "cat:cs",  # computer science
         "DeepSeek-R1",
@@ -17,6 +17,27 @@ QUERY_TERMS = {
         "jailbreak",
         "Long Chain-of-Thought Reasoning",
         "CoT-enabled models",
+    ],
+    'exclude': []
+}
+
+QUERY_TERMS = {
+    'include': [
+        "cat:cs",  # computer science
+        # "DeepSeek-R1",
+        # "DeepSeek R1",
+        # "o1",
+        # "o3",
+        # "o3-mini",
+        "reinforcement learning",
+        "embodied intelligence",
+        "Long Chain-of-Thought Reasoning",
+        "CoT-enabled models",
+        "scene graph",
+        "GAE",
+        "PPO",
+        "DPO",
+        "GRPO",
     ],
     'exclude': []
 }
