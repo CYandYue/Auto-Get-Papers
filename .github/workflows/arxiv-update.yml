@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 env:
-  GITHUB_USER_NAME: wonderNefelibata      # 请替换为你的 GitHub 用户名
-  GITHUB_USER_EMAIL: 909785560@qq.com    # 请替换为你的电子邮件地址
+  GITHUB_USER_NAME: CYandYue      # 请替换为你的 GitHub 用户名
+  GITHUB_USER_EMAIL: 89253033@qq.com    # 请替换为你的电子邮件地址
 
 jobs:
   update:
