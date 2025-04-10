@@ -65,6 +65,22 @@
     "summary": "Fleets of robo-taxis offering on-demand transportation services, commonly known as Autonomous Mobility-on-Demand (AMoD) systems, hold significant promise for societal benefits, such as reducing pollution, energy consumption, and urban congestion. However, orchestrating these systems at scale remains a critical challenge, with existing coordination algorithms often failing to exploit the systems' full potential. This work introduces a novel decision-making framework that unites mathematical modeling with data-driven techniques. In particular, we present the AMoD coordination problem through the lens of reinforcement learning and propose a graph network-based framework that exploits the main strengths of graph representation learning, reinforcement learning, and classical operations research tools. Extensive evaluations across diverse simulation fidelities and scenarios demonstrate the flexibility of our approach, achieving superior system performance, computational efficiency, and generalizability compared to prior methods. Finally, motivated by the need to democratize research efforts in this area, we release publicly available benchmarks, datasets, and simulators for network-level coordination alongside an open-source codebase designed to provide accessible simulation platforms and establish a standardized validation process for comparing methodologies. Code available at: https://github.com/StanfordASL/RL4AMOD"
   },
   {
+    "title": "Robo-taxi Fleet Coordination at Scale via Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2504.06125v2",
+    "arxiv_id": "2504.06125v2",
+    "authors": [
+      "Luigi Tresca",
+      "Carolin Schmidt",
+      "James Harrison",
+      "Filipe Rodrigues",
+      "Gioele Zardini",
+      "Daniele Gammelli",
+      "Marco Pavone"
+    ],
+    "published": "2025-04-08T15:19:41+00:00",
+    "summary": "Fleets of robo-taxis offering on-demand transportation services, commonly known as Autonomous Mobility-on-Demand (AMoD) systems, hold significant promise for societal benefits, such as reducing pollution, energy consumption, and urban congestion. However, orchestrating these systems at scale remains a critical challenge, with existing coordination algorithms often failing to exploit the systems' full potential. This work introduces a novel decision-making framework that unites mathematical modeling with data-driven techniques. In particular, we present the AMoD coordination problem through the lens of reinforcement learning and propose a graph network-based framework that exploits the main strengths of graph representation learning, reinforcement learning, and classical operations research tools. Extensive evaluations across diverse simulation fidelities and scenarios demonstrate the flexibility of our approach, achieving superior system performance, computational efficiency, and generalizability compared to prior methods. Finally, motivated by the need to democratize research efforts in this area, we release publicly available benchmarks, datasets, and simulators for network-level coordination alongside an open-source codebase designed to provide accessible simulation platforms and establish a standardized validation process for comparing methodologies. Code available at: https://github.com/StanfordASL/RL4AMOD"
+  },
+  {
     "title": "Leanabell-Prover: Posttraining Scaling in Formal Reasoning",
     "url": "http://arxiv.org/abs/2504.06122v1",
     "arxiv_id": "2504.06122v1",
@@ -81,6 +97,24 @@
     ],
     "published": "2025-04-08T15:15:26+00:00",
     "summary": "Recent advances in automated theorem proving (ATP) through LLMs have highlighted the potential of formal reasoning with Lean 4 codes. However, ATP has not yet be revolutionized by the recent posttraining scaling as demonstrated by Open AI O1/O3 and Deepseek R1. In this work, we investigate the entire posttraining of ATP, aiming to align it with breakthroughs in reasoning models in natural languages.To begin, we continual train current ATP models with a hybrid dataset, which consists of numerous statement-proof pairs, and additional data aimed at incorporating cognitive behaviors that emulate human reasoning and hypothesis refinement. Next, we explore reinforcement learning with the use of outcome reward returned by Lean 4 compiler. Through our designed continual training and reinforcement learning processes, we have successfully improved existing formal provers, including both DeepSeek-Prover-v1.5 and Goedel-Prover, achieving state-of-the-art performance in the field of whole-proof generation. For example, we achieve a 59.8% pass rate (pass@32) on MiniF2F. This is an on-going project and we will progressively update our findings, release our data and training details."
+  },
+  {
+    "title": "Leanabell-Prover: Posttraining Scaling in Formal Reasoning",
+    "url": "http://arxiv.org/abs/2504.06122v2",
+    "arxiv_id": "2504.06122v2",
+    "authors": [
+      "Jingyuan Zhang",
+      "Qi Wang",
+      "Xingguang Ji",
+      "Yahui Liu",
+      "Yang Yue",
+      "Fuzheng Zhang",
+      "Di Zhang",
+      "Guorui Zhou",
+      "Kun Gai"
+    ],
+    "published": "2025-04-08T15:15:26+00:00",
+    "summary": "Recent advances in automated theorem proving (ATP) through LLMs have highlighted the potential of formal reasoning with Lean 4 codes. However, ATP has not yet be revolutionized by the recent posttraining scaling as demonstrated by Open AI O1/O3 and Deepseek R1. In this work, we investigate the entire posttraining of ATP, aiming to align it with breakthroughs in reasoning models in natural languages. To begin, we continual train current ATP models with a hybrid dataset, which consists of numerous statement-proof pairs, and additional data aimed at incorporating cognitive behaviors that emulate human reasoning and hypothesis refinement. Next, we explore reinforcement learning with the use of outcome reward returned by Lean 4 compiler. Through our designed continual training and reinforcement learning processes, we have successfully improved existing formal provers, including both DeepSeek-Prover-v1.5 and Goedel-Prover, achieving state-of-the-art performance in the field of whole-proof generation. For example, we achieve a 59.8% pass rate (pass@32) on MiniF2F. This is an on-going project and we will progressively update our findings, release our data and training details."
   },
   {
     "title": "Trust-Region Twisted Policy Improvement",
@@ -576,6 +610,22 @@
     "title": "Algorithm Discovery With LLMs: Evolutionary Search Meets Reinforcement Learning",
     "url": "http://arxiv.org/abs/2504.05108v1",
     "arxiv_id": "2504.05108v1",
+    "authors": [
+      "Anja Surina",
+      "Amin Mansouri",
+      "Lars Quaedvlieg",
+      "Amal Seddas",
+      "Maryna Viazovska",
+      "Emmanuel Abbe",
+      "Caglar Gulcehre"
+    ],
+    "published": "2025-04-07T14:14:15+00:00",
+    "summary": "Discovering efficient algorithms for solving complex problems has been an outstanding challenge in mathematics and computer science, requiring substantial human expertise over the years. Recent advancements in evolutionary search with large language models (LLMs) have shown promise in accelerating the discovery of algorithms across various domains, particularly in mathematics and optimization. However, existing approaches treat the LLM as a static generator, missing the opportunity to update the model with the signal obtained from evolutionary exploration. In this work, we propose to augment LLM-based evolutionary search by continuously refining the search operator - the LLM - through reinforcement learning (RL) fine-tuning. Our method leverages evolutionary search as an exploration strategy to discover improved algorithms, while RL optimizes the LLM policy based on these discoveries. Our experiments on three combinatorial optimization tasks - bin packing, traveling salesman, and the flatpack problem - show that combining RL and evolutionary search improves discovery efficiency of improved algorithms, showcasing the potential of RL-enhanced evolutionary strategies to assist computer scientists and mathematicians for more efficient algorithm design."
+  },
+  {
+    "title": "Algorithm Discovery With LLMs: Evolutionary Search Meets Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2504.05108v2",
+    "arxiv_id": "2504.05108v2",
     "authors": [
       "Anja Surina",
       "Amin Mansouri",
