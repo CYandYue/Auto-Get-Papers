@@ -89,6 +89,25 @@
     "summary": "Recent advancements in reinforcement learning have significantly advanced the reasoning capabilities of multimodal large language models (MLLMs). While approaches such as Group Relative Policy Optimization (GRPO) and rule-based reward mechanisms demonstrate promise in text and image domains, their application to video understanding remains limited. This paper presents a systematic exploration of Reinforcement Fine-Tuning (RFT) with GRPO for video MLLMs, aiming to enhance spatio-temporal perception while maintaining general capabilities. Our experiments reveal that RFT is highly data-efficient for task-specific improvements. Through multi-task RFT on spatio-temporal perception objectives with limited samples, we develop VideoChat-R1, a powerful video MLLM that achieves state-of-the-art performance on spatio-temporal perception tasks without sacrificing chat ability, while exhibiting emerging spatio-temporal reasoning abilities. Compared to Qwen2.5-VL-7B, VideoChat-R1 boosts performance several-fold in tasks like temporal grounding (+31.8) and object tracking (+31.2). Additionally, it significantly improves on general QA benchmarks such as VideoMME (+0.9), MVBench (+1.0), and Perception Test (+0.9). Our findings underscore the potential of RFT for specialized task enhancement of Video MLLMs. We hope our work offers valuable insights for future RL research in video MLLMs."
   },
   {
+    "title": "VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning",
+    "url": "http://arxiv.org/abs/2504.06958v2",
+    "arxiv_id": "2504.06958v2",
+    "authors": [
+      "Xinhao Li",
+      "Ziang Yan",
+      "Desen Meng",
+      "Lu Dong",
+      "Xiangyu Zeng",
+      "Yinan He",
+      "Yali Wang",
+      "Yu Qiao",
+      "Yi Wang",
+      "Limin Wang"
+    ],
+    "published": "2025-04-09T15:09:27+00:00",
+    "summary": "Recent advancements in reinforcement learning have significantly advanced the reasoning capabilities of multimodal large language models (MLLMs). While approaches such as Group Relative Policy Optimization (GRPO) and rule-based reward mechanisms demonstrate promise in text and image domains, their application to video understanding remains limited. This paper presents a systematic exploration of Reinforcement Fine-Tuning (RFT) with GRPO for video MLLMs, aiming to enhance spatio-temporal perception while maintaining general capabilities. Our experiments reveal that RFT is highly data-efficient for task-specific improvements. Through multi-task RFT on spatio-temporal perception objectives with limited samples, we develop VideoChat-R1, a powerful video MLLM that achieves state-of-the-art performance on spatio-temporal perception tasks without sacrificing chat ability, while exhibiting emerging spatio-temporal reasoning abilities. Compared to Qwen2.5-VL-7B, VideoChat-R1 boosts performance several-fold in tasks like temporal grounding (+31.8) and object tracking (+31.2). Additionally, it significantly improves on general QA benchmarks such as VideoMME (+0.9), MVBench (+1.0), and Perception Test (+0.9). Our findings underscore the potential of RFT for specialized task enhancement of Video MLLMs. We hope our work offers valuable insights for future RL research in video MLLMs."
+  },
+  {
     "title": "Regret Bounds for Robust Online Decision Making",
     "url": "http://arxiv.org/abs/2504.06820v1",
     "arxiv_id": "2504.06820v1",
@@ -221,6 +240,18 @@
     "summary": "This paper explores an intrinsic motivation for mutual awareness, hypothesizing that humans possess a fundamental drive to understand \\textit{and to be understood} even in the absence of extrinsic rewards. Through simulations of the perceptual crossing paradigm, we explore the effect of various internal reward functions in reinforcement learning agents. The drive to understand is implemented as an active inference type artificial curiosity reward, whereas the drive to be understood is implemented through intrinsic rewards for imitation, influence/impressionability, and sub-reaction time anticipation of the other. Results indicate that while artificial curiosity alone does not lead to a preference for social interaction, rewards emphasizing reciprocal understanding successfully drive agents to prioritize interaction. We demonstrate that this intrinsic motivation can facilitate cooperation in tasks where only one agent receives extrinsic reward for the behaviour of the other."
   },
   {
+    "title": "Wanting to be Understood",
+    "url": "http://arxiv.org/abs/2504.06611v2",
+    "arxiv_id": "2504.06611v2",
+    "authors": [
+      "Chrisantha Fernando",
+      "Dylan Banarse",
+      "Simon Osindero"
+    ],
+    "published": "2025-04-09T06:15:24+00:00",
+    "summary": "This paper explores an intrinsic motivation for mutual awareness, hypothesizing that humans possess a fundamental drive to understand and to be understood even in the absence of extrinsic rewards. Through simulations of the perceptual crossing paradigm, we explore the effect of various internal reward functions in reinforcement learning agents. The drive to understand is implemented as an active inference type artificial curiosity reward, whereas the drive to be understood is implemented through intrinsic rewards for imitation, influence/impressionability, and sub-reaction time anticipation of the other. Results indicate that while artificial curiosity alone does not lead to a preference for social interaction, rewards emphasizing reciprocal understanding successfully drive agents to prioritize interaction. We demonstrate that this intrinsic motivation can facilitate cooperation in tasks where only one agent receives extrinsic reward for the behaviour of the other."
+  },
+  {
     "title": "Do Reasoning Models Show Better Verbalized Calibration?",
     "url": "http://arxiv.org/abs/2504.06564v1",
     "arxiv_id": "2504.06564v1",
@@ -252,6 +283,21 @@
     "title": "ASHiTA: Automatic Scene-grounded HIerarchical Task Analysis",
     "url": "http://arxiv.org/abs/2504.06553v1",
     "arxiv_id": "2504.06553v1",
+    "authors": [
+      "Yun Chang",
+      "Leonor Fermoselle",
+      "Duy Ta",
+      "Bernadette Bucher",
+      "Luca Carlone",
+      "Jiuguang Wang"
+    ],
+    "published": "2025-04-09T03:22:52+00:00",
+    "summary": "While recent work in scene reconstruction and understanding has made strides in grounding natural language to physical 3D environments, it is still challenging to ground abstract, high-level instructions to a 3D scene. High-level instructions might not explicitly invoke semantic elements in the scene, and even the process of breaking a high-level task into a set of more concrete subtasks, a process called hierarchical task analysis, is environment-dependent. In this work, we propose ASHiTA, the first framework that generates a task hierarchy grounded to a 3D scene graph by breaking down high-level tasks into grounded subtasks. ASHiTA alternates LLM-assisted hierarchical task analysis, to generate the task breakdown, with task-driven 3D scene graph construction to generate a suitable representation of the environment. Our experiments show that ASHiTA performs significantly better than LLM baselines in breaking down high-level tasks into environment-dependent subtasks and is additionally able to achieve grounding performance comparable to state-of-the-art methods."
+  },
+  {
+    "title": "ASHiTA: Automatic Scene-grounded HIerarchical Task Analysis",
+    "url": "http://arxiv.org/abs/2504.06553v2",
+    "arxiv_id": "2504.06553v2",
     "authors": [
       "Yun Chang",
       "Leonor Fermoselle",
@@ -327,6 +373,20 @@
       "Stef van den Elzen",
       "Maximilian Fischer",
       "Daniel Keim"
+    ],
+    "published": "2025-04-08T15:35:59+00:00",
+    "summary": "The rapid advances in Foundation Models and agentic Artificial Intelligence are transforming multimedia analytics by enabling richer, more sophisticated interactions between humans and analytical systems. Existing conceptual models for visual and multimedia analytics, however, do not adequately capture the complexity introduced by these powerful AI paradigms. To bridge this gap, we propose a comprehensive multimedia analytics model specifically designed for the foundation model era. Building upon established frameworks from visual analytics, multimedia analytics, knowledge generation, analytic task definition, mixed-initiative guidance, and human-in-the-loop reinforcement learning, our model emphasizes integrated human-AI teaming based on visual analytics agents from both technical and conceptual perspectives. Central to the model is a seamless, yet explicitly separable, interaction channel between expert users and semi-autonomous analytical processes, ensuring continuous alignment between user intent and AI behavior. The model addresses practical challenges in sensitive domains such as intelligence analysis, investigative journalism, and other fields handling complex, high-stakes data. We illustrate through detailed case studies how our model facilitates deeper understanding and targeted improvement of multimedia analytics solutions. By explicitly capturing how expert users can optimally interact with and guide AI-powered multimedia analytics systems, our conceptual framework sets a clear direction for system design, comparison, and future research."
+  },
+  {
+    "title": "A Multimedia Analytics Model for the Foundation Model Era",
+    "url": "http://arxiv.org/abs/2504.06138v2",
+    "arxiv_id": "2504.06138v2",
+    "authors": [
+      "Marcel Worring",
+      "Jan Zah\u00e1lka",
+      "Stef van den Elzen",
+      "Maximilian T. Fischer",
+      "Daniel A. Keim"
     ],
     "published": "2025-04-08T15:35:59+00:00",
     "summary": "The rapid advances in Foundation Models and agentic Artificial Intelligence are transforming multimedia analytics by enabling richer, more sophisticated interactions between humans and analytical systems. Existing conceptual models for visual and multimedia analytics, however, do not adequately capture the complexity introduced by these powerful AI paradigms. To bridge this gap, we propose a comprehensive multimedia analytics model specifically designed for the foundation model era. Building upon established frameworks from visual analytics, multimedia analytics, knowledge generation, analytic task definition, mixed-initiative guidance, and human-in-the-loop reinforcement learning, our model emphasizes integrated human-AI teaming based on visual analytics agents from both technical and conceptual perspectives. Central to the model is a seamless, yet explicitly separable, interaction channel between expert users and semi-autonomous analytical processes, ensuring continuous alignment between user intent and AI behavior. The model addresses practical challenges in sensitive domains such as intelligence analysis, investigative journalism, and other fields handling complex, high-stakes data. We illustrate through detailed case studies how our model facilitates deeper understanding and targeted improvement of multimedia analytics solutions. By explicitly capturing how expert users can optimally interact with and guide AI-powered multimedia analytics systems, our conceptual framework sets a clear direction for system design, comparison, and future research."
