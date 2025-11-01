@@ -30,10 +30,11 @@ QUERY_TERMS = {
         # "o3",
         # "o3-mini",
         "scene graph",
-        "3d reconstruction",
-        "computer vision",
-        "open-vocabulary",
-        "uncertainty",
+        # "3d reconstruction",
+        # "computer vision",
+        # "open-vocabulary",
+        # "uncertainty",
+        "3d scene graph",
     ],
     'exclude': []
 }
