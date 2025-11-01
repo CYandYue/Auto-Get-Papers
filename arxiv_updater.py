@@ -29,19 +29,15 @@ QUERY_TERMS = {
         # "o1",
         # "o3",
         # "o3-mini",
-        "reinforcement learning",
-        "embodied intelligence",
-        "Long Chain-of-Thought Reasoning",
-        "CoT-enabled models",
         "scene graph",
-        "GAE",
-        "PPO",
-        "DPO",
-        "GRPO",
+        "3d reconstruction",
+        "computer vision",
+        "open-vocabulary",
+        "uncertainty",
     ],
     'exclude': []
 }
-MAX_NEW_PAPERS = 50
+MAX_NEW_PAPERS = 5
 LATEST_PAPERS_COUNT = 20
 
 def extract_arxiv_id(url):
