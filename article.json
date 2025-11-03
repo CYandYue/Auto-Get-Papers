@@ -1,5 +1,29 @@
 [
   {
+    "title": "Toward Accurate Long-Horizon Robotic Manipulation: Language-to-Action with Foundation Models via Scene Graphs",
+    "url": "http://arxiv.org/abs/2510.27558v1",
+    "arxiv_id": "2510.27558v1",
+    "authors": [
+      "Sushil Samuel Dinesh",
+      "Shinkyu Park"
+    ],
+    "published": "2025-10-31T15:42:32+00:00",
+    "summary": "This paper presents a framework that leverages pre-trained foundation models for robotic manipulation without domain-specific training. The framework integrates off-the-shelf models, combining multimodal perception from foundation models with a general-purpose reasoning model capable of robust task sequencing. Scene graphs, dynamically maintained within the framework, provide spatial awareness and enable consistent reasoning about the environment. The framework is evaluated through a series of tabletop robotic manipulation experiments, and the results highlight its potential for building robotic manipulation systems directly on top of off-the-shelf foundation models."
+  },
+  {
+    "title": "A Multi-Modal Neuro-Symbolic Approach for Spatial Reasoning-Based Visual Grounding in Robotics",
+    "url": "http://arxiv.org/abs/2510.27033v1",
+    "arxiv_id": "2510.27033v1",
+    "authors": [
+      "Simindokht Jahangard",
+      "Mehrzad Mohammadi",
+      "Abhinav Dhall",
+      "Hamid Rezatofighi"
+    ],
+    "published": "2025-10-30T22:40:23+00:00",
+    "summary": "Visual reasoning, particularly spatial reasoning, is a challenging cognitive task that requires understanding object relationships and their interactions within complex environments, especially in robotics domain. Existing vision_language models (VLMs) excel at perception tasks but struggle with fine-grained spatial reasoning due to their implicit, correlation-driven reasoning and reliance solely on images. We propose a novel neuro_symbolic framework that integrates both panoramic-image and 3D point cloud information, combining neural perception with symbolic reasoning to explicitly model spatial and logical relationships. Our framework consists of a perception module for detecting entities and extracting attributes, and a reasoning module that constructs a structured scene graph to support precise, interpretable queries. Evaluated on the JRDB-Reasoning dataset, our approach demonstrates superior performance and reliability in crowded, human_built environments while maintaining a lightweight design suitable for robotics and embodied AI applications."
+  },
+  {
     "title": "Evaluation of Vision-LLMs in Surveillance Video",
     "url": "http://arxiv.org/abs/2510.23190v1",
     "arxiv_id": "2510.23190v1",
