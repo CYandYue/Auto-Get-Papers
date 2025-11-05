@@ -24,6 +24,16 @@
     "summary": "Visual reasoning, particularly spatial reasoning, is a challenging cognitive task that requires understanding object relationships and their interactions within complex environments, especially in robotics domain. Existing vision_language models (VLMs) excel at perception tasks but struggle with fine-grained spatial reasoning due to their implicit, correlation-driven reasoning and reliance solely on images. We propose a novel neuro_symbolic framework that integrates both panoramic-image and 3D point cloud information, combining neural perception with symbolic reasoning to explicitly model spatial and logical relationships. Our framework consists of a perception module for detecting entities and extracting attributes, and a reasoning module that constructs a structured scene graph to support precise, interpretable queries. Evaluated on the JRDB-Reasoning dataset, our approach demonstrates superior performance and reliability in crowded, human_built environments while maintaining a lightweight design suitable for robotics and embodied AI applications."
   },
   {
+    "title": "AI Powered High Quality Text to Video Generation with Enhanced Temporal Consistency",
+    "url": "http://arxiv.org/abs/2511.00107v1",
+    "arxiv_id": "2511.00107v1",
+    "authors": [
+      "Piyushkumar Patel"
+    ],
+    "published": "2025-10-30T18:46:59+00:00",
+    "summary": "Text to video generation has emerged as a critical frontier in generative artificial intelligence, yet existing approaches struggle with maintaining temporal consistency, compositional understanding, and fine grained control over visual narratives. We present MOVAI (Multimodal Original Video AI), a novel hierarchical framework that integrates compositional scene understanding with temporal aware diffusion models for high fidelity text to video synthesis. Our approach introduces three key innovations: (1) a Compositional Scene Parser (CSP) that decomposes textual descriptions into hierarchical scene graphs with temporal annotations, (2) a Temporal-Spatial Attention Mechanism (TSAM) that ensures coherent motion dynamics across frames while preserving spatial details, and (3) a Progressive Video Refinement (PVR) module that iteratively enhances video quality through multi-scale temporal reasoning. Extensive experiments on standard benchmarks demonstrate that MOVAI achieves state-of-the-art performance, improving video quality metrics by 15.3% in LPIPS, 12.7% in FVD, and 18.9% in user preference studies compared to existing methods. Our framework shows particular strength in generating complex multi-object scenes with realistic temporal dynamics and fine-grained semantic control."
+  },
+  {
     "title": "Evaluation of Vision-LLMs in Surveillance Video",
     "url": "http://arxiv.org/abs/2510.23190v1",
     "arxiv_id": "2510.23190v1",
