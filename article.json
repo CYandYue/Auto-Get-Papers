@@ -1,5 +1,34 @@
 [
   {
+    "title": "GraSP-VLA: Graph-based Symbolic Action Representation for Long-Horizon Planning with VLA Policies",
+    "url": "http://arxiv.org/abs/2511.04357v1",
+    "arxiv_id": "2511.04357v1",
+    "authors": [
+      "Ma\u00eblic Neau",
+      "Zoe Falomir",
+      "Paulo E. Santos",
+      "Anne-Gwenn Bosser",
+      "C\u00e9dric Buche"
+    ],
+    "published": "2025-11-06T13:39:38+00:00",
+    "summary": "Deploying autonomous robots that can learn new skills from demonstrations is an important challenge of modern robotics. Existing solutions often apply end-to-end imitation learning with Vision-Language Action (VLA) models or symbolic approaches with Action Model Learning (AML). On the one hand, current VLA models are limited by the lack of high-level symbolic planning, which hinders their abilities in long-horizon tasks. On the other hand, symbolic approaches in AML lack generalization and scalability perspectives. In this paper we present a new neuro-symbolic approach, GraSP-VLA, a framework that uses a Continuous Scene Graph representation to generate a symbolic representation of human demonstrations. This representation is used to generate new planning domains during inference and serves as an orchestrator for low-level VLA policies, scaling up the number of actions that can be reproduced in a row. Our results show that GraSP-VLA is effective for modeling symbolic representations on the task of automatic planning domain generation from observations. In addition, results on real-world experiments show the potential of our Continuous Scene Graph representation to orchestrate low-level VLA policies in long-horizon tasks."
+  },
+  {
+    "title": "SILVI: Simple Interface for Labeling Video Interactions",
+    "url": "http://arxiv.org/abs/2511.03819v1",
+    "arxiv_id": "2511.03819v1",
+    "authors": [
+      "Ozan Kanbertay",
+      "Richard Vogg",
+      "Elif Karakoc",
+      "Peter M. Kappeler",
+      "Claudia Fichtel",
+      "Alexander S. Ecker"
+    ],
+    "published": "2025-11-05T19:39:00+00:00",
+    "summary": "Computer vision methods are increasingly used for the automated analysis of large volumes of video data collected through camera traps, drones, or direct observations of animals in the wild. While recent advances have focused primarily on detecting individual actions, much less work has addressed the detection and annotation of interactions -- a crucial aspect for understanding social and individualized animal behavior. Existing open-source annotation tools support either behavioral labeling without localization of individuals, or localization without the capacity to capture interactions. To bridge this gap, we present SILVI, an open-source labeling software that integrates both functionalities. SILVI enables researchers to annotate behaviors and interactions directly within video data, generating structured outputs suitable for training and validating computer vision models. By linking behavioral ecology with computer vision, SILVI facilitates the development of automated approaches for fine-grained behavioral analyses. Although developed primarily in the context of animal behavior, SILVI could be useful more broadly to annotate human interactions in other videos that require extracting dynamic scene graphs. The software, along with documentation and download instructions, is available at: https://gitlab.gwdg.de/kanbertay/interaction-labelling-app."
+  },
+  {
     "title": "Toward Accurate Long-Horizon Robotic Manipulation: Language-to-Action with Foundation Models via Scene Graphs",
     "url": "http://arxiv.org/abs/2510.27558v1",
     "arxiv_id": "2510.27558v1",
