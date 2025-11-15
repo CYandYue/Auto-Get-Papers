@@ -1,5 +1,49 @@
 [
   {
+    "title": "MSGNav: Unleashing the Power of Multi-modal 3D Scene Graph for Zero-Shot Embodied Navigation",
+    "url": "http://arxiv.org/abs/2511.10376v1",
+    "arxiv_id": "2511.10376v1",
+    "authors": [
+      "Xun Huang",
+      "Shijia Zhao",
+      "Yunxiang Wang",
+      "Xin Lu",
+      "Wanfa Zhang",
+      "Rongsheng Qu",
+      "Weixin Li",
+      "Yunhong Wang",
+      "Chenglu Wen"
+    ],
+    "published": "2025-11-13T14:51:21+00:00",
+    "summary": "Embodied navigation is a fundamental capability for robotic agents operating. Real-world deployment requires open vocabulary generalization and low training overhead, motivating zero-shot methods rather than task-specific RL training. However, existing zero-shot methods that build explicit 3D scene graphs often compress rich visual observations into text-only relations, leading to high construction cost, irreversible loss of visual evidence, and constrained vocabularies. To address these limitations, we introduce the Multi-modal 3D Scene Graph (M3DSG), which preserves visual cues by replacing textual relational edges with dynamically assigned images. Built on M3DSG, we propose MSGNav, a zero-shot navigation system that includes a Key Subgraph Selection module for efficient reasoning, an Adaptive Vocabulary Update module for open vocabulary support, and a Closed-Loop Reasoning module for accurate exploration reasoning. Additionally, we further identify the last-mile problem in zero-shot navigation - determining the feasible target location with a suitable final viewpoint, and propose a Visibility-based Viewpoint Decision module to explicitly resolve it. Comprehensive experimental results demonstrate that MSGNav achieves state-of-the-art performance on GOAT-Bench and HM3D-OVON datasets. The open-source code will be publicly available."
+  },
+  {
+    "title": "RS-Net: Context-Aware Relation Scoring for Dynamic Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2511.08651v1",
+    "arxiv_id": "2511.08651v1",
+    "authors": [
+      "Hae-Won Jo",
+      "Yeong-Jun Cho"
+    ],
+    "published": "2025-11-11T05:37:21+00:00",
+    "summary": "Dynamic Scene Graph Generation (DSGG) models how object relations evolve over time in videos. However, existing methods are trained only on annotated object pairs and lack guidance for non-related pairs, making it difficult to identify meaningful relations during inference. In this paper, we propose Relation Scoring Network (RS-Net), a modular framework that scores the contextual importance of object pairs using both spatial interactions and long-range temporal context. RS-Net consists of a spatial context encoder with learnable context tokens and a temporal encoder that aggregates video-level information. The resulting relation scores are integrated into a unified triplet scoring mechanism to enhance relation prediction. RS-Net can be easily integrated into existing DSGG models without architectural changes. Experiments on the Action Genome dataset show that RS-Net consistently improves both Recall and Precision across diverse baselines, with notable gains in mean Recall, highlighting its ability to address the long-tailed distribution of relations. Despite the increased number of parameters, RS-Net maintains competitive efficiency, achieving superior performance over state-of-the-art methods."
+  },
+  {
+    "title": "Sparse3DPR: Training-Free 3D Hierarchical Scene Parsing and Task-Adaptive Subgraph Reasoning from Sparse RGB Views",
+    "url": "http://arxiv.org/abs/2511.07813v1",
+    "arxiv_id": "2511.07813v1",
+    "authors": [
+      "Haida Feng",
+      "Hao Wei",
+      "Zewen Xu",
+      "Haolin Wang",
+      "Chade Li",
+      "Yihong Wu"
+    ],
+    "published": "2025-11-11T04:13:54+00:00",
+    "summary": "Recently, large language models (LLMs) have been explored widely for 3D scene understanding. Among them, training-free approaches are gaining attention for their flexibility and generalization over training-based methods. However, they typically struggle with accuracy and efficiency in practical deployment. To address the problems, we propose Sparse3DPR, a novel training-free framework for open-ended scene understanding, which leverages the reasoning capabilities of pre-trained LLMs and requires only sparse-view RGB inputs. Specifically, we introduce a hierarchical plane-enhanced scene graph that supports open vocabulary and adopts dominant planar structures as spatial anchors, which enables clearer reasoning chains and more reliable high-level inferences. Furthermore, we design a task-adaptive subgraph extraction method to filter query-irrelevant information dynamically, reducing contextual noise and improving 3D scene reasoning efficiency and accuracy. Experimental results demonstrate the superiority of Sparse3DPR, which achieves a 28.7% EM@1 improvement and a 78.2% speedup compared with ConceptGraphs on the Space3D-Bench. Moreover, Sparse3DPR obtains comparable performance to training-based methods on ScanQA, with additional real-world experiments confirming its robustness and generalization capability."
+  },
+  {
     "title": "SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards",
     "url": "http://arxiv.org/abs/2511.07403v1",
     "arxiv_id": "2511.07403v1",
@@ -13,6 +57,22 @@
     ],
     "published": "2025-11-10T18:52:47+00:00",
     "summary": "Multimodal large language models (MLLMs) have achieved remarkable progress in vision-language tasks, but they continue to struggle with spatial understanding. Existing spatial MLLMs often rely on explicit 3D inputs or architecture-specific modifications, and remain constrained by large-scale datasets or sparse supervision. To address these limitations, we introduce SpatialThinker, a 3D-aware MLLM trained with RL to integrate structured spatial grounding with multi-step reasoning. The model simulates human-like spatial perception by constructing a scene graph of task-relevant objects and spatial relations, and reasoning towards an answer via dense spatial rewards. SpatialThinker consists of two key contributions: (1) a data synthesis pipeline that generates STVQA-7K, a high-quality spatial VQA dataset, and (2) online RL with a multi-objective dense spatial reward enforcing spatial grounding. SpatialThinker-7B outperforms supervised fine-tuning and the sparse RL baseline on spatial understanding and real-world VQA benchmarks, nearly doubling the base-model gain compared to sparse RL, and surpassing GPT-4o. These results showcase the effectiveness of combining spatial supervision with reward-aligned reasoning in enabling robust 3D spatial understanding with limited data and advancing MLLMs towards human-level visual reasoning."
+  },
+  {
+    "title": "Enhancing Multimodal Misinformation Detection by Replaying the Whole Story from Image Modality Perspective",
+    "url": "http://arxiv.org/abs/2511.06284v1",
+    "arxiv_id": "2511.06284v1",
+    "authors": [
+      "Bing Wang",
+      "Ximing Li",
+      "Yanjun Wang",
+      "Changchun Li",
+      "Lin Yuanbo Wu",
+      "Buyu Wang",
+      "Shengsheng Wang"
+    ],
+    "published": "2025-11-09T08:37:46+00:00",
+    "summary": "Multimodal Misinformation Detection (MMD) refers to the task of detecting social media posts involving misinformation, where the post often contains text and image modalities. However, by observing the MMD posts, we hold that the text modality may be much more informative than the image modality because the text generally describes the whole event/story of the current post but the image often presents partial scenes only. Our preliminary empirical results indicate that the image modality exactly contributes less to MMD. Upon this idea, we propose a new MMD method named RETSIMD. Specifically, we suppose that each text can be divided into several segments, and each text segment describes a partial scene that can be presented by an image. Accordingly, we split the text into a sequence of segments, and feed these segments into a pre-trained text-to-image generator to augment a sequence of images. We further incorporate two auxiliary objectives concerning text-image and image-label mutual information, and further post-train the generator over an auxiliary text-to-image generation benchmark dataset. Additionally, we propose a graph structure by defining three heuristic relationships between images, and use a graph neural network to generate the fused features. Extensive empirical results validate the effectiveness of RETSIMD."
   },
   {
     "title": "Interaction-Centric Knowledge Infusion and Transfer for Open-Vocabulary Scene Graph Generation",
