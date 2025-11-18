@@ -1,5 +1,33 @@
 [
   {
+    "title": "Computer Vision based group activity detection and action spotting",
+    "url": "http://arxiv.org/abs/2511.13315v1",
+    "arxiv_id": "2511.13315v1",
+    "authors": [
+      "Narthana Sivalingam",
+      "Santhirarajah Sivasthigan",
+      "Thamayanthi Mahendranathan",
+      "G. M. R. I. Godaliyadda",
+      "M. P. B. Ekanayake",
+      "H. M. V. R. Herath"
+    ],
+    "published": "2025-11-17T12:52:22+00:00",
+    "summary": "Group activity detection in multi-person scenes is challenging due to complex human interactions, occlusions, and variations in appearance over time. This work presents a computer vision based framework for group activity recognition and action spotting using a combination of deep learning models and graph based relational reasoning. The system first applies Mask R-CNN to obtain accurate actor localization through bounding boxes and instance masks. Multiple backbone networks, including Inception V3, MobileNet, and VGG16, are used to extract feature maps, and RoIAlign is applied to preserve spatial alignment when generating actor specific features. The mask information is then fused with the feature maps to obtain refined masked feature representations for each actor. To model interactions between individuals, we construct Actor Relation Graphs that encode appearance similarity and positional relations using methods such as normalized cross correlation, sum of absolute differences, and dot product. Graph Convolutional Networks operate on these graphs to reason about relationships and predict both individual actions and group level activities. Experiments on the Collective Activity dataset demonstrate that the combination of mask based feature refinement, robust similarity search, and graph neural network reasoning leads to improved recognition performance across both crowded and non crowded scenarios. This approach highlights the potential of integrating segmentation, feature extraction, and relational graph reasoning for complex video understanding tasks."
+  },
+  {
+    "title": "BridgeEQA: Virtual Embodied Agents for Real Bridge Inspections",
+    "url": "http://arxiv.org/abs/2511.12676v1",
+    "arxiv_id": "2511.12676v1",
+    "authors": [
+      "Subin Varghese",
+      "Joshua Gao",
+      "Asad Ur Rahman",
+      "Vedhus Hoskere"
+    ],
+    "published": "2025-11-16T16:30:38+00:00",
+    "summary": "Deploying embodied agents that can answer questions about their surroundings in realistic real-world settings remains difficult, partly due to the scarcity of benchmarks that faithfully capture practical operating conditions. We propose infrastructure inspection as a compelling domain for open-vocabulary Embodied Question Answering (EQA): it naturally demands multi-scale reasoning, long-range spatial understanding, and complex semantic relationships, while offering unique evaluation advantages via standardized National Bridge Inventory (NBI) condition ratings (0-9), professional inspection reports, and egocentric imagery.   We introduce BridgeEQA, a benchmark of 2,200 open-vocabulary question-answer pairs (in the style of OpenEQA) grounded in professional inspection reports across 200 real-world bridge scenes with 47.93 images on average per scene. Questions require synthesizing visual evidence across multiple images and aligning responses with NBI condition ratings. We further propose a new EQA metric Image Citation Relevance to evaluate the ability of a model to cite relevant images.   Evaluations of state-of-the-art vision-language models reveal substantial performance gaps under episodic memory EQA settings. To address this, we propose Embodied Memory Visual Reasoning (EMVR), which formulates inspection as sequential navigation over an image-based scene graph: images are nodes, and an agent takes actions to traverse views, compare evidence, and reason within a Markov decision process. EMVR shows strong performance over the baselines. We publicly release both the dataset and code."
+  },
+  {
     "title": "GraphPilot: Grounded Scene Graph Conditioning for Language-Based Autonomous Driving",
     "url": "http://arxiv.org/abs/2511.11266v1",
     "arxiv_id": "2511.11266v1",
