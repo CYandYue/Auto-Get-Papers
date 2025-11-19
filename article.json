@@ -1,5 +1,56 @@
 [
   {
+    "title": "A Neuro-Symbolic Framework for Reasoning under Perceptual Uncertainty: Bridging Continuous Perception and Discrete Symbolic Planning",
+    "url": "http://arxiv.org/abs/2511.14533v1",
+    "arxiv_id": "2511.14533v1",
+    "authors": [
+      "Jiahao Wu",
+      "Shengwen Yu"
+    ],
+    "published": "2025-11-18T14:38:01+00:00",
+    "summary": "Bridging continuous perceptual signals and discrete symbolic reasoning is a fundamental challenge in AI systems that must operate under uncertainty. We present a neuro-symbolic framework that explicitly models and propagates uncertainty from perception to planning, providing a principled connection between these two abstraction levels. Our approach couples a transformer-based perceptual front-end with graph neural network (GNN) relational reasoning to extract probabilistic symbolic states from visual observations, and an uncertainty-aware symbolic planner that actively gathers information when confidence is low. We demonstrate the framework's effectiveness on tabletop robotic manipulation as a concrete application: the translator processes 10,047 PyBullet-generated scenes (3--10 objects) and outputs probabilistic predicates with calibrated confidences (overall F1=0.68). When embedded in the planner, the system achieves 94\\%/90\\%/88\\% success on Simple Stack, Deep Stack, and Clear+Stack benchmarks (90.7\\% average), exceeding the strongest POMDP baseline by 10--14 points while planning within 15\\,ms. A probabilistic graphical-model analysis establishes a quantitative link between calibrated uncertainty and planning convergence, providing theoretical guarantees that are validated empirically. The framework is general-purpose and can be applied to any domain requiring uncertainty-aware reasoning from perceptual input to symbolic planning."
+  },
+  {
+    "title": "Abstract Scene Graphs: Formalizing and Monitoring Spatial Properties of Automated Driving Functions",
+    "url": "http://arxiv.org/abs/2511.14430v1",
+    "arxiv_id": "2511.14430v1",
+    "authors": [
+      "Ishan Saxena",
+      "Bernd Westphal",
+      "Martin Fr\u00e4nzle"
+    ],
+    "published": "2025-11-18T12:33:47+00:00",
+    "summary": "Automated Driving Functions (ADFs) need to comply with spatial properties of varied complexity while driving on public roads. Since such situations are safety-critical in nature, it is necessary to continuously check ADFs for compliance with their spatial properties. Due to their complexity, such spatial properties need to be formalized to enable their automated checking. Scene Graphs (SGs) allow for an explicit structured representation of objects present in a traffic scene and their spatial relationships to each other. In this paper, we build upon the SG construct and propose the Abstract Scene Graph (ASG) formalism to formalize spatial properties of ADFs. We show using real-world examples how spatial properties can be formalized using ASGs. Finally, we present a framework that uses ASGs to perform Runtime Monitoring of ADFs. To this end, we also show algorithmically how a spatial property formalized as an ASG can be satisfied by ADF system behaviour."
+  },
+  {
+    "title": "Searching in Space and Time: Unified Memory-Action Loops for Open-World Object Retrieval",
+    "url": "http://arxiv.org/abs/2511.14004v1",
+    "arxiv_id": "2511.14004v1",
+    "authors": [
+      "Taijing Chen",
+      "Sateesh Kumar",
+      "Junhong Xu",
+      "George Pavlakos",
+      "J oydeep Biswas",
+      "Roberto Mart\u00edn-Mart\u00edn"
+    ],
+    "published": "2025-11-18T00:14:18+00:00",
+    "summary": "Service robots must retrieve objects in dynamic, open-world settings where requests may reference attributes (\"the red mug\"), spatial context (\"the mug on the table\"), or past states (\"the mug that was here yesterday\"). Existing approaches capture only parts of this problem: scene graphs capture spatial relations but ignore temporal grounding, temporal reasoning methods model dynamics but do not support embodied interaction, and dynamic scene graphs handle both but remain closed-world with fixed vocabularies. We present STAR (SpatioTemporal Active Retrieval), a framework that unifies memory queries and embodied actions within a single decision loop. STAR leverages non-parametric long-term memory and a working memory to support efficient recall, and uses a vision-language model to select either temporal or spatial actions at each step. We introduce STARBench, a benchmark of spatiotemporal object search tasks across simulated and real environments. Experiments in STARBench and on a Tiago robot show that STAR consistently outperforms scene-graph and memory-only baselines, demonstrating the benefits of treating search in time and search in space as a unified problem."
+  },
+  {
+    "title": "Scene Graph-Guided Generative AI Framework for Synthesizing and Evaluating Industrial Hazard Scenarios",
+    "url": "http://arxiv.org/abs/2511.13970v1",
+    "arxiv_id": "2511.13970v1",
+    "authors": [
+      "Sanjay Acharjee",
+      "Abir Khan Ratul",
+      "Diego Patino",
+      "Md Nazmus Sakib"
+    ],
+    "published": "2025-11-17T22:58:27+00:00",
+    "summary": "Training vision models to detect workplace hazards accurately requires realistic images of unsafe conditions that could lead to accidents. However, acquiring such datasets is difficult because capturing accident-triggering scenarios as they occur is nearly impossible. To overcome this limitation, this study presents a novel scene graph-guided generative AI framework that synthesizes photorealistic images of hazardous scenarios grounded in historical Occupational Safety and Health Administration (OSHA) accident reports. OSHA narratives are analyzed using GPT-4o to extract structured hazard reasoning, which is converted into object-level scene graphs capturing spatial and contextual relationships essential for understanding risk. These graphs guide a text-to-image diffusion model to generate compositionally accurate hazard scenes. To evaluate the realism and semantic fidelity of the generated data, a visual question answering (VQA) framework is introduced. Across four state-of-the-art generative models, the proposed VQA Graph Score outperforms CLIP and BLIP metrics based on entropy-based validation, confirming its higher discriminative sensitivity."
+  },
+  {
     "title": "Computer Vision based group activity detection and action spotting",
     "url": "http://arxiv.org/abs/2511.13315v1",
     "arxiv_id": "2511.13315v1",
