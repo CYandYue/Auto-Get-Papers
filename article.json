@@ -1,5 +1,56 @@
 [
   {
+    "title": "Disc3D: Automatic Curation of High-Quality 3D Dialog Data via Discriminative Object Referring",
+    "url": "http://arxiv.org/abs/2511.18817v1",
+    "arxiv_id": "2511.18817v1",
+    "authors": [
+      "Siyuan Wei",
+      "Chunjie Wang",
+      "Xiao Liu",
+      "Xiaosheng Yan",
+      "Zhishan Zhou",
+      "Rui Huang"
+    ],
+    "published": "2025-11-24T06:51:34+00:00",
+    "summary": "3D Multi-modal Large Language Models (MLLMs) still lag behind their 2D peers, largely because large-scale, high-quality 3D scene-dialogue datasets remain scarce. Prior efforts hinge on expensive human annotation and leave two key ambiguities unresolved: viewpoint ambiguity, where spatial language presumes unknown camera poses, and object referring ambiguity, where non-exclusive descriptions blur the line between targets and distractors. We therefore present a fully automated pipeline that converts raw 3D scans into unambiguous, high-quality dialogue data at a fraction of the previous cost. By synergizing rule-based constraints with 2D MLLMs and LLMs, the pipeline enables controllable, scalable generation without human intervention. The pipeline comprises four stages: (1) meta-annotation collection harvesting object-, frame-, and scene-level captions, (2) scene graph construction with relation correction to capture proximal object relations, (3) discriminative object referring that generates exclusive and compact descriptions, and (4) multi-task data generation synthesizing diverse dialogues. Our pipeline systematically mitigates inherent flaws in source datasets and produces the final Disc3D dataset, over 2 million samples in 25K hybrid 3D scenes, spanning scene, view, and object captioning, visual grounding, and five object-centric QA tasks. Extensive experiments demonstrate that training with Disc3D yields consistent, significant improvements on both public benchmarks and our multifaceted Disc3D-QA tasks. Code, data, and models will be publicly available."
+  },
+  {
+    "title": "Yo'City: Personalized and Boundless 3D Realistic City Scene Generation via Self-Critic Expansion",
+    "url": "http://arxiv.org/abs/2511.18734v1",
+    "arxiv_id": "2511.18734v1",
+    "authors": [
+      "Keyang Lu",
+      "Sifan Zhou",
+      "Hongbin Xu",
+      "Gang Xu",
+      "Zhifei Yang",
+      "Yikai Wang",
+      "Zhen Xiao",
+      "Jieyi Long",
+      "Ming Li"
+    ],
+    "published": "2025-11-24T04:02:48+00:00",
+    "summary": "Realistic 3D city generation is fundamental to a wide range of applications, including virtual reality and digital twins. However, most existing methods rely on training a single diffusion model, which limits their ability to generate personalized and boundless city-scale scenes. In this paper, we present Yo'City, a novel agentic framework that enables user-customized and infinitely expandable 3D city generation by leveraging the reasoning and compositional capabilities of off-the-shelf large models. Specifically, Yo'City first conceptualize the city through a top-down planning strategy that defines a hierarchical \"City-District-Grid\" structure. The Global Planner determines the overall layout and potential functional districts, while the Local Designer further refines each district with detailed grid-level descriptions. Subsequently, the grid-level 3D generation is achieved through a \"produce-refine-evaluate\" isometric image synthesis loop, followed by image-to-3D generation. To simulate continuous city evolution, Yo'City further introduces a user-interactive, relationship-guided expansion mechanism, which performs scene graph-based distance- and semantics-aware layout optimization, ensuring spatially coherent city growth. To comprehensively evaluate our method, we construct a diverse benchmark dataset and design six multi-dimensional metrics that assess generation quality from the perspectives of semantics, geometry, texture, and layout. Extensive experiments demonstrate that Yo'City consistently outperforms existing state-of-the-art methods across all evaluation aspects."
+  },
+  {
+    "title": "Synthetic Curriculum Reinforces Compositional Text-to-Image Generation",
+    "url": "http://arxiv.org/abs/2511.18378v1",
+    "arxiv_id": "2511.18378v1",
+    "authors": [
+      "Shijian Wang",
+      "Runhao Fu",
+      "Siyi Zhao",
+      "Qingqin Zhan",
+      "Xingjian Wang",
+      "Jiarui Jin",
+      "Yuan Lu",
+      "Hanqian Wu",
+      "Cunjian Chen"
+    ],
+    "published": "2025-11-23T09:56:24+00:00",
+    "summary": "Text-to-Image (T2I) generation has long been an open problem, with compositional synthesis remaining particularly challenging. This task requires accurate rendering of complex scenes containing multiple objects that exhibit diverse attributes as well as intricate spatial and semantic relationships, demanding both precise object placement and coherent inter-object interactions. In this paper, we propose a novel compositional curriculum reinforcement learning framework named CompGen that addresses compositional weakness in existing T2I models. Specifically, we leverage scene graphs to establish a novel difficulty criterion for compositional ability and develop a corresponding adaptive Markov Chain Monte Carlo graph sampling algorithm. This difficulty-aware approach enables the synthesis of training curriculum data that progressively optimize T2I models through reinforcement learning. We integrate our curriculum learning approach into Group Relative Policy Optimization (GRPO) and investigate different curriculum scheduling strategies. Our experiments reveal that CompGen exhibits distinct scaling curves under different curriculum scheduling strategies, with easy-to-hard and Gaussian sampling strategies yielding superior scaling performance compared to random sampling. Extensive experiments demonstrate that CompGen significantly enhances compositional generation capabilities for both diffusion-based and auto-regressive T2I models, highlighting its effectiveness in improving the compositional T2I generation systems."
+  },
+  {
     "title": "YOWO: You Only Walk Once to Jointly Map An Indoor Scene and Register Ceiling-mounted Cameras",
     "url": "http://arxiv.org/abs/2511.16521v1",
     "arxiv_id": "2511.16521v1",
