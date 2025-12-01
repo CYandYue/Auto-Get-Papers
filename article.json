@@ -1,5 +1,35 @@
 [
   {
+    "title": "Multi-Modal Scene Graph with Kolmogorov-Arnold Experts for Audio-Visual Question Answering",
+    "url": "http://arxiv.org/abs/2511.23304v1",
+    "arxiv_id": "2511.23304v1",
+    "authors": [
+      "Zijian Fu",
+      "Changsheng Lv",
+      "Mengshi Qi",
+      "Huadong Ma"
+    ],
+    "published": "2025-11-28T16:03:23+00:00",
+    "summary": "In this paper, we propose a novel Multi-Modal Scene Graph with Kolmogorov-Arnold Expert Network for Audio-Visual Question Answering (SHRIKE). The task aims to mimic human reasoning by extracting and fusing information from audio-visual scenes, with the main challenge being the identification of question-relevant cues from the complex audio-visual content. Existing methods fail to capture the structural information within video, and suffer from insufficient fine-grained modeling of multi-modal features. To address these issues, we are the first to introduce a new multi-modal scene graph that explicitly models the objects and their relationship as a visually grounded, structured representation of the audio-visual scene. Furthermore, we design a Kolmogorov-Arnold Network~(KAN)-based Mixture of Experts (MoE) to enhance the expressive power of the temporal integration stage. This enables more fine-grained modeling of cross-modal interactions within the question-aware fused audio-visual representation, leading to capture richer and more nuanced patterns and then improve temporal reasoning performance. We evaluate the model on the established MUSIC-AVQA and MUSIC-AVQA v2 benchmarks, where it achieves state-of-the-art performance. Code and model checkpoints will be publicly released."
+  },
+  {
+    "title": "MG-Nav: Dual-Scale Visual Navigation via Sparse Spatial Memory",
+    "url": "http://arxiv.org/abs/2511.22609v1",
+    "arxiv_id": "2511.22609v1",
+    "authors": [
+      "Bo Wang",
+      "Jiehong Lin",
+      "Chenzhi Liu",
+      "Xinting Hu",
+      "Yifei Yu",
+      "Tianjia Liu",
+      "Zhongrui Wang",
+      "Xiaojuan Qi"
+    ],
+    "published": "2025-11-27T16:43:21+00:00",
+    "summary": "We present MG-Nav (Memory-Guided Navigation), a dual-scale framework for zero-shot visual navigation that unifies global memory-guided planning with local geometry-enhanced control. At its core is the Sparse Spatial Memory Graph (SMG), a compact, region-centric memory where each node aggregates multi-view keyframe and object semantics, capturing both appearance and spatial structure while preserving viewpoint diversity. At the global level, the agent is localized on SMG and a goal-conditioned node path is planned via an image-to-instance hybrid retrieval, producing a sequence of reachable waypoints for long-horizon guidance. At the local level, a navigation foundation policy executes these waypoints in point-goal mode with obstacle-aware control, and switches to image-goal mode when navigating from the final node towards the visual target. To further enhance viewpoint alignment and goal recognition, we introduce VGGT-adapter, a lightweight geometric module built on the pre-trained VGGT model, which aligns observation and goal features in a shared 3D-aware space. MG-Nav operates global planning and local control at different frequencies, using periodic re-localization to correct errors. Experiments on HM3D Instance-Image-Goal and MP3D Image-Goal benchmarks demonstrate that MG-Nav achieves state-of-the-art zero-shot performance and remains robust under dynamic rearrangements and unseen scene conditions."
+  },
+  {
     "title": "ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction",
     "url": "http://arxiv.org/abs/2511.20937v1",
     "arxiv_id": "2511.20937v1",
