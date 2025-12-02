@@ -1,5 +1,69 @@
 [
   {
+    "title": "SGDiff: Scene Graph Guided Diffusion Model for Image Collaborative SegCaptioning",
+    "url": "http://arxiv.org/abs/2512.01975v1",
+    "arxiv_id": "2512.01975v1",
+    "authors": [
+      "Xu Zhang",
+      "Jin Yuan",
+      "Hanwang Zhang",
+      "Guojin Zhong",
+      "Yongsheng Zang",
+      "Jiacheng Lin",
+      "Zhiyong Li"
+    ],
+    "published": "2025-12-01T18:33:04+00:00",
+    "summary": "Controllable image semantic understanding tasks, such as captioning or segmentation, necessitate users to input a prompt (e.g., text or bounding boxes) to predict a unique outcome, presenting challenges such as high-cost prompt input or limited information output. This paper introduces a new task ``Image Collaborative Segmentation and Captioning'' (SegCaptioning), which aims to translate a straightforward prompt, like a bounding box around an object, into diverse semantic interpretations represented by (caption, masks) pairs, allowing flexible result selection by users. This task poses significant challenges, including accurately capturing a user's intention from a minimal prompt while simultaneously predicting multiple semantically aligned caption words and masks. Technically, we propose a novel Scene Graph Guided Diffusion Model that leverages structured scene graph features for correlated mask-caption prediction. Initially, we introduce a Prompt-Centric Scene Graph Adaptor to map a user's prompt to a scene graph, effectively capturing his intention. Subsequently, we employ a diffusion process incorporating a Scene Graph Guided Bimodal Transformer to predict correlated caption-mask pairs by uncovering intricate correlations between them. To ensure accurate alignment, we design a Multi-Entities Contrastive Learning loss to explicitly align visual and textual entities by considering inter-modal similarity, resulting in well-aligned caption-mask pairs. Extensive experiments conducted on two datasets demonstrate that SGDiff achieves superior performance in SegCaptioning, yielding promising results for both captioning and segmentation tasks with minimal prompt input."
+  },
+  {
+    "title": "SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge",
+    "url": "http://arxiv.org/abs/2512.01629v1",
+    "arxiv_id": "2512.01629v1",
+    "authors": [
+      "Yumeng He",
+      "Ying Jiang",
+      "Jiayin Lu",
+      "Yin Yang",
+      "Chenfanfu Jiang"
+    ],
+    "published": "2025-12-01T12:51:56+00:00",
+    "summary": "Articulated 3D objects are critical for embodied AI, robotics, and interactive scene understanding, yet creating simulation-ready assets remains labor-intensive and requires expert modeling of part hierarchies and motion structures. We introduce SPARK, a framework for reconstructing physically consistent, kinematic part-level articulated objects from a single RGB image. Given an input image, we first leverage VLMs to extract coarse URDF parameters and generate part-level reference images. We then integrate the part-image guidance and the inferred structure graph into a generative diffusion transformer to synthesize consistent part and complete shapes of articulated objects. To further refine the URDF parameters, we incorporate differentiable forward kinematics and differentiable rendering to optimize joint types, axes, and origins under VLM-generated open-state supervision. Extensive experiments show that SPARK produces high-quality, simulation-ready articulated assets across diverse categories, enabling downstream applications such as robotic manipulation and interaction modeling."
+  },
+  {
+    "title": "SceneProp: Combining Neural Network and Markov Random Field for Scene-Graph Grounding",
+    "url": "http://arxiv.org/abs/2512.00936v1",
+    "arxiv_id": "2512.00936v1",
+    "authors": [
+      "Keita Otani",
+      "Tatsuya Harada"
+    ],
+    "published": "2025-11-30T15:35:38+00:00",
+    "summary": "Grounding complex, compositional visual queries with multiple objects and relationships is a fundamental challenge for vision-language models. While standard phrase grounding methods excel at localizing single objects, they lack the structural inductive bias to parse intricate relational descriptions, often failing as queries become more descriptive. To address this structural deficit, we focus on scene-graph grounding, a powerful but less-explored formulation where the query is an explicit graph of objects and their relationships. However, existing methods for this task also struggle, paradoxically showing decreased performance as the query graph grows -- failing to leverage the very information that should make grounding easier. We introduce SceneProp, a novel method that resolves this issue by reformulating scene-graph grounding as a Maximum a Posteriori (MAP) inference problem in a Markov Random Field (MRF). By performing global inference over the entire query graph, SceneProp finds the optimal assignment of image regions to nodes that jointly satisfies all constraints. This is achieved within an end-to-end framework via a differentiable implementation of the Belief Propagation algorithm. Experiments on four benchmarks show that our dedicated focus on the scene-graph grounding formulation allows SceneProp to significantly outperform prior work. Critically, its accuracy consistently improves with the size and complexity of the query graph, demonstrating for the first time that more relational context can, and should, lead to better grounding. Codes are available at https://github.com/keitaotani/SceneProp."
+  },
+  {
+    "title": "Describe Anything Anywhere At Any Moment",
+    "url": "http://arxiv.org/abs/2512.00565v1",
+    "arxiv_id": "2512.00565v1",
+    "authors": [
+      "Nicolas Gorlo",
+      "Lukas Schmid",
+      "Luca Carlone"
+    ],
+    "published": "2025-11-29T17:27:17+00:00",
+    "summary": "Computer vision and robotics applications ranging from augmented reality to robot autonomy in large-scale environments require spatio-temporal memory frameworks that capture both geometric structure for accurate language-grounding as well as semantic detail. Existing methods face a tradeoff, where producing rich open-vocabulary descriptions comes at the expense of real-time performance when these descriptions have to be grounded in 3D. To address these challenges, we propose Describe Anything, Anywhere, at Any Moment (DAAAM), a novel spatio-temporal memory framework for large-scale and real-time 4D scene understanding. DAAAM introduces a novel optimization-based frontend to infer detailed semantic descriptions from localized captioning models, such as the Describe Anything Model (DAM), leveraging batch processing to speed up inference by an order of magnitude for online processing. It leverages such semantic understanding to build a hierarchical 4D scene graph (SG), which acts as an effective globally spatially and temporally consistent memory representation. DAAAM constructs 4D SGs with detailed, geometrically grounded descriptions while maintaining real-time performance. We show that DAAAM's 4D SG interfaces well with a tool-calling agent for inference and reasoning.   We thoroughly evaluate DAAAM in the complex task of spatio-temporal question answering on the NaVQA benchmark and show its generalization capabilities for sequential task grounding on the SG3D benchmark. We further curate an extended OC-NaVQA benchmark for large-scale and long-time evaluations. DAAAM achieves state-of-the-art results in both tasks, improving OC-NaVQA question accuracy by 53.6%, position errors by 21.9%, temporal errors by 21.6%, and SG3D task grounding accuracy by 27.8% over the most competitive baselines, respectively. We release our data and code open-source."
+  },
+  {
+    "title": "Words into World: A Task-Adaptive Agent for Language-Guided Spatial Retrieval in AR",
+    "url": "http://arxiv.org/abs/2512.00294v1",
+    "arxiv_id": "2512.00294v1",
+    "authors": [
+      "Lixing Guo",
+      "Tobias H\u00f6llerer"
+    ],
+    "published": "2025-11-29T03:29:15+00:00",
+    "summary": "Traditional augmented reality (AR) systems predominantly rely on fixed class detectors or fiducial markers, limiting their ability to interpret complex, open-vocabulary natural language queries. We present a modular AR agent system that integrates multimodal large language models (MLLMs) with grounded vision models to enable relational reasoning in space and language-conditioned spatial retrieval in physical environments. Our adaptive task agent coordinates MLLMs and coordinate-aware perception tools to address varying query complexities, ranging from simple object identification to multi-object relational reasoning, while returning meter-accurate 3D anchors. It constructs dynamic AR scene graphs encoding nine typed relations (spatial, structural-semantic, causal-functional), enabling MLLMs to understand not just what objects exist, but how they relate and interact in 3D space. Through task-adaptive region-of-interest highlighting and contextual spatial retrieval, the system guides human attention to information-dense areas while supporting human-in-the-loop refinement. The agent dynamically invokes coordinate-aware tools for complex queries-selection, measurement, comparison, and actuation-grounding language understanding in physical operations. The modular architecture supports plug-and-use vision-language models without retraining, establishing AR agents as intermediaries that augment MLLMs with real-world spatial intelligence for interactive scene understanding. We also introduce GroundedAR-Bench, an evaluation framework for language-driven real world localization and relation grounding across diverse environments."
+  },
+  {
     "title": "Multi-Modal Scene Graph with Kolmogorov-Arnold Experts for Audio-Visual Question Answering",
     "url": "http://arxiv.org/abs/2511.23304v1",
     "arxiv_id": "2511.23304v1",
