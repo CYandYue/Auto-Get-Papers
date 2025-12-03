@@ -1,5 +1,21 @@
 [
   {
+    "title": "Unsupervised Structural Scene Decomposition via Foreground-Aware Slot Attention with Pseudo-Mask Guidance",
+    "url": "http://arxiv.org/abs/2512.02685v1",
+    "arxiv_id": "2512.02685v1",
+    "authors": [
+      "Huankun Sheng",
+      "Ming Li",
+      "Yixiang Wei",
+      "Yeying Fan",
+      "Yu-Hui Wen",
+      "Tieliang Gong",
+      "Yong-Jin Liu"
+    ],
+    "published": "2025-12-02T12:14:05+00:00",
+    "summary": "Recent advances in object-centric representation learning have shown that slot attention-based methods can effectively decompose visual scenes into object slot representations without supervision. However, existing approaches typically process foreground and background regions indiscriminately, often resulting in background interference and suboptimal instance discovery performance on real-world data. To address this limitation, we propose Foreground-Aware Slot Attention (FASA), a two-stage framework that explicitly separates foreground from background to enable precise object discovery. In the first stage, FASA performs a coarse scene decomposition to distinguish foreground from background regions through a dual-slot competition mechanism. These slots are initialized via a clustering-based strategy, yielding well-structured representations of salient regions. In the second stage, we introduce a masked slot attention mechanism where the first slot captures the background while the remaining slots compete to represent individual foreground objects. To further address over-segmentation of foreground objects, we incorporate pseudo-mask guidance derived from a patch affinity graph constructed with self-supervised image features to guide the learning of foreground slots. Extensive experiments on both synthetic and real-world datasets demonstrate that FASA consistently outperforms state-of-the-art methods, validating the effectiveness of explicit foreground modeling and pseudo-mask guidance for robust scene decomposition and object-coherent representation. Code will be made publicly available."
+  },
+  {
     "title": "SGDiff: Scene Graph Guided Diffusion Model for Image Collaborative SegCaptioning",
     "url": "http://arxiv.org/abs/2512.01975v1",
     "arxiv_id": "2512.01975v1",
@@ -28,6 +44,20 @@
     ],
     "published": "2025-12-01T12:51:56+00:00",
     "summary": "Articulated 3D objects are critical for embodied AI, robotics, and interactive scene understanding, yet creating simulation-ready assets remains labor-intensive and requires expert modeling of part hierarchies and motion structures. We introduce SPARK, a framework for reconstructing physically consistent, kinematic part-level articulated objects from a single RGB image. Given an input image, we first leverage VLMs to extract coarse URDF parameters and generate part-level reference images. We then integrate the part-image guidance and the inferred structure graph into a generative diffusion transformer to synthesize consistent part and complete shapes of articulated objects. To further refine the URDF parameters, we incorporate differentiable forward kinematics and differentiable rendering to optimize joint types, axes, and origins under VLM-generated open-state supervision. Extensive experiments show that SPARK produces high-quality, simulation-ready articulated assets across diverse categories, enabling downstream applications such as robotic manipulation and interaction modeling."
+  },
+  {
+    "title": "SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge",
+    "url": "http://arxiv.org/abs/2512.01629v2",
+    "arxiv_id": "2512.01629v2",
+    "authors": [
+      "Yumeng He",
+      "Ying Jiang",
+      "Jiayin Lu",
+      "Yin Yang",
+      "Chenfanfu Jiang"
+    ],
+    "published": "2025-12-01T12:51:56+00:00",
+    "summary": "Articulated 3D objects are critical for embodied AI, robotics, and interactive scene understanding, yet creating simulation-ready assets remains labor-intensive and requires expert modeling of part hierarchies and motion structures. We introduce SPARK, a framework for reconstructing physically consistent, kinematic part-level articulated objects from a single RGB image. Given an input image, we first leverage VLMs to extract coarse URDF parameters and generate part-level reference images. We then integrate the part-image guidance and the inferred structure graph into a generative diffusion transformer to synthesize consistent part and complete shapes of articulated objects. To further refine the URDF parameters, we incorporate differentiable forward kinematics and differentiable rendering to optimize joint types, axes, and origins under VLM-generated open-state supervision. Extensive experiments show that SPARK produces high-quality, simulation-ready articulated assets across diverse categories, enabling downstream applications such as robotic manipulation and interaction modeling. Project page: https://heyumeng.com/SPARK/index.html."
   },
   {
     "title": "SceneProp: Combining Neural Network and Markov Random Field for Scene-Graph Grounding",
