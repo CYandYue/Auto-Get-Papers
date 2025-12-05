@@ -1,5 +1,28 @@
 [
   {
+    "title": "Contract-Governed Training for Earth Observation: Observed Service Agreement Graphs and Coverage-Accuracy Trade-offs",
+    "url": "http://arxiv.org/abs/2512.04644v1",
+    "arxiv_id": "2512.04644v1",
+    "authors": [
+      "Wenzhang Du"
+    ],
+    "published": "2025-12-04T10:17:25+00:00",
+    "summary": "Earth observation (EO) models are frequently trained under implicit sampling policies that optimize global accuracy but provide no explicit guarantees on who (which regions, classes, or mission-critical strata) is being served throughout training. This paper introduces a contract-governed training paradigm for EO in which training samples are grouped into service contracts -- semantically meaningful units such as (dataset, region, rare-crop indicator) -- and each contract is assigned a target service share. We instantiate this paradigm as an Observed Service Agreement Graph (OSAG), a lightweight governance layer that (i) monitors contract-level exposure (coverage) during optimization, (ii) drives empirical coverage toward target shares via contract-normalized sampling weights, and (iii) exposes explicit accuracy-governance trade-offs through two knobs: a sampling mixture coefficient alpha and a contract-regularization weight lambda_C. We provide a compact theory in a toy setting: OSAG sampling concentrates empirical coverage to targets; coverage deviations upper-bound service-risk deviations; and contract design (coarse vs. fine) modulates governance cost. Experiments on AVIRIS hyperspectral scenes (Indian Pines plus Salinas) and multispectral Sentinel-2 EuroSAT demonstrate that OSAG can substantially reduce priority coverage error while maintaining global accuracy and improving high-priority accuracy. A EuroSAT coarse-vs-fine contract ablation further evidences how semantically refined contracts can reduce the accuracy cost per unit of governance improvement."
+  },
+  {
+    "title": "CRAFT-E: A Neuro-Symbolic Framework for Embodied Affordance Grounding",
+    "url": "http://arxiv.org/abs/2512.04231v1",
+    "arxiv_id": "2512.04231v1",
+    "authors": [
+      "Zhou Chen",
+      "Joe Lin",
+      "Carson Bulgin",
+      "Sathyanarayanan N. Aakur"
+    ],
+    "published": "2025-12-03T19:54:27+00:00",
+    "summary": "Assistive robots operating in unstructured environments must understand not only what objects are, but what they can be used for. This requires grounding language-based action queries to objects that both afford the requested function and can be physically retrieved. Existing approaches often rely on black-box models or fixed affordance labels, limiting transparency, controllability, and reliability for human-facing applications. We introduce CRAFT-E, a modular neuro-symbolic framework that composes a structured verb-property-object knowledge graph with visual-language alignment and energy-based grasp reasoning. The system generates interpretable grounding paths that expose the factors influencing object selection and incorporates grasp feasibility as an integral part of affordance inference. We further construct a benchmark dataset with unified annotations for verb-object compatibility, segmentation, and grasp candidates, and deploy the full pipeline on a physical robot. CRAFT-E achieves competitive performance in static scenes, ImageNet-based functional retrieval, and real-world trials involving 20 verbs and 39 objects. The framework remains robust under perceptual noise and provides transparent, component-level diagnostics. By coupling symbolic reasoning with embodied perception, CRAFT-E offers an interpretable and customizable alternative to end-to-end models for affordance-grounded object selection, supporting trustworthy decision-making in assistive robotic systems."
+  },
+  {
     "title": "Hierarchical Vision Language Action Model Using Success and Failure Demonstrations",
     "url": "http://arxiv.org/abs/2512.03913v1",
     "arxiv_id": "2512.03913v1",
