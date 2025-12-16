@@ -1,5 +1,16 @@
 [
   {
+    "title": "LINA: Learning INterventions Adaptively for Physical Alignment and Generalization in Diffusion Models",
+    "url": "http://arxiv.org/abs/2512.13290v1",
+    "arxiv_id": "2512.13290v1",
+    "authors": [
+      "Shu Yu",
+      "Chaochao Lu"
+    ],
+    "published": "2025-12-15T12:59:59+00:00",
+    "summary": "Diffusion models (DMs) have achieved remarkable success in image and video generation. However, they still struggle with (1) physical alignment and (2) out-of-distribution (OOD) instruction following. We argue that these issues stem from the models' failure to learn causal directions and to disentangle causal factors for novel recombination. We introduce the Causal Scene Graph (CSG) and the Physical Alignment Probe (PAP) dataset to enable diagnostic interventions. This analysis yields three key insights. First, DMs struggle with multi-hop reasoning for elements not explicitly determined in the prompt. Second, the prompt embedding contains disentangled representations for texture and physics. Third, visual causal structure is disproportionately established during the initial, computationally limited denoising steps. Based on these findings, we introduce LINA (Learning INterventions Adaptively), a novel framework that learns to predict prompt-specific interventions, which employs (1) targeted guidance in the prompt and visual latent spaces, and (2) a reallocated, causality-aware denoising schedule. Our approach enforces both physical alignment and OOD instruction following in image and video DMs, achieving state-of-the-art performance on challenging causal generation tasks and the Winoground dataset. Our project page is at https://opencausalab.github.io/LINA."
+  },
+  {
     "title": "CoSPlan: Corrective Sequential Planning via Scene Graph Incremental Updates",
     "url": "http://arxiv.org/abs/2512.10342v1",
     "arxiv_id": "2512.10342v1",
@@ -12,6 +23,20 @@
     ],
     "published": "2025-12-11T06:46:51+00:00",
     "summary": "Large-scale Vision-Language Models (VLMs) exhibit impressive complex reasoning capabilities but remain largely unexplored in visual sequential planning, i.e., executing multi-step actions towards a goal. Additionally, practical sequential planning often involves non-optimal (erroneous) steps, challenging VLMs to detect and correct such steps. We propose Corrective Sequential Planning Benchmark (CoSPlan) to evaluate VLMs in error-prone, vision-based sequential planning tasks across 4 domains: maze navigation, block rearrangement, image reconstruction,and object reorganization. CoSPlan assesses two key abilities: Error Detection (identifying non-optimal action) and Step Completion (correcting and completing action sequences to reach the goal). Despite using state-of-the-art reasoning techniques such as Chain-of-Thought and Scene Graphs, VLMs (e.g. Intern-VLM and Qwen2) struggle on CoSPlan, failing to leverage contextual cues to reach goals. Addressing this, we propose a novel training-free method, Scene Graph Incremental updates (SGI), which introduces intermediate reasoning steps between the initial and goal states. SGI helps VLMs reason about sequences, yielding an average performance gain of 5.2%. In addition to enhancing reliability in corrective sequential planning, SGI generalizes to traditional planning tasks such as Plan-Bench and VQA."
+  },
+  {
+    "title": "Aion: Towards Hierarchical 4D Scene Graphs with Temporal Flow Dynamics",
+    "url": "http://arxiv.org/abs/2512.11903v1",
+    "arxiv_id": "2512.11903v1",
+    "authors": [
+      "Iacopo Catalano",
+      "Eduardo Montijano",
+      "Javier Civera",
+      "Julio A. Placed",
+      "Jorge Pena-Queralta"
+    ],
+    "published": "2025-12-10T15:13:30+00:00",
+    "summary": "Autonomous navigation in dynamic environments requires spatial representations that capture both semantic structure and temporal evolution. 3D Scene Graphs (3DSGs) provide hierarchical multi-resolution abstractions that encode geometry and semantics, but existing extensions toward dynamics largely focus on individual objects or agents. In parallel, Maps of Dynamics (MoDs) model typical motion patterns and temporal regularities, yet are usually tied to grid-based discretizations that lack semantic awareness and do not scale well to large environments. In this paper we introduce Aion, a framework that embeds temporal flow dynamics directly within a hierarchical 3DSG, effectively incorporating the temporal dimension. Aion employs a graph-based sparse MoD representation to capture motion flows over arbitrary time intervals and attaches them to navigational nodes in the scene graph, yielding more interpretable and scalable predictions that improve planning and interaction in complex dynamic environments."
   },
   {
     "title": "View-on-Graph: Zero-shot 3D Visual Grounding via Vision-Language Reasoning on Scene Graphs",
