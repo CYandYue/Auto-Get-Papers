@@ -1,5 +1,17 @@
 [
   {
+    "title": "ProtoFlow: Interpretable and Robust Surgical Workflow Modeling with Learned Dynamic Scene Graph Prototypes",
+    "url": "http://arxiv.org/abs/2512.14092v1",
+    "arxiv_id": "2512.14092v1",
+    "authors": [
+      "Felix Holm",
+      "Ghazal Ghazaei",
+      "Nassir Navab"
+    ],
+    "published": "2025-12-16T04:59:58+00:00",
+    "summary": "Purpose: Detailed surgical recognition is critical for advancing AI-assisted surgery, yet progress is hampered by high annotation costs, data scarcity, and a lack of interpretable models. While scene graphs offer a structured abstraction of surgical events, their full potential remains untapped. In this work, we introduce ProtoFlow, a novel framework that learns dynamic scene graph prototypes to model complex surgical workflows in an interpretable and robust manner.   Methods: ProtoFlow leverages a graph neural network (GNN) encoder-decoder architecture that combines self-supervised pretraining for rich representation learning with a prototype-based fine-tuning stage. This process discovers and refines core prototypes that encapsulate recurring, clinically meaningful patterns of surgical interaction, forming an explainable foundation for workflow analysis.   Results: We evaluate our approach on the fine-grained CAT-SG dataset. ProtoFlow not only outperforms standard GNN baselines in overall accuracy but also demonstrates exceptional robustness in limited-data, few-shot scenarios, maintaining strong performance when trained on as few as one surgical video. Our qualitative analyses further show that the learned prototypes successfully identify distinct surgical sub-techniques and provide clear, interpretable insights into workflow deviations and rare complications.   Conclusion: By uniting robust representation learning with inherent explainability, ProtoFlow represents a significant step toward developing more transparent, reliable, and data-efficient AI systems, accelerating their potential for clinical adoption in surgical training, real-time decision support, and workflow optimization."
+  },
+  {
     "title": "LINA: Learning INterventions Adaptively for Physical Alignment and Generalization in Diffusion Models",
     "url": "http://arxiv.org/abs/2512.13290v1",
     "arxiv_id": "2512.13290v1",
