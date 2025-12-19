@@ -1,5 +1,51 @@
 [
   {
+    "title": "MomaGraph: State-Aware Unified Scene Graphs with Vision-Language Model for Embodied Task Planning",
+    "url": "http://arxiv.org/abs/2512.16909v1",
+    "arxiv_id": "2512.16909v1",
+    "authors": [
+      "Yuanchen Ju",
+      "Yongyuan Liang",
+      "Yen-Jen Wang",
+      "Nandiraju Gireesh",
+      "Yuanliang Ju",
+      "Seungjae Lee",
+      "Qiao Gu",
+      "Elvis Hsieh",
+      "Furong Huang",
+      "Koushil Sreenath"
+    ],
+    "published": "2025-12-18T18:59:03+00:00",
+    "summary": "Mobile manipulators in households must both navigate and manipulate. This requires a compact, semantically rich scene representation that captures where objects are, how they function, and which parts are actionable. Scene graphs are a natural choice, yet prior work often separates spatial and functional relations, treats scenes as static snapshots without object states or temporal updates, and overlooks information most relevant for accomplishing the current task. To address these limitations, we introduce MomaGraph, a unified scene representation for embodied agents that integrates spatial-functional relationships and part-level interactive elements. However, advancing such a representation requires both suitable data and rigorous evaluation, which have been largely missing. We thus contribute MomaGraph-Scenes, the first large-scale dataset of richly annotated, task-driven scene graphs in household environments, along with MomaGraph-Bench, a systematic evaluation suite spanning six reasoning capabilities from high-level planning to fine-grained scene understanding. Built upon this foundation, we further develop MomaGraph-R1, a 7B vision-language model trained with reinforcement learning on MomaGraph-Scenes. MomaGraph-R1 predicts task-oriented scene graphs and serves as a zero-shot task planner under a Graph-then-Plan framework. Extensive experiments demonstrate that our model achieves state-of-the-art results among open-source models, reaching 71.6% accuracy on the benchmark (+11.4% over the best baseline), while generalizing across public benchmarks and transferring effectively to real-robot experiments."
+  },
+  {
+    "title": "SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning",
+    "url": "http://arxiv.org/abs/2512.16461v1",
+    "arxiv_id": "2512.16461v1",
+    "authors": [
+      "Tin Stribor Sohn",
+      "Maximilian Dillitzer",
+      "Jason J. Corso",
+      "Eric Sax"
+    ],
+    "published": "2025-12-18T12:27:06+00:00",
+    "summary": "Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction. While Vision-Language Models (VLMs) provide open-world semantic priors, they lack grounding in 3D geometry and temporal dynamics. Conversely, geometric perception captures structure and motion but remains semantically sparse. We propose SNOW (Scene Understanding with Open-World Knowledge), a training-free and backbone-agnostic framework for unified 4D scene understanding that integrates VLM-derived semantics with point cloud geometry and temporal consistency. SNOW processes synchronized RGB images and 3D point clouds, using HDBSCAN clustering to generate object-level proposals that guide SAM2-based segmentation. Each segmented region is encoded through our proposed Spatio-Temporal Tokenized Patch Encoding (STEP), producing multimodal tokens that capture localized semantic, geometric, and temporal attributes. These tokens are incrementally integrated into a 4D Scene Graph (4DSG), which serves as 4D prior for downstream reasoning. A lightweight SLAM backend anchors all STEP tokens spatially in the environment, providing the global reference alignment, and ensuring unambiguous spatial grounding across time. The resulting 4DSG forms a queryable, unified world model through which VLMs can directly interpret spatial scene structure and temporal dynamics. Experiments on a diverse set of benchmarks demonstrate that SNOW enables precise 4D scene understanding and spatially grounded inference, thereby setting new state-of-the-art performance in several settings, highlighting the importance of structured 4D priors for embodied reasoning and autonomous robotics."
+  },
+  {
+    "title": "Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models",
+    "url": "http://arxiv.org/abs/2512.15957v1",
+    "arxiv_id": "2512.15957v1",
+    "authors": [
+      "Utsav Panchal",
+      "Yuchen Liu",
+      "Luigi Palmieri",
+      "Ilche Georgievski",
+      "Marco Aiello"
+    ],
+    "published": "2025-12-17T20:44:32+00:00",
+    "summary": "Accurately predicting human behaviors is crucial for mobile robots operating in human-populated environments. While prior research primarily focuses on predicting actions in single-human scenarios from an egocentric view, several robotic applications require understanding multiple human behaviors from a third-person perspective. To this end, we present CAMP-VLM (Context-Aware Multi-human behavior Prediction): a Vision Language Model (VLM)-based framework that incorporates contextual features from visual input and spatial awareness from scene graphs to enhance prediction of humans-scene interactions. Due to the lack of suitable datasets for multi-human behavior prediction from an observer view, we perform fine-tuning of CAMP-VLM with synthetic human behavior data generated by a photorealistic simulator, and evaluate the resulting models on both synthetic and real-world sequences to assess their generalization capabilities. Leveraging Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO), CAMP-VLM outperforms the best-performing baseline by up to 66.9% in prediction accuracy."
+  },
+  {
     "title": "HERO: Hierarchical Traversable 3D Scene Graphs for Embodied Navigation Among Movable Obstacles",
     "url": "http://arxiv.org/abs/2512.15047v1",
     "arxiv_id": "2512.15047v1",
