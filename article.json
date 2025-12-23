@@ -1,5 +1,57 @@
 [
   {
+    "title": "From Pixels to Predicates Structuring urban perception with scene graphs",
+    "url": "http://arxiv.org/abs/2512.19221v1",
+    "arxiv_id": "2512.19221v1",
+    "authors": [
+      "Yunlong Liu",
+      "Shuyang Li",
+      "Pengyuan Liu",
+      "Yu Zhang",
+      "Rudi Stouffs"
+    ],
+    "published": "2025-12-22T10:02:53+00:00",
+    "summary": "Perception research is increasingly modelled using streetscapes, yet many approaches still rely on pixel features or object co-occurrence statistics, overlooking the explicit relations that shape human perception. This study proposes a three stage pipeline that transforms street view imagery (SVI) into structured representations for predicting six perceptual indicators. In the first stage, each image is parsed using an open-set Panoptic Scene Graph model (OpenPSG) to extract object predicate object triplets. In the second stage, compact scene-level embeddings are learned through a heterogeneous graph autoencoder (GraphMAE). In the third stage, a neural network predicts perception scores from these embeddings. We evaluate the proposed approach against image-only baselines in terms of accuracy, precision, and cross-city generalization. Results indicate that (i) our approach improves perception prediction accuracy by an average of 26% over baseline models, and (ii) maintains strong generalization performance in cross-city prediction tasks. Additionally, the structured representation clarifies which relational patterns contribute to lower perception scores in urban scenes, such as graffiti on wall and car parked on sidewalk. Overall, this study demonstrates that graph-based structure provides expressive, generalizable, and interpretable signals for modelling urban perception, advancing human-centric and context-aware urban analytics."
+  },
+  {
+    "title": "Text2Graph VPR: A Text-to-Graph Expert System for Explainable Place Recognition in Changing Environments",
+    "url": "http://arxiv.org/abs/2512.18613v1",
+    "arxiv_id": "2512.18613v1",
+    "authors": [
+      "Saeideh Yousefzadeh",
+      "Hamidreza Pourreza"
+    ],
+    "published": "2025-12-21T06:16:20+00:00",
+    "summary": "Visual Place Recognition (VPR) in long-term deployment requires reasoning beyond pixel similarity: systems must make transparent, interpretable decisions that remain robust under lighting, weather and seasonal change. We present Text2Graph VPR, an explainable semantic localization system that converts image sequences into textual scene descriptions, parses those descriptions into structured scene graphs, and reasons over the resulting graphs to identify places. Scene graphs capture objects, attributes and pairwise relations; we aggregate per-frame graphs into a compact place representation and perform retrieval with a dual-similarity mechanism that fuses learned Graph Attention Network (GAT) embeddings and a Shortest-Path (SP) kernel for structural matching. This hybrid design enables both learned semantic matching and topology-aware comparison, and -- critically -- produces human-readable intermediate representations that support diagnostic analysis and improve transparency in the decision process. We validate the system on Oxford RobotCar and MSLS (Amman/San Francisco) benchmarks and demonstrate robust retrieval under severe appearance shifts, along with zero-shot operation using human textual queries. The results illustrate that semantic, graph-based reasoning is a viable and interpretable alternative for place recognition, particularly suited to safety-sensitive and resource-constrained settings."
+  },
+  {
+    "title": "Object-Centric Framework for Video Moment Retrieval",
+    "url": "http://arxiv.org/abs/2512.18448v1",
+    "arxiv_id": "2512.18448v1",
+    "authors": [
+      "Zongyao Li",
+      "Yongkang Wong",
+      "Satoshi Yamazaki",
+      "Jianquan Liu",
+      "Mohan Kankanhalli"
+    ],
+    "published": "2025-12-20T17:44:53+00:00",
+    "summary": "Most existing video moment retrieval methods rely on temporal sequences of frame- or clip-level features that primarily encode global visual and semantic information. However, such representations often fail to capture fine-grained object semantics and appearance, which are crucial for localizing moments described by object-oriented queries involving specific entities and their interactions. In particular, temporal dynamics at the object level have been largely overlooked, limiting the effectiveness of existing approaches in scenarios requiring detailed object-level reasoning. To address this limitation, we propose a novel object-centric framework for moment retrieval. Our method first extracts query-relevant objects using a scene graph parser and then generates scene graphs from video frames to represent these objects and their relationships. Based on the scene graphs, we construct object-level feature sequences that encode rich visual and semantic information. These sequences are processed by a relational tracklet transformer, which models spatio-temporal correlations among objects over time. By explicitly capturing object-level state changes, our framework enables more accurate localization of moments aligned with object-oriented queries. We evaluated our method on three benchmarks: Charades-STA, QVHighlights, and TACoS. Experimental results demonstrate that our method outperforms existing state-of-the-art methods across all benchmarks."
+  },
+  {
+    "title": "Through the PRISm: Importance-Aware Scene Graphs for Image Retrieval",
+    "url": "http://arxiv.org/abs/2512.18407v1",
+    "arxiv_id": "2512.18407v1",
+    "authors": [
+      "Dimitrios Georgoulopoulos",
+      "Nikolaos Chaidos",
+      "Angeliki Dimitriou",
+      "Giorgos Stamou"
+    ],
+    "published": "2025-12-20T15:57:46+00:00",
+    "summary": "Accurately retrieving images that are semantically similar remains a fundamental challenge in computer vision, as traditional methods often fail to capture the relational and contextual nuances of a scene. We introduce PRISm (Pruning-based Image Retrieval via Importance Prediction on Semantic Graphs), a multimodal framework that advances image-to-image retrieval through two novel components. First, the Importance Prediction Module identifies and retains the most critical objects and relational triplets within an image while pruning irrelevant elements. Second, the Edge-Aware Graph Neural Network explicitly encodes relational structure and integrates global visual features to produce semantically informed image embeddings. PRISm achieves image retrieval that closely aligns with human perception by explicitly modeling the semantic importance of objects and their interactions, capabilities largely absent in prior approaches. Its architecture effectively combines relational reasoning with visual representation, enabling semantically grounded retrieval. Extensive experiments on benchmark and real-world datasets demonstrate consistently superior top-ranked performance, while qualitative analyses show that PRISm accurately captures key objects and interactions, producing interpretable and semantically meaningful results."
+  },
+  {
     "title": "LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents",
     "url": "http://arxiv.org/abs/2512.17445v1",
     "arxiv_id": "2512.17445v1",
