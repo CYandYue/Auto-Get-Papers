@@ -1,5 +1,30 @@
 [
   {
+    "title": "With Great Context Comes Great Prediction Power: Classifying Objects via Geo-Semantic Scene Graphs",
+    "url": "http://arxiv.org/abs/2512.23024v1",
+    "arxiv_id": "2512.23024v1",
+    "authors": [
+      "Ciprian Constantinescu",
+      "Marius Leordeanu"
+    ],
+    "published": "2025-12-28T17:53:55+00:00",
+    "summary": "Humans effortlessly identify objects by leveraging a rich understanding of the surrounding scene, including spatial relationships, material properties, and the co-occurrence of other objects. In contrast, most computational object recognition systems operate on isolated image regions, devoid of meaning in isolation, thus ignoring this vital contextual information. This paper argues for the critical role of context and introduces a novel framework for contextual object classification. We first construct a Geo-Semantic Contextual Graph (GSCG) from a single monocular image. This rich, structured representation is built by integrating a metric depth estimator with a unified panoptic and material segmentation model. The GSCG encodes objects as nodes with detailed geometric, chromatic, and material attributes, and their spatial relationships as edges. This explicit graph structure makes the model's reasoning process inherently interpretable. We then propose a specialized graph-based classifier that aggregates features from a target object, its immediate neighbors, and the global scene context to predict its class. Through extensive ablation studies, we demonstrate that our context-aware model achieves a classification accuracy of 73.4%, dramatically outperforming context-agnostic versions (as low as 38.4%). Furthermore, our GSCG-based approach significantly surpasses strong baselines, including fine-tuned ResNet models (max 53.5%) and a state-of-the-art multimodal Large Language Model (LLM), Llama 4 Scout, which, even when given the full image alongside a detailed description of objects, maxes out at 42.3%. These results on COCO 2017 train/val splits highlight the superiority of explicitly structured and interpretable context for object recognition tasks."
+  },
+  {
+    "title": "Instance Communication System for Intelligent Connected Vehicles: Bridging the Gap from Semantic to Instance-Level Transmission",
+    "url": "http://arxiv.org/abs/2512.22693v1",
+    "arxiv_id": "2512.22693v1",
+    "authors": [
+      "Daiqi Zhang",
+      "Bizhu Wang",
+      "Wenqi Zhang",
+      "Chen Sun",
+      "Xiaodong Xu"
+    ],
+    "published": "2025-12-27T19:42:19+00:00",
+    "summary": "Intelligent Connected Vehicles (ICVs) rely on high-speed data transmission for efficient and safety-critical services. However, the scarcity of wireless resources limits the capabilities of ICVs. Semantic Communication (SemCom) systems can alleviate this issue by extracting and transmitting task-relevant information, termed semantic information, instead of the entire raw data. Despite this, we reveal that residual redundancy persists within SemCom systems, where not all instances under the same semantic category are equally critical for downstream tasks. To tackle this issue, we introduce Instance Communication (InsCom), which elevates communication from the semantic level to the instance level for ICVs. Specifically, InsCom uses a scene graph generation model to identify all image instances and analyze their inter-relationships, thus distinguishing between semantically identical instances. Additionally, it applies user-configurable, task-critical criteria based on subject semantics and relation-object pairs to filter recognized instances. Consequently, by transmitting only task-critical instances, InsCom significantly reduces data redundancy, substantially enhancing transmission efficiency within limited wireless resources. Evaluations across various datasets and wireless channel conditions show that InsCom achieves a data volume reduction of over 7.82 times and a quality improvement ranging from 1.75 to 14.03 dB compared to the state-of-the-art SemCom systems."
+  },
+  {
     "title": "LookPlanGraph: Embodied Instruction Following Method with VLM Graph Augmentation",
     "url": "http://arxiv.org/abs/2512.21243v1",
     "arxiv_id": "2512.21243v1",
