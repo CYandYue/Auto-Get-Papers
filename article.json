@@ -1,5 +1,39 @@
 [
   {
+    "title": "CausalNav: A Long-term Embodied Navigation System for Autonomous Mobile Robots in Dynamic Outdoor Scenarios",
+    "url": "http://arxiv.org/abs/2601.01872v1",
+    "arxiv_id": "2601.01872v1",
+    "authors": [
+      "Hongbo Duan",
+      "Shangyi Luo",
+      "Zhiyuan Deng",
+      "Yanbo Chen",
+      "Yuanhao Chiang",
+      "Yi Liu",
+      "Fangming Liu",
+      "Xueqian Wang"
+    ],
+    "published": "2026-01-05T08:00:34+00:00",
+    "summary": "Autonomous language-guided navigation in large-scale outdoor environments remains a key challenge in mobile robotics, due to difficulties in semantic reasoning, dynamic conditions, and long-term stability. We propose CausalNav, the first scene graph-based semantic navigation framework tailored for dynamic outdoor environments. We construct a multi-level semantic scene graph using LLMs, referred to as the Embodied Graph, that hierarchically integrates coarse-grained map data with fine-grained object entities. The constructed graph serves as a retrievable knowledge base for Retrieval-Augmented Generation (RAG), enabling semantic navigation and long-range planning under open-vocabulary queries. By fusing real-time perception with offline map data, the Embodied Graph supports robust navigation across varying spatial granularities in dynamic outdoor environments. Dynamic objects are explicitly handled in both the scene graph construction and hierarchical planning modules. The Embodied Graph is continuously updated within a temporal window to reflect environmental changes and support real-time semantic navigation. Extensive experiments in both simulation and real-world settings demonstrate superior robustness and efficiency."
+  },
+  {
+    "title": "GenCAMO: Scene-Graph Contextual Decoupling for Environment-aware and Mask-free Camouflage Image-Dense Annotation Generation",
+    "url": "http://arxiv.org/abs/2601.01181v1",
+    "arxiv_id": "2601.01181v1",
+    "authors": [
+      "Chenglizhao Chen",
+      "Shaojiang Yuan",
+      "Xiaoxue Lu",
+      "Mengke Song",
+      "Jia Song",
+      "Zhenyu Wu",
+      "Wenfeng Song",
+      "Shuai Li"
+    ],
+    "published": "2026-01-03T13:13:51+00:00",
+    "summary": "Conceal dense prediction (CDP), especially RGB-D camouflage object detection and open-vocabulary camouflage object segmentation, plays a crucial role in advancing the understanding and reasoning of complex camouflage scenes. However, high-quality and large-scale camouflage datasets with dense annotation remain scarce due to expensive data collection and labeling costs. To address this challenge, we explore leveraging generative models to synthesize realistic camouflage image-dense data for training CDP models with fine-grained representations, prior knowledge, and auxiliary reasoning. Concretely, our contributions are threefold: (i) we introduce GenCAMO-DB, a large-scale camouflage dataset with multi-modal annotations, including depth maps, scene graphs, attribute descriptions, and text prompts; (ii) we present GenCAMO, an environment-aware and mask-free generative framework that produces high-fidelity camouflage image-dense annotations; (iii) extensive experiments across multiple modalities demonstrate that GenCAMO significantly improves dense prediction performance on complex camouflage scenes by providing high-quality synthetic data. The code and datasets will be released after paper acceptance."
+  },
+  {
     "title": "ArtiSG: Functional 3D Scene Graph Construction via Human-demonstrated Articulated Objects Manipulation",
     "url": "http://arxiv.org/abs/2512.24845v1",
     "arxiv_id": "2512.24845v1",
