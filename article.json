@@ -1,5 +1,32 @@
 [
   {
+    "title": "LOST-3DSG: Lightweight Open-Vocabulary 3D Scene Graphs with Semantic Tracking in Dynamic Environments",
+    "url": "http://arxiv.org/abs/2601.02905v1",
+    "arxiv_id": "2601.02905v1",
+    "authors": [
+      "Sara Micol Ferraina",
+      "Michele Brienza",
+      "Francesco Argenziano",
+      "Emanuele Musumeci",
+      "Vincenzo Suriani",
+      "Domenico D. Bloisi",
+      "Daniele Nardi"
+    ],
+    "published": "2026-01-06T10:44:19+00:00",
+    "summary": "Tracking objects that move within dynamic environments is a core challenge in robotics. Recent research has advanced this topic significantly; however, many existing approaches remain inefficient due to their reliance on heavy foundation models. To address this limitation, we propose LOST-3DSG, a lightweight open-vocabulary 3D scene graph designed to track dynamic objects in real-world environments. Our method adopts a semantic approach to entity tracking based on word2vec and sentence embeddings, enabling an open-vocabulary representation while avoiding the necessity of storing dense CLIP visual features. As a result, LOST-3DSG achieves superior performance compared to approaches that rely on high-dimensional visual embeddings. We evaluate our method through qualitative and quantitative experiments conducted in a real 3D environment using a TIAGo robot. The results demonstrate the effectiveness and efficiency of LOST-3DSG in dynamic object tracking. Code and supplementary material are publicly available on the project website at https://lab-rococo-sapienza.github.io/lost-3dsg/."
+  },
+  {
+    "title": "Textile IR: A Bidirectional Intermediate Representation for Physics-Aware Fashion CAD",
+    "url": "http://arxiv.org/abs/2601.02792v1",
+    "arxiv_id": "2601.02792v1",
+    "authors": [
+      "Petteri Teikari",
+      "Neliana Fuenmayor"
+    ],
+    "published": "2026-01-06T08:00:06+00:00",
+    "summary": "We introduce Textile IR, a bidirectional intermediate representation that connects manufacturing-valid CAD, physics-based simulation, and lifecycle assessment for fashion design. Unlike existing siloed tools where pattern software guarantees sewable outputs but understands nothing about drape, and physics simulation predicts behaviour but cannot automatically fix patterns, Textile IR provides the semantic glue for integration through a seven-layer Verification Ladder -- from cheap syntactic checks (pattern closure, seam compatibility) to expensive physics validation (drape simulation, stress analysis). The architecture enables bidirectional feedback: simulation failures suggest pattern modifications; material substitutions update sustainability estimates in real time; uncertainty propagates across the pipeline with explicit confidence bounds. We formalise fashion engineering as constraint satisfaction over three domains and demonstrate how Textile IR's scene-graph representation enables AI systems to manipulate garments as structured programs rather than pixel arrays. The framework addresses the compound uncertainty problem: when measurement errors in material testing, simulation approximations, and LCA database gaps combine, sustainability claims become unreliable without explicit uncertainty tracking. We propose six research priorities and discuss deployment considerations for fashion SMEs where integrated workflows reduce specialised engineering requirements. Key contribution: a formal representation that makes engineering constraints perceptible, manipulable, and immediately consequential -- enabling designers to navigate sustainability, manufacturability, and aesthetic tradeoffs simultaneously rather than discovering conflicts after costly physical prototyping."
+  },
+  {
     "title": "CausalNav: A Long-term Embodied Navigation System for Autonomous Mobile Robots in Dynamic Outdoor Scenarios",
     "url": "http://arxiv.org/abs/2601.01872v1",
     "arxiv_id": "2601.01872v1",
