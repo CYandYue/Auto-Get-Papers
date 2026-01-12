@@ -1,5 +1,22 @@
 [
   {
+    "title": "SceneAlign: Aligning Multimodal Reasoning to Scene Graphs in Complex Visual Scenes",
+    "url": "http://arxiv.org/abs/2601.05600v1",
+    "arxiv_id": "2601.05600v1",
+    "authors": [
+      "Chuhan Wang",
+      "Xintong Li",
+      "Jennifer Yuntong Zhang",
+      "Junda Wu",
+      "Chengkai Huang",
+      "Lina Yao",
+      "Julian McAuley",
+      "Jingbo Shang"
+    ],
+    "published": "2026-01-09T07:40:39+00:00",
+    "summary": "Multimodal large language models often struggle with faithful reasoning in complex visual scenes, where intricate entities and relations require precise visual grounding at each step. This reasoning unfaithfulness frequently manifests as hallucinated entities, mis-grounded relations, skipped steps, and over-specified reasoning. Existing preference-based approaches, typically relying on textual perturbations or answer-conditioned rationales, fail to address this challenge as they allow models to exploit language priors to bypass visual grounding. To address this, we propose SceneAlign, a framework that leverages scene graphs as structured visual information to perform controllable structural interventions. By identifying reasoning-critical nodes and perturbing them through four targeted strategies that mimic typical grounding failures, SceneAlign constructs hard negative rationales that remain linguistically plausible but are grounded in inaccurate visual facts. These contrastive pairs are used in Direct Preference Optimization to steer models toward fine-grained, structure-faithful reasoning. Across seven visual reasoning benchmarks, SceneAlign consistently improves answer accuracy and reasoning faithfulness, highlighting the effectiveness of grounding-aware alignment for multimodal reasoning."
+  },
+  {
     "title": "LOST-3DSG: Lightweight Open-Vocabulary 3D Scene Graphs with Semantic Tracking in Dynamic Environments",
     "url": "http://arxiv.org/abs/2601.02905v1",
     "arxiv_id": "2601.02905v1",
