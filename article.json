@@ -1,5 +1,48 @@
 [
   {
+    "title": "VENUS: Visual Editing with Noise Inversion Using Scene Graphs",
+    "url": "http://arxiv.org/abs/2601.07219v1",
+    "arxiv_id": "2601.07219v1",
+    "authors": [
+      "Thanh-Nhan Vo",
+      "Trong-Thuan Nguyen",
+      "Tam V. Nguyen",
+      "Minh-Triet Tran"
+    ],
+    "published": "2026-01-12T05:24:58+00:00",
+    "summary": "State-of-the-art text-based image editing models often struggle to balance background preservation with semantic consistency, frequently resulting either in the synthesis of entirely new images or in outputs that fail to realize the intended edits. In contrast, scene graph-based image editing addresses this limitation by providing a structured representation of semantic entities and their relations, thereby offering improved controllability. However, existing scene graph editing methods typically depend on model fine-tuning, which incurs high computational cost and limits scalability. To this end, we introduce VENUS (Visual Editing with Noise inversion Using Scene graphs), a training-free framework for scene graph-guided image editing. Specifically, VENUS employs a split prompt conditioning strategy that disentangles the target object of the edit from its background context, while simultaneously leveraging noise inversion to preserve fidelity in unedited regions. Moreover, our proposed approach integrates scene graphs extracted from multimodal large language models with diffusion backbones, without requiring any additional training. Empirically, VENUS substantially improves both background preservation and semantic alignment on PIE-Bench, increasing PSNR from 22.45 to 24.80, SSIM from 0.79 to 0.84, and reducing LPIPS from 0.100 to 0.070 relative to the state-of-the-art scene graph editing model (SGEdit). In addition, VENUS enhances semantic consistency as measured by CLIP similarity (24.97 vs. 24.19). On EditVal, VENUS achieves the highest fidelity with a 0.87 DINO score and, crucially, reduces per-image runtime from 6-10 minutes to only 20-30 seconds. Beyond scene graph-based editing, VENUS also surpasses strong text-based editing baselines such as LEDIT++ and P2P+DirInv, thereby demonstrating consistent improvements across both paradigms."
+  },
+  {
+    "title": "SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation",
+    "url": "http://arxiv.org/abs/2601.06806v1",
+    "arxiv_id": "2601.06806v1",
+    "authors": [
+      "Jiwen Zhang",
+      "Zejun Li",
+      "Siyuan Wang",
+      "Xiangyu Shi",
+      "Zhongyu Wei",
+      "Qi Wu"
+    ],
+    "published": "2026-01-11T08:39:19+00:00",
+    "summary": "Although learning-based vision-and-language navigation (VLN) agents can learn spatial knowledge implicitly from large-scale training data, zero-shot VLN agents lack this process, relying primarily on local observations for navigation, which leads to inefficient exploration and a significant performance gap. To deal with the problem, we consider a zero-shot VLN setting that agents are allowed to fully explore the environment before task execution. Then, we construct the Spatial Scene Graph (SSG) to explicitly capture global spatial structure and semantics in the explored environment. Based on the SSG, we introduce SpatialNav, a zero-shot VLN agent that integrates an agent-centric spatial map, a compass-aligned visual representation, and a remote object localization strategy for efficient navigation. Comprehensive experiments in both discrete and continuous environments demonstrate that SpatialNav significantly outperforms existing zero-shot agents and clearly narrows the gap with state-of-the-art learning-based methods. Such results highlight the importance of global spatial representations for generalizable navigation."
+  },
+  {
+    "title": "Semantic Enrichment of CAD-Based Industrial Environments via Scene Graphs for Simulation and Reasoning",
+    "url": "http://arxiv.org/abs/2601.06415v1",
+    "arxiv_id": "2601.06415v1",
+    "authors": [
+      "Nathan Pascal Walus",
+      "Ranulfo Bezerra",
+      "Shotaro Kojima",
+      "Tsige Tadesse Alemayoh",
+      "Satoshi Tadokoro",
+      "Kazunori Ohno"
+    ],
+    "published": "2026-01-10T03:22:29+00:00",
+    "summary": "Utilizing functional elements in an industrial environment, such as displays and interactive valves, provide effective possibilities for robot training. When preparing simulations for robots or applications that involve high-level scene understanding, the simulation environment must be equally detailed. Although CAD files for such environments deliver an exact description of the geometry and visuals, they usually lack semantic, relational and functional information, thus limiting the simulation and training possibilities. A 3D scene graph can organize semantic, spatial and functional information by enriching the environment through a Large Vision-Language Model (LVLM). In this paper we present an offline approach to creating detailed 3D scene graphs from CAD environments. This will serve as a foundation to include the relations of functional and actionable elements, which then can be used for dynamic simulation and reasoning. Key results of this research include both quantitative results of the generated semantic labels as well as qualitative results of the scene graph, especially in hindsight of pipe structures and identified functional relations. All code, results and the environment will be made available at https://cad-scenegraph.github.io"
+  },
+  {
     "title": "SceneAlign: Aligning Multimodal Reasoning to Scene Graphs in Complex Visual Scenes",
     "url": "http://arxiv.org/abs/2601.05600v1",
     "arxiv_id": "2601.05600v1",
@@ -20,6 +63,22 @@
     "title": "LOST-3DSG: Lightweight Open-Vocabulary 3D Scene Graphs with Semantic Tracking in Dynamic Environments",
     "url": "http://arxiv.org/abs/2601.02905v1",
     "arxiv_id": "2601.02905v1",
+    "authors": [
+      "Sara Micol Ferraina",
+      "Michele Brienza",
+      "Francesco Argenziano",
+      "Emanuele Musumeci",
+      "Vincenzo Suriani",
+      "Domenico D. Bloisi",
+      "Daniele Nardi"
+    ],
+    "published": "2026-01-06T10:44:19+00:00",
+    "summary": "Tracking objects that move within dynamic environments is a core challenge in robotics. Recent research has advanced this topic significantly; however, many existing approaches remain inefficient due to their reliance on heavy foundation models. To address this limitation, we propose LOST-3DSG, a lightweight open-vocabulary 3D scene graph designed to track dynamic objects in real-world environments. Our method adopts a semantic approach to entity tracking based on word2vec and sentence embeddings, enabling an open-vocabulary representation while avoiding the necessity of storing dense CLIP visual features. As a result, LOST-3DSG achieves superior performance compared to approaches that rely on high-dimensional visual embeddings. We evaluate our method through qualitative and quantitative experiments conducted in a real 3D environment using a TIAGo robot. The results demonstrate the effectiveness and efficiency of LOST-3DSG in dynamic object tracking. Code and supplementary material are publicly available on the project website at https://lab-rococo-sapienza.github.io/lost-3dsg/."
+  },
+  {
+    "title": "LOST-3DSG: Lightweight Open-Vocabulary 3D Scene Graphs with Semantic Tracking in Dynamic Environments",
+    "url": "http://arxiv.org/abs/2601.02905v2",
+    "arxiv_id": "2601.02905v2",
     "authors": [
       "Sara Micol Ferraina",
       "Michele Brienza",
