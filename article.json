@@ -1,5 +1,21 @@
 [
   {
+    "title": "Salience-SGG: Enhancing Unbiased Scene Graph Generation with Iterative Salience Estimation",
+    "url": "http://arxiv.org/abs/2601.08728v1",
+    "arxiv_id": "2601.08728v1",
+    "authors": [
+      "Runfeng Qu",
+      "Ole Hall",
+      "Pia K Bideau",
+      "Julie Ouerfelli-Ethier",
+      "Martin Rolfs",
+      "Klaus Obermayer",
+      "Olaf Hellwich"
+    ],
+    "published": "2026-01-13T16:57:09+00:00",
+    "summary": "Scene Graph Generation (SGG) suffers from a long-tailed distribution, where a few predicate classes dominate while many others are underrepresented, leading to biased models that underperform on rare relations. Unbiased-SGG methods address this issue by implementing debiasing strategies, but often at the cost of spatial understanding, resulting in an over-reliance on semantic priors. We introduce Salience-SGG, a novel framework featuring an Iterative Salience Decoder (ISD) that emphasizes triplets with salient spatial structures. To support this, we propose semantic-agnostic salience labels guiding ISD. Evaluations on Visual Genome, Open Images V6, and GQA-200 show that Salience-SGG achieves state-of-the-art performance and improves existing Unbiased-SGG methods in their spatial understanding as demonstrated by the Pairwise Localization Average Precision"
+  },
+  {
     "title": "VENUS: Visual Editing with Noise Inversion Using Scene Graphs",
     "url": "http://arxiv.org/abs/2601.07219v1",
     "arxiv_id": "2601.07219v1",
