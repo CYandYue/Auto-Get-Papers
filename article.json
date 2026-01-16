@@ -1,5 +1,19 @@
 [
   {
+    "title": "RAG-3DSG: Enhancing 3D Scene Graphs with Re-Shot Guided Retrieval-Augmented Generation",
+    "url": "http://arxiv.org/abs/2601.10168v1",
+    "arxiv_id": "2601.10168v1",
+    "authors": [
+      "Yue Chang",
+      "Rufeng Chen",
+      "Zhaofan Zhang",
+      "Yi Chen",
+      "Sihong Xie"
+    ],
+    "published": "2026-01-15T08:15:01+00:00",
+    "summary": "Open-vocabulary 3D Scene Graph (3DSG) generation can enhance various downstream tasks in robotics, such as manipulation and navigation, by leveraging structured semantic representations. A 3DSG is constructed from multiple images of a scene, where objects are represented as nodes and relationships as edges. However, existing works for open-vocabulary 3DSG generation suffer from both low object-level recognition accuracy and speed, mainly due to constrained viewpoints, occlusions, and redundant surface density. To address these challenges, we propose RAG-3DSG to mitigate aggregation noise through re-shot guided uncertainty estimation and support object-level Retrieval-Augmented Generation (RAG) via reliable low-uncertainty objects. Furthermore, we propose a dynamic downsample-mapping strategy to accelerate cross-image object aggregation with adaptive granularity. Experiments on Replica dataset demonstrate that RAG-3DSG significantly improves node captioning accuracy in 3DSG generation while reducing the mapping time by two-thirds compared to the vanilla version."
+  },
+  {
     "title": "Salience-SGG: Enhancing Unbiased Scene Graph Generation with Iterative Salience Estimation",
     "url": "http://arxiv.org/abs/2601.08728v1",
     "arxiv_id": "2601.08728v1",
