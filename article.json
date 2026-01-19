@@ -1,5 +1,19 @@
 [
   {
+    "title": "Learning Semantic-Geometric Task Graph-Representations from Human Demonstrations",
+    "url": "http://arxiv.org/abs/2601.11460v1",
+    "arxiv_id": "2601.11460v1",
+    "authors": [
+      "Franziska Herbert",
+      "Vignesh Prasad",
+      "Han Liu",
+      "Dorothea Koert",
+      "Georgia Chalvatzaki"
+    ],
+    "published": "2026-01-16T17:35:00+00:00",
+    "summary": "Learning structured task representations from human demonstrations is essential for understanding long-horizon manipulation behaviors, particularly in bimanual settings where action ordering, object involvement, and interaction geometry can vary significantly. A key challenge lies in jointly capturing the discrete semantic structure of tasks and the temporal evolution of object-centric geometric relations in a form that supports reasoning over task progression. In this work, we introduce a semantic-geometric task graph-representation that encodes object identities, inter-object relations, and their temporal geometric evolution from human demonstrations. Building on this formulation, we propose a learning framework that combines a Message Passing Neural Network (MPNN) encoder with a Transformer-based decoder, decoupling scene representation learning from action-conditioned reasoning about task progression. The encoder operates solely on temporal scene graphs to learn structured representations, while the decoder conditions on action-context to predict future action sequences, associated objects, and object motions over extended time horizons. Through extensive evaluation on human demonstration datasets, we show that semantic-geometric task graph-representations are particularly beneficial for tasks with high action and object variability, where simpler sequence-based models struggle to capture task progression. Finally, we demonstrate that task graph representations can be transferred to a physical bimanual robot and used for online action selection, highlighting their potential as reusable task abstractions for downstream decision-making in manipulation systems."
+  },
+  {
     "title": "RAG-3DSG: Enhancing 3D Scene Graphs with Re-Shot Guided Retrieval-Augmented Generation",
     "url": "http://arxiv.org/abs/2601.10168v1",
     "arxiv_id": "2601.10168v1",
