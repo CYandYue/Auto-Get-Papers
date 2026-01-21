@@ -28,6 +28,30 @@
     "summary": "Open-vocabulary 3D Scene Graph (3DSG) generation can enhance various downstream tasks in robotics, such as manipulation and navigation, by leveraging structured semantic representations. A 3DSG is constructed from multiple images of a scene, where objects are represented as nodes and relationships as edges. However, existing works for open-vocabulary 3DSG generation suffer from both low object-level recognition accuracy and speed, mainly due to constrained viewpoints, occlusions, and redundant surface density. To address these challenges, we propose RAG-3DSG to mitigate aggregation noise through re-shot guided uncertainty estimation and support object-level Retrieval-Augmented Generation (RAG) via reliable low-uncertainty objects. Furthermore, we propose a dynamic downsample-mapping strategy to accelerate cross-image object aggregation with adaptive granularity. Experiments on Replica dataset demonstrate that RAG-3DSG significantly improves node captioning accuracy in 3DSG generation while reducing the mapping time by two-thirds compared to the vanilla version."
   },
   {
+    "title": "Predicting When to Trust Vision-Language Models for Spatial Reasoning",
+    "url": "http://arxiv.org/abs/2601.11644v1",
+    "arxiv_id": "2601.11644v1",
+    "authors": [
+      "Muhammad Imran",
+      "Yugyung Lee"
+    ],
+    "published": "2026-01-14T22:00:28+00:00",
+    "summary": "Vision-Language Models (VLMs) demonstrate impressive capabilities across multimodal tasks, yet exhibit systematic spatial reasoning failures, achieving only 49% (CLIP) to 54% (BLIP-2) accuracy on basic directional relationships. For safe deployment in robotics and autonomous systems, we need to predict when to trust VLM spatial predictions rather than accepting all outputs. We propose a vision-based confidence estimation framework that validates VLM predictions through independent geometric verification using object detection. Unlike text-based approaches relying on self-assessment, our method fuses four signals via gradient boosting: geometric alignment between VLM claims and coordinates, spatial ambiguity from overlap, detection quality, and VLM internal uncertainty. We achieve 0.674 AUROC on BLIP-2 (34.0% improvement over text-based baselines) and 0.583 AUROC on CLIP (16.1% improvement), generalizing across generative and classification architectures. Our framework enables selective prediction: at 60% target accuracy, we achieve 61.9% coverage versus 27.6% baseline (2.2x improvement) on BLIP-2. Feature analysis reveals vision-based signals contribute 87.4% of model importance versus 12.7% from VLM confidence, validating that external geometric verification outperforms self-assessment. We demonstrate reliable scene graph construction where confidence-based pruning improves precision from 52.1% to 78.3% while retaining 68.2% of edges."
+  },
+  {
+    "title": "KG-ViP: Bridging Knowledge Grounding and Visual Perception in Multi-modal LLMs for Visual Question Answering",
+    "url": "http://arxiv.org/abs/2601.11632v1",
+    "arxiv_id": "2601.11632v1",
+    "authors": [
+      "Zhiyang Li",
+      "Ao Ke",
+      "Yukun Cao",
+      "Xike Xie"
+    ],
+    "published": "2026-01-14T07:16:11+00:00",
+    "summary": "Multi-modal Large Language Models (MLLMs) for Visual Question Answering (VQA) often suffer from dual limitations: knowledge hallucination and insufficient fine-grained visual perception. Crucially, we identify that commonsense graphs and scene graphs provide precisely complementary solutions to these respective deficiencies by providing rich external knowledge and capturing fine-grained visual details. However, prior works typically treat them in isolation, overlooking their synergistic potential. To bridge this gap, we propose KG-ViP, a unified framework that empowers MLLMs by fusing scene graphs and commonsense graphs. The core of the KG-ViP framework is a novel retrieval-and-fusion pipeline that utilizes the query as a semantic bridge to progressively integrate both graphs, synthesizing a unified structured context that facilitates reliable multi-modal reasoning. Extensive experiments on FVQA 2.0+ and MVQA benchmarks demonstrate that KG-ViP significantly outperforms existing VQA methods."
+  },
+  {
     "title": "Salience-SGG: Enhancing Unbiased Scene Graph Generation with Iterative Salience Estimation",
     "url": "http://arxiv.org/abs/2601.08728v1",
     "arxiv_id": "2601.08728v1",
