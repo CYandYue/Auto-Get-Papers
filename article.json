@@ -1,5 +1,19 @@
 [
   {
+    "title": "ExPrIS: Knowledge-Level Expectations as Priors for Object Interpretation from Sensor Data",
+    "url": "http://arxiv.org/abs/2601.15025v1",
+    "arxiv_id": "2601.15025v1",
+    "authors": [
+      "Marian Renz",
+      "Martin G\u00fcnther",
+      "Felix Igelbrink",
+      "Oscar Lima",
+      "Martin Atzmueller"
+    ],
+    "published": "2026-01-21T14:27:38+00:00",
+    "summary": "While deep learning has significantly advanced robotic object recognition, purely data-driven approaches often lack semantic consistency and fail to leverage valuable, pre-existing knowledge about the environment. This report presents the ExPrIS project, which addresses this challenge by investigating how knowledge-level expectations can serve as to improve object interpretation from sensor data. Our approach is based on the incremental construction of a 3D Semantic Scene Graph (3DSSG). We integrate expectations from two sources: contextual priors from past observations and semantic knowledge from external graphs like ConceptNet. These are embedded into a heterogeneous Graph Neural Network (GNN) to create an expectation-biased inference process. This method moves beyond static, frame-by-frame analysis to enhance the robustness and consistency of scene understanding over time. The report details this architecture, its evaluation, and outlines its planned integration on a mobile robotic platform."
+  },
+  {
     "title": "Learning Semantic-Geometric Task Graph-Representations from Human Demonstrations",
     "url": "http://arxiv.org/abs/2601.11460v1",
     "arxiv_id": "2601.11460v1",
