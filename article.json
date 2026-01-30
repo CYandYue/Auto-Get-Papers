@@ -1,5 +1,18 @@
 [
   {
+    "title": "SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing",
+    "url": "http://arxiv.org/abs/2601.21498v1",
+    "arxiv_id": "2601.21498v1",
+    "authors": [
+      "Thanh-Nhan Vo",
+      "Trong-Thuan Nguyen",
+      "Tam V. Nguyen",
+      "Minh-Triet Tran"
+    ],
+    "published": "2026-01-29T10:15:55+00:00",
+    "summary": "Recent advancements in Generative Artificial Intelligence (GenAI) have significantly enhanced the capabilities of both image generation and editing. However, current approaches often treat these tasks separately, leading to inefficiencies and challenges in maintaining spatial consistency and semantic coherence between generated content and edits. Moreover, a major obstacle is the lack of structured control over object relationships and spatial arrangements. Scene graph-based methods, which represent objects and their interrelationships in a structured format, offer a solution by providing greater control over composition and interactions in both image generation and editing. To address this, we introduce SimGraph, a unified framework that integrates scene graph-based image generation and editing, enabling precise control over object interactions, layouts, and spatial coherence. In particular, our framework integrates token-based generation and diffusion-based editing within a single scene graph-driven model, ensuring high-quality and consistent results. Through extensive experiments, we empirically demonstrate that our approach outperforms existing state-of-the-art methods."
+  },
+  {
     "title": "CURVE: Learning Causality-Inspired Invariant Representations for Robust Scene Understanding via Uncertainty-Guided Regularization",
     "url": "http://arxiv.org/abs/2601.20355v1",
     "arxiv_id": "2601.20355v1",
