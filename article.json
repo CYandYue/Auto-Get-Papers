@@ -1,5 +1,81 @@
 [
   {
+    "title": "Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning",
+    "url": "http://arxiv.org/abs/2602.02456v1",
+    "arxiv_id": "2602.02456v1",
+    "authors": [
+      "Albert Gassol Puigjaner",
+      "Angelos Zacharia",
+      "Kostas Alexis"
+    ],
+    "published": "2026-02-02T18:47:02+00:00",
+    "summary": "Representing and understanding 3D environments in a structured manner is crucial for autonomous agents to navigate and reason about their surroundings. While traditional Simultaneous Localization and Mapping (SLAM) methods generate metric reconstructions and can be extended to metric-semantic mapping, they lack a higher level of abstraction and relational reasoning. To address this gap, 3D scene graphs have emerged as a powerful representation for capturing hierarchical structures and object relationships. In this work, we propose an enhanced hierarchical 3D scene graph that integrates open-vocabulary features across multiple abstraction levels and supports object-relational reasoning. Our approach leverages a Vision Language Model (VLM) to infer semantic relationships. Notably, we introduce a task reasoning module that combines Large Language Models (LLM) and a VLM to interpret the scene graph's semantic and relational information, enabling agents to reason about tasks and interact with their environment more intelligently. We validate our method by deploying it on a quadruped robot in multiple environments and tasks, highlighting its ability to reason about them."
+  },
+  {
+    "title": "LIEREx: Language-Image Embeddings for Robotic Exploration",
+    "url": "http://arxiv.org/abs/2602.01930v1",
+    "arxiv_id": "2602.01930v1",
+    "authors": [
+      "Felix Igelbrink",
+      "Lennart Niecksch",
+      "Marian Renz",
+      "Martin G\u00fcnther",
+      "Martin Atzmueller"
+    ],
+    "published": "2026-02-02T10:30:50+00:00",
+    "summary": "Semantic maps allow a robot to reason about its surroundings to fulfill tasks such as navigating known environments, finding specific objects, and exploring unmapped areas. Traditional mapping approaches provide accurate geometric representations but are often constrained by pre-designed symbolic vocabularies. The reliance on fixed object classes makes it impractical to handle out-of-distribution knowledge not defined at design time. Recent advances in Vision-Language Foundation Models, such as CLIP, enable open-set mapping, where objects are encoded as high-dimensional embeddings rather than fixed labels. In LIEREx, we integrate these VLFMs with established 3D Semantic Scene Graphs to enable target-directed exploration by an autonomous agent in partially unknown environments."
+  },
+  {
+    "title": "GSR: Learning Structured Reasoning for Embodied Manipulation",
+    "url": "http://arxiv.org/abs/2602.01693v1",
+    "arxiv_id": "2602.01693v1",
+    "authors": [
+      "Kewei Hu",
+      "Michael Zhang",
+      "Wei Ying",
+      "Tianhao Liu",
+      "Guoqiang Hao",
+      "Zimeng Li",
+      "Wanchan Yu",
+      "Jiajian Jing",
+      "Fangwen Chen",
+      "Hanwen Kang"
+    ],
+    "published": "2026-02-02T06:07:42+00:00",
+    "summary": "Despite rapid progress, embodied agents still struggle with long-horizon manipulation that requires maintaining spatial consistency, causal dependencies, and goal constraints. A key limitation of existing approaches is that task reasoning is implicitly embedded in high-dimensional latent representations, making it challenging to separate task structure from perceptual variability. We introduce Grounded Scene-graph Reasoning (GSR), a structured reasoning paradigm that explicitly models world-state evolution as transitions over semantically grounded scene graphs. By reasoning step-wise over object states and spatial relations, rather than directly mapping perception to actions, GSR enables explicit reasoning about action preconditions, consequences, and goal satisfaction in a physically grounded space. To support learning such reasoning, we construct Manip-Cognition-1.6M, a large-scale dataset that jointly supervises world understanding, action planning, and goal interpretation. Extensive evaluations across RLBench, LIBERO, GSR-benchmark, and real-world robotic tasks show that GSR significantly improves zero-shot generalization and long-horizon task completion over prompting-based baselines. These results highlight explicit world-state representations as a key inductive bias for scalable embodied reasoning."
+  },
+  {
+    "title": "USS-Nav: Unified Spatio-Semantic Scene Graph for Lightweight UAV Zero-Shot Object Navigation",
+    "url": "http://arxiv.org/abs/2602.00708v1",
+    "arxiv_id": "2602.00708v1",
+    "authors": [
+      "Weiqi Gai",
+      "Yuman Gao",
+      "Yuan Zhou",
+      "Yufan Xie",
+      "Zhiyang Liu",
+      "Yuze Wu",
+      "Xin Zhou",
+      "Fei Gao",
+      "Zhijun Meng"
+    ],
+    "published": "2026-01-31T13:10:02+00:00",
+    "summary": "Zero-Shot Object Navigation in unknown environments poses significant challenges for Unmanned Aerial Vehicles (UAVs) due to the conflict between high-level semantic reasoning requirements and limited onboard computational resources. To address this, we present USS-Nav, a lightweight framework that incrementally constructs a Unified Spatio-Semantic scene graph and enables efficient Large Language Model (LLM)-augmented Zero-Shot Object Navigation in unknown environments. Specifically, we introduce an incremental Spatial Connectivity Graph generation method utilizing polyhedral expansion to capture global geometric topology, which is dynamically partitioned into semantic regions via graph clustering. Concurrently, open-vocabulary object semantics are instantiated and anchored to this topology to form a hierarchical environmental representation. Leveraging this hierarchical structure, we present a coarse-to-fine exploration strategy: LLM grounded in the scene graph's semantics to determine global target regions, while a local planner optimizes frontier coverage based on information gain. Experimental results demonstrate that our framework outperforms state-of-the-art methods in terms of computational efficiency and real-time update frequency (15 Hz) on a resource-constrained platform. Furthermore, ablation studies confirm the effectiveness of our framework, showing substantial improvements in Success weighted by Path Length (SPL). The source code will be made publicly available to foster further research."
+  },
+  {
+    "title": "VIZOR: Viewpoint-Invariant Zero-Shot Scene Graph Generation for 3D Scene Reasoning",
+    "url": "http://arxiv.org/abs/2602.00637v1",
+    "arxiv_id": "2602.00637v1",
+    "authors": [
+      "Vivek Madhavaram",
+      "Vartika Sengar",
+      "Arkadipta De",
+      "Charu Sharma"
+    ],
+    "published": "2026-01-31T10:11:27+00:00",
+    "summary": "Scene understanding and reasoning has been a fundamental problem in 3D computer vision, requiring models to identify objects, their properties, and spatial or comparative relationships among the objects. Existing approaches enable this by creating scene graphs using multiple inputs such as 2D images, depth maps, object labels, and annotated relationships from specific reference view. However, these methods often struggle with generalization and produce inaccurate spatial relationships like \"left/right\", which become inconsistent across different viewpoints. To address these limitations, we propose Viewpoint-Invariant Zero-shot scene graph generation for 3D scene Reasoning (VIZOR). VIZOR is a training-free, end-to-end framework that constructs dense, viewpoint-invariant 3D scene graphs directly from raw 3D scenes. The generated scene graph is unambiguous, as spatial relationships are defined relative to each object's front-facing direction, making them consistent regardless of the reference view. Furthermore, it infers open-vocabulary relationships that describe spatial and proximity relationships among scene objects without requiring annotated training data. We conduct extensive quantitative and qualitative evaluations to assess the effectiveness of VIZOR in scene graph generation and downstream tasks, such as query-based object grounding. VIZOR outperforms state-of-the-art methods, showing clear improvements in scene graph generation and achieving 22% and 4.81% gains in zero-shot grounding accuracy on the Replica and Nr3D datasets, respectively."
+  },
+  {
     "title": "SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing",
     "url": "http://arxiv.org/abs/2601.21498v1",
     "arxiv_id": "2601.21498v1",
