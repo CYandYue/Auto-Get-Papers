@@ -1,5 +1,22 @@
 [
   {
+    "title": "SVRepair: Structured Visual Reasoning for Automated Program Repair",
+    "url": "http://arxiv.org/abs/2602.06090v1",
+    "arxiv_id": "2602.06090v1",
+    "authors": [
+      "Xiaoxuan Tang",
+      "Jincheng Wang",
+      "Liwei Luo",
+      "Jingxuan Xu",
+      "Sheng Zhou",
+      "Dajun Chen",
+      "Wei Jiang",
+      "Yong Li"
+    ],
+    "published": "2026-02-05T06:26:46+00:00",
+    "summary": "Large language models (LLMs) have recently shown strong potential for Automated Program Repair (APR), yet most existing approaches remain unimodal and fail to leverage the rich diagnostic signals contained in visual artifacts such as screenshots and control-flow graphs. In practice, many bug reports convey critical information visually (e.g., layout breakage or missing widgets), but directly using such dense visual inputs often causes context loss and noise, making it difficult for MLLMs to ground visual observations into precise fault localization and executable patches. To bridge this semantic gap, we propose \\textbf{SVRepair}, a multimodal APR framework with structured visual representation. SVRepair first fine-tunes a vision-language model, \\textbf{Structured Visual Representation (SVR)}, to uniformly transform heterogeneous visual artifacts into a \\emph{semantic scene graph} that captures GUI elements and their structural relations (e.g., hierarchy), providing normalized, code-relevant context for downstream repair. Building on the graph, SVRepair drives a coding agent to localize faults and synthesize patches, and further introduces an iterative visual-artifact segmentation strategy that progressively narrows the input to bug-centered regions to suppress irrelevant context and reduce hallucinations. Extensive experiments across multiple benchmarks demonstrate state-of-the-art performance: SVRepair achieves \\textbf{36.47\\%} accuracy on SWE-Bench M, \\textbf{38.02\\%} on MMCode, and \\textbf{95.12\\%} on CodeVision, validating the effectiveness of SVRepair for multimodal program repair."
+  },
+  {
     "title": "Relational Scene Graphs for Object Grounding of Natural Language Commands",
     "url": "http://arxiv.org/abs/2602.04635v1",
     "arxiv_id": "2602.04635v1",
