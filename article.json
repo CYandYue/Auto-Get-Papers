@@ -1,5 +1,20 @@
 [
   {
+    "title": "Differentiate-and-Inject: Enhancing VLAs via Functional Differentiation Induced by In-Parameter Structural Reasoning",
+    "url": "http://arxiv.org/abs/2602.07541v1",
+    "arxiv_id": "2602.07541v1",
+    "authors": [
+      "Jingyi Hou",
+      "Leyu Zhou",
+      "Chenchen Jing",
+      "Jinghan Yang",
+      "Xinbo Yu",
+      "Wei He"
+    ],
+    "published": "2026-02-07T13:31:11+00:00",
+    "summary": "As robots are expected to perform increasingly diverse tasks, they must understand not only low-level actions but also the higher-level structure that determines how a task should unfold. Existing vision-language-action (VLA) models struggle with this form of task-level reasoning. They either depend on prompt-based in-context decomposition, which is unstable and sensitive to linguistic variations, or end-to-end long-horizon training, which requires large-scale demonstrations and entangles task-level reasoning with low-level control. We present in-parameter structured task reasoning (iSTAR), a framework for enhancing VLA models via functional differentiation induced by in-parameter structural reasoning. Instead of treating VLAs as monolithic policies, iSTAR embeds task-level semantic structure directly into model parameters, enabling differentiated task-level inference without external planners or handcrafted prompt inputs. This injected structure takes the form of implicit dynamic scene-graph knowledge that captures object relations, subtask semantics, and task-level dependencies in parameter space. Across diverse manipulation benchmarks, iSTAR achieves more reliable task decompositions and higher success rates than both in-context and end-to-end VLA baselines, demonstrating the effectiveness of parameter-space structural reasoning for functional differentiation and improved generalization across task variations."
+  },
+  {
     "title": "SVRepair: Structured Visual Reasoning for Automated Program Repair",
     "url": "http://arxiv.org/abs/2602.06090v1",
     "arxiv_id": "2602.06090v1",
