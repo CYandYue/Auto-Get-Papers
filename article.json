@@ -1,5 +1,19 @@
 [
   {
+    "title": "All-in-One Conditioning for Text-to-Image Synthesis",
+    "url": "http://arxiv.org/abs/2602.09165v1",
+    "arxiv_id": "2602.09165v1",
+    "authors": [
+      "Hirunima Jayasekara",
+      "Chuong Huynh",
+      "Yixuan Ren",
+      "Christabel Acquaye",
+      "Abhinav Shrivastava"
+    ],
+    "published": "2026-02-09T20:16:19+00:00",
+    "summary": "Accurate interpretation and visual representation of complex prompts involving multiple objects, attributes, and spatial relationships is a critical challenge in text-to-image synthesis. Despite recent advancements in generating photorealistic outputs, current models often struggle with maintaining semantic fidelity and structural coherence when processing intricate textual inputs. We propose a novel approach that grounds text-to-image synthesis within the framework of scene graph structures, aiming to enhance the compositional abilities of existing models. Eventhough, prior approaches have attempted to address this by using pre-defined layout maps derived from prompts, such rigid constraints often limit compositional flexibility and diversity. In contrast, we introduce a zero-shot, scene graph-based conditioning mechanism that generates soft visual guidance during inference. At the core of our method is the Attribute-Size-Quantity-Location (ASQL) Conditioner, which produces visual conditions via a lightweight language model and guides diffusion-based generation through inference-time optimization. This enables the model to maintain text-image alignment while supporting lightweight, coherent, and diverse image synthesis."
+  },
+  {
     "title": "Differentiate-and-Inject: Enhancing VLAs via Functional Differentiation Induced by In-Parameter Structural Reasoning",
     "url": "http://arxiv.org/abs/2602.07541v1",
     "arxiv_id": "2602.07541v1",
