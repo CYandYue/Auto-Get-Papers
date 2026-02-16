@@ -1,5 +1,38 @@
 [
   {
+    "title": "UniManip: General-Purpose Zero-Shot Robotic Manipulation with Agentic Operational Graph",
+    "url": "http://arxiv.org/abs/2602.13086v1",
+    "arxiv_id": "2602.13086v1",
+    "authors": [
+      "Haichao Liu",
+      "Yuanjiang Xue",
+      "Yuheng Zhou",
+      "Haoyuan Deng",
+      "Yinan Liang",
+      "Lihua Xie",
+      "Ziwei Wang"
+    ],
+    "published": "2026-02-13T16:47:26+00:00",
+    "summary": "Achieving general-purpose robotic manipulation requires robots to seamlessly bridge high-level semantic intent with low-level physical interaction in unstructured environments. However, existing approaches falter in zero-shot generalization: end-to-end Vision-Language-Action (VLA) models often lack the precision required for long-horizon tasks, while traditional hierarchical planners suffer from semantic rigidity when facing open-world variations. To address this, we present UniManip, a framework grounded in a Bi-level Agentic Operational Graph (AOG) that unifies semantic reasoning and physical grounding. By coupling a high-level Agentic Layer for task orchestration with a low-level Scene Layer for dynamic state representation, the system continuously aligns abstract planning with geometric constraints, enabling robust zero-shot execution. Unlike static pipelines, UniManip operates as a dynamic agentic loop: it actively instantiates object-centric scene graphs from unstructured perception, parameterizes these representations into collision-free trajectories via a safety-aware local planner, and exploits structured memory to autonomously diagnose and recover from execution failures. Extensive experiments validate the system's robust zero-shot capability on unseen objects and tasks, demonstrating a 22.5% and 25.0% higher success rate compared to state-of-the-art VLA and hierarchical baselines, respectively. Notably, the system enables direct zero-shot transfer from fixed-base setups to mobile manipulation without fine-tuning or reconfiguration. Our open-source project page can be found at https://henryhcliu.github.io/unimanip."
+  },
+  {
+    "title": "INHerit-SG: Incremental Hierarchical Semantic Scene Graphs with RAG-Style Retrieval",
+    "url": "http://arxiv.org/abs/2602.12971v1",
+    "arxiv_id": "2602.12971v1",
+    "authors": [
+      "YukTungSamuel Fang",
+      "Zhikang Shi",
+      "Jiabin Qiu",
+      "Zixuan Chen",
+      "Jieqi Shi",
+      "Hao Xu",
+      "Jing Huo",
+      "Yang Gao"
+    ],
+    "published": "2026-02-13T14:45:55+00:00",
+    "summary": "Driven by advancements in foundation models, semantic scene graphs have emerged as a prominent paradigm for high-level 3D environmental abstraction in robot navigation. However, existing approaches are fundamentally misaligned with the needs of embodied tasks. As they rely on either offline batch processing or implicit feature embeddings, the maps can hardly support interpretable human-intent reasoning in complex environments. To address these limitations, we present INHerit-SG. We redefine the map as a structured, RAG-ready knowledge base where natural-language descriptions are introduced as explicit semantic anchors to better align with human intent. An asynchronous dual-process architecture, together with a Floor-Room-Area-Object hierarchy, decouples geometric segmentation from time-consuming semantic reasoning. An event-triggered map update mechanism reorganizes the graph only when meaningful semantic events occur. This strategy enables our graph to maintain long-term consistency with relatively low computational overhead. For retrieval, we deploy multi-role Large Language Models (LLMs) to decompose queries into atomic constraints and handle logical negations, and employ a hard-to-soft filtering strategy to ensure robust reasoning. This explicit interpretability improves the success rate and reliability of complex retrievals, enabling the system to adapt to a broader spectrum of human interaction tasks. We evaluate INHerit-SG on a newly constructed dataset, HM3DSem-SQR, and in real-world environments. Experiments demonstrate that our system achieves state-of-the-art performance on complex queries, and reveal its scalability for downstream navigation tasks. Project Page: https://fangyuktung.github.io/INHeritSG.github.io/"
+  },
+  {
     "title": "Any House Any Task: Scalable Long-Horizon Planning for Abstract Human Tasks",
     "url": "http://arxiv.org/abs/2602.12244v1",
     "arxiv_id": "2602.12244v1",
