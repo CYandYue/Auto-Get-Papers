@@ -1,5 +1,35 @@
 [
   {
+    "title": "To Move or Not to Move: Constraint-based Planning Enables Zero-Shot Generalization for Interactive Navigation",
+    "url": "http://arxiv.org/abs/2602.20055v1",
+    "arxiv_id": "2602.20055v1",
+    "authors": [
+      "Apoorva Vashisth",
+      "Manav Kulshrestha",
+      "Pranav Bakshi",
+      "Damon Conover",
+      "Guillaume Sartoretti",
+      "Aniket Bera"
+    ],
+    "published": "2026-02-23T17:10:00+00:00",
+    "summary": "Visual navigation typically assumes the existence of at least one obstacle-free path between start and goal, which must be discovered/planned by the robot. However, in real-world scenarios, such as home environments and warehouses, clutter can block all routes. Targeted at such cases, we introduce the Lifelong Interactive Navigation problem, where a mobile robot with manipulation abilities can move clutter to forge its own path to complete sequential object- placement tasks - each involving placing an given object (eg. Alarm clock, Pillow) onto a target object (eg. Dining table, Desk, Bed). To address this lifelong setting - where effects of environment changes accumulate and have long-term effects - we propose an LLM-driven, constraint-based planning framework with active perception. Our framework allows the LLM to reason over a structured scene graph of discovered objects and obstacles, deciding which object to move, where to place it, and where to look next to discover task-relevant information. This coupling of reasoning and active perception allows the agent to explore the regions expected to contribute to task completion rather than exhaustively mapping the environment. A standard motion planner then executes the corresponding navigate-pick-place, or detour sequence, ensuring reliable low-level control. Evaluated in physics-enabled ProcTHOR-10k simulator, our approach outperforms non-learning and learning-based baselines. We further demonstrate our approach qualitatively on real-world hardware."
+  },
+  {
+    "title": "RL-RIG: A Generative Spatial Reasoner via Intrinsic Reflection",
+    "url": "http://arxiv.org/abs/2602.19974v1",
+    "arxiv_id": "2602.19974v1",
+    "authors": [
+      "Tianyu Wang",
+      "Zhiyuan Ma",
+      "Qian Wang",
+      "Xinyi Zhang",
+      "Xinwei Long",
+      "Bowen Zhou"
+    ],
+    "published": "2026-02-23T15:39:53+00:00",
+    "summary": "Recent advancements in image generation have achieved impressive results in producing high-quality images. However, existing image generation models still generally struggle with a spatial reasoning dilemma, lacking the ability to accurately capture fine-grained spatial relationships from the prompt and correctly generate scenes with structural integrity. To mitigate this dilemma, we propose RL-RIG, a Reinforcement Learning framework for Reflection-based Image Generation. Our architecture comprises four primary components: Diffuser, Checker, Actor, and Inverse Diffuser, following a Generate-Reflect-Edit paradigm to spark the Chain of Thought reasoning ability in image generation for addressing the dilemma. To equip the model with better intuition over generation trajectories, we further develop Reflection-GRPO to train the VLM Actor for edit prompts and the Image Editor for better image quality under a given prompt, respectively. Unlike traditional approaches that solely produce visually stunning yet structurally unreasonable content, our evaluation metrics prioritize spatial accuracy, utilizing Scene Graph IoU and employing a VLM-as-a-Judge strategy to assess the spatial consistency of generated images on LAION-SG dataset. Experimental results show that RL-RIG outperforms existing state-of-the-art open-source models by up to 11% in terms of controllable and precise spatial reasoning in image generation."
+  },
+  {
     "title": "GraphThinker: Reinforcing Video Reasoning with Event Graph Thinking",
     "url": "http://arxiv.org/abs/2602.17555v1",
     "arxiv_id": "2602.17555v1",
@@ -10,6 +40,22 @@
       "Ziquan Liu",
       "Wei Li",
       "Shaogang Gong"
+    ],
+    "published": "2026-02-19T17:09:30+00:00",
+    "summary": "Video reasoning requires understanding the causal relationships between events in a video. However, such relationships are often implicit and costly to annotate manually. While existing multimodal large language models (MLLMs) often infer event relations through dense captions or video summaries for video reasoning, such modeling still lacks causal understanding. Without explicit causal structure modeling within and across video events, these models suffer from hallucinations during the video reasoning. In this work, we propose GraphThinker, a reinforcement finetuning-based method that constructs structural event-level scene graphs and enhances visual grounding to jointly reduce hallucinations in video reasoning. Specifically, we first employ an MLLM to construct an event-based video scene graph (EVSG) that explicitly models both intra- and inter-event relations, and incorporate these formed scene graphs into the MLLM as an intermediate thinking process. We also introduce a visual attention reward during reinforcement finetuning, which strengthens video grounding and further mitigates hallucinations. We evaluate GraphThinker on two datasets, RexTime and VidHalluc, where it shows superior ability to capture object and event relations with more precise event localization, reducing hallucinations in video reasoning compared to prior methods."
+  },
+  {
+    "title": "GraphThinker: Reinforcing Video Reasoning with Event Graph Thinking",
+    "url": "http://arxiv.org/abs/2602.17555v2",
+    "arxiv_id": "2602.17555v2",
+    "authors": [
+      "Zixu Cheng",
+      "Da Li",
+      "Jian Hu",
+      "Yuhang Zang",
+      "Ziquan Liu",
+      "Shaogang Gong",
+      "Wei Li"
     ],
     "published": "2026-02-19T17:09:30+00:00",
     "summary": "Video reasoning requires understanding the causal relationships between events in a video. However, such relationships are often implicit and costly to annotate manually. While existing multimodal large language models (MLLMs) often infer event relations through dense captions or video summaries for video reasoning, such modeling still lacks causal understanding. Without explicit causal structure modeling within and across video events, these models suffer from hallucinations during the video reasoning. In this work, we propose GraphThinker, a reinforcement finetuning-based method that constructs structural event-level scene graphs and enhances visual grounding to jointly reduce hallucinations in video reasoning. Specifically, we first employ an MLLM to construct an event-based video scene graph (EVSG) that explicitly models both intra- and inter-event relations, and incorporate these formed scene graphs into the MLLM as an intermediate thinking process. We also introduce a visual attention reward during reinforcement finetuning, which strengthens video grounding and further mitigates hallucinations. We evaluate GraphThinker on two datasets, RexTime and VidHalluc, where it shows superior ability to capture object and event relations with more precise event localization, reducing hallucinations in video reasoning compared to prior methods."
