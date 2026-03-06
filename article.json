@@ -1,5 +1,24 @@
 [
   {
+    "title": "SGR3 Model: Scene Graph Retrieval-Reasoning Model in 3D",
+    "url": "http://arxiv.org/abs/2603.04614v1",
+    "arxiv_id": "2603.04614v1",
+    "authors": [
+      "Zirui Wang",
+      "Ruiping Liu",
+      "Yufan Chen",
+      "Junwei Zheng",
+      "Weijia Fan",
+      "Kunyu Peng",
+      "Di Wen",
+      "Jiale Wei",
+      "Jiaming Zhang",
+      "Rainer Stiefelhagen"
+    ],
+    "published": "2026-03-04T21:19:54+00:00",
+    "summary": "3D scene graphs provide a structured representation of object entities and their relationships, enabling high-level interpretation and reasoning for robots while remaining intuitively understandable to humans. Existing approaches for 3D scene graph generation typically combine scene reconstruction with graph neural networks (GNNs). However, such pipelines require multi-modal data that may not always be available, and their reliance on heuristic graph construction can constrain the prediction of relationship triplets. In this work, we introduce a Scene Graph Retrieval-Reasoning Model in 3D (SGR3 Model), a training-free framework that leverages multi-modal large language models (MLLMs) with retrieval-augmented generation (RAG) for semantic scene graph generation. SGR3 Model bypasses the need for explicit 3D reconstruction. Instead, it enhances relational reasoning by incorporating semantically aligned scene graphs retrieved via a ColPali-style cross-modal framework. To improve retrieval robustness, we further introduce a weighted patch-level similarity selection mechanism that mitigates the negative impact of blurry or semantically uninformative regions. Experiments demonstrate that SGR3 Model achieves competitive performance compared to training-free baselines and on par with GNN-based expert models. Moreover, an ablation study on the retrieval module and knowledge base scale reveals that retrieved external information is explicitly integrated into the token generation process, rather than being implicitly internalized through abstraction."
+  },
+  {
     "title": "Hazard-Aware Traffic Scene Graph Generation",
     "url": "http://arxiv.org/abs/2603.03584v1",
     "arxiv_id": "2603.03584v1",
