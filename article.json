@@ -1,5 +1,44 @@
 [
   {
+    "title": "SG-DOR: Learning Scene Graphs with Direction-Conditioned Occlusion Reasoning for Pepper Plants",
+    "url": "http://arxiv.org/abs/2603.06512v1",
+    "arxiv_id": "2603.06512v1",
+    "authors": [
+      "Rohit Menon",
+      "Niklas Mueller-Goldingen",
+      "Sicong Pan",
+      "Gokul Krishna Chenchani",
+      "Maren Bennewitz"
+    ],
+    "published": "2026-03-06T17:52:51+00:00",
+    "summary": "Robotic harvesting in dense crop canopies requires effective interventions that depend not only on geometry, but also on explicit, direction-conditioned relations identifying which organs obstruct a target fruit. We present SG-DOR (Scene Graphs with Direction-Conditioned Occlusion Reasoning), a relational framework that, given instance-segmented organ point clouds, infers a scene graph encoding physical attachments and direction-conditioned occlusion. We introduce an occlusion ranking task for retrieving and ranking candidate leaves for a target fruit and approach direction, and propose a direction-aware graph neural architecture with per-fruit leaf-set attention and union-level aggregation. Experiments on a multi-plant synthetic pepper dataset show improved occlusion prediction (F1=0.73, NDCG@3=0.85) and attachment inference (edge F1=0.83) over strong ablations, yielding a structured relational signal for downstream intervention planning."
+  },
+  {
+    "title": "REACT++: Efficient Cross-Attention for Real-Time Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2603.06386v1",
+    "arxiv_id": "2603.06386v1",
+    "authors": [
+      "Ma\u00eblic Neau",
+      "Zoe Falomir"
+    ],
+    "published": "2026-03-06T15:36:00+00:00",
+    "summary": "Scene Graph Generation (SGG) is a task that encodes visual relationships between objects in images as graph structures. SGG shows significant promise as a foundational component for downstream tasks, such as reasoning for embodied agents. To enable real-time applications, SGG must address the trade-off between performance and inference speed. However, current methods tend to focus on one of the following: (1) improving relation prediction accuracy, (2) enhancing object detection accuracy, or (3) reducing latency, without aiming to balance all three objectives simultaneously. To address this limitation, we build on the powerful Real-time Efficiency and Accuracy Compromise for Tradeoffs in Scene Graph Generation (REACT) architecture and propose REACT++, a new state-of-the-art model for real-time SGG. By leveraging efficient feature extraction and subject-to-object cross-attention within the prototype space, REACT++ balances latency and representational power. REACT++ achieves the highest inference speed among existing SGG models, improving relation prediction accuracy without sacrificing object detection performance. Compared to the previous REACT version, REACT++ is 20% faster with a gain of 10% in relation prediction accuracy on average. The code is available at https://github.com/Maelic/SGG-Benchmark."
+  },
+  {
+    "title": "Relational Semantic Reasoning on 3D Scene Graphs for Open World Interactive Object Search",
+    "url": "http://arxiv.org/abs/2603.05642v1",
+    "arxiv_id": "2603.05642v1",
+    "authors": [
+      "Imen Mahdi",
+      "Matteo Cassinelli",
+      "Fabien Despinoy",
+      "Tim Welschehold",
+      "Abhinav Valada"
+    ],
+    "published": "2026-03-05T19:52:26+00:00",
+    "summary": "Open-world interactive object search in household environments requires understanding semantic relationships between objects and their surrounding context to guide exploration efficiently. Prior methods either rely on vision-language embeddings similarity, which does not reliably capture task-relevant relational semantics, or large language models (LLMs), which are too slow and costly for real-time deployment. We introduce SCOUT: Scene Graph-Based Exploration with Learned Utility for Open-World Interactive Object Search, a novel method that searches directly over 3D scene graphs by assigning utility scores to rooms, frontiers, and objects using relational exploration heuristics such as room-object containment and object-object co-occurrence. To make this practical without sacrificing open-vocabulary generalization, we propose an offline procedural distillation framework that extracts structured relational knowledge from LLMs into lightweight models for on-robot inference. Furthermore, we present SymSearch, a scalable symbolic benchmark for evaluating semantic reasoning in interactive object search tasks. Extensive evaluations across symbolic and simulation environments show that SCOUT outperforms embedding similarity-based methods and matches LLM-level performance while remaining computationally efficient. Finally, real-world experiments demonstrate effective transfer to physical environments, enabling open-world interactive object search under realistic sensing and navigation constraints."
+  },
+  {
     "title": "SGR3 Model: Scene Graph Retrieval-Reasoning Model in 3D",
     "url": "http://arxiv.org/abs/2603.04614v1",
     "arxiv_id": "2603.04614v1",
