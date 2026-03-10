@@ -1,5 +1,80 @@
 [
   {
+    "title": "Graph Based Semantic Encoder Decoder Framework for Task Oriented Communications in Connected Autonomous Vehicles",
+    "url": "http://arxiv.org/abs/2603.08438v1",
+    "arxiv_id": "2603.08438v1",
+    "authors": [
+      "Soheyb Ribouh",
+      "Phil Polo Ditsia Di Ngoma"
+    ],
+    "published": "2026-03-09T14:36:58+00:00",
+    "summary": "Connected autonomous vehicles (CAVs) require reliable and efficient communication frameworks to support safety critical and task-oriented applications such as collision avoidance, cooperative perception, and traffic risk assessment. Traditional communication paradigms, which focus on transmitting raw bits, often incur excessive bandwidth consumption and fail to preserve the semantic relevance of transmitted information. To bridge this gap, we propose a Graph-Based Semantic Encoder-Decoder (GBSED) architecture tailored for task-oriented communications in CAV networks. The encoder leverages scene graphs to capture spatial and semantic relationships among road entities, combined with a semantic compression algorithm that reduces the size of the extracted graph based representations by up to 99% compared to raw images, while the decoder reconstructs task relevant representations rather than raw data. This design enables a significant reduction in communication overhead while maintaining high semantic fidelity, exceeding 0.9 at SNR levels above 10dB, for downstream vehicular tasks. We evaluate the proposed framework through simulations in autonomous driving scenarios, where the semantic encoder and decoder are integrated into a MIMO OFDM physical layer system. The results demonstrate high prediction success rates for risk assessment, improved robustness under the 3GPP CDL channel, and significant compression gains, confirming that the proposed semantic communication framework is a promising solution for future 6G systems."
+  },
+  {
+    "title": "ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation",
+    "url": "http://arxiv.org/abs/2603.08007v1",
+    "arxiv_id": "2603.08007v1",
+    "authors": [
+      "Haoyu Tong",
+      "Xiangyu Dong",
+      "Xiaoguang Ma",
+      "Haoran Zhao",
+      "Yaoming Zhou",
+      "Chenghao Lin"
+    ],
+    "published": "2026-03-09T06:29:17+00:00",
+    "summary": "Existing aerial Vision-Language Navigation (VLN) methods predominantly adopt a detection-and-planning pipeline, which converts open-vocabulary detections into discrete textual scene graphs. These approaches are plagued by inadequate spatial reasoning capabilities and inherent linguistic ambiguities. To address these bottlenecks, we propose a Visual-Spatial Reasoning (ViSA) enhanced framework for aerial VLN. Specifically, a triple-phase collaborative architecture is designed to leverage structured visual prompting, enabling Vision-Language Models (VLMs) to perform direct reasoning on image planes without the need for additional training or complex intermediate representations. Comprehensive evaluations on the CityNav benchmark demonstrate that the ViSA-enhanced VLN achieves a 70.3\\% improvement in success rate compared to the fully trained state-of-the-art (SOTA) method, elucidating its great potential as a backbone for aerial VLN systems."
+  },
+  {
+    "title": "Extend Your Horizon: A Device-Agnostic Surgical Tool Tracking Framework with Multi-View Optimization for Augmented Reality",
+    "url": "http://arxiv.org/abs/2603.07981v1",
+    "arxiv_id": "2603.07981v1",
+    "authors": [
+      "Jiaming Zhang",
+      "Mingxu Liu",
+      "Hongchao Shu",
+      "Ruixing Liang",
+      "Yihao Liu",
+      "Ojas Taskar",
+      "Amir Kheradmand",
+      "Mehran Armand",
+      "Alejandro Martin-Gomez"
+    ],
+    "published": "2026-03-09T05:37:49+00:00",
+    "summary": "Surgical navigation provides real-time guidance by estimating the pose of patient anatomy and surgical instruments to visualize relevant intraoperative information. In conventional systems, instruments are typically tracked using fiducial markers and stationary optical tracking systems (OTS). Augmented reality (AR) has further enabled intuitive visualization and motivated tracking using sensors embedded in head-mounted displays (HMDs). However, most existing approaches rely on a clear line of sight, which is difficult to maintain in dynamic operating room environments due to frequent occlusions caused by equipment, surgical tools, and personnel. This work introduces a framework for tracking surgical instruments under occlusion by fusing multiple sensing modalities within a dynamic scene graph representation. The proposed approach integrates tracking systems with different accuracy levels and motion characteristics while estimating tracking reliability in real time. Experimental results demonstrate improved robustness and enhanced consistency of AR visualization in the presence of occlusions."
+  },
+  {
+    "title": "SGG-R$^{\\rm 3}$: From Next-Token Prediction to End-to-End Unbiased Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2603.07961v1",
+    "arxiv_id": "2603.07961v1",
+    "authors": [
+      "Jiaye Feng",
+      "Qixiang Yin",
+      "Yuankun Liu",
+      "Tong Mo",
+      "Weiping Li"
+    ],
+    "published": "2026-03-09T04:58:03+00:00",
+    "summary": "Scene Graph Generation (SGG) structures visual scenes as graphs of objects and their relations. While Multimodal Large Language Models (MLLMs) have advanced end-to-end SGG, current methods are hindered by both a lack of task-specific structured reasoning and the challenges of sparse, long-tailed relation distributions, resulting in incomplete scene graphs characterized by low recall and biased predictions. To address these issues, we introduce SGG-R$^{\\rm 3}$, a structured reasoning framework that integrates task-specific chain-of-thought (CoT)-guided supervised fine-tuning (SFT) and reinforcement learning (RL) with group sequence policy optimization (GSPO), designed to engage in three sequential stages to achieve end-to-end unbiased scene graph generation. During the SFT phase, we propose a relation augmentation strategy by leveraging an MLLM and refined via embedding similarity filtering to alleviate relation sparsity. Subsequently, a stage-aligned reward scheme optimizes the procedural reasoning during RL. Specifically, we propose a novel dual-granularity reward which integrates fine-grained and coarse-grained relation rewards, simultaneously mitigating the long-tail issue via frequency-based adaptive weighting of predicates and improving relation coverage through semantic clustering. Experiments on two benchmarks show that SGG-R$^{\\rm 3}$ achieves superior performance compared to existing methods, demonstrating the effectiveness and generalization of the framework."
+  },
+  {
+    "title": "PARSE: Part-Aware Relational Spatial Modeling",
+    "url": "http://arxiv.org/abs/2603.07704v1",
+    "arxiv_id": "2603.07704v1",
+    "authors": [
+      "Yinuo Bai",
+      "Peijun Xu",
+      "Kuixiang Shao",
+      "Yuyang Jiao",
+      "Jingxuan Zhang",
+      "Kaixin Yao",
+      "Jiayuan Gu",
+      "Jingyi Yu"
+    ],
+    "published": "2026-03-08T16:11:18+00:00",
+    "summary": "Inter-object relations underpin spatial intelligence, yet existing representations -- linguistic prepositions or object-level scene graphs -- are too coarse to specify which regions actually support, contain, or contact one another, leading to ambiguous and physically inconsistent layouts. To address these ambiguities, a part-level formulation is needed; therefore, we introduce PARSE, a framework that explicitly models how object parts interact to determine feasible and spatially grounded scene configurations. PARSE centers on the Part-centric Assembly Graph (PAG), which encodes geometric relations between specific object parts, and a Part-Aware Spatial Configuration Solver that converts these relations into geometric constraints to assemble collision-free, physically valid scenes. Using PARSE, we build PARSE-10K, a dataset of 10,000 3D indoor scenes constructed from real-image layout priors and a curated part-annotated shape database, each with dense contact structures and a part-level contact graph. With this structured, spatially grounded supervision, fine-tuning Qwen3-VL on PARSE-10K yields stronger object-level layout reasoning and more accurate part-level relation understanding; furthermore, leveraging PAGs as structural priors in 3D generation models leads to scenes with substantially improved physical realism and structural complexity. Together, these results show that PARSE significantly advances geometry-grounded spatial reasoning and supports the generation of physically consistent 3D scenes."
+  },
+  {
     "title": "SG-DOR: Learning Scene Graphs with Direction-Conditioned Occlusion Reasoning for Pepper Plants",
     "url": "http://arxiv.org/abs/2603.06512v1",
     "arxiv_id": "2603.06512v1",
