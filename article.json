@@ -1,5 +1,36 @@
 [
   {
+    "title": "VLM-Loc: Localization in Point Cloud Maps via Vision-Language Models",
+    "url": "http://arxiv.org/abs/2603.09826v1",
+    "arxiv_id": "2603.09826v1",
+    "authors": [
+      "Shuhao Kang",
+      "Youqi Liao",
+      "Peijie Wang",
+      "Wenlong Liao",
+      "Qilin Zhang",
+      "Benjamin Busam",
+      "Xieyuanli Chen",
+      "Yun Liu"
+    ],
+    "published": "2026-03-10T15:48:25+00:00",
+    "summary": "Text-to-point-cloud (T2P) localization aims to infer precise spatial positions within 3D point cloud maps from natural language descriptions, reflecting how humans perceive and communicate spatial layouts through language. However, existing methods largely rely on shallow text-point cloud correspondence without effective spatial reasoning, limiting their accuracy in complex environments. To address this limitation, we propose VLM-Loc, a framework that leverages the spatial reasoning capability of large vision-language models (VLMs) for T2P localization. Specifically, we transform point clouds into bird's-eye-view (BEV) images and scene graphs that jointly encode geometric and semantic context, providing structured inputs for the VLM to learn cross-modal representations bridging linguistic and spatial semantics. On top of these representations, we introduce a partial node assignment mechanism that explicitly associates textual cues with scene graph nodes, enabling interpretable spatial reasoning for accurate localization. To facilitate systematic evaluation across diverse scenes, we present CityLoc, a benchmark built from multi-source point clouds for fine-grained T2P localization. Experiments on CityLoc demonstrate VLM-Loc achieves superior accuracy and robustness compared to state-of-the-art methods. Our code, model, and dataset are available at \\href{https://github.com/MCG-NKU/nku-3d-vision}{repository}."
+  },
+  {
+    "title": "TopoOR: A Unified Topological Scene Representation for the Operating Room",
+    "url": "http://arxiv.org/abs/2603.09466v1",
+    "arxiv_id": "2603.09466v1",
+    "authors": [
+      "Tony Danjun Wang",
+      "Ka Young Kim",
+      "Tolga Birdal",
+      "Nassir Navab",
+      "Lennart Bastian"
+    ],
+    "published": "2026-03-10T10:19:42+00:00",
+    "summary": "Surgical Scene Graphs abstract the complexity of surgical operating rooms (OR) into a structure of entities and their relations, but existing paradigms suffer from strictly dyadic structural limitations. Frameworks that predominantly rely on pairwise message passing or tokenized sequences flatten the manifold geometry inherent to relational structures and lose structure in the process. We introduce TopoOR, a new paradigm that models multimodal operating rooms as a higher-order structure, innately preserving pairwise and group relationships. By lifting interactions between entities into higher-order topological cells, TopoOR natively models complex dynamics and multimodality present in the OR. This topological representation subsumes traditional scene graphs, thereby offering strictly greater expressivity. We also propose a higher-order attention mechanism that explicitly preserves manifold structure and modality-specific features throughout hierarchical relational attention. In this way, we circumvent combining 3D geometry, audio, and robot kinematics into a single joint latent representation, preserving the precise multimodal structure required for safety-critical reasoning, unlike existing methods. Extensive experiments demonstrate that our approach outperforms traditional graph and LLM-based baselines across sterility breach detection, robot phase prediction, and next-action anticipation"
+  },
+  {
     "title": "Graph Based Semantic Encoder Decoder Framework for Task Oriented Communications in Connected Autonomous Vehicles",
     "url": "http://arxiv.org/abs/2603.08438v1",
     "arxiv_id": "2603.08438v1",
