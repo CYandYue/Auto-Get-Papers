@@ -1,5 +1,21 @@
 [
   {
+    "title": "Towards Spatio-Temporal World Scene Graph Generation from Monocular Videos",
+    "url": "http://arxiv.org/abs/2603.13185v1",
+    "arxiv_id": "2603.13185v1",
+    "authors": [
+      "Rohith Peddi",
+      "Saurabh",
+      "Shravan Shanmugam",
+      "Likhitha Pallapothula",
+      "Yu Xiang",
+      "Parag Singla",
+      "Vibhav Gogate"
+    ],
+    "published": "2026-03-13T17:18:03+00:00",
+    "summary": "Spatio-temporal scene graphs provide a principled representation for modeling evolving object interactions, yet existing methods remain fundamentally frame-centric: they reason only about currently visible objects, discard entities upon occlusion, and operate in 2D. To address this, we first introduce ActionGenome4D, a dataset that upgrades Action Genome videos into 4D scenes via feed-forward 3D reconstruction, world-frame oriented bounding boxes for every object involved in actions, and dense relationship annotations including for objects that are temporarily unobserved due to occlusion or camera motion. Building on this data, we formalize World Scene Graph Generation (WSGG), the task of constructing a world scene graph at each timestamp that encompasses all interacting objects in the scene, both observed and unobserved. We then propose three complementary methods, each exploring a different inductive bias for reasoning about unobserved objects: PWG (Persistent World Graph), which implements object permanence via a zero-order feature buffer; MWAE (Masked World Auto-Encoder), which reframes unobserved-object reasoning as masked completion with cross-view associative retrieval; and 4DST (4D Scene Transformer), which replaces the static buffer with differentiable per-object temporal attention enriched by 3D motion and camera-pose features. We further design and evaluate the performance of strong open-source Vision-Language Models on the WSGG task via a suite of Graph RAG-based approaches, establishing baselines for unlocalized relationship prediction. WSGG thus advances video scene understanding toward world-centric, temporally persistent, and interpretable scene reasoning."
+  },
+  {
     "title": "DSFlash: Comprehensive Panoptic Scene Graph Generation in Realtime",
     "url": "http://arxiv.org/abs/2603.10538v1",
     "arxiv_id": "2603.10538v1",
