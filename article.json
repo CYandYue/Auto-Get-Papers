@@ -1,5 +1,89 @@
 [
   {
+    "title": "3D-Layout-R1: Structured Reasoning for Language-Instructed Spatial Editing",
+    "url": "http://arxiv.org/abs/2603.22279v1",
+    "arxiv_id": "2603.22279v1",
+    "authors": [
+      "Haoyu Zhen",
+      "Xiaolong Li",
+      "Yilin Zhao",
+      "Han Zhang",
+      "Sifei Liu",
+      "Kaichun Mo",
+      "Chuang Gan",
+      "Subhashree Radhakrishnan"
+    ],
+    "published": "2026-03-23T17:59:14+00:00",
+    "summary": "Large Language Models (LLMs) and Vision Language Models (VLMs) have shown impressive reasoning abilities, yet they struggle with spatial understanding and layout consistency when performing fine-grained visual editing. We introduce a Structured Reasoning framework that performs text-conditioned spatial layout editing via scene-graph reasoning. Given an input scene graph and a natural-language instruction, the model reasons over the graph to generate an updated scene graph that satisfies the text condition while maintaining spatial coherence. By explicitly guiding the reasoning process through structured relational representations, our approach improves both interpretability and control over spatial relationships. We evaluate our method on a new text-guided layout editing benchmark encompassing sorting, spatial alignment, and room-editing tasks. Our training paradigm yields an average 15% improvement in IoU and 25% reduction in center-distance error compared to Chain of Thought Fine-tuning (CoT-SFT) and vanilla GRPO baselines. Compared to SOTA zero-shot LLMs, our best models achieve up to 20% higher mIoU, demonstrating markedly improved spatial precision."
+  },
+  {
+    "title": "IGV-RRT: Prior-Real-Time Observation Fusion for Active Object Search in Changing Environments",
+    "url": "http://arxiv.org/abs/2603.21887v1",
+    "arxiv_id": "2603.21887v1",
+    "authors": [
+      "Wei Zhang",
+      "Ping Gong",
+      "Yujie Wang",
+      "Minghui Bai",
+      "Rongfeng Ye",
+      "Yinchuan Wang",
+      "Yachao Wang",
+      "Leilei Yao",
+      "Teng Chen",
+      "Chen Sun",
+      "Chaoqun Wang"
+    ],
+    "published": "2026-03-23T12:14:26+00:00",
+    "summary": "Object Goal Navigation (ObjectNav) in temporally changing indoor environments is challenging because object relocation can invalidate historical scene knowledge. To address this issue, we propose a probabilistic planning framework that combines uncertainty-aware scene priors with online target relevance estimates derived from a Vision Language Model (VLM). The framework contains a dual-layer semantic mapping module and a real-time planner. The mapping module includes an Information Gain Map (IGM) built from a 3D scene graph (3DSG) during prior exploration to model object co-occurrence relations and provide global guidance on likely target regions. It also maintains a VLM score map (VLM-SM) that fuses confidence-weighted semantic observations into the map for local validation of the current scene. Based on these two cues, we develop a planner that jointly exploits information gain and semantic evidence for online decision making. The planner biases tree expansion toward semantically salient regions with high prior likelihood and strong online relevance (IGV-RRT), while preserving kinematic feasibility through gradient-based analysis. Simulation and real-world experiments demonstrate that the proposed method effectively mitigates the impact of object rearrangement, achieving higher search efficiency and success rates than representative baselines in complex indoor environments."
+  },
+  {
+    "title": "Revisiting Weakly-Supervised Video Scene Graph Generation via Pair Affinity Learning",
+    "url": "http://arxiv.org/abs/2603.21559v1",
+    "arxiv_id": "2603.21559v1",
+    "authors": [
+      "Minseok Kang",
+      "Minhyeok Lee",
+      "Minjung Kim",
+      "Jungho Lee",
+      "Donghyeong Kim",
+      "Sungmin Woo",
+      "Inseok Jeon",
+      "Sangyoun Lee"
+    ],
+    "published": "2026-03-23T04:28:51+00:00",
+    "summary": "Weakly-supervised video scene graph generation (WS-VSGG) aims to parse video content into structured relational triplets without bounding box annotations and with only sparse temporal labeling, significantly reducing annotation costs. Without ground-truth bounding boxes, these methods rely on off-the-shelf detectors to generate object proposals, yet largely overlook a fundamental discrepancy from fullysupervised pipelines. Fully-supervised detectors implicitly filter out noninteractive objects, while off-the-shelf detectors indiscriminately detect all visible objects, overwhelming relation models with noisy pairs.We address this by introducing a learnable pair affinity that estimates the likelihood of interaction between subject-object pairs. Through Pair Affinity Learning and Scoring (PALS), pair affinity is incorporated into inferencetime ranking and further integrated into contextual reasoning through Pair Affinity Modulation (PAM), enabling the model to suppress noninteractive pairs and focus on relationally meaningful ones. To provide cleaner supervision for pair affinity learning, we further propose Relation- Aware Matching (RAM), which leverages vision-language grounding to resolve class-level ambiguity in pseudo-label generation. Extensive experiments on Action Genome demonstrate that our approach consistently yields substantial improvements across different baselines and backbones, achieving state-of-the-art WS-VSGG performance."
+  },
+  {
+    "title": "CVT-Bench: Counterfactual Viewpoint Transformations Reveal Unstable Spatial Representations in Multimodal LLMs",
+    "url": "http://arxiv.org/abs/2603.21114v1",
+    "arxiv_id": "2603.21114v1",
+    "authors": [
+      "Shanmukha Vellamcheti",
+      "Uday Kiran Kothapalli",
+      "Disharee Bhowmick",
+      "Sathyanarayanan N. Aakur"
+    ],
+    "published": "2026-03-22T08:13:28+00:00",
+    "summary": "Multimodal large language models (MLLMs) achieve strong performance on single-view spatial reasoning tasks, yet it remains unclear whether they maintain stable spatial state representations under counterfactual viewpoint changes. We introduce a controlled diagnostic benchmark that evaluates relational consistency under hypothetical camera orbit transformations without re-rendering images. Across 100 synthetic scenes and 6,000 relational queries, we measure viewpoint consistency, 360\u00b0 cycle agreement, and relational stability over sequential transformations. Despite high single-view accuracy, state-of-the-art MLLMs exhibit systematic degradation under counterfactual viewpoint changes, with frequent violations of cycle consistency and rapid decay in relational stability. We further evaluate multiple input representations, visual input, textual bounding boxes, and structured scene graphs, and show that increasing representational structure improves stability. Our results suggest that single-view spatial accuracy overestimates the robustness of induced spatial representations and that representation structure plays a critical role in counterfactual spatial reasoning."
+  },
+  {
+    "title": "Scene Graph-guided SegCaptioning Transformer with Fine-grained Alignment for Controllable Video Segmentation and Captioning",
+    "url": "http://arxiv.org/abs/2603.20887v1",
+    "arxiv_id": "2603.20887v1",
+    "authors": [
+      "Xu Zhang",
+      "Jin Yuan",
+      "BinHong Yang",
+      "Xuan Liu",
+      "Qianjun Zhang",
+      "Yuyi Wang",
+      "Zhiyong Li",
+      "Hanwang Zhang"
+    ],
+    "published": "2026-03-21T17:26:01+00:00",
+    "summary": "Recent advancements in multimodal large models have significantly bridged the representation gap between diverse modalities, catalyzing the evolution of video multimodal interpretation, which enhances users' understanding of video content by generating correlated modalities. However, most existing video multimodal interpretation methods primarily concentrate on global comprehension with limited user interaction. To address this, we propose a novel task, Controllable Video Segmentation and Captioning (SegCaptioning), which empowers users to provide specific prompts, such as a bounding box around an object of interest, to simultaneously generate correlated masks and captions that precisely embody user intent. An innovative framework Scene Graph-guided Fine-grained SegCaptioning Transformer (SG-FSCFormer) is designed that integrates a Prompt-guided Temporal Graph Former to effectively captures and represents user intent through an adaptive prompt adaptor, ensuring that the generated content well aligns with the user's requirements. Furthermore, our model introduces a Fine-grained Mask-linguistic Decoder to collaboratively predict high-quality caption-mask pairs using a Multi-entity Contrastive loss, as well as provide fine-grained alignment between each mask and its corresponding caption tokens, thereby enhancing users' comprehension of videos. Comprehensive experiments conducted on two benchmark datasets demonstrate that SG-FSCFormer achieves remarkable performance, effectively capturing user intent and generating precise multimodal outputs tailored to user specifications. Our code is available at https://github.com/XuZhang1211/SG-FSCFormer."
+  },
+  {
     "title": "GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning",
     "url": "http://arxiv.org/abs/2603.19137v1",
     "arxiv_id": "2603.19137v1",
