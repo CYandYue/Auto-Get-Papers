@@ -1,5 +1,34 @@
 [
   {
+    "title": "Modernising Reinforcement Learning-Based Navigation for Embodied Semantic Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2603.25415v1",
+    "arxiv_id": "2603.25415v1",
+    "authors": [
+      "Roman Kueble",
+      "Marco Hueller",
+      "Mrunmai Phatak",
+      "Rainer Lienhart",
+      "Joerg Haehner"
+    ],
+    "published": "2026-03-26T13:10:08+00:00",
+    "summary": "Semantic world models enable embodied agents to reason about objects, relations, and spatial context beyond purely geometric representations. In Organic Computing, such models are a key enabler for objective-driven self-adaptation under uncertainty and resource constraints. The core challenge is to acquire observations maximising model quality and downstream usefulness within a limited action budget.   Semantic scene graphs (SSGs) provide a structured and compact representation for this purpose. However, constructing them within a finite action horizon requires exploration strategies that trade off information gain against navigation cost and decide when additional actions yield diminishing returns.   This work presents a modular navigation component for Embodied Semantic Scene Graph Generation and modernises its decision-making by replacing the policy-optimisation method and revisiting the discrete action formulation. We study compact and finer-grained, larger discrete motion sets and compare a single-head policy over atomic actions with a factorised multi-head policy over action components. We evaluate curriculum learning and optional depth-based collision supervision, and assess SSG completeness, execution safety, and navigation behaviour.   Results show that replacing the optimisation algorithm alone improves SSG completeness by 21\\% relative to the baseline under identical reward shaping. Depth mainly affects execution safety (collision-free motion), while completeness remains largely unchanged. Combining modern optimisation with a finer-grained, factorised action representation yields the strongest overall completeness--efficiency trade-off."
+  },
+  {
+    "title": "Interpretable Zero-shot Referring Expression Comprehension with Query-driven Scene Graphs",
+    "url": "http://arxiv.org/abs/2603.25004v1",
+    "arxiv_id": "2603.25004v1",
+    "authors": [
+      "Yike Wu",
+      "Necva Bolucu",
+      "Stephen Wan",
+      "Dadong Wang",
+      "Jiahao Xia",
+      "Jian Zhang"
+    ],
+    "published": "2026-03-26T04:05:30+00:00",
+    "summary": "Zero-shot referring expression comprehension (REC) aims to locate target objects in images given natural language queries without relying on task-specific training data, demanding strong visual understanding capabilities. Existing Vision-Language Models~(VLMs), such as CLIP, commonly address zero-shot REC by directly measuring feature similarities between textual queries and image regions. However, these methods struggle to capture fine-grained visual details and understand complex object relationships. Meanwhile, Large Language Models~(LLMs) excel at high-level semantic reasoning, their inability to directly abstract visual features into textual semantics limits their application in REC tasks. To overcome these limitations, we propose \\textbf{SGREC}, an interpretable zero-shot REC method leveraging query-driven scene graphs as structured intermediaries. Specifically, we first employ a VLM to construct a query-driven scene graph that explicitly encodes spatial relationships, descriptive captions, and object interactions relevant to the given query. By leveraging this scene graph, we bridge the gap between low-level image regions and higher-level semantic understanding required by LLMs. Finally, an LLM infers the target object from the structured textual representation provided by the scene graph, responding with detailed explanations for its decisions that ensure interpretability in the inference process. Extensive experiments show that SGREC achieves top-1 accuracy on most zero-shot REC benchmarks, including RefCOCO val (66.78\\%), RefCOCO+ testB (53.43\\%), and RefCOCOg val (73.28\\%), highlighting its strong visual scene understanding."
+  },
+  {
     "title": "Knowledge-Guided Manipulation Using Multi-Task Reinforcement Learning",
     "url": "http://arxiv.org/abs/2603.24083v1",
     "arxiv_id": "2603.24083v1",
