@@ -1,5 +1,42 @@
 [
   {
+    "title": "Pandora: Articulated 3D Scene Graphs from Egocentric Vision",
+    "url": "http://arxiv.org/abs/2603.28732v1",
+    "arxiv_id": "2603.28732v1",
+    "authors": [
+      "Alan Yu",
+      "Yun Chang",
+      "Christopher Xie",
+      "Luca Carlone"
+    ],
+    "published": "2026-03-30T17:47:07+00:00",
+    "summary": "Robotic mapping systems typically approach building metric-semantic scene representations from the robot's own sensors and cameras. However, these \"first person\" maps inherit the robot's own limitations due to its embodiment or skillset, which may leave many aspects of the environment unexplored. For example, the robot might not be able to open drawers or access wall cabinets. In this sense, the map representation is not as complete, and requires a more capable robot to fill in the gaps. We narrow these blind spots in current methods by leveraging egocentric data captured as a human naturally explores a scene wearing Project Aria glasses, giving a way to directly transfer knowledge about articulation from the human to any deployable robot. We demonstrate that, by using simple heuristics, we can leverage egocentric data to recover models of articulate object parts, with quality comparable to those of state-of-the-art methods based on other input modalities. We also show how to integrate these models into 3D scene graph representations, leading to a better understanding of object dynamics and object-container relationships. We finally demonstrate that these articulated 3D scene graphs enhance a robot's ability to perform mobile manipulation tasks, showcasing an application where a Boston Dynamics Spot is tasked with retrieving concealed target items, given only the 3D scene graph as input."
+  },
+  {
+    "title": "ToLL: Topological Layout Learning with Structural Multi-view Augmentation for 3D Scene Graph Pretraining",
+    "url": "http://arxiv.org/abs/2603.28178v1",
+    "arxiv_id": "2603.28178v1",
+    "authors": [
+      "Yucheng Huang",
+      "Luping Ji",
+      "Xiangwei Jiang",
+      "Wen Li",
+      "Mao Ye"
+    ],
+    "published": "2026-03-30T08:43:52+00:00",
+    "summary": "3D Scene Graph (3DSG) generation plays a pivotal role in spatial understanding and semantic-affordance perception. However, its generalizability is often constrained by data scarcity. Current solutions primarily focus on cross-modal assisted representation learning and object-centric generation pre-training. The former relies heavily on predicate annotations, while the latter's predicate learning may be bypassed due to strong object priors. Consequently, they could not often provide a label-free and robust self-supervised proxy task for 3DSG fine-tuning. To bridge this gap, we propose a Topological Layout Learning (ToLL) for 3DSG pretraining framework. In detail, we design an Anchor-Conditioned Topological Geometry Reasoning, with a GNN to recover the global layout of zero-centered subgraphs by the spatial priors from sparse anchors. This process is strictly modulated by predicate features, thereby enforcing the predicate relation learning. Furthermore, we construct a Structural Multi-view Augmentation to avoid semantic corruption, and enhancing representations via self-distillation. The extensive experiments on 3DSSG dataset demonstrate that our ToLL could improve representation quality, outperforming state-of-the-art baselines."
+  },
+  {
+    "title": "Inference-Time Structural Reasoning for Compositional Vision-Language Understanding",
+    "url": "http://arxiv.org/abs/2603.27349v1",
+    "arxiv_id": "2603.27349v1",
+    "authors": [
+      "Amartya Bhattacharya"
+    ],
+    "published": "2026-03-28T17:41:35+00:00",
+    "summary": "Vision-language models (VLMs) excel at image-text retrieval yet persistently fail at compositional reasoning, distinguishing captions that share the same words but differ in relational structure. We present, a unified evaluation and augmentation framework benchmarking four architecturally diverse VLMs,CLIP, BLIP, LLaVA, and Qwen3-VL-8B-Thinking,on the Winoground benchmark under plain and scene-graph-augmented regimes. We introduce a dependency-based TextSceneGraphParser (spaCy) extracting subject-relation-object triples, and a Graph Asymmetry Scorer using optimal bipartite matching to inject structural relational priors. Caption ablation experiments (subject-object masking and swapping) reveal that Qwen3-VL-8B-Thinking achieves a group score of 62.75, far above all encoder-based models, while a proposed multi-turn SG filtering strategy further lifts it to 66.0, surpassing prior open-source state-of-the-art. We analyze the capability augmentation tradeoff and find that SG augmentation benefits already capable models while providing negligible or negative gains for weaker baselines. Code: https://github.com/amartyacodes/Inference-Time-Structural-Reasoning-for-Compositional-Vision-Language-Understanding"
+  },
+  {
     "title": "Modernising Reinforcement Learning-Based Navigation for Embodied Semantic Scene Graph Generation",
     "url": "http://arxiv.org/abs/2603.25415v1",
     "arxiv_id": "2603.25415v1",
