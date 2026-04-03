@@ -1,5 +1,18 @@
 [
   {
+    "title": "Reinforcing Consistency in Video MLLMs with Structured Rewards",
+    "url": "http://arxiv.org/abs/2604.01460v1",
+    "arxiv_id": "2604.01460v1",
+    "authors": [
+      "Yihao Quan",
+      "Zeru Shi",
+      "Jinman Zhao",
+      "Ruixiang Tang"
+    ],
+    "published": "2026-04-01T23:15:34+00:00",
+    "summary": "Multimodal large language models (MLLMs) have achieved remarkable progress in video understanding. However, seemingly plausible outputs often suffer from poor visual and temporal grounding: a model may fabricate object existence, assign incorrect attributes, or collapse repeated events while still producing a globally reasonable caption or answer. We study this failure mode through a compositional consistency audit that decomposes a caption into supporting factual and temporal claims, investigating whether a correct high-level prediction is actually backed by valid lower-level evidence. Our top-down audit reveals that even correct root relational claims often lack reliable attribute and existence support. This indicates that standard sentence-level supervision is a weak proxy for faithful video understanding. Furthermore, when turning to reinforcement learning (RL) for better alignment, standard sentence-level rewards often prove too coarse to accurately localize specific grounding failures. To address this, we replace generic sentence-level rewards with a structured reward built from factual and temporal units. Our training objective integrates three complementary components: (1) an instance-aware scene-graph reward for factual objects, attributes, and relations; (2) a temporal reward for event ordering and repetition; and (3) a video-grounded VQA reward for hierarchical self-verification. Across temporal, general video understanding, and hallucination-oriented benchmarks, this objective yields consistent gains on open-source backbones. These results suggest that structured reward shaping is a practical route to more faithful video understanding."
+  },
+  {
     "title": "Pandora: Articulated 3D Scene Graphs from Egocentric Vision",
     "url": "http://arxiv.org/abs/2603.28732v1",
     "arxiv_id": "2603.28732v1",
