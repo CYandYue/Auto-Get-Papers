@@ -1,5 +1,20 @@
 [
   {
+    "title": "Rendering Multi-Human and Multi-Object with 3D Gaussian Splatting",
+    "url": "http://arxiv.org/abs/2604.02996v1",
+    "arxiv_id": "2604.02996v1",
+    "authors": [
+      "Weiquan Wang",
+      "Jun Xiao",
+      "Feifei Shao",
+      "Yi Yang",
+      "Yueting Zhuang",
+      "Long Chen"
+    ],
+    "published": "2026-04-03T12:20:36+00:00",
+    "summary": "Reconstructing dynamic scenes with multiple interacting humans and objects from sparse-view inputs is a critical yet challenging task, essential for creating high-fidelity digital twins for robotics and VR/AR. This problem, which we term Multi-Human Multi-Object (MHMO) rendering, presents two significant obstacles: achieving view-consistent representations for individual instances under severe mutual occlusion, and explicitly modeling the complex and combinatorial dependencies that arise from their interactions. To overcome these challenges, we propose MM-GS, a novel hierarchical framework built upon 3D Gaussian Splatting. Our method first employs a Per-Instance Multi-View Fusion module to establish a robust and consistent representation for each instance by aggregating visual information across all available views. Subsequently, a Scene-Level Instance Interaction module operates on a global scene graph to reason about relationships between all participants, refining their attributes to capture subtle interaction effects. Extensive experiments on challenging datasets demonstrate that our method significantly outperforms strong baselines, producing state-of-the-art results with high-fidelity details and plausible inter-instance contacts."
+  },
+  {
     "title": "Reinforcing Consistency in Video MLLMs with Structured Rewards",
     "url": "http://arxiv.org/abs/2604.01460v1",
     "arxiv_id": "2604.01460v1",
