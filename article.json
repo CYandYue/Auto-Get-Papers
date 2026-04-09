@@ -1,5 +1,22 @@
 [
   {
+    "title": "CSA-Graphs: A Privacy-Preserving Structural Dataset for Child Sexual Abuse Research",
+    "url": "http://arxiv.org/abs/2604.07132v1",
+    "arxiv_id": "2604.07132v1",
+    "authors": [
+      "Carlos Caetano",
+      "Camila Laranjeira",
+      "Clara Ernesto",
+      "Artur Barros",
+      "Jo\u00e3o Macedo",
+      "Leo S. F. Ribeiro",
+      "Jefersson A. dos Santos",
+      "Sandra Avila"
+    ],
+    "published": "2026-04-08T14:26:52+00:00",
+    "summary": "Child Sexual Abuse Imagery (CSAI) classification is an important yet challenging problem for computer vision research due to the strict legal and ethical restrictions that prevent the public sharing of CSAI datasets. This limitation hinders reproducibility and slows progress in developing automated methods. In this work, we introduce CSA-Graphs, a privacy-preserving structural dataset. Instead of releasing the original images, we provide structural representations that remove explicit visual content while preserving contextual information. CSA-Graphs includes two complementary graph-based modalities: scene graphs describing object relationships and skeleton graphs encoding human pose. Experiments show that both representations retain useful information for classifying CSAI, and that combining them further improves performance. This dataset enables broader research on computer vision methods for child safety while respecting legal and ethical constraints."
+  },
+  {
     "title": "SGTA: Scene-Graph Based Multi-Modal Traffic Agent for Video Understanding",
     "url": "http://arxiv.org/abs/2604.03697v1",
     "arxiv_id": "2604.03697v1",
@@ -33,6 +50,21 @@
     "title": "Rendering Multi-Human and Multi-Object with 3D Gaussian Splatting",
     "url": "http://arxiv.org/abs/2604.02996v1",
     "arxiv_id": "2604.02996v1",
+    "authors": [
+      "Weiquan Wang",
+      "Jun Xiao",
+      "Feifei Shao",
+      "Yi Yang",
+      "Yueting Zhuang",
+      "Long Chen"
+    ],
+    "published": "2026-04-03T12:20:36+00:00",
+    "summary": "Reconstructing dynamic scenes with multiple interacting humans and objects from sparse-view inputs is a critical yet challenging task, essential for creating high-fidelity digital twins for robotics and VR/AR. This problem, which we term Multi-Human Multi-Object (MHMO) rendering, presents two significant obstacles: achieving view-consistent representations for individual instances under severe mutual occlusion, and explicitly modeling the complex and combinatorial dependencies that arise from their interactions. To overcome these challenges, we propose MM-GS, a novel hierarchical framework built upon 3D Gaussian Splatting. Our method first employs a Per-Instance Multi-View Fusion module to establish a robust and consistent representation for each instance by aggregating visual information across all available views. Subsequently, a Scene-Level Instance Interaction module operates on a global scene graph to reason about relationships between all participants, refining their attributes to capture subtle interaction effects. Extensive experiments on challenging datasets demonstrate that our method significantly outperforms strong baselines, producing state-of-the-art results with high-fidelity details and plausible inter-instance contacts."
+  },
+  {
+    "title": "Rendering Multi-Human and Multi-Object with 3D Gaussian Splatting",
+    "url": "http://arxiv.org/abs/2604.02996v2",
+    "arxiv_id": "2604.02996v2",
     "authors": [
       "Weiquan Wang",
       "Jun Xiao",
