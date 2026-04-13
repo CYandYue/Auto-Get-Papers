@@ -1,5 +1,42 @@
 [
   {
+    "title": "Multimodal Anomaly Detection for Human-Robot Interaction",
+    "url": "http://arxiv.org/abs/2604.09326v1",
+    "arxiv_id": "2604.09326v1",
+    "authors": [
+      "Guilherme Ribeiro",
+      "Iordanis Antypas",
+      "Leonardo Bizzaro",
+      "Jo\u00e3o Bimbo",
+      "Nuno Cruz Garcia"
+    ],
+    "published": "2026-04-10T13:51:19+00:00",
+    "summary": "Ensuring safety and reliability in human-robot interaction (HRI) requires the timely detection of unexpected events that could lead to system failures or unsafe behaviours. Anomaly detection thus plays a critical role in enabling robots to recognize and respond to deviations from normal operation during collaborative tasks. While reconstruction models have been actively explored in HRI, approaches that operate directly on feature vectors remain largely unexplored. In this work, we propose MADRI, a framework that first transforms video streams into semantically meaningful feature vectors before performing reconstruction-based anomaly detection. Additionally, we augment these visual feature vectors with the robot's internal sensors' readings and a Scene Graph, enabling the model to capture both external anomalies in the visual environment and internal failures within the robot itself. To evaluate our approach, we collected a custom dataset consisting of a simple pick-and-place robotic task under normal and anomalous conditions. Experimental results demonstrate that reconstruction on vision-based feature vectors alone is effective for detecting anomalies, while incorporating other modalities further improves detection performance, highlighting the benefits of multimodal feature reconstruction for robust anomaly detection in human-robot collaboration."
+  },
+  {
+    "title": "SenBen: Sensitive Scene Graphs for Explainable Content Moderation",
+    "url": "http://arxiv.org/abs/2604.08819v1",
+    "arxiv_id": "2604.08819v1",
+    "authors": [
+      "Fatih Cagatay Akyon",
+      "Alptekin Temizel"
+    ],
+    "published": "2026-04-09T23:22:05+00:00",
+    "summary": "Content moderation systems classify images as safe or unsafe but lack spatial grounding and interpretability: they cannot explain what sensitive behavior was detected, who is involved, or where it occurs. We introduce the Sensitive Benchmark (SenBen), the first large-scale scene graph benchmark for sensitive content, comprising 13,999 frames from 157 movies annotated with Visual Genome-style scene graphs (25 object classes, 28 attributes including affective states such as pain, fear, aggression, and distress, 14 predicates) and 16 sensitivity tags across 5 categories. We distill a frontier VLM into a compact 241M student model using a multi-task recipe that addresses vocabulary imbalance in autoregressive scene graph generation through suffix-based object identity, Vocabulary-Aware Recall (VAR) Loss, and a decoupled Query2Label tag head with asymmetric loss, yielding a +6.4 percentage point improvement in SenBen Recall over standard cross-entropy training. On grounded scene graph metrics, our student model outperforms all evaluated VLMs except Gemini models and all commercial safety APIs, while achieving the highest object detection and captioning scores across all models, at $7.6\\times$ faster inference and $16\\times$ less GPU memory."
+  },
+  {
+    "title": "3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding",
+    "url": "http://arxiv.org/abs/2604.08645v1",
+    "arxiv_id": "2604.08645v1",
+    "authors": [
+      "Makanjuola Ogunleye",
+      "Eman Abdelrahman",
+      "Ismini Lourentzou"
+    ],
+    "published": "2026-04-09T17:57:35+00:00",
+    "summary": "Large multimodal models are increasingly used as the reasoning core of embodied agents operating in 3D environments, yet they remain prone to hallucinations that can produce unsafe and ungrounded decisions. Existing inference-time hallucination mitigation methods largely target 2D vision-language settings and do not transfer to embodied 3D reasoning, where failures arise from object presence, spatial layout, and geometric grounding rather than pixel-level inconsistencies. We introduce 3D-VCD, the first inference-time visual contrastive decoding framework for hallucination mitigation in 3D embodied agents. 3D-VCD constructs a distorted 3D scene graph by applying semantic and geometric perturbations to object-centric representations, such as category substitutions and coordinate or extent corruption. By contrasting predictions under the original and distorted 3D contexts, our method suppresses tokens that are insensitive to grounded scene evidence and are therefore likely driven by language priors. We evaluate 3D-VCD on the 3D-POPE and HEAL benchmarks and show that it consistently improves grounded reasoning without any retraining, establishing inference-time contrastive decoding over structured 3D representations as an effective and practical route to more reliable embodied intelligence."
+  },
+  {
     "title": "Object-Attribute-Relation Model Driven Adaptive Hierarchical Transmission for Multimodal Semantic Communication",
     "url": "http://arxiv.org/abs/2604.07859v1",
     "arxiv_id": "2604.07859v1",
