@@ -1,5 +1,17 @@
 [
   {
+    "title": "Panoptic Pairwise Distortion Graph",
+    "url": "http://arxiv.org/abs/2604.11004v1",
+    "arxiv_id": "2604.11004v1",
+    "authors": [
+      "Muhammad Kamran Janjua",
+      "Abdul Wahab",
+      "Bahador Rashidi"
+    ],
+    "published": "2026-04-13T05:12:16+00:00",
+    "summary": "In this work, we introduce a new perspective on comparative image assessment by representing an image pair as a structured composition of its regions. In contrast, existing methods focus on whole image analysis, while implicitly relying on region-level understanding. We extend the intra-image notion of a scene graph to inter-image, and propose a novel task of Distortion Graph (DG). DG treats paired images as a structured topology grounded in regions, and represents dense degradation information such as distortion type, severity, comparison and quality score in a compact interpretable graph structure. To realize the task of learning a distortion graph, we contribute (i) a region-level dataset, PandaSet, (ii) a benchmark suite, PandaBench, with varying region-level difficulty, and (iii) an efficient architecture, Panda, to generate distortion graphs. We demonstrate that PandaBench poses a significant challenge for state-of-the-art multimodal large language models (MLLMs) as they fail to understand region-level degradations even when fed with explicit region cues. We show that training on PandaSet or prompting with DG elicits region-wise distortion understanding, opening a new direction for fine-grained, structured pairwise image assessment."
+  },
+  {
     "title": "Multimodal Anomaly Detection for Human-Robot Interaction",
     "url": "http://arxiv.org/abs/2604.09326v1",
     "arxiv_id": "2604.09326v1",
