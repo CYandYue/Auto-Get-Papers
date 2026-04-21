@@ -1,8 +1,63 @@
 [
   {
+    "title": "AeroRAG: Structured Multimodal Retrieval-Augmented LLM for Fine-Grained Aerial Visual Reasoning",
+    "url": "http://arxiv.org/abs/2604.17889v1",
+    "arxiv_id": "2604.17889v1",
+    "authors": [
+      "Junxiao Xue",
+      "Quan Deng",
+      "Tingqi Hu",
+      "Meicong Si",
+      "Xinyi Yin",
+      "Yunyun Shi",
+      "Xuecheng Wu"
+    ],
+    "published": "2026-04-20T07:02:10+00:00",
+    "summary": "Despite recent progress in multimodal large language models (MLLMs), reliable visual question answering in aerial scenes remains challenging. In such scenes, task-critical evidence is often carried by small objects, explicit quantities, coarse locations, and inter-object relations, whereas conventional dense visual-token representations are not well aligned with these structured semantics. To address this interface mismatch, we propose AeroRAG, a scene-graph-guided multimodal retrieval-augmented generation framework for visual question answering. The framework first converts an input image into structured visual knowledge, including object categories, quantities, spatial locations, and semantic relations, and then retrieves query-relevant semantic chunks to construct compact prompts for a text-based large language model. Rather than relying on direct reasoning over dense visual tokens, our method introduces a more explicit intermediate interface between perception and language reasoning. Experiments on the AUG aerial dataset and the general-domain VG-150 benchmark show consistent improvements over six strong MLLM baselines, with the largest gains observed in dense aerial scenes and relation-sensitive reasoning. We further evaluate the framework on VQAv2 to verify that the proposed interface remains compatible with standard visual reasoning settings. These results suggest that structured retrieval is a practical design direction for deployment-oriented and grounded visual reasoning systems."
+  },
+  {
+    "title": "HSG: Hyperbolic Scene Graph",
+    "url": "http://arxiv.org/abs/2604.17454v1",
+    "arxiv_id": "2604.17454v1",
+    "authors": [
+      "Liyang Wang",
+      "Zeyu Zhang",
+      "Hao Tang"
+    ],
+    "published": "2026-04-19T14:11:37+00:00",
+    "summary": "Scene graph representations enable structured visual understanding by modeling objects and their relationships, and have been widely used for multiview and 3D scene reasoning. Existing methods such as MSG learn scene graph embeddings in Euclidean space using contrastive learning and attention based association. However, Euclidean geometry does not explicitly capture hierarchical entailment relationships between places and objects, limiting the structural consistency of learned representations. To address this, we propose Hyperbolic Scene Graph (HSG), which learns scene graph embeddings in hyperbolic space where hierarchical relationships are naturally encoded through geometric distance. Our results show that HSG improves hierarchical structure quality while maintaining strong retrieval performance. The largest gains are observed in graph level metrics: HSG achieves a PP IoU of 33.17 and the highest Graph IoU of 33.51, outperforming the best AoMSG variant (25.37) by 8.14, highlighting the effectiveness of hyperbolic representation learning for scene graph modeling. Code: https://github.com/AIGeeksGroup/HSG."
+  },
+  {
+    "title": "Frequency-guided Multi-level Reasoning for Scene Graph Generation in Video",
+    "url": "http://arxiv.org/abs/2604.17298v1",
+    "arxiv_id": "2604.17298v1",
+    "authors": [
+      "Chenxing Li",
+      "Yiping Duan",
+      "Xiaoming Tao"
+    ],
+    "published": "2026-04-19T07:28:39+00:00",
+    "summary": "Video Scene Graph Generation aims to obtain structured semantic representations of objects and their relationships in videos for high-level understanding. However, existing methods still have limitations in handling long-tail distributions. This paper proposes the Frequency-guided Relational Multi-level Reasoning (FReMuRe) model, which enhances the modeling ability of long-tail relationships from a mechanism perspective. We introduce relation-specific branches to deal gradient conflicts, yielding more balanced and tail-aware learning. And we design a frequency-aware dual-branch predicate embedding network to model high-frequency and low-frequency relationships separately and improve the recall rate of tail classes through gated fusion. Meanwhile, we propose two types of interchangeable relation classification heads: Bayesian Head for uncertainty estimation and new Gaussian Mixture Model Head to enhance intra-class diversity. Experimental results show that FReMuRe significantly improves the recall rate of long-tail relationships and overall reasoning robustness on the Action Genome dataset."
+  },
+  {
     "title": "Integrating Graphs, Large Language Models, and Agents: Reasoning and Retrieval",
     "url": "http://arxiv.org/abs/2604.15951v1",
     "arxiv_id": "2604.15951v1",
+    "authors": [
+      "Hamed Jelodar",
+      "Samita Bai",
+      "Mohammad Meymani",
+      "Parisa Hamedi",
+      "Roozbeh Razavi-Far",
+      "Ali Ghorbani"
+    ],
+    "published": "2026-04-17T11:12:55+00:00",
+    "summary": "Generative AI, particularly Large Language Models, increasingly integrates graph-based representations to enhance reasoning, retrieval, and structured decision-making. Despite rapid advances, there remains limited clarity regarding when, why, where, and what types of graph-LLM integrations are most appropriate across applications. This survey provides a concise, structured overview of the design choices underlying the integration of graphs with LLMs. We categorize existing methods based on their purpose (reasoning, retrieval, generation, recommendation), graph modality (knowledge graphs, scene graphs, interaction graphs, causal graphs, dependency graphs), and integration strategies (prompting, augmentation, training, or agent-based use). By mapping representative works across domains such as cybersecurity, healthcare, materials science, finance, robotics, and multimodal environments, we highlight the strengths, limitations, and best-fit scenarios for each technique. This survey aims to offer researchers a practical guide for selecting the most suitable graph-LLM approach depending on task requirements, data characteristics, and reasoning complexity."
+  },
+  {
+    "title": "Integrating Graphs, Large Language Models, and Agents: Reasoning and Retrieval",
+    "url": "http://arxiv.org/abs/2604.15951v2",
+    "arxiv_id": "2604.15951v2",
     "authors": [
       "Hamed Jelodar",
       "Samita Bai",
