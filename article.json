@@ -24,6 +24,17 @@
     "summary": "We present an approach for enhancing non-playable characters (NPCs) in games by combining large language models (LLMs) with computer vision to provide contextual awareness of their surroundings. Conventional NPCs typically rely on pre-scripted dialogue and lack spatial understanding, which limits their responsiveness to player actions and reduces overall immersion. Our method addresses these limitations by capturing panoramic images of an NPC's environment and applying semantic segmentation to identify objects and their spatial positions. The extracted information is used to generate a structured JSON representation of the environment, combining object locations derived from segmentation with additional scene graph data within the NPC's bounding sphere, encoded as directional vectors. This representation is provided as input to the LLM, enabling NPCs to incorporate spatial knowledge into player interactions. As a result, NPCs can dynamically reference nearby objects, landmarks, and environmental features, leading to more believable and engaging gameplay. We describe the technical implementation of the system and evaluate it in two stages. First, an expert interview was conducted to gather feedback and identify areas for improvement. After integrating these refinements, a user study was performed, showing that participants preferred the context-aware NPCs over a non-context-aware baseline, confirming the effectiveness of the proposed approach."
   },
   {
+    "title": "Empowering NPC Dialogue with Environmental Context Using LLMs and Panoramic Images",
+    "url": "http://arxiv.org/abs/2604.19192v2",
+    "arxiv_id": "2604.19192v2",
+    "authors": [
+      "Grega Rade\u017e",
+      "Ciril Bohak"
+    ],
+    "published": "2026-04-21T07:59:36+00:00",
+    "summary": "We present an approach for enhancing non-playable characters (NPCs) in games by combining large language models (LLMs) with computer vision to provide contextual awareness of their surroundings. Conventional NPCs typically rely on pre-scripted dialogue and lack spatial understanding, which limits their responsiveness to player actions and reduces overall immersion. Our method addresses these limitations by capturing panoramic images of an NPC's environment and applying semantic segmentation to identify objects and their spatial positions. The extracted information is used to generate a structured JSON representation of the environment, combining object locations derived from segmentation with additional scene graph data within the NPC's bounding sphere, encoded as directional vectors. This representation is provided as input to the LLM, enabling NPCs to incorporate spatial knowledge into player interactions. As a result, NPCs can dynamically reference nearby objects, landmarks, and environmental features, leading to more believable and engaging gameplay. We describe the technical implementation of the system and evaluate it in two stages. First, an expert interview was conducted to gather feedback and identify areas for improvement. After integrating these refinements, a user study was performed, showing that participants preferred the context-aware NPCs over a non-context-aware baseline, confirming the effectiveness of the proposed approach."
+  },
+  {
     "title": "AeroRAG: Structured Multimodal Retrieval-Augmented LLM for Fine-Grained Aerial Visual Reasoning",
     "url": "http://arxiv.org/abs/2604.17889v1",
     "arxiv_id": "2604.17889v1",
