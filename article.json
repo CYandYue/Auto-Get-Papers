@@ -1,5 +1,31 @@
 [
   {
+    "title": "ReLIC-SGG: Relation Lattice Completion for Open-Vocabulary Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2604.22546v1",
+    "arxiv_id": "2604.22546v1",
+    "authors": [
+      "Amir Hosseini",
+      "Sara Farahani",
+      "Xinyi Li",
+      "Suiyang Guang"
+    ],
+    "published": "2026-04-24T13:36:41+00:00",
+    "summary": "Open-vocabulary scene graph generation (SGG) aims to describe visual scenes with flexible relation phrases beyond a fixed predicate set. Existing methods usually treat annotated triplets as positives and all unannotated object-pair relations as negatives. However, scene graph annotations are inherently incomplete: many valid relations are missing, and the same interaction can be described at different granularities, e.g., \\textit{on}, \\textit{standing on}, \\textit{resting on}, and \\textit{supported by}. This issue becomes more severe in open-vocabulary SGG due to the much larger relation space. We propose \\textbf{ReLIC-SGG}, a relation-incompleteness-aware framework that treats unannotated relations as latent variables rather than definite negatives. ReLIC-SGG builds a semantic relation lattice to model similarity, entailment, and contradiction among open-vocabulary predicates, and uses it to infer missing positive relations from visual-language compatibility, graph context, and semantic consistency. A positive-unlabeled graph learning objective further reduces false-negative supervision, while lattice-guided decoding produces compact and semantically consistent scene graphs. Experiments on conventional, open-vocabulary, and panoptic SGG benchmarks show that ReLIC-SGG improves rare and unseen predicate recognition and better recovers missing relations."
+  },
+  {
+    "title": "CAGE-SGG: Counterfactual Active Graph Evidence for Open-Vocabulary Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2604.22274v1",
+    "arxiv_id": "2604.22274v1",
+    "authors": [
+      "Suiyang Guang",
+      "Chenyu Liu",
+      "Ruohan Zhang",
+      "Siyuan Chen"
+    ],
+    "published": "2026-04-24T06:34:45+00:00",
+    "summary": "Open-vocabulary scene graph generation (SGG) aims to describe visual scenes with flexible and fine-grained relation phrases beyond a fixed predicate vocabulary. While recent vision-language models greatly expand the semantic coverage of SGG, they also introduce a critical reliability issue: predicted relations may be driven by language priors or object co-occurrence rather than grounded visual evidence. In this paper, we propose an evidence-rounded open-vocabulary SGG framework based on counterfactual relation verification. Instead of directly accepting plausible relation proposals, our method verifies whether each candidate relation is supported by relation-pecific visual, geometric, and contextual evidence. Specifically, we first generate open-vocabulary relation candidates with a vision-language proposer, then decompose predicate phrases into soft evidence bases such as support, contact, containment, depth, motion, and state. A relation-conditioned evidence encoder extracts predicate-relevant cues, while a counterfactual verifier tests whether the relation score decreases when necessary vidence is removed and remains stable under irrelevant perturbations. We further introduce contradiction-aware predicate learning and graph-level preference optimization to improve fine-grained discrimination and global graph consistency. Experiments on conventional, open-vocabulary, and panoptic SGG benchmarks show that our method consistently improves standard recall-based metrics, unseen predicate generalization, and counterfactual grounding quality. These results demonstrate that moving from relation generation to relation verification leads to more reliable, interpretable, and evidence-grounded scene graphs."
+  },
+  {
     "title": "MOSA: Motion-Guided Semantic Alignment for Dynamic Scene Graph Generation",
     "url": "http://arxiv.org/abs/2604.19631v1",
     "arxiv_id": "2604.19631v1",
