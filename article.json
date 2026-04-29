@@ -1,5 +1,37 @@
 [
   {
+    "title": "Robust Graph Matching through Semantic Relationship Generation for SLAM",
+    "url": "http://arxiv.org/abs/2604.25404v1",
+    "arxiv_id": "2604.25404v1",
+    "authors": [
+      "David Perez-Saura",
+      "Jose Andres Millan-Romera",
+      "Miguel Fernandez-Cortizas",
+      "Holger Voos",
+      "Pascual Campoy",
+      "Jose Luis Sanchez-Lopez"
+    ],
+    "published": "2026-04-28T09:15:51+00:00",
+    "summary": "Graph-based representations such as Scene Graphs enable localization in structured indoor environments by matching a locally observed graph, constructed from sensor data, to a prior map. This process is particularly challenging in environments with repetitive or symmetric layouts, where structural cues alone are often insufficient to resolve ambiguities. We propose a semantic-enhanced graph matching approach that explicitly models relations between detected objects and structural elements, such as rooms and wall planes. Objects are detected from RGB-D data and integrated into the graph, and their relations to structural elements are exploited to filter candidate correspondences prior to geometric verification, significantly reducing ambiguity and search complexity. The proposed method is integrated within the iS-Graphs framework and evaluated in synthetic and simulated environments. Results show that semantic relations significantly reduce the number of candidate matches, improve computational efficiency, and enable faster convergence, particularly in symmetric scenarios where purely geometric approaches fail."
+  },
+  {
+    "title": "Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models",
+    "url": "http://arxiv.org/abs/2604.25072v1",
+    "arxiv_id": "2604.25072v1",
+    "authors": [
+      "Weixing Wang",
+      "Liudvikas Zekas",
+      "Anton Hackl",
+      "Constantin Alexander Auga",
+      "Parisa Shahabinejad",
+      "Jona Otholt",
+      "Antonio Rueda-Toicen",
+      "Gerard de Melo"
+    ],
+    "published": "2026-04-27T23:57:29+00:00",
+    "summary": "Unified Multimodal Models (uMMs) aim to support both visual understanding and visual generation within a shared representation. However, existing evaluation protocols assess these two capabilities independently and do not examine whether they are semantically aligned. As a result, it remains unclear whether current uMMs learn coherent unified representations that remain consistent across tasks given a visual concept. We introduce XTC-Bench, a scene-graph-grounded evaluation framework that measures cross-task visual semantic consistency. By deriving both generation prompts and understanding queries from a structured scene graph, our framework enables fact-level alignment analysis across objects, attributes, and relations. We propose Continuous Cross-Task Agreement (CCTA), a fine-grained metric that quantifies semantic agreement between generation and understanding over matched atomic facts, isolating internal consistency from standalone task accuracy. Extensive experiments on eight open-source and one commercial unified models reveal that high generation or understanding performance does not imply strong cross-task alignment, and architectural analysis shows consistency is governed by how tightly learning objectives are coupled across modalities, not by architectural unification alone. XTC-Bench provides a reproducible and model-agnostic framework for diagnosing representation-level misalignment, offering a concrete direction for advancing unified multimodal modeling beyond isolated task performance."
+  },
+  {
     "title": "Passage-Aware Structural Mapping for RGB-D Visual SLAM",
     "url": "http://arxiv.org/abs/2604.24707v1",
     "arxiv_id": "2604.24707v1",
@@ -44,6 +76,19 @@
     "title": "ReLIC-SGG: Relation Lattice Completion for Open-Vocabulary Scene Graph Generation",
     "url": "http://arxiv.org/abs/2604.22546v2",
     "arxiv_id": "2604.22546v2",
+    "authors": [
+      "Amir Hosseini",
+      "Sara Farahani",
+      "Xinyi Li",
+      "Suiyang Guang"
+    ],
+    "published": "2026-04-24T13:36:41+00:00",
+    "summary": "Open-vocabulary scene graph generation (SGG) aims to describe visual scenes with flexible relation phrases beyond a fixed predicate set. Existing methods usually treat annotated triplets as positives and all unannotated object-pair relations as negatives. However, scene graph annotations are inherently incomplete: many valid relations are missing, and the same interaction can be described at different granularities, e.g., \\textit{on}, \\textit{standing on}, \\textit{resting on}, and \\textit{supported by}. This issue becomes more severe in open-vocabulary SGG due to the much larger relation space. We propose \\textbf{ReLIC-SGG}, a relation-incompleteness-aware framework that treats unannotated relations as latent variables rather than definite negatives. ReLIC-SGG builds a semantic relation lattice to model similarity, entailment, and contradiction among open-vocabulary predicates, and uses it to infer missing positive relations from visual-language compatibility, graph context, and semantic consistency. A positive-unlabeled graph learning objective further reduces false-negative supervision, while lattice-guided decoding produces compact and semantically consistent scene graphs. Experiments on conventional, open-vocabulary, and panoptic SGG benchmarks show that ReLIC-SGG improves rare and unseen predicate recognition and better recovers missing relations."
+  },
+  {
+    "title": "ReLIC-SGG: Relation Lattice Completion for Open-Vocabulary Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2604.22546v3",
+    "arxiv_id": "2604.22546v3",
     "authors": [
       "Amir Hosseini",
       "Sara Farahani",
