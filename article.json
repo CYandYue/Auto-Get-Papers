@@ -1,5 +1,69 @@
 [
   {
+    "title": "BARISTA: A Multi-Task Egocentric Benchmark for Compositional Visual Understanding",
+    "url": "http://arxiv.org/abs/2605.12074v1",
+    "arxiv_id": "2605.12074v1",
+    "authors": [
+      "Patrick Knab",
+      "Orgest Xhelili",
+      "Inis Buzi",
+      "Drago Andres Guggiana Nilo",
+      "Mohd Saquib Khan",
+      "Lorenz Kolb",
+      "Manuel Scherzer",
+      "Kerem Yildirir",
+      "Christian Bartelt",
+      "Philipp Johannes Schubert"
+    ],
+    "published": "2026-05-12T13:01:25+00:00",
+    "summary": "Scene understanding is central to general physical intelligence, and video is a primary modality for capturing both state and temporal dynamics of a scene. Yet understanding physical processes remains difficult, as models must combine object localization, hand-object interactions, relational parsing, temporal reasoning, and step-level procedural inference. Existing benchmarks usually evaluate these capabilities separately, limiting diagnosis of why models fail on procedural tasks. We introduce BARISTA, a densely annotated egocentric dataset and benchmark of 185 real-world coffee-preparation videos covering fully automatic, portafilter-based, and capsule-based workflows. BARISTA provides verified per-frame scene graphs linking persistent object identities to masks, tracks, boxes, attributes, typed relations, hand-object interactions, activities, and process steps. From these graphs, we derive zero-shot language-based tasks spanning phrase grounding, hand-object interaction recognition, referring, activity recognition, relation extraction, and temporal visual question answering. Experiments reveal strong variation across task families and no consistently dominant model family, positioning BARISTA as a challenging diagnostic benchmark for procedural video understanding. Code and dataset available at https://huggingface.co/datasets/ramblr/BARISTA."
+  },
+  {
+    "title": "Lane-Aware Graph Attention Network for Multi-Vehicle Trajectory Prediction in Expressway Merge Zones",
+    "url": "http://arxiv.org/abs/2605.11940v1",
+    "arxiv_id": "2605.11940v1",
+    "authors": [
+      "Eni Solomon Laughter"
+    ],
+    "published": "2026-05-12T10:50:49+00:00",
+    "summary": "Accurate multi-vehicle trajectory prediction in expressway merge and diverge areas is fundamental to the decision-making frameworks of autonomous vehicle systems. However, the majority of existing graph-based prediction models are developed and validated on mainline freeway segments and do not address the geometrically distinct interaction structures that characterize merge zones. Furthermore, standard evaluation protocols rely exclusively on displacement error metrics, leaving the safety consequences of predicted trajectories unquantified. This paper proposes a Lane-Aware Graph Attention Network (LA-GAT) that encodes vehicle interaction within dynamic scene graphs, augmented with a trainable lane-relationship attention bias that prioritizes merge-conflict interactions from the outset of training. The model is pre-trained on the raw NGSIM US-101 and I-80 datasets and subsequently fine-tuned on UAV-captured UTE SQM-W-1 trajectory data from a Chinese expressway merge area, with final evaluation on the held-out SQM-W-2 dataset. Evaluation spans both displacement metrics (ADE, FDE at 1s, 3s, 5s horizons) and surrogate safety measures (TTC violation rate, DRAC exceedance rate, collision rate). Fine-tuned results on SQM-W-2 yield ADE of 0.865 m at 1s and 2.518 m at 3s, demonstrating that drone-informed fine-tuning substantially reduces the cross-dataset transfer gap. The deliberate use of unfiltered NGSIM data is shown to characterize raw-condition generalization limits, with the performance degradation attributed to the well-documented measurement errors in that dataset."
+  },
+  {
+    "title": "Grounding by Remembering: Cross-Scene and In-Scene Memory for 3D Functional Affordances",
+    "url": "http://arxiv.org/abs/2605.11616v1",
+    "arxiv_id": "2605.11616v1",
+    "authors": [
+      "Qirui Wang",
+      "Jingyi He",
+      "Yining Pan",
+      "Xulei Yang",
+      "Shijie Li"
+    ],
+    "published": "2026-05-12T06:44:47+00:00",
+    "summary": "Functional affordance grounding requires more than recognizing an object: an agent must localize the specific region that supports an interaction, such as the handle to pull or the button to press. This is difficult for training-free vision-language pipelines because actionable regions are often small, visually ambiguous, and repeated across multiple same-category instances in a scene. We propose AFFORDMEM, a framework that grounds 3D functional affordances by remembering geometry at two levels. The first is cross-scene affordance memory: the agent maintains a category-level memory bank of RGB images with affordance regions rendered as overlays, and recalls the most informative examples at query time to guide a frozen VLM toward small operable subregions that text-only prompting consistently misses. The second is in-scene spatial memory: as the agent processes the scene, it organizes candidate instances and their 3D spatial relations into a structured scene graph, enabling the language model to resolve references over distant or currently unobserved candidates such as \"the second handle from the top.\" AFFORDMEM requires no model fine-tuning and no target-scene annotation, using a reusable memory bank built from source scenes. On SceneFun3D, our method improves AP50 over the prior training-free state of the art by 3.23 on Split 0 and 3.7 on Split 1. Ablation studies support complementary benefits: cross-scene affordance memory improves fine-grained localization, while in-scene spatial memory provides the larger gain on spatially qualified queries. The project homepage is available at the project page."
+  },
+  {
+    "title": "PointForward: Feedforward Driving Reconstruction through Point-Aligned Representations",
+    "url": "http://arxiv.org/abs/2605.11594v1",
+    "arxiv_id": "2605.11594v1",
+    "authors": [
+      "Cheng Chi",
+      "Xianqi Wang",
+      "Hongcheng Luo",
+      "Mingfei Tu",
+      "Gangwei Xu",
+      "Zehan Zhang",
+      "Bing Wang",
+      "Guang Chen",
+      "Hangjun Ye",
+      "Sida Peng",
+      "Xin Yang",
+      "Haiyang Sun"
+    ],
+    "published": "2026-05-12T06:20:59+00:00",
+    "summary": "High-fidelity reconstruction of driving scenes is crucial for autonomous driving. While recent feedforward 3D Gaussian Splatting (3DGS) methods enable fast reconstruction, their per-pixel Gaussian prediction paradigm often suffers from multi-view inconsistency and layering artifacts. Moreover, existing methods often model dynamic instances via dense flow prediction, which lacks explicit cross-view correspondence and instance-level consistency. In this paper, we propose PointForward, a feedforward driving reconstruction framework through point-aligned representations. Unlike pixel-aligned methods, we initialize sparse 3D queries in world space and aggregate multi-view image information via spatial-temporal fusion onto these queries, enforcing explicit cross-view consistency in a single feedforward pass. To handle scene dynamics, we introduce scene graphs that explicitly organize moving instances during reconstruction. By leveraging 3D bounding boxes, our method enables instance-level motion propagation and temporally consistent dynamic representations. Extensive experiments demonstrate that PointForward achieves state-of-the-art performance on large-scale driving benchmarks. The code will be available upon the publication of the paper."
+  },
+  {
     "title": "OpenSGA: Efficient 3D Scene Graph Alignment in the Open World",
     "url": "http://arxiv.org/abs/2605.10484v1",
     "arxiv_id": "2605.10484v1",
