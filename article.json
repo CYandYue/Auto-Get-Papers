@@ -1,5 +1,74 @@
 [
   {
+    "title": "RGB-only Active 3D Scene Graph Generation for Indoor Mobile Robots",
+    "url": "http://arxiv.org/abs/2605.18197v1",
+    "arxiv_id": "2605.18197v1",
+    "authors": [
+      "Giorgia Modi",
+      "Davide Buoso",
+      "Giuseppe Averta",
+      "Daniele De Martini"
+    ],
+    "published": "2026-05-18T10:37:39+00:00",
+    "summary": "Current approaches to 3D scene graph generation rely on dedicated depth sensors, such as LiDAR or RGB-D cameras, for metric 3D reconstruction. This limits deployment to specialized robotic platforms and excludes settings where only RGB cameras are available, such as fixed external infrastructure. Existing pipelines also typically operate on passively collected observation trajectories, rather than selecting viewpoints based on the partially built scene representation, and therefore fail to effectively exploit the semantic and spatial information encoded within the graph during exploration. This paper presents a fully visual framework for the active, incremental construction of 3D scene graphs from RGB input only, addressing both limitations. The proposed approach unifies perception and planning around a shared structured representation that captures object semantics, 3D geometry, relational context, and information from multiple viewpoints. Because the framework is hardware-agnostic and relies only on RGB observations, it can incorporate inputs from both onboard robot cameras and fixed external cameras within the same representation. Experiments on the Replica dataset show that the RGB-only pipeline achieves F1-score parity with baselines using ground-truth depth. Active exploration experiments on ReplicaCAD further show that semantic-driven viewpoint selection detects more than twice as many objects as a geometric frontier-based baseline under the same exploration budget. Finally, the external-camera setting demonstrates that complementary RGB views can effectively bootstrap the scene graph and improve contextual understanding at no additional exploration cost."
+  },
+  {
+    "title": "Fixed External Cameras as Common Prior Maps for Active 3D Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2605.18184v1",
+    "arxiv_id": "2605.18184v1",
+    "authors": [
+      "Giorgia Modi",
+      "Davide Buoso",
+      "Giuseppe Averta",
+      "Daniele De Martini"
+    ],
+    "published": "2026-05-18T10:26:07+00:00",
+    "summary": "Commonly available prior information, such as BIM models, floor plans, and remote sensing images, can provide valuable geometric and semantic context for autonomous robotic systems. In this paper, we treat observations from fixed external RGB cameras as Common Prior Maps (CPMs): wide-field views of the environment that initialize a semantic and geometric scene prior before any robot motion begins. We present an RGB-only framework for active, incremental 3D scene graph (3DSG) generation that seamlessly fuses observations from both onboard robot cameras and fixed external cameras within a single hardware-agnostic pipeline. By relying solely on RGB observations processed by a feed-forward 3D reconstruction model, the system treats all cameras - onboard or external - identically, requiring no hardware modifications. A graph-based active semantic exploration framework then directly leverages the partial scene graph to guide the robot toward regions of high semantic uncertainty, progressively completing and refining the prior. Experiments demonstrate that bootstrapping the scene graph with even a single external camera increases initial object recall by up to +79%, and that the richer context of the prior significantly improves the efficiency of subsequent active exploration."
+  },
+  {
+    "title": "Mono-Hydra++: Real-Time Monocular Scene Graph Construction with Multi-Task Learning for 3D Indoor Mapping",
+    "url": "http://arxiv.org/abs/2605.17661v1",
+    "arxiv_id": "2605.17661v1",
+    "authors": [
+      "U. V. B. L. Udugama",
+      "George Vosselman",
+      "Francesco Nex"
+    ],
+    "published": "2026-05-17T21:36:29+00:00",
+    "summary": "Autonomous agile robots need more than metric geometry: they must understand objects, rooms, places, and spatial relations for search, inspection, exploration, and human robot interaction. Conventional metric maps support localization and collision avoidance, but do not provide this semantic and relational structure. 3D scene graphs address this gap by connecting geometry with object level and room level understanding. Building such representations on agile platforms remains difficult because aerial and lightweight robots operate under strict payload, power, and compute limits, making RGB-D cameras and LiDAR sensors impractical for many onboard settings. We present Mono-Hydra++, a real time monocular RGB plus IMU pipeline for indoor metric semantic mapping and hierarchical 3D scene graph construction. The system combines M2H-MX, a DINOv3 based multi-task model for depth and semantics, with a deep feature visual inertial odometry front end, sparse predicted depth constraints in the VIO derived pose graph, semantic masking for dynamic regions, and pose aware temporal alignment before volumetric fusion in the Mono-Hydra backend. On the Go-SLAM ScanNet evaluation subset, Mono-Hydra++ achieves 1.6% lower average trajectory error than the strongest RGB-D baseline in our comparison, while using only monocular RGB plus IMU input. On calibrated 7-Scenes, it improves average ATE by 29.8% over the strongest competing calibrated baseline. We further validate Mono-Hydra++ in a real ITC building deployment using RealSense RGB plus IMU and demonstrate embedded feasibility by deploying the ONNX/TensorRT FP16 M2H-MX-L perception model at 25.53 FPS on a Jetson Orin NX 16GB. These results show that Mono-Hydra++ can provide real time metric semantic mapping and scene graph construction for resource constrained robotic platforms without relying on active depth sensors."
+  },
+  {
+    "title": "SWoMo: Neuro-Symbolic World Model for Cataract Surgery Simulation",
+    "url": "http://arxiv.org/abs/2605.16530v1",
+    "arxiv_id": "2605.16530v1",
+    "authors": [
+      "Ssharvien Kumar Sivakumar",
+      "Akwele Johnson",
+      "Anirudh Dhingra",
+      "Yannik Frisch",
+      "Ghazal Ghazaei",
+      "Anirban Mukhopadhyay"
+    ],
+    "published": "2026-05-15T18:27:29+00:00",
+    "summary": "Realistic surgical simulation plays a crucial role in training novice surgeons and in the development of autonomous agents. World models can scale such simulation environments to realistic and diverse procedures by predicting future patient states conditioned on current observations and surgical actions. However, current state-of-the-art approaches often fail to satisfy key criteria required for clinical applicability, including visual realism, physically grounded interactions, and the ability to simulate scenarios beyond the training distribution. Hence, we introduce SWoMo, a neuro-symbolic world model for cataract surgery simulation that decouples motion generation from visual realism. The symbolic component, consisting of a rule-based simulator and scene graph representations, models motion dynamics and tool-tissue interactions, while a diffusion model produces realistic visual appearance, including textures and tissue deformations. We propose an inverse pairing strategy that reconstructs real surgical videos in the simulator to obtain paired simulated and real videos, which are then used to train our video diffusion model for the reverse objective of sim-to-real translation. Our experiments show both qualitative and quantitative improvements over prior work. We demonstrate that our simulator further satisfies the key criteria, including generalisation to unseen interaction geometries, improvements in downstream phase detection, and unsupervised video style transfer. The code, data, and model weights are available at: https://ssharvienkumar.github.io/SWoMo/"
+  },
+  {
+    "title": "Hierarchical and Holistic Open-Vocabulary Functional 3D Scene Graphs for Indoor Spaces",
+    "url": "http://arxiv.org/abs/2605.15753v1",
+    "arxiv_id": "2605.15753v1",
+    "authors": [
+      "Xinggang Hu",
+      "Chenyangguang Zhang",
+      "Alexandros Delitzas",
+      "Xiangkui Zhang",
+      "Marc Pollefeys",
+      "Francis Engelmann",
+      "Xiangyang Ji"
+    ],
+    "published": "2026-05-15T09:14:50+00:00",
+    "summary": "Functional 3D scene graphs offer a versatile and flexible representation for 3D scene understanding and robotic manipulation, defined by object nodes, interactive elements, and functional relationship edges. However, their potential remains underexplored due to the limited coverage of existing benchmarks and the overly straightforward design of previous pipelines, which primarily focus on large-scale furniture but lack of hierarchical structures. Therefore, in this work, we extend the benchmark coverage by introducing dense tabletop objects and explicit multi-level functional relationships. This expansion introduces critical challenges involving small-scale, dense, and similar instances, with lack of visual anchoring in relational reasoning, instance confusion during cross-frame fusion, and attribution uncertainty under dynamic viewpoints. To address these issues, we propose an open-vocabulary pipeline based on 2D visual grounding and 3D graph optimization. Specifically, we anchor fine-grained functional edges from 2D visual evidence, and associate nodes across frames in 3D using multiple cues. Furthermore, edge association is formulated as temporal graph optimization, integrating evidence accumulation, entropy regularization, and temporal smoothing to robustly determine the functional connections of each node. Finally, global hierarchy shaping is performed to recover the hierarchical graph structure. Extensive experiments demonstrate that the proposed method can reliably infer functional 3D scene graphs in challenging real-world scenes, thereby further unlocking their potential for practical applications."
+  },
+  {
     "title": "Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN",
     "url": "http://arxiv.org/abs/2605.14801v1",
     "arxiv_id": "2605.14801v1",
