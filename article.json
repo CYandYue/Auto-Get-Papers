@@ -1,5 +1,27 @@
 [
   {
+    "title": "DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2605.23176v1",
+    "arxiv_id": "2605.23176v1",
+    "authors": [
+      "Hao Vo",
+      "Khoa Vo",
+      "Phu Loc Nguyen",
+      "Sieu Tran",
+      "Duc Minh Nguyen",
+      "Ngo Xuan Cuong",
+      "Gladys Gawugah",
+      "Sreevenkata Anjani Tishita Godavarthi",
+      "Chase Rainwater",
+      "Nghi D. Q. Bui",
+      "Anh Nguyen",
+      "Duy Minh Ho Nguyen",
+      "Ngan Le"
+    ],
+    "published": "2026-05-22T02:52:06+00:00",
+    "summary": "Spatiotemporal intelligence in autonomous driving (AD) requires an agent to integrate multi-view observations into a coherent scene representation, maintain object continuity across viewpoints and time, and reason about spatial relations, interactions, and future dynamics. However, existing AD vision-language benchmarks largely focus on single-view, static, ego-centric, or single-source question answering, leaving it unclear whether current Vision-Language Models (VLMs) can truly construct and reason over dynamic driving scenes. We introduce DriveSpatial, a benchmark of 15.6K human-verified QA pairs across 20 tasks from five large-scale AD datasets. DriveSpatial evaluates four abilities: Cognitive Scene Construction, Multi-view Relational Understanding, Temporal Reasoning, and Generalization. Unlike prior benchmarks, DriveSpatial is generated from a dynamic multi-relational scene graph that encodes object states, spatial relations, interactions, camera visibility, and temporal correspondences, enabling QA pairs that enforce genuine cross-view and spatiotemporal reasoning. Evaluating 15 representative VLMs reveals a substantial human-model gap: the strongest model trails humans by 28.4 points, with Cognitive Scene Construction emerging as the key bottleneck. Further diagnostics show that language-only prompting is insufficient, while explicit BEV grounding consistently improves performance. These results suggest that current VLMs lack the scene-construction ability needed for reliable spatiotemporal driving intelligence. DriveSpatial and its construction pipeline will be released to support future research."
+  },
+  {
     "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
     "url": "http://arxiv.org/abs/2605.21935v1",
     "arxiv_id": "2605.21935v1",
