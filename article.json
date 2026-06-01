@@ -1,5 +1,31 @@
 [
   {
+    "title": "Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks",
+    "url": "http://arxiv.org/abs/2605.31067v1",
+    "arxiv_id": "2605.31067v1",
+    "authors": [
+      "Marcel Bartholomeus Prasetyo",
+      "Shrutika Vishal Thengane",
+      "A Manicka Praveen",
+      "Yi Loo",
+      "Malika Meghjani"
+    ],
+    "published": "2026-05-29T09:37:19+00:00",
+    "summary": "Open-set task execution can significantly benefit from seamlessly switching between coarse and fine scene representations depending on the context and the evolving information as the robot explores the environment. For example, it is often sufficient to start with a coarse scene representation initially and only employ a finer, more granular scene representation when the robot encounters regions which are likely to contain the task relevant objects. Hence, in this work, we propose BiMoSG, a bimodal 3D scene graph generation approach for open-set tasks. BiMoSG employs a \"fast\" mode by default to efficiently generate a coarse 3D scene graph and can switch to a \"slow\" mode for generating a finer open vocabulary 3D scene graph of task relevant objects. We demonstrate that our proposed 3D scene graph generation approach is significantly faster than the open-source state-of-the-art approaches. This allows us to integrate the scene graph generation process with task execution for real-time deployment."
+  },
+  {
+    "title": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
+    "url": "http://arxiv.org/abs/2605.30512v1",
+    "arxiv_id": "2605.30512v1",
+    "authors": [
+      "Nafiul Haque",
+      "Syed Nazmus Sakib",
+      "Shifat E Arman"
+    ],
+    "published": "2026-05-28T19:49:27+00:00",
+    "summary": "Generating physics diagrams from text requires strict adherence to physical laws. While current generative models produce visually plausible outputs, they systematically hallucinate force vectors, ignore conservation laws, and violate geometric constraints. We present PhyDrawGen, a neuro-symbolic pipeline that decouples semantic scene understanding from physical constraint satisfaction. First, a large language model extracts a typed scene graph from the problem text. A deterministic solver then converts this graph into a Planar Straight-Line Graph (PSLG), encoding force balance, optical paths, and field topologies as exact geometric primitives. Finally, a fine-tuned Qwen-VL model implements a visually grounded propose-verify loop to iteratively correct any constraint violations. Evaluated on a benchmark of 1,449 problems spanning mechanics, optics, and electromagnetism, PhyDrawGen significantly outperforms GPT-5-image, Gemini 2.5 Flash, and Gemini 3 Pro, demonstrating robust physical accuracy even on unusual-object problems."
+  },
+  {
     "title": "Before the Shutter: Aesthetic and Actionable Portrait Photography Planning in 3D Scenes",
     "url": "http://arxiv.org/abs/2605.30318v1",
     "arxiv_id": "2605.30318v1",
@@ -14,6 +40,19 @@
     "title": "DGSG-Mind: Dynamic 3D Gaussian Scene Graphs for Long-Term Scene Understanding and Grounding",
     "url": "http://arxiv.org/abs/2605.29879v1",
     "arxiv_id": "2605.29879v1",
+    "authors": [
+      "Luzhou Ge",
+      "Xiangyu Zhu",
+      "Jinyan Liu",
+      "Xuesong Li"
+    ],
+    "published": "2026-05-28T13:04:17+00:00",
+    "summary": "Integrating open-vocabulary semantic information into dynamic 3D scene representations is essential for long-term embodied scene understanding. However, existing methods often suffer from fragile instance association due to incomplete cross-view cues, while their limited ability to handle object-level topological changes restricts long-term robotic task execution. Moreover, current 3D scene understanding methods either rely on simple feature matching without explicit spatial reasoning or assume offline ground-truth 3D geometry. To address these challenges, we present DGSG-Mind, a hybrid instance-aware 3D Gaussian dynamic scene graph system with an embodied reasoning agent. Our system couples a probabilistic voxel grid with explicit 3D Gaussians to enable robust cross-modal instance fusion and incremental semantic mapping. It handles dynamic changes through Gaussian-based visual relocalization and localized masked refinement guided by geometric-semantic consistency. Built on the instance Gaussian map, DGSG-Mind further constructs a hierarchical scene graph and develops the 3D Gaussian Mind, which integrates structural relations, spatial-semantic information, and visually annotated RoI Gaussian renderings for multimodal reasoning. Extensive experiments show that DGSG-Mind achieves the best zero-shot 3DVG performance among methods operating on self-reconstructed maps, while also delivering strong performance in 3D open-vocabulary semantic segmentation and scene reconstruction. We further deploy DGSG-Mind on real-world robots to demonstrate its target-oriented reasoning and dynamic update capabilities. The project page of DGSG-Mind is available at https://icr-lab.github.io/DGSG-Mind"
+  },
+  {
+    "title": "DGSG-Mind: Dynamic 3D Gaussian Scene Graphs for Long-Term Scene Understanding and Grounding",
+    "url": "http://arxiv.org/abs/2605.29879v2",
+    "arxiv_id": "2605.29879v2",
     "authors": [
       "Luzhou Ge",
       "Xiangyu Zhu",
