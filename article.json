@@ -1,5 +1,73 @@
 [
   {
+    "title": "Question-Aware Evidence Ledgers for Video Relational Reasoning",
+    "url": "http://arxiv.org/abs/2606.02506v1",
+    "arxiv_id": "2606.02506v1",
+    "authors": [
+      "Yilin Ou",
+      "Mengshi Qi",
+      "Huadong Ma"
+    ],
+    "published": "2026-06-01T17:18:03+00:00",
+    "summary": "The VRR-QA challenge evaluates visual relational reasoning in videos, where answers often depend on implicit spatial relations, event boundaries, target identity, and dialogue context rather than a single salient frame. We present a test-time reasoning pipeline built around a strong GPT-5.5 video QA solver and a set of question-aware evidence ledgers. The initial solver answers each question from a uniform video representation, while routed ledgers are prompted to make the required targets, count units, reference frames, and temporal or spatial scope explicit for counting, spatial, endpoint, viewpoint, and dialogue reasoning. External tools such as open-vocabulary detection, depth cues, pair crops, ASR, and scene-graph ledgers are used only as evidence sources. A conservative gate keeps the current answer unless independent evidence uniquely supports a different option. The final evidence-gated pipeline achieves 92.95% overall accuracy and 93.79% macro accuracy on the challenge test split."
+  },
+  {
+    "title": "Hierarchical Semantic-Augmented Navigation: Optimal Transport and Graph-Driven Reasoning for Vision-Language Navigation",
+    "url": "http://arxiv.org/abs/2606.01565v1",
+    "arxiv_id": "2606.01565v1",
+    "authors": [
+      "Xiang Fang",
+      "Wanlong Fang",
+      "Changshuo Wang"
+    ],
+    "published": "2026-06-01T02:11:01+00:00",
+    "summary": "Vision-Language Navigation in Continuous Environments (VLN-CE) poses a formidable challenge for autonomous agents, requiring seamless integration of natural language instructions and visual observations to navigate complex 3D indoor spaces. Existing approaches often falter in long-horizon tasks due to limited scene understanding, inefficient planning, and lack of robust decision-making frameworks. We introduce the \\textbf{Hierarchical Semantic-Augmented Navigation (HSAN)} framework, a groundbreaking approach that redefines VLN-CE through three synergistic innovations. First, HSAN constructs a dynamic hierarchical semantic scene graph, leveraging vision-language models to capture multi-level environmental representations, from objects to regions to zones, enabling nuanced spatial reasoning. Second, it employs an optimal transport-based topological planner, grounded in Kantorovich's duality, to select long-term goals by balancing semantic relevance and spatial accessibility with theoretical guarantees of optimality. Third, a graph-aware reinforcement learning policy ensures precise low-level control, navigating subgoals while robustly avoiding obstacles. By integrating spectral graph theory, optimal transport, and advanced multi-modal learning, HSAN addresses the shortcomings of static maps and heuristic planners prevalent in prior work. Extensive experiments on multiple challenging VLN-CE datasets demonstrate that HSAN achieves state-of-the-art performance, with significant improvements in navigation success and generalization to unseen environments."
+  },
+  {
+    "title": "Hierarchical Object Representation for Spatial Robot Perception: Points, Meshes, and Superquadrics",
+    "url": "http://arxiv.org/abs/2606.01545v1",
+    "arxiv_id": "2606.01545v1",
+    "authors": [
+      "Ceng Zhang",
+      "Wan Su",
+      "Mohamed Samshad",
+      "Gregory S. Chirikjian",
+      "Rajat Talak"
+    ],
+    "published": "2026-06-01T01:45:47+00:00",
+    "summary": "Hierarchical 3D Scene Graphs (3DSG) have emerged as an actionable and scalable representation for long-term autonomy incorporating metric, semantic, and topological information in the scene. However, the question of geometric representation of objects in 3DSG has been overlooked as most methods use simplified geometric models such as partial point clouds or 3D bounding boxes. In this work, we introduce a hierarchical object representation that can be leveraged for high-fidelity object-level reconstruction, object-based robust re-localization or map alignment, and efficient and analytical collision checking for safe robot navigation planning in dense and cluttered environments. The representation is structurally organized into four distinct layers, progressively abstracting the scene from raw sensor data to dense 3D meshes to analytical primitives such as superquadrics, which provide a sparse and analytical representation for object geometry. We develop a pipeline that builds the hierarchical object representation from RGB-D image stream captured by a robot, and demonstrate its working in real-world open-set object scenes in both indoor and outdoor environments. Extensive experiments across diverse datasets including HOPE, ReplicaCAD, Kimera-Multi, and NUS Campus Dataset collected using Unitree B2 Robot validate our pipeline in both indoor and outdoor environments. We show that our superquadric-based map alignment method outperforms the current state-of-the-art object based map alignment method ROMAN. Our code can be found at https://github.com/perceptica-robotics/Hickory."
+  },
+  {
+    "title": "PSG-Nav: Probabilistic Scene Graph Navigation via Multiverse Decision Making",
+    "url": "http://arxiv.org/abs/2606.01313v1",
+    "arxiv_id": "2606.01313v1",
+    "authors": [
+      "Rufeng Chen",
+      "Yue Chang",
+      "Xiaqiang Tang",
+      "Hechang Chen",
+      "Sihong Xie"
+    ],
+    "published": "2026-05-31T16:00:19+00:00",
+    "summary": "Open-vocabulary navigation requires embodied agents to manage significant perception uncertainty stemming from semantic ambiguity and model errors.   However, most existing works settle for local optimal deterministic approaches, depriving complex navigation decision-making over multiple composite possibilities that are critical for globally better solutions.   In this paper, we propose Probabilistic Scene Graph Navigation (PSG-Nav), which constructs a 3D Probabilistic Scene Graph that uses full semantic categorical distributions to account for perception uncertainty.   To efficiently use the local distributions to compose and reason about the optimal navigation landmarks, we propose Multiverse Decision to sample multiple most likely world settings from the joint distribution, and evaluate navigation landmarks based on the compatibility between landmarks and multiverses.   To mitigate false positives due to epistemic uncertainty in open-vocabulary navigation, we introduce the Evidential Experience Calibrator, which enables online lifelong adaptation by cross-validating detections against memories of past successes and failures.   Extensive experiments on widely-used benchmarks MP3D, HM3D, and HSSD demonstrate that PSG-Nav establishes new state-of-the-art results, achieving Success Rates of 66.1%, 44.8%, and 67.9%, respectively. Code is available at: https://psg-nav.github.io/"
+  },
+  {
+    "title": "Expanding Spatial and Temporal Context for Robotic Imitation Learning With Scene Graphs",
+    "url": "http://arxiv.org/abs/2606.01072v1",
+    "arxiv_id": "2606.01072v1",
+    "authors": [
+      "Jianing Qian",
+      "Qinhe Peng",
+      "Emmanuel Panov",
+      "Leonor Fermoselle",
+      "Dinesh Jayaraman",
+      "Bernadette Bucher",
+      "Tarik Kelestemur"
+    ],
+    "published": "2026-05-31T07:34:25+00:00",
+    "summary": "Imitation learning enables robots to learn how to execute tasks via observation. However, real-world environments like homes and offices are often severely partially observed due to their large spatial scales. In addition, many tasks involve executing a series of subtasks requiring autonomous robots to reason over extended time horizons. To address these challenges, we propose using scene graphs as an explicit and structured memory mechanism in imitation learning. By maintaining a dynamic scene graph that captures object-centric relationships and their evolution over time, our method allows the agent to retain relevant historical context during task execution to efficiently reason over incrementally accrued scene information. Our experiments on simulated mobile manipulation and real-world tabletop manipulation demonstrate that our approach substantially improves policy performance, particularly in settings that demand long-term reasoning and robust generalization under partial observability."
+  },
+  {
     "title": "Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks",
     "url": "http://arxiv.org/abs/2605.31067v1",
     "arxiv_id": "2605.31067v1",
