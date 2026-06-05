@@ -1,5 +1,71 @@
 [
   {
+    "title": "Visual Commonsense Driven Knowledge Refinements for Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2606.06369v1",
+    "arxiv_id": "2606.06369v1",
+    "authors": [
+      "Ma\u00eblic Neau",
+      "Salim Baloch",
+      "Jakob Suchan",
+      "Zoe Falomir",
+      "Mehul Bhatt"
+    ],
+    "published": "2026-06-04T16:36:40+00:00",
+    "summary": "Learning-driven Scene Graph Generation (SGG) models excel on frequent relation types but degrade sharply under annotation sparsity, failing to capture reliable visual commonsense knowledge. We propose a model-agnostic, semantically-guided knowledge refinement framework that systematically mines commonsense-grounded constraints from training data - capturing spatial, functional, and qualitative relational regularities - and uses general declarative commonsense reasoning to correct and refine ranked SGG predictions at inference time. The framework requires no manual rule authoring, no model retraining, and transfers across datasets and architectures. On three standard benchmarks, we obtain consistent improvements over strong baselines, demonstrating that structured visual commonsense reasoning over deep scene semantics is a practical and effective complement to purely learning-based scene graph generation."
+  },
+  {
+    "title": "HyperVis: Continuous Latent Visual Relational Graphs on the Lorentz Hyperboloid for Compositional Reasoning",
+    "url": "http://arxiv.org/abs/2606.06100v1",
+    "arxiv_id": "2606.06100v1",
+    "authors": [
+      "Moshiur Farazi",
+      "Sameera Ramasinghe",
+      "Mahbub Ahmed Turza",
+      "Shafin Rahman"
+    ],
+    "published": "2026-06-04T12:40:15+00:00",
+    "summary": "Vision-Language Models (VLMs) struggle with compositional reasoning that requires understanding inter-object relationships. A natural remedy is to inject explicit scene graph triplets $\\langle s, p, o \\rangle$ from an off-the-shelf scene graph generator (SGG), but we show this backfires: discrete text labels collide with the continuous visual modality, degrading GQA accuracy from 60.38\\% to 58.86\\%. We propose \\textbf{HyperVis}, which bypasses the SGG semantic bottleneck entirely. From $N$ class-agnostic region proposals, we compute a dense $O(N^2)$ visual relation tensor via spatially-biased cross-attention, project it onto a Lorentz hyperboloid, and enforce hierarchy through spatial physics, namely IoA-driven entailment cones and exterior-angle repulsion. We discover that HyperVis contributes in two complementary ways: (1) as a \\emph{training-time regularizer}, the hyperbolic relational losses shape LoRA representations that improve generative VQA (GQA 61.03\\% vs.\\ 57.21\\% for LoRA fine-tuning without relational losses, recovering and surpassing the baseline); and (2) as an \\emph{inference-time relational encoder}, hyperbolic prefix tokens boost discriminative compositional scoring (SugarCrepe 79.94\\%, $+$6.25pp over baseline). The learned curvature stabilises at $\u03ba{=}4.0$, an order of magnitude above prior hyperbolic VLMs where $\u03ba$ typically collapses toward zero, indicating that continuous visual features genuinely require the exponential volume of strongly curved space. A controlled Euclidean ablation confirms this decomposition: the relational pipeline regularises LoRA comparably in flat space (GQA 60.81\\%), but the compositionality gain is specifically hyperbolic (SugarCrepe $+$4.58pp over Euclidean), with entailment loss ${\\sim}6{\\times}$ higher in Euclidean training. Codes are available at TBA."
+  },
+  {
+    "title": "T-FunS3D: Task-Driven Hierarchical Open-Vocabulary 3D Functionality Segmentation",
+    "url": "http://arxiv.org/abs/2606.05975v1",
+    "arxiv_id": "2606.05975v1",
+    "authors": [
+      "Jingkun Feng",
+      "Reza Sabzevari"
+    ],
+    "published": "2026-06-04T10:16:39+00:00",
+    "summary": "Open-vocabulary 3D functionality segmentation enables robots to localize functional object components in 3D scenes. It is a challenging task that requires spatial understanding and task interpretation. Current open-vocabulary 3D segmentation methods primarily focus on object-level recognition, while scene-wide part segmentation methods attempt to segment the entire scene exhaustively, making them highly resource-intensive and time consuming. Balancing segmentation performance in terms of granularity, accuracy, and speed remains a challenge. As one step towards alleviating this, we introduce T-FunS3D, a task-driven hierarchical open-vocabulary 3D functionality segmentation method that provides actionable perception for robotic applications. Our method takes as input the 3D point cloud and posed RGB-D images of an indoor scene. We construct an open-vocabulary scene graph by extracting instances and their visual embeddings in the environment. Given a task description, T-FunS3D identifies the most relevant instances in the scene graph and locates their functional components leveraging a vision-language model. Experiments on the SceneFun3D dataset demonstrate that T-FunS3D is comparable to state-of-the-art in open-vocabulary 3D functionality segmentation, while achieving faster runtime and reduced memory usage."
+  },
+  {
+    "title": "Unveiling the Unknown: Open Vocabulary Object Detection with Scene Graphs",
+    "url": "http://arxiv.org/abs/2606.05916v1",
+    "arxiv_id": "2606.05916v1",
+    "authors": [
+      "Yi Chen",
+      "Yinghao Lu",
+      "Zhehao Li",
+      "Chenchen Yan",
+      "Jiafei Wu",
+      "Chong Wang",
+      "Jiangbo Qian"
+    ],
+    "published": "2026-06-04T09:23:08+00:00",
+    "summary": "Open-vocabulary object detection seeks to identify novel object categories that were not part of the training data. Many knowledge distillation-based approaches have shown promising performance by transferring knowledge from pre-trained vision-language models to object detection. However, these methods often overlook structured, image-specific relationships between objects, such as interactions and spatial arrangements. This oversight can significantly restrict the effectiveness of detecting novel categories. To address this issue, we propose a Scene-guided Relational Modeling detection framework. This framework utilizes scene graphs to capture structured semantic and spatial relationships between candidate regions and their contextual objects. It explicitly models interactions among neighboring regions and incorporates a Relation Attention Module to implicitly amplify the key relational cues extracted from the scene graph. Furthermore, we present a scene-based textual alignment branch that distills category knowledge from captions to guide relational alignment. This approach facilitates a seamless integration of visual relations with semantic information for enhanced detection performance. Comprehensive experiments show that our model achieves superior performance compared to other OVOD methods, improving the AP for novel categories on COCO and LVIS datasets."
+  },
+  {
+    "title": "QPredSGG: Hybrid Quantum Predicate Learning for Long-Tailed Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2606.04689v1",
+    "arxiv_id": "2606.04689v1",
+    "authors": [
+      "Prerana Ramkumar",
+      "Nouhaila Innan",
+      "Muhammad Shafique"
+    ],
+    "published": "2026-06-03T10:15:56+00:00",
+    "summary": "Scene Graph Generation (SGG) requires relational reasoning over objects and their interactions, but performance is often limited by severe long-tail predicate imbalance. Classical SGG models frequently rely on dataset statistics, leading to biased predictions toward frequent relations rather than fine-grained semantic predicates. Although existing debiasing strategies improve mean recall, predicate classification in current frameworks still often depends on large classical decision modules with high parameter cost. This work introduces a hybrid quantum predicate classifier for SGG by replacing the classical predicate head in Causal Feature Enhancement Network (CFEN) with a Quantum Predicate Head (QP-Head) trained using weighted cross-entropy. To the best of our knowledge, this is among the first studies to evaluate a hybrid quantum architecture for scene graph predicate classification on Visual Genome 150. We study the effect of qubit count, encoding strategy, entangling structure, and circuit depth on relational prediction. The best 4-qubit QP-Head uses Amplitude Embedding and Strongly Entangling Layers to compress 4096-dimensional pair features into a 16-dimensional quantum-compatible representation, corresponding to a 256$\\times$ reduction. It achieves an mR@100 of 57.25%, compared with 41.1% for the classical CFEN reference, while using only 96 trainable quantum parameters. Scaling to 8 qubits maintains strong long-tail performance, reaching an mR@100 of 55.38% with 384 quantum parameters, while the depth analysis shows a trade-off between expressibility and runtime overhead. These results suggest that compact hybrid quantum predicate heads can support parameter-efficient long-tail relational classification in complex visual reasoning tasks."
+  },
+  {
     "title": "Question-Aware Evidence Ledgers for Video Relational Reasoning",
     "url": "http://arxiv.org/abs/2606.02506v1",
     "arxiv_id": "2606.02506v1",
