@@ -1,5 +1,19 @@
 [
   {
+    "title": "SCOUT: Semantic scene COverage via Uncertainty-guided Traversal",
+    "url": "http://arxiv.org/abs/2606.06721v1",
+    "arxiv_id": "2606.06721v1",
+    "authors": [
+      "Junyu Mao",
+      "Sara Ayoubi",
+      "Vishnu D. Sharma",
+      "Ilija Had\u017ei\u0107",
+      "Matthew Andrews"
+    ],
+    "published": "2026-06-04T21:13:33+00:00",
+    "summary": "Robots that operate over extended periods should not merely visit space; they should progressively understand it. Yet most 3D scene graph pipelines treat perception as a post-processing stage over a fixed dataset, decoupling scene representation from the decisions that determine what is observed in the first place. We present SCOUT, an online semantic exploration framework that closes this loop by coupling active traversal with probabilistic scene graph construction. Given a prior 2D occupancy map and posed RGB-D observations, SCOUT incrementally builds an uncertainty-aware 3D scene graph whose nodes maintain fused geometry and posterior beliefs over open-vocabulary object labels, while edges encode structural relations such as on, inside, belong, and next to. These beliefs are fed back to an uncertainty-guided traversal planner, which selects viewpoints by balancing expected semantic certainty gain, geometric coverage gain, and travel cost. In this way, the robot revisits ambiguous objects when additional evidence matters and expands into unseen free space when the scene remains incomplete. The resulting system treats semantic scene completeness as an operational objective rather than a passive by-product of semantic mapping, moving toward autonomous agents that can patrol, update, and reason about evolving indoor environments with minimal human intervention."
+  },
+  {
     "title": "Visual Commonsense Driven Knowledge Refinements for Scene Graph Generation",
     "url": "http://arxiv.org/abs/2606.06369v1",
     "arxiv_id": "2606.06369v1",
