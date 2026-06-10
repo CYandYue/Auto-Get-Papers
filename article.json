@@ -1,5 +1,38 @@
 [
   {
+    "title": "AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2606.10927v1",
+    "arxiv_id": "2606.10927v1",
+    "authors": [
+      "Hang Yin",
+      "Yinan Liang",
+      "Jiazhao Zhang",
+      "Jiahang Liu",
+      "Minghan Li",
+      "Zhizheng Zhang",
+      "He Wang"
+    ],
+    "published": "2026-06-09T14:35:53+00:00",
+    "summary": "Lifelong embodied navigation in dynamic environments requires robots to form persistent scene understanding from fragmentary observations, which remains difficult for existing methods that rely on explicit maps or scene graphs and struggle to generalize beyond structured settings. We propose AllDayNav, a lifelong self-learning navigation framework that implicitly encodes scene dynamics into the billion-scale parameters of a large model via reinforcement learning, powered by a self-evolving multimodal memory that maintains and updates visual keyframes, semantic descriptions, and temporal context while autonomously generating open-vocabulary instructions, image goals, and structured rewards. Experiments in both synthetic and real-world environments across cross-room, cross-episode, and cross-task scenarios show that AllDayNav achieves success rates approaching $100\\%$ and consistently surpasses strong map-based, VLM, and RL baselines in path efficiency and robustness, demonstrating implicit, memory-driven reinforcement learning as a scalable alternative to explicit mapping for reliable lifelong navigation."
+  },
+  {
+    "title": "ManiSplat: Manipulation Trajectory Synthesis from Monocular Video via Decoupled 3D Gaussian Splatting",
+    "url": "http://arxiv.org/abs/2606.10645v1",
+    "arxiv_id": "2606.10645v1",
+    "authors": [
+      "Wenhao Hu",
+      "Haonan Zhou",
+      "Liu Liu",
+      "Yun Du",
+      "Xinjie Wang",
+      "Ziang Li",
+      "Zhizhong Su",
+      "Gaoang Wang"
+    ],
+    "published": "2026-06-09T09:55:58+00:00",
+    "summary": "Reconstructing dynamic and interactive 3D scenes from real-world observations remains a fundamental challenge in computer vision and robotics. While recent advances in 3D Gaussian Splatting have enabled high-fidelity static reconstruction, extending it to interactive environments with articulated robots and manipulable objects remains difficult due to complex contact interactions and abrupt pose changes. To address these challenges, we introduce ManiSplat, a unified framework that reconstructs controllable and decoupled Gaussian digital twins directly from monocular ego-view robotic videos. Our method introduces a Graph-Structured Disentangled Representation that separates the robot, objects, and background into independently optimizable Gaussian subfields organized within a scene graph. To ensure stability, we propose a Task-Oriented Spatio-Temporal Alignment module that leverages the inherent logic of manipulation tasks-alternating between Motion and Skill phases-to construct accurate pseudo-ground-truth trajectories. Finally, a joint photometric-geometric optimization ensures the reconstructed scenes are temporally coherent, physically consistent, and simulation-ready. Extensive experiments demonstrate that our approach reconstructs interaction-driven dynamic scenes with high fidelity and controllability, effectively supporting downstream robotic tasks and policy learning."
+  },
+  {
     "title": "HDSL: A Hierarchical Domain-Specific Language for Structured 3D Indoor Scene Generation and Localized Editing with LLM Agents",
     "url": "http://arxiv.org/abs/2606.09738v1",
     "arxiv_id": "2606.09738v1",
