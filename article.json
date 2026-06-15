@@ -15,6 +15,19 @@
     "summary": "Fine-grained understanding of operating room (OR) activity could enable workflow-aware assistance, yet remains difficult due to clutter, occlusions, and limited sensing. The prevailing approach to model this environment is scene graphs as an interpretable representation of OR interactions. Converting their frame-wise relational predictions into temporally extended, fine-grained actions however, is challenging without explicit temporal modeling. To enable a principled temporal evaluation of current OR understanding methods, we introduce the first action-centric benchmark built on a publicly available ego-exocentric OR dataset by defining a fine-grained, multi-role action taxonomy and generating dense action segments via distillation from ground-truth scene graph state changes. Experiments on this benchmark show that current scene graph prediction methods struggle to model temporal structure, even when adding explicit modeling through Graph Neural Networks. We therefore introduce a vision-only temporal model that outperforms graph-based methods significantly when using all available egocentric video as input. Building on this model we also introduce a novel multi- to single-view feature alignment strategy that improves single-view performance on multi-role action recognition, mitigating the need for extensive egocentric video capture. Benchmark and code will be released upon acceptance."
   },
   {
+    "title": "Occupancy-Grounded Room Segmentation for Hierarchical 3D Scene Graphs",
+    "url": "http://arxiv.org/abs/2606.13727v1",
+    "arxiv_id": "2606.13727v1",
+    "authors": [
+      "Carlos Cueto Zumaya",
+      "Iacopo Catalano",
+      "Jorge Pe\u00f1a-Queralta",
+      "Wallace Moreira Bessa"
+    ],
+    "published": "2026-06-11T09:36:15+00:00",
+    "summary": "Hierarchical 3D scene graphs (3DSGs) for indoor robots organize geometric and semantic information across spatial scales, with a room layer that connects object-level perception to room-scale reasoning. Existing systems construct this layer from different spatial substrates (\\eg{} place clusters, wall planes, or segmentation outputs), and as a result, room nodes are not evaluated on a common geometric criterion. We present an occupancy-grounded 3DSG pipeline in which room nodes are anchored to tracked free-space regions derived from occupancy decomposition, giving each room an explicit polygonal footprint. We evaluate the pipeline on 12 Matterport3D scenes by matching predicted room polygons to annotated room instances and compare against Hydra, a representative state-of-the-art place-connectivity baseline. The results show that occupancy-grounded anchoring recovers substantially more room instances than place-connectivity construction, at the cost of lower precision, and that wall-accurate room boundaries remain an open problem for both methods. Code is available at https://github.com/crcz25/OccuSG."
+  },
+  {
     "title": "SG2Loc: Sequential Visual Localization on 3D Scene Graphs",
     "url": "http://arxiv.org/abs/2606.11880v1",
     "arxiv_id": "2606.11880v1",
