@@ -1,5 +1,69 @@
 [
   {
+    "title": "From Pixels to Concepts: Growing Rich 3D Semantic Scene Graph Forests utilizing Foundation Models",
+    "url": "http://arxiv.org/abs/2606.23312v1",
+    "arxiv_id": "2606.23312v1",
+    "authors": [
+      "David Oberacker",
+      "Meike Deitersen",
+      "Niklas Spielbauer",
+      "Tristan Schnell",
+      "Georg Heppner",
+      "Arne Roennau"
+    ],
+    "published": "2026-06-22T13:26:17+00:00",
+    "summary": "Operating in complex real-world environments requires robots to understand their surroundings on a functional semantic level. This demands a detailed multi-layer world model capturing the complex relations of its surroundings. Hierarchical 3D scene graphs address this challenge by integrating geometric, semantic, and relational data within a unified spatial framework. However, current 3D scene graph approaches often restrict themselves to rigid structures of pre-determined relationship classes, mostly neglecting important semantic connections, like causal connections or environmental contexts. This paper explores the potential of foundation models to build forests of 3D scene graphs with open semantic relationships to improve scene understanding and robotic task execution. We propose a method where instance-specific concept-nodes and relationships are first identified by a VLM and extended upon by a LLM, inferring broader, more abstract concept-nodes and relationships through reasoning. These object-nodes, concept-nodes, and relationships are then assembled into a forest of hierarchical 3D scene graphs, enhanced with concept-nodes to represent abstract concepts. Evaluations were conducted on the uHumans2 and ScanNet indoor dataset, validating the accuracy and relevance of the generated relationships. Downstream suitability of scene-graph forests for robotics applications is demonstrated in an open-vocabulary object-retrieval task utilizing both ScanNet data and a real-world indoor deployment using a Boston Dynamics Spot. This paper leverages foundation models to create more expressive, semantically deep 3D hierarchical scene graphs and demonstrates their potential to advance semantic and environmental understanding in robotics."
+  },
+  {
+    "title": "G-MASt3R-SfM: Graph-based View Pruning and Multi-stage Optimization for Robust SfM",
+    "url": "http://arxiv.org/abs/2606.22856v1",
+    "arxiv_id": "2606.22856v1",
+    "authors": [
+      "Toshiki Watanabe",
+      "Shintaro Ito",
+      "Natsuki Takama",
+      "Koichi Ito",
+      "Takafumi Aoki"
+    ],
+    "published": "2026-06-22T05:01:08+00:00",
+    "summary": "Structure from Motion (SfM) is essential for multi-view 3D reconstruction, however, its accuracy heavily relies on the accuracy of image matching. While the recent correspondence matching method, MASt3R, enables robust matching even under challenging conditions, it tends to generate incorrect correspondences for non-overlapping image pairs. Consequently, existing SfM methods using MASt3R, such as MASt3R-SfM, suffer from significant degradation in pose estimation accuracy as they incorporate these unreliable matches directly into optimization. To address this issue, we propose G-MASt3R-SfM, a novel SfM pipeline that enhances robustness through two key modules. First, the Graph-based View Pruning (GVP) module constructs a scene graph from matching confidence and geometrically prunes outlier views. Second, the Multi-Stage Optimization (MSO) module progressively refines camera parameters by expanding the optimization scope from local consistency to the global consistency. Experiments on the ETH3D dataset demonstrate that our method achieves state-of-the-art accuracy in both camera pose estimation and 3D reconstruction, effectively suppressing noise caused by outliers."
+  },
+  {
+    "title": "Modular Diffusion Models for Structured Visual Recognition",
+    "url": "http://arxiv.org/abs/2606.22702v1",
+    "arxiv_id": "2606.22702v1",
+    "authors": [
+      "Siddhesh Khandelwal",
+      "Bj\u00f6rn Ommer",
+      "Leonid Sigal"
+    ],
+    "published": "2026-06-21T22:38:35+00:00",
+    "summary": "Traditional supervised methods for structured visual recognition tasks -- such as object detection, segmentation, and scene graph generation -- often produce deterministic, fixed outputs, limiting their ability to capture the inherent uncertainty in complex visual scenes. As a consequence, such point estimates are unable to capture the prediction uncertainty (or multi modality) intrinsic to these problems, often arising from natural ambiguities (e.g., ambiguity in size of partially occluded objects, local ambiguity of exact segmentation boundary, etc.) as well as noise and sparsity of training data. To address this limitation, we present Modular Diffusion Models (MDMs), a simple and novel framework that learns a distribution over structured outputs for a given input image. MDMs decompose the diffusion process into distinct, task-specific modules, each focused on capturing a different aspect of the structured information space, such as object categories, spatial locations, and inter-object relationships. This modular design allows each component to be learned independently, with seamless integration at inference without additional training. Furthermore, the modularity of MDMs enables the diffusion process to easily operate over the heterogeneous output space common in many structured learning tasks (e.g., a continuous bounding boxes and discrete class labels). Experimental results over three distinct structured tasks -- object detection, instance segmentation, and scene graph generation -- highlight the benefits of our proposed framework."
+  },
+  {
+    "title": "Scaling Diverse Language Generation for 3D Visual Grounding",
+    "url": "http://arxiv.org/abs/2606.20946v1",
+    "arxiv_id": "2606.20946v1",
+    "authors": [
+      "Austin T. Wang",
+      "Dongchen Yang",
+      "Angel X. Chang"
+    ],
+    "published": "2026-06-18T21:20:20+00:00",
+    "summary": "Developing robust models for 3D visual grounding (3DVG), the localization of entities in a 3D scene described in natural language, is important for enabling agents to correspond spatial language with objects in the physical world. However, the lack of diverse descriptions at scale prevents models from generalizing beyond simple linguistic patterns. Recent such attempts lack diversity in the constraint types and language used to ground objects. Captioning methods cannot precisely contrast objects, which is important for visual grounding. We therefore propose ViGiL3D++, a scalable, scene-agnostic method that generates diverse visual grounding queries by combining constraint sampling in scene graphs with the language generation of LLMs. We show that it has greater diversity over existing scaled datasets and improves model performance over several 3DVG benchmarks but also illuminates outstanding limitations of VLMs."
+  },
+  {
+    "title": "Relational Gaze Transitions During Encoding Predict Episodic Recall of Naturalistic Scenes",
+    "url": "http://arxiv.org/abs/2606.20844v1",
+    "arxiv_id": "2606.20844v1",
+    "authors": [
+      "Hugo Rydel",
+      "Alex Kafkas"
+    ],
+    "published": "2026-06-18T18:27:45+00:00",
+    "summary": "Remembering a visual scene requires organizing distinct details into a cohesive event. This study investigates whether relation-guided gaze transitions provide a behavioural marker of this cognitive organization during episodic encoding and retrieval. By applying scene graph annotations to eye-tracking data, we measured whether gaze moved between objects that were meaningfully related within complex scenes. This approach allowed us to quantify relational scanning within naturalistic environments, moving beyond prior methods that relied on simplified displays or isolated relation types. Participants showed above-chance relational gaze during both initial viewing and blank-screen retrieval, indicating that gaze actively tracks scene structure during first viewing and at recall. Additionally, relational scanning at encoding predicted subsequent free recall of both object and relational details, even after accounting for salience, fixation frequency, meaning, and image-level differences. In contrast, relational scanning at retrieval did not predict recall success, suggesting that relational gaze is most functional to memory during its formation. Together, these findings show that relational gaze can be measured in complex scenes and may serve as a marker of episodic encoding during natural visual exploration."
+  },
+  {
     "title": "SGM-SLAM: Scene Graph Matching for Data-Efficient Distributed SLAM",
     "url": "http://arxiv.org/abs/2606.16881v1",
     "arxiv_id": "2606.16881v1",
