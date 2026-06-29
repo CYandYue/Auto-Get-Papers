@@ -1,5 +1,67 @@
 [
   {
+    "title": "ReScene: Structured Indoor Scene Reconstruction from Multi-View Captures",
+    "url": "http://arxiv.org/abs/2606.28060v1",
+    "arxiv_id": "2606.28060v1",
+    "authors": [
+      "Haoran Xu",
+      "Lechao Zhang",
+      "Daoguo Dong",
+      "Yan Gao",
+      "Xin Tan"
+    ],
+    "published": "2026-06-26T13:08:40+00:00",
+    "summary": "Constructing simulation-ready 3D scenes from multi-view captures is a key bottleneck for Embodied Artificial Intelligence, as downstream tasks require object-level structure, explicit inter-object relations, and physical plausibility. Existing approaches either rely on specialized capture hardware, suffer from single-view bias in object reconstruction, or yield layouts that are geometrically reasonable but physically inconsistent. We identify that the problem is not single-object reconstruction but cross-view relation fusion and physically plausible scene assembly. To address this challenge, we present ReScene, a framework that threads multi-view geometry throughout the pipeline as a unifying prior. Our method consists of two main components: HierView prioritizes reconstruction views based on semantic consistency and 3D coverage completeness, replacing the largest-mask heuristic that conflates image occupancy with object coverage; and Relation-Aware Assembly fuses multi-frame relation predictions from a vision-language model with geometric and room-shell priors into a confidence-weighted scene graph, enabling physically consistent scene assembly. ReScene sets a new state of the art across geometry, rendering, and perceptual quality on a set of ScanNet scenes, achieving a 17% reduction in Chamfer Distance and 26% in LPIPS over the strongest prior baseline, while running up to 10x faster than prior multi-view methods. Based on the reconstructed scenes, we also generate an embodied visual question answering dataset, on which fine-tuned Qwen-VL approaches the performance of strong closed-source models on several spatial reasoning tasks."
+  },
+  {
+    "title": "LocalNav: Distilling Frontier VLMs and Embodied RL for On-Device Object Goal Navigation",
+    "url": "http://arxiv.org/abs/2606.27871v1",
+    "arxiv_id": "2606.27871v1",
+    "authors": [
+      "Nicolas Baumann",
+      "Liam Boyle",
+      "Pu Deng",
+      "Edoardo Ghignone",
+      "Boyang Sun",
+      "Marc Pollefeys",
+      "Luca Benini",
+      "Michele Magno"
+    ],
+    "published": "2026-06-26T09:11:59+00:00",
+    "summary": "Vision Language Models (VLMs) have emerged in the robotic domain as a powerful tool that enables environmental perception with language context, serving as a catalyst for open-vocabulary tasks like ObjectNav. Yet, their computational footprint typically confines them to cloud execution, hindering low-latency inference with local deployment on resource-constrained robots. To address this challenge, we present a distillation strategy that transfers complex spatial-semantic reasoning from large frontier models into a lightweight, 4B-parameter local VLM for edge execution on embedded GPU devices (e.g., Jetson Orin). We first establish a State of the Art (SotA), Scene Graph (SG)-based pipeline using Claude Sonnet 4.6, achieving a 39.7% Success Rate (SR) on the HM3D OVON benchmark. We then demonstrate that fine-tuning Qwen3.5-4B on just 500 frontier reasoning traces effectively enables navigation capabilities, yielding a SR of 34.5%, narrowing the gap to the performance of large cloud models. Finally, we introduce E-RLVR with Token Generation (TG) regularization to compress output sequence lengths for physical deployment while grounding the agent in its task. This downstream optimization reduces TG overhead by 72.1% and latency by 71.8%. Combined with quantization, this joint strategy yields a cumulative 82.8% reduction in overall inference latency without significantly sacrificing performance, presenting a viable paradigm for local, low-latency VLM execution on mobile robots."
+  },
+  {
+    "title": "hia-gat: A Heterogeneous Interaction-Aware Graph Attention Network For Frame-Level Traffic Conflict Risk Prediction On Freeways",
+    "url": "http://arxiv.org/abs/2606.27577v1",
+    "arxiv_id": "2606.27577v1",
+    "authors": [
+      "Mahshid Malazizi",
+      "Seyedmehdi Khaleghian",
+      "Mina Sartipi",
+      "Toru Hirano",
+      "Yunfei Xu",
+      "Hoang H. Nguyen"
+    ],
+    "published": "2026-06-25T22:04:54+00:00",
+    "summary": "This paper formulates frame-level freeway risk assessment as a multi-agent scene graph-level binary classification problem, where each video or trajectory frame is labeled risky if any TTC- or PET-based conflict violates a specified severity threshold. We construct a relation-aware graph per frame with vehicles as nodes and two interaction types as edges: same-lane (longitudinal) and adjacent-lane (lateral), augmented with physics-informed edge features aligned to rear-end and lane-change conflict mechanisms. Building on a structured benchmarking suite of non-graph models and graph baselines, we propose HIA-GAT, a dual-stream heterogeneous graph attention network that processes longitudinal and lateral interactions through dedicated attention pathways and fuses them via a conflict-type-aware gating mechanism with event-level gate supervision derived from SSM conflict attribution. Experiments on the NGSIM I-80 and US-101 freeway datasets across nine TTC and PET threshold configurations show that HIA-GAT achieves the best average risk-ranking performance (AUC 0.835 on I-80 and 0.867 on US-101), with the largest gains on PET-only (lane-change) settings where relational structure is essential. Beyond accuracy, the learned gate provides interpretable per-vehicle attribution of dominant conflict type, supporting actionable, real-time freeway safety monitoring. We show that graph structure is critical for modeling lateral conflict risk, while longitudinal risk can often be captured by non-relational aggregation."
+  },
+  {
+    "title": "Not All Relations Rotate Alike: Transformation-Aware Decoupling for Viewpoint-Robust 3D Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2606.27412v1",
+    "arxiv_id": "2606.27412v1",
+    "authors": [
+      "Jingjun Sun",
+      "Chaowei Wang",
+      "Zhirui Liu",
+      "Jiaxu Tian",
+      "Ming Yang",
+      "Yaoxing Wang",
+      "Shan Gao"
+    ],
+    "published": "2026-06-25T14:44:40+00:00",
+    "summary": "3D Scene Graph Generation (3DSGG) represents 3D scenes as structured object-relation-object graphs, providing a compact relational abstraction for spatial understanding. In embodied intelligence settings, the same 3D scene may be observed by agents from viewpoints that differ by yaw rotations. However, current 3DSGG models often fail to produce relation predictions that follow the expected transformation behavior under such viewpoint shifts. This behavior reveals an empirical mismatch related to predicate-level transformation heterogeneity: directional predicates such as left, front, right, and behind should transform with the observation frame, whereas most contact, support, and semantic predicates such as standing on and attached to should remain stable. To reduce this mismatch, we propose Transformation-Aware Decoupling (TAD), a viewpoint-robust 3DSGG framework that decouples relation reasoning according to predicate transformation behavior and is supported by viewpoint-stable object representations. TAD decomposes relation reasoning into two parts: one learns cues that should stay stable across viewpoints, while the other learns directional cues that should change with the observation frame. The two parts are merged for standard multi-label predicate prediction. Transformation-specific descriptors and group-aware auxiliary supervision encourage the two branches to capture complementary relation cues. Extensive experiments on 3DSSG show that TAD achieves state-of-the-art robustness under yaw viewpoint changes without training-time rotation augmentation, while maintaining competitive performance under the standard benchmark. The project page is available at https://tad-predicate.github.io/."
+  },
+  {
     "title": "UAV-MapFusion: RTK-Aligned Uncertainty-Aware Coarse-to-Fine Multi-Session UAV Mapping",
     "url": "http://arxiv.org/abs/2606.26928v1",
     "arxiv_id": "2606.26928v1",
