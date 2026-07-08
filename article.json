@@ -1,5 +1,35 @@
 [
   {
+    "title": "Revisiting Scene Graph Generation from the Perspective of Detector-Conditioned Reachability",
+    "url": "http://arxiv.org/abs/2607.06176v1",
+    "arxiv_id": "2607.06176v1",
+    "authors": [
+      "Runfeng Qu",
+      "Pia K Bideau",
+      "Ole Hall",
+      "Julie Ouerfelli-Ethier",
+      "Klaus Obermayer",
+      "Olaf Hellwich"
+    ],
+    "published": "2026-07-07T11:53:32+00:00",
+    "summary": "Scene graph generation (SGG) approaches can be broadly classified into detector-based and query-based methods according to their underlying reasoning mechanisms. However, the discrepancy in their predictive behaviors, induced by these distinct mechanisms, has not been systematically analyzed. In this work, we design a controlled experimental setup to examine prediction discrepancies from the perspective of detector-conditioned reachability. The results suggest clear complementary clues. Motivated by this observation, we introduce a Dual-SGG method that consolidates both reasoning mechanisms via a dual-query design, thereby leveraging the complementary predictive behaviors of both detector-based and query-based methods. Extensive experiments on the Visual Genome, Open Images v6, and GQA-200 datasets demonstrate the effectiveness of the proposed method."
+  },
+  {
+    "title": "Scene Graph Thinking: Reinforcing Structured Visual Reasoning for Multimodal Large Language Models",
+    "url": "http://arxiv.org/abs/2607.05716v1",
+    "arxiv_id": "2607.05716v1",
+    "authors": [
+      "Zhiwei Yang",
+      "Yuanchen Wu",
+      "Nan Zhang",
+      "Yucong Meng",
+      "Ke Yan",
+      "Shouhong Ding"
+    ],
+    "published": "2026-07-07T01:00:51+00:00",
+    "summary": "Multimodal Large Language Models (MLLMs) have demonstrated strong perception and reasoning capabilities. However, most existing models focus on isolated objects and neglect structured relationships for efficient target navigation, limiting their performance on visually intensive tasks. To address this challenge, we introduce Scene Graph Thinking (SaGe), a novel paradigm that enables fine-grained and structured visual reasoning through explicit scene-graph representations. Specifically, we first introduce an automated data engine that converts flat image-text corpora into structured scene graphs, where hierarchical entities constitute the nodes and diverse visual relations define the edges. Building upon this, we construct 120K high-quality training data by sampling reasoning traces from scene graphs. Then, two-stage graph-aligned post-training paradigms are introduced, where supervised fine-tuning internalizes MLLMs with structured reasoning, and subsequent reinforcement fine-tuning proposes node-as-proxy graph rewards to consolidate efficient graph exploration. With curated data and graph-aligned training, our approach achieves significant improvements across eight multimodal benchmarks, demonstrating strong effectiveness on fine-grained perception and reasoning tasks. Code is available at https://github.com/zwyang6/SaGe."
+  },
+  {
     "title": "Beyond Isolated Objects: Relationship-aware Open Vocabulary Scene Understanding via 3D Scene Graph Analysis",
     "url": "http://arxiv.org/abs/2607.05348v1",
     "arxiv_id": "2607.05348v1",
