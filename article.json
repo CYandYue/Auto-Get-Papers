@@ -1,5 +1,36 @@
 [
   {
+    "title": "PUF: Plug-and-Play Uncertainty-Aware Fusion for Online 3D Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2607.07170v1",
+    "arxiv_id": "2607.07170v1",
+    "authors": [
+      "Yi Yang",
+      "Myrna Castillo",
+      "Bodo Rosenhahn",
+      "Michael Ying Yang"
+    ],
+    "published": "2026-07-08T09:05:52+00:00",
+    "summary": "Online 3D scene graph generation builds a persistent, structured representation of a scene by incrementally fusing 2D observations into a global 3D graph. Existing online methods treat this fusion as a fully deterministic pipeline, where we identify three sources of uncertainty that are overlooked: observation, 2D model, and 3D representation. We propose PUF: a Plug-and-play, Uncertainty-aware, and training-free Fusion framework. Scene graph node association is reformulated as a probabilistic likelihood over semantic and spatial factors, replacing binary accept/reject gates. Dirichlet evidence accumulation distributes class and relationship evidence across plausible candidates proportional to association likelihood. An optional class-conditional prior completes edges for sparsely or never co-observed object pairs. We instantiate PUF with both a 3D Gaussian and a 3D voxel backend and observe consistent improvements, demonstrating its ability to generalize across different representations. Experiments on the 3DSSG and ReplicaSSG benchmarks show that our method substantially outperforms existing approaches while maintaining real-time latency. These results establish uncertainty-aware fusion as a principled and effective paradigm for online 3D scene understanding. The source code is publicly available at https://github.com/yyyyangyi/PUF."
+  },
+  {
+    "title": "CompoVista: A Composition-Graph-Based Visual Analytics System for Compositional Analysis of Traditional Chinese Paintings",
+    "url": "http://arxiv.org/abs/2607.07105v1",
+    "arxiv_id": "2607.07105v1",
+    "authors": [
+      "Dekun Qian",
+      "Ruiqi Yu",
+      "Fengling Zheng",
+      "Li Ye",
+      "Yize Li",
+      "Weigui Zheng",
+      "Yigang Wang",
+      "Jinchang Li",
+      "Zhiguang Zhou"
+    ],
+    "published": "2026-07-08T07:41:18+00:00",
+    "summary": "Composition in Traditional Chinese Paintings (TCPs) carries spatial, narrative, and cultural-aesthetic meaning. Systematic compositional analysis is therefore important for understanding their visual language and artistic meaning. Traditional compositional analysis is mainly qualitative and interpretation-driven. It supports close reading of individual paintings, but it is difficult to discover, compare, and verify compositional patterns across large painting collections. To better understand these challenges, we conducted a literature review and in-depth interviews with two art historians. Based on these findings, we introduce the Composition Graph, a scene-graph-based representation for TCP composition. It models a painting through four layers: entities, relations, void space, and context. Based on this representation, we develop CompoVista, a canvas-based visual analytics system for composition-oriented exploration of TCPs. CompoVista allows art historians to construct and revise format-aware painting cohorts through visual queries and context queries. It also supports cohort-level inspection of entity distributions and relations, comparison of compositional differences across cohorts, and tracing aggregate patterns back to painting-level evidence.We evaluated CompoVista through a task-based user study with 12 domain participants, two case studies, and expert interviews. The results show that CompoVista supports composition-oriented cohort construction, pattern discovery, iterative refinement, and evidence inspection. The evaluation also reveals future needs, including clearer result explanations, fuzzier composition queries, and stronger exploration history management. Our work contributes a composition-specific structured representation and an integrated visual analytics workflow for studying TCP composition at collection scale."
+  },
+  {
     "title": "Revisiting Scene Graph Generation from the Perspective of Detector-Conditioned Reachability",
     "url": "http://arxiv.org/abs/2607.06176v1",
     "arxiv_id": "2607.06176v1",
