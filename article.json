@@ -1,5 +1,36 @@
 [
   {
+    "title": "Hydra++: Real-Time Hierarchical 3D Scene Graph Construction With Object-Level Shape Estimation",
+    "url": "http://arxiv.org/abs/2607.09455v1",
+    "arxiv_id": "2607.09455v1",
+    "authors": [
+      "Hyungtae Lim",
+      "Nathan Hughes",
+      "Xihang Yu",
+      "Ruihan Xu",
+      "Yun Chang",
+      "Jingnan Shi",
+      "Rajat Talak",
+      "Luca Carlone"
+    ],
+    "published": "2026-07-10T14:24:16+00:00",
+    "summary": "3D scene graphs provide a hierarchical abstraction of environments by encoding spatial entities, such as objects and places, and their relationships. However, existing scene graph systems model object geometry coarsely, relying on partial point clouds or class-level CAD templates, which limits instance-specific shape detail. This paper presents Hydra++, a system-level investigation into how learning-based object shape estimators can be integrated into a hierarchical 3D scene graph pipeline. Hydra++ incorporates category-agnostic shape estimation and a reprojection-mask consistency check to reject degenerate predictions from partial observations or imprecise segmentation. In its default CRISP-based configuration, Hydra++ performs online scene graph construction; slower estimators such as SAM3D are evaluated as modular alternatives to demonstrate generalization-latency trade-offs. Furthermore, to address the challenges of sparse and noisy depth measurements in outdoor environments, Hydra++ supports a hybrid LiDAR-camera configuration for large-scale operation, improving scene-level reconstruction quality. Experiments in both simulation and real-world outdoor campus scenarios demonstrate that Hydra++ improves object- and scene-level reconstruction quality. Project page is available at https://hydra-plusplus.github.io/."
+  },
+  {
+    "title": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
+    "url": "http://arxiv.org/abs/2607.09059v1",
+    "arxiv_id": "2607.09059v1",
+    "authors": [
+      "Kunbo Zhang",
+      "Lei Fu",
+      "Zeyu Wang",
+      "Zijing Liu",
+      "Kejian Tong"
+    ],
+    "published": "2026-07-10T03:03:42+00:00",
+    "summary": "We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driven feedback for the next turn. These agents communicate through a shared differentiable blackboard and are scheduled by a learned meta controller. The design combines structured program search with adaptive multi turn correction, improving reasoning efficiency and solution quality on challenging abstract transformation tasks."
+  },
+  {
     "title": "PUF: Plug-and-Play Uncertainty-Aware Fusion for Online 3D Scene Graph Generation",
     "url": "http://arxiv.org/abs/2607.07170v1",
     "arxiv_id": "2607.07170v1",
