@@ -1,5 +1,20 @@
 [
   {
+    "title": "T-STAR: A Large-Scale Benchmark for Spatio-Temporal Panoptic Scene Graph Generation in Satellite Video",
+    "url": "http://arxiv.org/abs/2607.21228v1",
+    "arxiv_id": "2607.21228v1",
+    "authors": [
+      "Linlin Wang",
+      "Xue Yang",
+      "Zhihuang Zhou",
+      "Zhenyu Zhong",
+      "Ruiyuan Zhang",
+      "Yansheng Li"
+    ],
+    "published": "2026-07-23T11:44:11+00:00",
+    "summary": "Structured understanding of satellite video is essential for advancing dynamic geospatial scene analysis from low-level perception to high-level cognition. To move beyond object-centric perception, this paper introduces spatio-temporal panoptic scene graph generation (TPSG) in satellite video as a new benchmark task. TPSG aims to generate a structured graph composed of a set of triplets <subject, relationship, object> with explicit temporal spans, thereby describing dynamic geospatial scenes by jointly modeling identity-consistent instance masks and spatio-temporal relationships among panoptic scene elements. However, there is still no dedicated dataset for TPSG in satellite video. Moreover, TPSG in satellite video is intrinsically challenging, as objects are often small and weakly textured, cross-frame association is easily disrupted by occlusion and background clutter, and relationship semantics are highly coupled with spatial structure and temporal evolution. Consequently, TPSG models developed for natural videos are not directly applicable to satellite video. This paper presents T-STAR, a large-scale benchmark dataset for TPSG in satellite video, comprising over 1.1 million instance masks and over 3.8 million spatio-temporal triplets across 39 fine-grained object categories and 70 fine-grained relationship categories. To enable TPSG in satellite video, we propose a unified framework to enhance cross-frame instance consistency and spatio-temporal relationship prediction. Extensive experiments demonstrate the significance of T-STAR and the effectiveness of the proposed framework, establishing a strong benchmark for future research on structured satellite video understanding. The dataset and code are available at https://github.com/linlin-dev/T-STAR."
+  },
+  {
     "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
     "url": "http://arxiv.org/abs/2607.18116v1",
     "arxiv_id": "2607.18116v1",
