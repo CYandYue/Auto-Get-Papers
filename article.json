@@ -1,5 +1,17 @@
 [
   {
+    "title": "Geometric 2D Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2607.22325v1",
+    "arxiv_id": "2607.22325v1",
+    "authors": [
+      "Christoph Jahn",
+      "Urs Waldmann",
+      "Bastian Goldluecke"
+    ],
+    "published": "2026-07-24T14:03:24+00:00",
+    "summary": "In production processes for consumer products, assembly instructions are essential not only for planning but also for executing the production process. Likewise in robotics, it is crucial for an assembly robot to understand how components fit together and can be assembled. To facilitate these tasks, we contribute a method for constructing scene graphs to represent and characterize assembly relationships between components. Our approach does not rely on semantic data and is capable of handling a very small dataset. To realize this, the output of a Faster R-CNN model is used to create geometric representations, which are then processed by a transformer architecture to generate an adjacency matrix. This matrix serves as input to a Siamese network that uses message passing based on an attentional graph convolutional network (aGCN) architecture to characterize the connections between the components. We validate our method on a study dataset of toy model components which can be assembled into transportation vehicles."
+  },
+  {
     "title": "T-STAR: A Large-Scale Benchmark for Spatio-Temporal Panoptic Scene Graph Generation in Satellite Video",
     "url": "http://arxiv.org/abs/2607.21228v1",
     "arxiv_id": "2607.21228v1",
