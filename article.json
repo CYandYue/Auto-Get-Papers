@@ -1,5 +1,20 @@
 [
   {
+    "title": "Surgical Re-enactment for Operating Room Workflow Datasets",
+    "url": "http://arxiv.org/abs/2607.24206v1",
+    "arxiv_id": "2607.24206v1",
+    "authors": [
+      "Jana Nina Friedrich",
+      "Andrea Karin Maria Ross",
+      "Angelo Henriques",
+      "Mario Peter Martin Weisser",
+      "Ling Zhang",
+      "Mohammad Ali Nasseri"
+    ],
+    "published": "2026-07-27T09:34:46+00:00",
+    "summary": "The introduction of new technologies, such as surgical robots, is driving the vision of a connected, smart operating room (OR). However, realizing this vision requires a deep understanding of surgical workflows, which relies on realistic datasets capturing the actions of all OR personnel from both full room and surgical field perspectives. Acquiring such data in real ORs is prohibitively challenging due to factors such as ethics committee approvals, limited space for camera installation, and sterility regulations preventing the use of tracking markers. We present a step-by-step methodology for re-enacting complete surgical procedures in a reconstructed OR. This approach enables the creation of repeatable and annotatable workflow datasets for training activity recognition models, generating scene graphs, and formalizing surgical process models. Developed for robot-assisted ophthalmic surgery, our methodology combines expert consultation, structured workflow formalization, OR reconstruction, role-based training, real OR observation, and iterative recording with post-take debriefing. We provide concrete recommendations to allow other research groups to seamlessly adopt this methodology for their own surgical domains."
+  },
+  {
     "title": "Geometric 2D Scene Graph Generation",
     "url": "http://arxiv.org/abs/2607.22325v1",
     "arxiv_id": "2607.22325v1",
