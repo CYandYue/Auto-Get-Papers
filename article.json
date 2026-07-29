@@ -1,5 +1,16 @@
 [
   {
+    "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
+    "url": "http://arxiv.org/abs/2607.25236v1",
+    "arxiv_id": "2607.25236v1",
+    "authors": [
+      "Jiaxin Bai",
+      "Jiaxuan Xiong"
+    ],
+    "published": "2026-07-28T03:23:47+00:00",
+    "summary": "Different research lines use the term world model in different ways, yet they share a common aim: to capture how the world evolves under action in a form that supports perception, simulation, and planning. Two prominent realizations are neural predictors that learn dynamics in continuous vector spaces, and hand-built physics engines that expose explicit state and physical laws. Neural predictors scale from data but leave the form of the dynamics implicit; physics engines are inspectable and editable but difficult to construct at scale. We introduce VisualPatchWorld (VPW), which represents world dynamics as code. VPW first selects a qualitative dynamical form with short active probes, then fits that form's free parameters from recorded state-action traces by minimizing multi-step prediction error. The resulting programs can be rolled forward like a simulator, inspected in source form, and used inside model-predictive control; image-derived scene graphs can supply the live state at replan time. Across comparisons with prior code-based world models, VPW attains 69.0% mean planning success and exceeds the strongest code baseline by 23.5 points. The largest gains arise when choosing the correct qualitative dynamics is essential. Under the same planner, the induced models approach ground-truth engine success on navigation and grasp-rich control; a residual gap remains for contact-rich pushing, and checking a shortlist of promising plans in the engine closes most of that gap. These results establish a practical route toward automatically constructed code world models that are useful for planning. Code is available at https://github.com/HKBU-KnowComp/VisualPatchWorld/."
+  },
+  {
     "title": "Surgical Re-enactment for Operating Room Workflow Datasets",
     "url": "http://arxiv.org/abs/2607.24206v1",
     "arxiv_id": "2607.24206v1",
