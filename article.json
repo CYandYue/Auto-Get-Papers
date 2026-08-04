@@ -1,5 +1,33 @@
 [
   {
+    "title": "TBSG-Net: Temporal Bipartite Scene Graph Network for Fine-Grained Video Moment Retrieval",
+    "url": "http://arxiv.org/abs/2608.02056v1",
+    "arxiv_id": "2608.02056v1",
+    "authors": [
+      "Ji Huang",
+      "Yongsheng Dai",
+      "Tianyu Ren",
+      "Barry Devereux",
+      "Hui Wang"
+    ],
+    "published": "2026-08-03T10:52:32+00:00",
+    "summary": "Recent advances in proposal-free Video Moment Retrieval (VMR) have highlighted the effectiveness of Static Scene Graphs (SSGs). By modeling objects and their relations at the frame level, SSGs enrich retrieval-oriented video representations. However, integrating SSGs into VMR remains constrained by two inherent limitations: (1) Lack of Temporal Dynamics. SSGs fail to model how objects and their relationships evolve over time, leading to the loss of essential temporal dependencies in video representation; and (2) Lack of Explicit Temporal Span Encoding. SSGs do not explicitly encode the duration of relationships, making precise localization challenging. To address these limitations, we propose Temporal Bipartite Scene Graph Network (TBSG-Net)---to the best of our knowledge, the first Dynamic Scene Graph (DSG) based proposal-free VMR model. Specifically, TBSG-Net leverages DSGs to extract event-centric graph representations of the input video, enabling the modeling of object interactions over time and thus addressing limitation (1). These DSGs are then processed by a novel Dynamic Scene Graph Embedding (DSG-E) module to capture both Temporal Span and spatio-temporal information. First, DSG-E utilizes a TBSG Constructor to transform DSGs into TBSGs, explicitly encoding objects, relationships, and time spans to tackle limitation (2). Second, the resultant TBSGs are passed into a hybrid TBSG Encoder that integrates a Transformer variant for global event modeling and a Graph Convolutional Network for detailed relational reasoning, ultimately producing a more comprehensive spatio-temporal representation. Our experiments demonstrate substantial improvements of TBSG-Net over all baselines."
+  },
+  {
+    "title": "SG-Layout: Structured Scene Graph-Guided Layout Generation with LLMs",
+    "url": "http://arxiv.org/abs/2608.01106v1",
+    "arxiv_id": "2608.01106v1",
+    "authors": [
+      "Junsheng Wang",
+      "Chao Chen",
+      "Mengying Xie",
+      "Mingyan Li",
+      "Fuqiang Gu"
+    ],
+    "published": "2026-08-02T09:11:38+00:00",
+    "summary": "Understanding and generating spatially coherent layouts from natural language remains a fundamental yet challenging task for large language models (LLMs). Existing LLMs often struggle to capture explicit geometric relationships and structural dependencies between objects. To address this issue, we propose SG-Layout, a graph-guided layout generation framework that explicitly incorporates structured spatial knowledge into LLMs. SG-Layout follows a two-stage training paradigm: (1) a graph-language feature alignment stage, where a relational graph encoder and a projector are trained to map scene-graph embeddings into the LLM's linguistic space; and (2) an instruction tuning stage, where LoRA-based adapters enable efficient fine-tuning for instruction-driven layout generation while keeping the backbone frozen. We evaluate SG-Layout on image layout generation, indoor scene synthesis and robotic object rearrangement tasks. Experimental results show that SG-Layout improves spatial reasoning accuracy and geometric consistency over the compact open-source backbone, with particularly clear advantages in relation-dense and compositionally complex scenes. These results highlight the effectiveness of graph-structured feature alignment for enhancing controllable layout generation."
+  },
+  {
     "title": "CinemaTraj: Composing Atomic Camera Trajectories for 3D Scenes with LLM Agents",
     "url": "http://arxiv.org/abs/2607.26910v1",
     "arxiv_id": "2607.26910v1",
