@@ -1,5 +1,35 @@
 [
   {
+    "title": "TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding",
+    "url": "http://arxiv.org/abs/2608.03763v1",
+    "arxiv_id": "2608.03763v1",
+    "authors": [
+      "Qingxi Du",
+      "Junbo Wang",
+      "Yuke Li",
+      "Yining Zhu"
+    ],
+    "published": "2026-08-04T14:51:15+00:00",
+    "summary": "Zero-shot 3D visual grounding aims to localize specific objects based on textual descriptions and 3D visual input. However, the effectiveness of existing methods is significantly hindered by the ambiguous query text and deficient viewpoints. To address these issues, we propose TDVR, a training-free reasoning framework that disambiguates the input text and infers accurate viewpoints for zero-shot 3D visual grounding. First, we construct semantic 3D scene graph from the detected instances in the 3D point cloud. Subsequently, we put the original query, appearance and spatial relationship descriptions into the LLM for fusion, thereby disambiguating the initial input. We leverage chain-of-thought reasoning to generate the structured representation of disambiguated query. Then taking the scene graph and structured query as input, we get the optimal view via viewpoint reasoning to solve the problem of missing viewpoints during grounding. Based on the obtained optimal viewpoint, we further discriminate the distracting objects, enabling the model with the ability to distinguish similar instances. After that, we match the category text and appearance images with the query by computing the similarity of feature vectors. Finally, the target object was identified by integrating the viewpoint score, confusion score, category score, and appearance score. Compared with previous methods, our TDVR has stronger capabilities in viewpoint reasoning, similar object discrimination, and ambiguous query understanding. Experimental results on the public ScanRefer dataset show that our method outperforms the existing state-of-the-art methods by 15.25% and 14.46% in Acc@0.25 and Acc@0.5 respectively, demonstrating the effectiveness of our TDVR in addressing ambiguous query text and deficient viewpoints."
+  },
+  {
+    "title": "Modeling Scientific Experiment Scenes: Dataset and Model",
+    "url": "http://arxiv.org/abs/2608.02892v1",
+    "arxiv_id": "2608.02892v1",
+    "authors": [
+      "Minghao Zou",
+      "Qingtian Zeng",
+      "Shangkun Liu",
+      "Cong Liu",
+      "Paul L. Rosin",
+      "Guanghui Yue",
+      "Jun Liu",
+      "Wei Zhou"
+    ],
+    "published": "2026-08-03T21:20:15+00:00",
+    "summary": "Scene Graph Generation (SGG) is fundamental to structured visual understanding, yet existing benchmarks focus mainly on daily life images and overlook scientific experiment scenes with specialized instruments, task-specific experimental semantics, and dense, fine-grained physical relations. These scenes are increasingly important for automated experimental analysis and smart education. To bridge this gap, we introduce PhysScene, the first SGG dataset for physical experiment scenes, providing densely annotated scene graphs and benchmarks under multiple supervision and protocol settings. PhysScene further exposes two key algorithmic challenges for SGG: pronounced long-tail relational predicate distributions and a substantial visual-textual semantic gap. To address these challenges, we propose the Cross-Modal Dual-Path Generator (CM-DPG), a model for robust open-vocabulary SGG. The model enhances object-level semantic representations through joint visual-textual encoding and improves relational reasoning using complementary visual and geometric cues. We also incorporate relation-aware pre-training, caption-derived pseudo-supervision, and adaptive weighting to support balanced learning across head and tail predicates. Extensive experiments on PhysScene and VG150 show that CM-DPG achieves competitive performance across multiple evaluation settings, with ablation studies validating the contribution of each component. The dataset and code are publicly available at https://github.com/ZMH-SDUST/CM-DPG."
+  },
+  {
     "title": "TBSG-Net: Temporal Bipartite Scene Graph Network for Fine-Grained Video Moment Retrieval",
     "url": "http://arxiv.org/abs/2608.02056v1",
     "arxiv_id": "2608.02056v1",
