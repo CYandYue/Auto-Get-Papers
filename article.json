@@ -1,5 +1,21 @@
 [
   {
+    "title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
+    "url": "http://arxiv.org/abs/2608.04425v1",
+    "arxiv_id": "2608.04425v1",
+    "authors": [
+      "Yupu Lu",
+      "Shuang Wu",
+      "Sihan Chen",
+      "Ruihua Han",
+      "Yichen Zhang",
+      "Marcus Kalander",
+      "Jia Pan"
+    ],
+    "published": "2026-08-05T04:09:16+00:00",
+    "summary": "Subtask labels decompose a long-horizon manipulation demonstration into shorter semantic segments for policy training and evaluation. Natural language descriptions are easy to read, but their linguistic variability makes automatic verification difficult. Rigid template formats, such as BEHAVIOR-1K's skill_annotation, are linguistically over-segmented, hindering both readability and annotation consistency. We propose the Structured Subtask Chain (SSC), a state-transition representation that bridges these extremes. A demonstration is a sequence of Structured Subtask Template (SST) entries. Each SST stores core action components (subject, predicate, object), flexible conditions (adverbial modifiers such as spatial or instrumental phrases), a base-motion field separate from arm actions, and an after-state scene graph. Built on this format, SSC supports three vision-language assisted functions: rendering SSTs as natural language, checking the assembled chain against four state-transition rules, and completing underspecified fields through a query resolution cascade. We instantiate the pipeline on BEHAVIOR-1K (50 tasks, 3 episodes per task, 2,357 annotated action cells) for logic verification and content completion, evaluating 13 selected state-of-the-art VL models as candidate verifiers and reporting labelling anomalies."
+  },
+  {
     "title": "TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding",
     "url": "http://arxiv.org/abs/2608.03763v1",
     "arxiv_id": "2608.03763v1",
