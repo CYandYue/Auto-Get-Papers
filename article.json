@@ -1,5 +1,18 @@
 [
   {
+    "title": "Prior-SG: Task and Prior Driven Region Segmentation for Scene Graphs in Arbitrarily-Structured Environments",
+    "url": "http://arxiv.org/abs/2608.06170v1",
+    "arxiv_id": "2608.06170v1",
+    "authors": [
+      "Giorgio Tonetti",
+      "Laurent Kneip",
+      "Abel Gawel",
+      "Marco Hutter"
+    ],
+    "published": "2026-08-06T15:36:12+00:00",
+    "summary": "Hierarchical 3D scene graphs are a promising representation for high-level spatial reasoning in autonomous mobile platforms. However, existing extraction frameworks typically rely on purely local visual clustering or strict geometric heuristics, such as wall-separated rooms, which fail in open-plan or arbitrarily-structured environments. We propose Prior-SG, a task- and prior-driven framework that casts scene graph generation fundamentally as a probabilistic alignment problem. As the robot explores, it continuously aggregates an incoming RGB-D sensor stream into a physically grounded Instance Graph utilizing a multi-scale, open-vocabulary feature fusion strategy. The system then infers the high-level functional semantics of this map through a Maximum A Posteriori (MAP) estimate, guided by a Prior Graph-a logical expectation of the environment's structure and task-relevant vocabulary synthesized dynamically by a Large Language Model. By optimizing a Markov Random Field that fuses heterogeneous experts (visual, geometric, and discrete objects) with these topological priors, the system resolves local perceptual ambiguities. We validate this approach across diverse simulated residential datasets and large, open-plan real-world environments. Prior-SG achieves state-of-the-art semantic region segmentation accuracy compared to recent baselines, robustly delineates distant functional boundaries in the absence of physical walls, and uniquely provides zero-shot ontological flexibility, enabling the robot to entirely restructure its spatial partitioning based on a given high-level task."
+  },
+  {
     "title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
     "url": "http://arxiv.org/abs/2608.04425v1",
     "arxiv_id": "2608.04425v1",
@@ -32,6 +45,23 @@
     "title": "Modeling Scientific Experiment Scenes: Dataset and Model",
     "url": "http://arxiv.org/abs/2608.02892v1",
     "arxiv_id": "2608.02892v1",
+    "authors": [
+      "Minghao Zou",
+      "Qingtian Zeng",
+      "Shangkun Liu",
+      "Cong Liu",
+      "Paul L. Rosin",
+      "Guanghui Yue",
+      "Jun Liu",
+      "Wei Zhou"
+    ],
+    "published": "2026-08-03T21:20:15+00:00",
+    "summary": "Scene Graph Generation (SGG) is fundamental to structured visual understanding, yet existing benchmarks focus mainly on daily life images and overlook scientific experiment scenes with specialized instruments, task-specific experimental semantics, and dense, fine-grained physical relations. These scenes are increasingly important for automated experimental analysis and smart education. To bridge this gap, we introduce PhysScene, the first SGG dataset for physical experiment scenes, providing densely annotated scene graphs and benchmarks under multiple supervision and protocol settings. PhysScene further exposes two key algorithmic challenges for SGG: pronounced long-tail relational predicate distributions and a substantial visual-textual semantic gap. To address these challenges, we propose the Cross-Modal Dual-Path Generator (CM-DPG), a model for robust open-vocabulary SGG. The model enhances object-level semantic representations through joint visual-textual encoding and improves relational reasoning using complementary visual and geometric cues. We also incorporate relation-aware pre-training, caption-derived pseudo-supervision, and adaptive weighting to support balanced learning across head and tail predicates. Extensive experiments on PhysScene and VG150 show that CM-DPG achieves competitive performance across multiple evaluation settings, with ablation studies validating the contribution of each component. The dataset and code are publicly available at https://github.com/ZMH-SDUST/CM-DPG."
+  },
+  {
+    "title": "Modeling Scientific Experiment Scenes: Dataset and Model",
+    "url": "http://arxiv.org/abs/2608.02892v2",
+    "arxiv_id": "2608.02892v2",
     "authors": [
       "Minghao Zou",
       "Qingtian Zeng",
