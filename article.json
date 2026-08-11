@@ -1,5 +1,70 @@
 [
   {
+    "title": "SafeSceneReason: A Multimodal Reasoning Benchmark Connecting Industrial Hazards with Accident Knowledge",
+    "url": "http://arxiv.org/abs/2608.09230v1",
+    "arxiv_id": "2608.09230v1",
+    "authors": [
+      "Yuanchi Zhu",
+      "Kang An",
+      "Tengyue Wang",
+      "Zhongyu Yang",
+      "Chenxu Du",
+      "Xinqi Yang",
+      "Hebao Zhu",
+      "Bokai Zhao",
+      "Tianyu Liang",
+      "Ziliang Wang",
+      "Faqiang Qian",
+      "Yunli Yang",
+      "Weiyang Shi",
+      "Qibing Ren"
+    ],
+    "published": "2026-08-10T07:53:54+00:00",
+    "summary": "Industrial-safety understanding requires more than detecting workers, equipment, and personal protective equipment. Models must also assess compliance, identify hazardous interactions, explain potential accident mechanisms, and recommend preventive actions. Existing safety datasets primarily focus on visual perception or isolated violation recognition and provide limited supervision for evidence-grounded reasoning. We introduce SafeSceneReason, a multimodal industrial-safety reasoning benchmark and companion training corpus that connects workplace scenes with knowledge from occupational accident investigations. SafeSceneReason combines two complementary data-construction pipelines. The scene-centric pipeline converts annotated workplace images into executable safety scene graphs and generates deterministic answers through program execution over objects, relations, and safety rules. The report-centric pipeline extracts figures and contextual evidence from accident reports and constructs multimodal questions using evidence graphs, explicit information boundaries, multi-step reasoning paths, and iterative verification. The resulting resource contains 110,581 verified scene-centric question--answer pairs and 13,114 refined report-centric question--answer pairs, covering perception, spatial and quantitative reasoning, compliance assessment, evidence synthesis, causal analysis, and mitigation-oriented decision making. Evaluation of representative proprietary and open-source vision--language models reveals substantial performance differences and persistent weaknesses in comparative, technical, and multi-evidence reasoning, demonstrating that strong general visual understanding does not yet guarantee reliable industrial-safety reasoning."
+  },
+  {
+    "title": "Dependency-Aware Reliability Allocation for Open-Vocabulary Scene-Graph Semantic Packets over Latency- and Energy-Constrained Wireless Visual Uplinks",
+    "url": "http://arxiv.org/abs/2608.08110v1",
+    "arxiv_id": "2608.08110v1",
+    "authors": [
+      "Yuli Liu",
+      "Jiacheng Ruan"
+    ],
+    "published": "2026-08-08T12:45:56+00:00",
+    "summary": "Wireless visual perception uplinks increasingly transmit structured semantic packets rather than raw images or opaque feature tensors. In an open-vocabulary scene graph, an indexed subject-relation-object triplet is interpretable only if its own packet and all prerequisite vocabulary-increment packets are recovered, creating a dependency structure not captured by conventional packet-loss, layer-priority, or semantic-feature HARQ rules. We study dependency-aware reliability allocation for such packets under expected frame-delay and frame-energy constraints. The model separates vocabulary-increment and indexed-triplet packets, builds their prerequisite graph, and derives Chase-combining HARQ residual failure, feedback-aware delay and energy, and dependency-aware semantic distortion. The resulting finite discrete problem jointly selects each packet's modulation and coding scheme, transmit power, and maximum HARQ depth. Unlike fixed-priority UEP, a vocabulary packet receives a shared downstream enabling value that depends on the current reliabilities of other prerequisite and triplet packets. Exploiting the resulting multi-affine distortion structure, the proposed semantic-dependency Lagrangian block method performs exact finite-candidate minimization for each packet update. In a small-scale exhaustive audit over 30 reduced-menu instances, the method reaches the global optimum in 28 cases, with mean and worst observed relative gaps of 0.052% and 1.10%. Analytical link-budget sweeps, public scene-graph traces, multi-session and multi-seed validation, and table-driven BLER tests show lower vocabulary-induced semantic failure and higher critical-query success than dependency-agnostic HARQ, semantic-priority HARQ, priority UEP, UEP-only, and uniform HARQ."
+  },
+  {
+    "title": "EgoTrack3D: A Modular Framework for Egocentric 3D Object Tracking",
+    "url": "http://arxiv.org/abs/2608.08016v1",
+    "arxiv_id": "2608.08016v1",
+    "authors": [
+      "Jan Kulik",
+      "Bjarni Dagur Thor Karason",
+      "Yung-Hsu Yang",
+      "Boyang Sun",
+      "Marc Pollefeys",
+      "Xi Wang"
+    ],
+    "published": "2026-08-08T08:53:54+00:00",
+    "summary": "Understanding 3D scenes from egocentric video is fundamental for robotics and autonomous navigation, yet rapid viewpoint changes and partial occlusions make building structured representations challenging. Existing 3D tracking and scene graph construction methods primarily address explicit interactions or assume static scenes, limiting their ability to capture complex dynamics. We introduce EgoTrack3D, a modular framework that reconstructs and maintains a dynamic 3D scene representation directly from egocentric RGB video. The framework lifts 2D segmentation masks into a global 3D coordinate frame, using a point-based motion scoring mechanism alongside a voxel-based merging heuristic to associate object tracks. EgoTrack3D maintains accurate representations over time, achieving an 11% improvement in percentage of correct locations (PCL) relative to the strongest baseline on the Aria Digital Twin (ADT) dataset, while addressing the more general setting of persistent 3D tracking for both static and dynamic objects. Furthermore, to demonstrate the system's robustness under degraded conditions that simulate real-world deployment constraints, we replace dense depth maps with sparse 3D bounding box estimation and integrate interaction-guided dynamic association, enabling EgoTrack3D to maintain accurate spatial representations despite noisy observations."
+  },
+  {
+    "title": "GraphThink: Graph-Enhanced LLM Thinking for Long-Horizon Embodied Task Planning",
+    "url": "http://arxiv.org/abs/2608.07905v1",
+    "arxiv_id": "2608.07905v1",
+    "authors": [
+      "Chen Li",
+      "Sijie Cheng",
+      "Yuelin Zhang",
+      "Junxi Li",
+      "Maozhi Huang",
+      "Yang Liu",
+      "Wenbing Huang"
+    ],
+    "published": "2026-08-08T04:05:05+00:00",
+    "summary": "Embodied agents using LLM-based planners often struggle with physical hallucinations, poor generalization to long-horizon tasks, and lack of environmental awareness. We propose GraphThink, a novel framework that integrates a task graph to provide structured knowledge for robust planning and a scene graph to maintain environmental memory for event-driven replanning. Specifically, the task graph guides LLM thinking through contextual prompting and iterative refinement, effectively mitigating planning hallucinations. Furthermore, within the GRPO framework, the task graph offers delicate reward design to train the LLM planner, enhancing long-horizon planning capabilities and improving generalization. Finally, an event-driven replanning module, powered by the scene graph, enables closed-loop environment awareness and error correction. GraphThink achieves state-of-the-art performance on the ALFRED benchmark. In particular, our high-level planner surpasses leading API-based LLMs on both the validation set and held-out long-horizon tasks, underscoring its robust zero-shot and few-shot capabilities. Additional evaluations further demonstrate strong out-of-distribution generalization to novel tasks and environments."
+  },
+  {
     "title": "Prior-SG: Task and Prior Driven Region Segmentation for Scene Graphs in Arbitrarily-Structured Environments",
     "url": "http://arxiv.org/abs/2608.06170v1",
     "arxiv_id": "2608.06170v1",
