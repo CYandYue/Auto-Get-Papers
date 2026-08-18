@@ -1,5 +1,45 @@
 [
   {
+    "title": "Sterilizable Scene Graph Generation for Operating Rooms",
+    "url": "http://arxiv.org/abs/2608.16469v1",
+    "arxiv_id": "2608.16469v1",
+    "authors": [
+      "Nick Lemke",
+      "Ssharvien Kumar Sivakumar",
+      "Antoine P. Sanner",
+      "John Kalkhof",
+      "Henry John Krumb",
+      "Ghazal Ghazaei",
+      "Anirban Mukhopadhyay"
+    ],
+    "published": "2026-08-17T12:06:49+00:00",
+    "summary": "Scene graph generation from surgical video enables a holistic and structured understanding of surgical scenes by modeling objects and their semantic relationships. Despite recent advances, state-of-the-art approaches rely on large, parameter-heavy deep learning models that are impractical for deployment in the operating room (OR) due to hardware footprint, hygiene constraints, latency, and data privacy concerns. To the best of our knowledge, this is the first scene graph generation method built on NCAs and the first NCA framework capable of learning structured representations. We introduce SG-NCA, a lightweight scene graph generation framework based on Neural Cellular Automata (NCA), designed for inference in fanless devices critical for OR hygiene protocols. SG-NCA is the first scene graph generation combining NCA-based multiclass segmentation for efficient object detection and feature extraction with a lightweight relation predictor. We evaluate SG-NCA on videos of cataract surgery and cholecystectomy, demonstrating performance comparable to established baselines while requiring 55x fewer parameters. We showcase deployment on fanless edge devices better suited for the OR and demonstrate downstream applications such as surgical video captioning, highlighting SG-NCA's potential for affordable, privacy-preserving, and OR-ready intraoperative scene understanding."
+  },
+  {
+    "title": "SAGE-OR: Semi-supervised Adaptive Scene Graph Generation for Operating Rooms",
+    "url": "http://arxiv.org/abs/2608.15336v1",
+    "arxiv_id": "2608.15336v1",
+    "authors": [
+      "Brandon Leblanc",
+      "Charalambos Poullis"
+    ],
+    "published": "2026-08-15T17:32:48+00:00",
+    "summary": "Current surgical scene graph generation methods depend on dense multi-modal supervision and specialized hardware (synchronized RGB-D sensors, calibration rigs), making dataset construction expensive and restricting all existing benchmarks to simulated environments. We propose SAGE-OR, a feature-centric framework that replaces the traditional detect-then-reason paradigm with a decoupled representation-reasoning paradigm in which localization is derived from frozen foundation models, encoded implicitly in pre-computed features, and used without any localization supervision, while a lightweight graph transformer performs relational reasoning over cached features. We employ a semi-supervised formulation with general-purpose segmentation prompts to eliminate localization supervision while enabling unsupervised context augmentation through additional prompt-driven entities, such as hands, which are absent from annotations. General-purpose prompts are used to induce near-perfect recall, while precision is delegated to downstream attention-based reasoning, enabling simple adaptation to new entities via prompt-level modification. This design enables a lightweight 15M-parameter graph transformer that trains in 1.4 hours and runs relational inference at $\\sim$1ms per frame with peak memory under 2GB, suitable for edge hardware used in the operating room; feature extraction runs offline as a separate caching stage (4.27s per frame). On the 4D-OR benchmark, the core model achieves 76% F1, matching the fully supervised 4D-OR baseline while eliminating all localization annotations, and unsupervised hand augmentation raises this to 86%, within 4 points of state-of-the-art (SOTA) methods requiring dense multi-modal supervision, providing a practical pathway for adaptation to new surgical settings without annotation other than relationship and class labels."
+  },
+  {
+    "title": "OvDSGG: End-to-End Open-Vocabulary Dynamic Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2608.14835v1",
+    "arxiv_id": "2608.14835v1",
+    "authors": [
+      "John Helsby",
+      "Yi Yang",
+      "Bodo Rosenhahn",
+      "Michael Ying Yang"
+    ],
+    "published": "2026-08-14T19:12:40+00:00",
+    "summary": "Dynamic scene graphs (DSGs) capture spatio-temporal interactions across videos as $\\langle$subject, predicate, object$\\rangle$ triplets, and underpin downstream tasks such as video captioning, video question answering, and action analysis. However, end-to-end dynamic scene graph generation (DSGG) methods are closed-set: they recognize only objects and predicates from a fixed training vocabulary and struggle with the long-tailed distribution of rare concepts, severely limiting their real-world applicability. Existing open-vocabulary models typically inherit pretrained large language models, resulting in multi-stage training and inference with substantial cost. We introduce OvDSGG, the first end-to-end framework for open-vocabulary DSGG. OvDSGG builds on top of an open-vocabulary Spatial Backbone and a Temporal Backbone; we further propose a Triplet Feature Extraction Module that bridges them, and a Visual-Language Alignment Module that preserves open-vocabulary recognition by learning an adaptive decision boundary in the joint visual-language feature space, without expensive knowledge distillation in existing methods. We further introduce a rigorous open-vocabulary DSGG benchmark adapted from Action Genome, with disjoint Base/Novel splits for both objects and predicates. OvDSGG significantly outperforms open-vocabulary baselines across all metrics, with zero-shot Recall@$K$ scores 10.0--20.4 percentage point higher than the next-best baseline, while on closed-set DSGG remaining competitive with state-of-the-art models. Code and benchmark are publicly available at https://github.com/jhelsby/OvDSGG/."
+  },
+  {
     "title": "OpenBelief-Nav: Evidence-Preserving Object Memory for Open-Vocabulary Language-Guided Navigation",
     "url": "http://arxiv.org/abs/2608.13923v1",
     "arxiv_id": "2608.13923v1",
