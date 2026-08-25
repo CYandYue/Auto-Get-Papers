@@ -1,5 +1,24 @@
 [
   {
+    "title": "SuperMap: A Spatio-Temporal SLAM System for Visual-Language Navigation",
+    "url": "http://arxiv.org/abs/2608.22896v1",
+    "arxiv_id": "2608.22896v1",
+    "authors": [
+      "Shibo Zhao",
+      "Guofei Chen",
+      "Honghao Zhu",
+      "Zhiheng Li",
+      "Changwei Yao",
+      "Nader Zantout",
+      "Seungchan Kim",
+      "Wenshan Wang",
+      "Ji Zhang",
+      "Sebastian Scherer"
+    ],
+    "published": "2026-08-24T07:25:14+00:00",
+    "summary": "Robotic navigation in human environments requires a spatio-temporal semantic representation that can rec- oncile open-vocabulary perception with long-term environmental changes. While foundation models provide strong zero-shot recognition, their predictions are intermittent and view-dependent, and naively integrating them into mapping pipelines leads to identity drift and stale semantics over time. We present SuperMap, a 4D spatio-temporal mapping framework for language-guided navigation that integrates high-frequency geometric SLAM with asynchronous open-vocabulary perception. Our core contribution is a consistency-driven mapping engine that combines 3D-aware instance association/re-activation with a principled existence-and-label confidence update to maintain stable object identities and prune outdated map content under occlusions and scene changes. SuperMap produces a queryable 4D scene-graph representation that interfaces naturally with Vision-Language Models by supporting compositional queries over object semantics, relations,   We demonstrate SuperMap on benchmarks and real robots, including dynamic scenes with appearance/disappearance and relocation, and provide ablations and runtime analysis. We release the full system as open-source to provide the community with a deployable baseline for open-vocabulary spatio-temporal mapping. Project website: superodometry.com/supermap."
+  },
+  {
     "title": "G3Ego: Gaze-Guided Graphs for Egocentric Action Understanding",
     "url": "http://arxiv.org/abs/2608.20157v1",
     "arxiv_id": "2608.20157v1",
