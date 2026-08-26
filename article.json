@@ -1,5 +1,66 @@
 [
   {
+    "title": "Scalable Question-Centric Text-to-Image Evaluation: Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing",
+    "url": "http://arxiv.org/abs/2608.24112v1",
+    "arxiv_id": "2608.24112v1",
+    "authors": [
+      "Shaoan Zhao",
+      "Fang Zhao",
+      "Xueqiang Guo",
+      "Xinpei Su",
+      "Huanlin Gao",
+      "Qiang Hui",
+      "Ting Lu",
+      "Fuyuan Shi",
+      "Chao Tan",
+      "Bikun Yang",
+      "Kai Wang",
+      "Shiguo Lian"
+    ],
+    "published": "2026-08-25T06:20:18+00:00",
+    "summary": "Modern text-to-image (T2I) models often have similar total scores but different strengths, making practical selection difficult. Fine-grained benchmarks decompose prompts into questions, yet often return them to prompt scores and fixed categories, weakening attribution and ignoring complexity. Related requirements are also scored separately or as one total, obscuring basic versus compositional failure. We present QC-T2I-Bench, a question-centric framework that converts open prompts into attributed atomic questions and organizes their dependencies with Davidsonian Scene Graphs (DSGs). We use hierarchy-constrained question aggregation to exclude downstream questions after a prerequisite fails and to prevent simple and complex prompts from receiving the same total weight. We then use the DSG structure to measure joint success within prompts and compare repeated entities across prompts, separating basic realization failures from failures under additional requirements. We evaluate multiple open-source T2I models on English and Chinese prompts. The resulting question-level evidence supports reliable ranking and fine-grained diagnosis: joint completion falls from 80.7\\% for components with two capabilities to 37.2\\% for those with seven or more. Finally, we reuse the same records for training-free routing; our cost-aware router matches ERNIE's 89.51-point estimate with 21.3\\% less GPU-s/MP."
+  },
+  {
+    "title": "ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation",
+    "url": "http://arxiv.org/abs/2608.24103v1",
+    "arxiv_id": "2608.24103v1",
+    "authors": [
+      "JooYoung Jang",
+      "Taegyeong Lee",
+      "Jihyeon Park",
+      "Nojun Kwak"
+    ],
+    "published": "2026-08-25T06:05:17+00:00",
+    "summary": "Commercial design platforms increasingly edit documents through large language model (LLM) agents, but two practical problems block reliable deployment: legacy document formats expose only \\emph{flat}, absolutely positioned elements, so agents must recompute coordinates and routinely break layouts; and design has no unique ground truth, so diff-against-reference metrics penalize valid-but-different outputs. We present \\textbf{ACE}, an agentic canvas editor over a \\emph{hierarchical scene-graph} with a presentation-specialized action space (98 tools), paired with \\textbf{CARE}, a content-aware router that feeds the agent only the relevant slice of each deck (avg.\\ $\\sim$89\\% input-token reduction), and a \\emph{self-correction} loop driven by a \\emph{ground-truth-free} instruction-following (IF) judge whose natural-language critique is fed back as the next-turn instruction. With a fixed backbone, a scene-graph editor in a \\emph{single turn} already matches a same-backbone \\emph{agentic} HTML pipeline that iterates internally; adding self-correction lifts ACE significantly above it on instruction following (IF 4.23 vs.\\ 3.81 on the full 94-task benchmark, paired $p{=}.010$, replicated by an out-of-loop judge) at 1.75$\\times$ the speed and $\\sim$44\\% lower cost. VQ means are statistically indistinguishable, but 26 blind raters prefer ACE overall (58.7\\% decisive win-rate) and prefer the self-corrected output 81\\% of the time; the ranking is invariant across three judge families, and out-of-loop judges retain two-thirds of the self-correction gain, bounding circularity. 66\\% of cases halt after one pass, and a strict-peak rollback removes every observed regression."
+  },
+  {
+    "title": "LUX: A Lesion-Aware Graph-Conditioned Visual - Language Architecture for Explainable Endoscopic Captioning",
+    "url": "http://arxiv.org/abs/2608.23853v1",
+    "arxiv_id": "2608.23853v1",
+    "authors": [
+      "Alexis Ivan Escamilla-Lopez",
+      "Gilberto Ochoa-Ruiz",
+      "Salvador Hinojosa",
+      "Sharib Ali"
+    ],
+    "published": "2026-08-24T21:51:19+00:00",
+    "summary": "The interpretation of endoscopic imagery in ulcerative colitis is complex and subjective, with variability in human assessment and subtle mucosal inflammation. Although deep learning has advanced automated analysis, most vision-language models rely on global visual embeddings that overlook the localized and relational nature of pathological evidence, limiting clinical reliability and interpretability.   We introduce LUX (Lesion-aware Unified eXplainable captioning), a graph-conditioned vision-language architecture for explainable endoscopic image captioning. LUX constructs a lesion-centric scene graph from Grad-CAM and CBAM activation maps, representing pathological regions as nodes and encoding their spatial and clinical relationships. These graph embeddings are integrated into the cross-attention layers of a T5 decoder, enabling generated words to attend to specific lesion nodes rather than only to global image features. This provides direct alignment between linguistic content and pathological evidence, supporting token-level interpretability and relational reasoning.   LUX outperforms strong baseline and state-of-the-art medical captioning models across BLEU, METEOR, ROUGE-L, and CIDEr, with particularly strong gains in CIDEr. It also reduces hallucinated clinical findings and improves lesion-level grounding through stronger correspondence between generated tokens and localized pathological regions."
+  },
+  {
+    "title": "Concept-Guided Exploration: Building Persistent, Actionable Scene Graphs",
+    "url": "http://arxiv.org/abs/2608.23650v1",
+    "arxiv_id": "2608.23650v1",
+    "authors": [
+      "No\u00e9 Zapata",
+      "Gerardo P\u00e9rez",
+      "Alejandro Torrej\u00f3n",
+      "Pedro N\u00fa\u00f1ez",
+      "Pablo Bustos"
+    ],
+    "published": "2026-08-24T10:08:48+00:00",
+    "summary": "The perception of 3D space by mobile robots is rapidly moving from flat metric grid representations to hybrid metric-semantic graphs built from human-interpretable concepts. While most approaches first build metric maps and then add semantic layers, we explore an alternative, concept-first architecture in which spatial understanding emerges from asynchronous concept agents that directly instantiate and manage semantic entities. Our robot employs two spatial concepts (room and door), implemented as autonomous processes within a cognitive distributed architecture. These concept agents cooperatively build a shared scene graph representation of indoor layouts through active exploration and incremental validation. The key architectural principle is hierarchical constraint propagation: Room instantiation provides geometric and semantic priors to guide and support door detection within wall boundaries. The resulting structure is maintained by a complementary functional principle based on prediction-matching loops. This approach is designed to yield an actionable, human-interpretable spatial representation without relying on any pre-existing global metric map, supporting scalable operation and persistent, task-relevant understanding in structured indoor environments."
+  },
+  {
     "title": "SuperMap: A Spatio-Temporal SLAM System for Visual-Language Navigation",
     "url": "http://arxiv.org/abs/2608.22896v1",
     "arxiv_id": "2608.22896v1",
