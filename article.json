@@ -1,5 +1,19 @@
 [
   {
+    "title": "Towards Faithful and Efficient Semantic Communication: An Ontological Approach",
+    "url": "http://arxiv.org/abs/2608.25422v1",
+    "arxiv_id": "2608.25422v1",
+    "authors": [
+      "Yixiao Feng",
+      "Yueting Wang",
+      "Yining Wang",
+      "Han Han",
+      "Bo Zhang"
+    ],
+    "published": "2026-08-26T06:24:53+00:00",
+    "summary": "In this paper, an ontology-driven semantic communication (ODSC) framework is proposed for multi-view visual question answering (VQA) tasks. In the considered framework, multiple transmitters observe a scene, extract the semantic information (SI) with vision-language models (VLMs), and transmit the scene graphs to a receiver. Due to the completeness, heterogeneity, and uninterpretability of the VLMs, the extracted scene graphs are redundant, ambiguous, and inconsistent. To solve these problems, the transmitters and the receiver share an ontology-based knowledge base that predefines synonyms, inference rules, and consistency constraints. For each transmitter, the proposed ODSC framework removes the partial scene graph that can be inferred based on the inference rules. For the receiver, the proposed framework aligns the SI of different views based on the synonyms and detects the inconsistency among the views based on the constraints. A metric of multi-view VQA accuracy (MVA) is defined to evaluate the proposed framework. Simulation results show that, compared with transmitting the complete scene graphs, the proposed framework reduces the data size of the SI by up to 87.1% while improving the answering accuracy by 4.5%. Moreover, the proposed framework yields up to a 16.0% improvement in terms of the MVA compared with the SI filtering approaches."
+  },
+  {
     "title": "Scalable Question-Centric Text-to-Image Evaluation: Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing",
     "url": "http://arxiv.org/abs/2608.24112v1",
     "arxiv_id": "2608.24112v1",
