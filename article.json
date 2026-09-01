@@ -1,5 +1,68 @@
 [
   {
+    "title": "Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling",
+    "url": "http://arxiv.org/abs/2608.30821v1",
+    "arxiv_id": "2608.30821v1",
+    "authors": [
+      "Minghan Qin",
+      "Yuang Wang",
+      "Xiuyu Yang",
+      "Yushi Long",
+      "Yujian Zhang",
+      "Ruihuan Wang",
+      "Kai Ye",
+      "Yangang Zhang",
+      "Hang Li"
+    ],
+    "published": "2026-08-31T14:03:20+00:00",
+    "summary": "Composable scene modeling aims to recover a real indoor scene as complete, editable object assets arranged as observed, giving robot simulation and embodied AI a simulation-ready replica of the real environment whose objects can be manipulated individually. Existing pipelines decompose the task into three steps---parse the observations into instances, generate an asset for each, and place each asset back---but every step presumes an input that a cluttered capture rarely provides: accurate instance geometry, unoccluded views, and assets that accurately match the observations. We propose Lucida, which keeps this order but redistributes the requirements, so each step consumes only what a real capture reliably provides and precision is reached at the end of the pipeline rather than demanded at its start. Lucida parses the video into a scene graph whose nodes carry per-instance multi-view evidence, generates a complete asset for each instance from its evidence, and places assets with GizmoAct, a VLM policy that casts placement as multi-turn GUI interaction, manipulating the object's gizmo in a closed loop and deciding itself when alignment is reached. Across scene-level 3D object detection, object pose estimation, and scene reconstruction, Lucida improves mAP over Boxer by 69% on R2S-Scene, raises ADD-SB@0.05 from 57.8% to 83.4% on CA-1M, and increases scene F-Score from 0.794 for SAM3D to 0.924."
+  },
+  {
+    "title": "Learning Compositional Spatio-Temporal Video Grounding with Synthetic Curriculum",
+    "url": "http://arxiv.org/abs/2608.30584v1",
+    "arxiv_id": "2608.30584v1",
+    "authors": [
+      "Xingjian Wang",
+      "Shijian Wang",
+      "Yibo Wang",
+      "Zihao Yu",
+      "Runhao Fu",
+      "Xuelian Cheng",
+      "Zongyuan Ge"
+    ],
+    "published": "2026-08-31T11:01:31+00:00",
+    "summary": "Despite the impressive progress of recent MLLMs on spatio-temporal video grounding (STVG), existing evaluations and training data focus primarily on simple queries. They largely overlook the compositional queries prevalent in real-world scenarios, where a target must be disambiguated by jointly reasoning about its attributes and relations to other entities. To bridge this gap, we propose Compositional Spatio-Temporal Video Grounding (CompSTVG), a task that requires models to process complex textual queries where every intertwined attribute and relational cue is essential for disambiguation. To facilitate this task at scale, we build a synthetic data engine that leverages a spatio-temporal scene graph as a difficulty measure and casts difficulty-controlled query synthesis as a constraint programming problem, producing difficulty-graded data for both evaluation and training. Built on this engine, we introduce STVG-CompBench, a benchmark stratified by explicit difficulty levels that jointly capture temporal complexity and spatial interference. Evaluating 11 representative STVG models on STVG-CompBench reveals that current models perform poorly on compositional queries, exhibiting a sharp performance drop that is typically obscured by overall dataset-level averages. We further construct synthetic training data and propose CurrSTVG, a curriculum reinforcement learning framework that delivers consistent gains, with the largest improvements observed on the most challenging compositional queries."
+  },
+  {
+    "title": "CGFM-Nav: Cognitive Graph-Field Memory for Semantic-Guided Lifelong Multimodal Embodied Navigation",
+    "url": "http://arxiv.org/abs/2608.29114v1",
+    "arxiv_id": "2608.29114v1",
+    "authors": [
+      "Yuxiang Xiao",
+      "Xibei Chen",
+      "Xin Zhou",
+      "Jie Chen",
+      "Yifeng Zhang",
+      "Guillaume Sartoretti"
+    ],
+    "published": "2026-08-29T07:54:38+00:00",
+    "summary": "Vision-and-Language Navigation (VLN) requires agents to reason over accumulated observations while continuously exploring unseen regions. However, existing environment representations often struggle to jointly support explicit semantic memory and continuous exploration guidance. To address this challenge, we propose Cognitive Graph-Field Memory (CGFM), a persistent multimodal scene representation that couples explicit relational memory with continuous spatial intuition. CGFM organizes objects, spatial relations, and visual observations into a multimodal scene graph, enabling target retrieval and long-horizon reasoning across navigation tasks. When no reliable target match is identified, graph-based evidence is projected into a goal-conditioned semantic-frontier field to guide exploration toward semantically promising frontiers and regions. Building upon CGFM, we introduce CGFM-Nav, a foundation-model-based framework for lifelong multimodal navigation that integrates task-relevant subgraph selection, VLM reasoning, and verification feedback into a closed decision loop. Preliminary experiments on GOAT-Bench show that, under the same Qwen3-VL-8B backbone, CGFM-Nav improves the overall success rate from 53.2% to 63.0% and SPL from 30.0% to 39.6%, demonstrating the effectiveness of combining explicit semantic memory with semantic-guided exploration."
+  },
+  {
+    "title": "Generation of High-Level Concepts in 3D Scene Graphs via Autoregressive Diffusion",
+    "url": "http://arxiv.org/abs/2608.28733v1",
+    "arxiv_id": "2608.28733v1",
+    "authors": [
+      "Jose Andres Millan-Romera",
+      "Samuel Cognolato",
+      "Holger Voos",
+      "Jose Luis Sanchez-Lopez",
+      "Luciano Serafini"
+    ],
+    "published": "2026-08-28T17:41:37+00:00",
+    "summary": "Indoor 3D Scene Graphs (3DSGs) represent environments as multi-layer hierarchies that connect observed geometric primitives (e.g., planes) to higher-level metric-semantic concepts (e.g., rooms, floors, buildings), enabling incremental spatial reasoning for robotic perception and SLAM. However, classical high-level concept generation approaches rely on hand-crafted rules for specific concept classes, while learning-based methods require separate models for graph structure and spatial node features (e.g., centroids), which limits scalability to novel classes and more complex hierarchies. We propose a unified autoregressive diffusion-based graph generative model that jointly learns structure and features, constructing complete 3DSGs bottom-up from observed vertical planes across arbitrary hierarchy depths. Our method consistently surpasses all learning-based and random baselines across 3DSG datasets spanning synthetic scenes, real architectural floor plans, and robotic sensor data, with varying layout complexity and hierarchy depth, and surpasses a one-shot model with oracle access to the target graph size on the largest hierarchy and on real single-floor data. Finally, we propose an adaptation of the Fused Gromov--Wasserstein distance for principled graph-level evaluation of generated 3DSGs against ground truth."
+  },
+  {
     "title": "STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation",
     "url": "http://arxiv.org/abs/2608.28279v1",
     "arxiv_id": "2608.28279v1",
