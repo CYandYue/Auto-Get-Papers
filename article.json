@@ -1,5 +1,30 @@
 [
   {
+    "title": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.03892v1",
+    "arxiv_id": "2609.03892v1",
+    "authors": [
+      "Junqing Du",
+      "Fernando Ropero",
+      "Erkin Turkoz",
+      "Yanfeng Zhang",
+      "Lu Liu"
+    ],
+    "published": "2026-09-03T14:11:56+00:00",
+    "summary": "3D spatial reasoning underpins understanding and acting in the physical world, yet it remains unreliable in current multimodal large language models (MLLMs). These models falter at precise geometric measurement, at transforming between egocentric and allocentric viewpoints, and at grounding fine-grained appearance. The most common remedies fine-tune the model on large-scale curated spatial-reasoning datasets or attach dedicated encoders for 3D geometry, which typically couples the solution to costly supervision and a specific backbone. We instead introduce GraFT, a training-free framework that supplies the missing 3D structure through a compact, easily maintained 3D scene graph (3DSG). From this 3DSG, GraFT provides three spatial reasoning capabilities: (1) deterministic geometry through symbolic tools, (2) allocentric layout through a bird's-eye-view (BEV) rendering, and (3) visual-attribute grounding through task-relevant egocentric frames. On ScanQA, GraFT improves every metric over the same-backbone baseline, raising CIDEr by 27%. On VSI-Bench, GraFT improves frozen MLLMs by up to 65%, surpassing every proprietary and general-purpose open-source baseline, and several prominent fine-tuned spatial models."
+  },
+  {
+    "title": "A hybrid pipeline for dynamic ontology-based semantic mapping",
+    "url": "http://arxiv.org/abs/2609.03891v1",
+    "arxiv_id": "2609.03891v1",
+    "authors": [
+      "Konstantinos Dimitropoulos",
+      "Ioannis Hatzilygeroudis"
+    ],
+    "published": "2026-09-03T14:11:21+00:00",
+    "summary": "Semantic mapping plays a crucial role in the ability of a robot to interact with objects, operate and navigate a complex environment. The most common pipeline for semantic mapping consists of geometric mapping and localization (SLAM), perception, semantic fusion and semantic representation. However, more recent works also integrate a form of prior knowledge in their application, most notably knowledge graphs or semantic scene graphs, to improve contextual understanding of the environment. In this paper, we present a hybrid pipeline for semantic mapping. Our system incorporates an external calibrated camera using homography projection for geometric mapping and localization, combined with object detection, persistent object tracking and ontology driven semantic updates to build a dynamic semantic world model. Linear regression models are also used for correction of the estimated values of real world coordinates. The system continuously updates object instances, spatial properties and semantic relations based on real time sensory data. Ontologies are selected as form of knowledge representation due to their hierarchical structure, semantic expressiveness and support for dynamic world modelling."
+  },
+  {
     "title": "SG-AMP: Scene-Graph-Guided Active Perception and Semantics-Aware Motion Planning for Pepper Plants",
     "url": "http://arxiv.org/abs/2609.01579v1",
     "arxiv_id": "2609.01579v1",
