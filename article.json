@@ -1,5 +1,31 @@
 [
   {
+    "title": "Commonsense Reasoning in Computer Vision: Foundations, Recent Advancements, and Future Directions",
+    "url": "http://arxiv.org/abs/2609.05257v1",
+    "arxiv_id": "2609.05257v1",
+    "authors": [
+      "Bahar Uddin Mahmud",
+      "Sumit Barua",
+      "Guan Yue Hong",
+      "Ajay Gupta",
+      "Hexu Liu"
+    ],
+    "published": "2026-09-04T15:19:37+00:00",
+    "summary": "Commonsense reasoning in computer vision encompasses integrating visual data and contextual knowledge, crucial for enhancing AI's understanding of everyday scenarios. This understanding not only improves machine learning models but also enhances their ability to interact meaningfully with humans and the environment. Unlike CNN-based conventional vision models, which are designed to identify objects within a specific image, incorporating commonsense knowledge enables models to interpret scenes in a more holistic manner, thereby improving their spatial ability to reason about relationships among objects and actions. This integration not only enhances object recognition but also facilitates a deeper understanding of the contextual factors, ultimately leading to more precise predictions and interactions in real-world applications. This paper presents a comprehensive survey of recent developments that integrate commonsense knowledge into computer vision tasks. We systematically review approaches based on knowledge graphs, scene graphs, neuro-symbolic models, and commonsense-augmented transformers. We also outline current limitations related to dataset bias, knowledge incompleteness, and integration challenges. Finally, we highlight prospective research trajectories in cross-modal reasoning, scalable commonsense knowledge injection, and neuro-symbolic hybrid architectures to develop truly intelligent visual systems."
+  },
+  {
+    "title": "Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study",
+    "url": "http://arxiv.org/abs/2609.04607v1",
+    "arxiv_id": "2609.04607v1",
+    "authors": [
+      "Chad R. Samuelson",
+      "Gabriel R. Slade",
+      "Joshua G. Mangelson"
+    ],
+    "published": "2026-09-04T01:14:09+00:00",
+    "summary": "Three-dimensional scene graphs (3DSGs) have emerged as a promising approach for building geometrically grounded, semantically informed, hierarchical general-purpose maps to support high-level robotic reasoning. However, the behavior of 3DSGs in real-world outdoor deployments remains poorly understood, particularly when combined with open-set vision-language models (VLMs). In this field report, we analyze the components common to most 3DSG representations across five outdoor robotic datasets to characterize challenges that arise in complex outdoor environments. Using the recently proposed Terra 3DSG as a case study, we investigate semantic point embeddings, place-node graph navigation, region-level understanding, and memory size across the five diverse datasets. We additionally introduce novel consistency metrics to evaluate whether semantic and structural graph properties remain stable across repeated traversals of the same environment. Our analysis reveals that outliers and multiple modes are common in VLM point embeddings across all tested datasets with outlier ratios above $0.1$ for around $30\\%$ of points. We demonstrate the feasibility of outdoor 3DSGs for navigation-based object retrieval, achieving success rates near $70\\%$, though performance is limited by traversability failures and inefficient routing, with trajectories averaging approximately $66\\%$ suboptimal path efficiency. Region-level understanding remains challenging in complex natural environments, with low average F1 scores around $0.359$. Overall, our results show that outdoor 3DSGs can maintain compact (less than $600$MB for multi-kilometer trajectories) and relatively consistent large-scale environment representations, while highlighting open challenges in handling multiple semantic modes, incorporating traversability into graph structures, and improving higher-level region understanding."
+  },
+  {
     "title": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
     "url": "http://arxiv.org/abs/2609.03892v1",
     "arxiv_id": "2609.03892v1",
