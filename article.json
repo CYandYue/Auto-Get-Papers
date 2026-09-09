@@ -1,5 +1,74 @@
 [
   {
+    "title": "STSG-VQA: Evidence-Grounded Temporal Question Answering from Surgical Spatio-Temporal Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.08543v1",
+    "arxiv_id": "2609.08543v1",
+    "authors": [
+      "Jing Li",
+      "Duygu Sarikaya"
+    ],
+    "published": "2026-09-08T10:27:02+00:00",
+    "summary": "Despite recent advances in surgical vision-language models (VLMs), temporal reasoning remains limited because existing supervision is largely frame-centric. Frame-level scene graphs (SGs) have proven effective in providing structured representations of surgical environments but do not explicitly model the dynamics of surgical workflows. To explicitly model how surgical states evolve across time, we introduce a multi-level structured temporal supervision methodology that augments frame-level surgical SGs with object-level continuity, event-level interaction continuity, and procedure-level connectivity. We then execute temporal queries over the resulting spatio-temporal scene graphs (STSGs) to generate evidence-grounded question-answer pairs, which together form the STSG-VQA benchmark. Each question is linked to the temporal interval and STSG evidence used to derive its reference answer, enabling traceable verification. The benchmark contains 18,458 question-answer pairs across seven temporal categories. Fine-tuning Qwen3-VL-4B and Hulu-Med-4B with STSG-derived supervision improves question-level micro accuracy by 24.39 and 19.56 percentage points over their zero-shot baselines and by 16.50 and 14.25 points over static scene-graph supervision, respectively. These gains span all temporal categories, indicating that STSG-derived supervision helps surgical VLMs reason over temporally grounded interactions rather than isolated frames. The code and dataset will be made publicly available upon acceptance."
+  },
+  {
+    "title": "EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments",
+    "url": "http://arxiv.org/abs/2609.08292v1",
+    "arxiv_id": "2609.08292v1",
+    "authors": [
+      "Xilin Wang",
+      "Guoxi Zhang",
+      "Hongming Xu",
+      "Zhuofan Zhang",
+      "Tianxu Wang",
+      "Lifeng Fan"
+    ],
+    "published": "2026-09-08T06:05:05+00:00",
+    "summary": "Lifelong navigation (LN) requires an embodied agent to solve a sequence of navigation subtasks in the same environment. Since solving each subtask from scratch incurs redundant exploration, an LN agent must consolidate experience from earlier stages and reuse it in later stages, often through persistent scene representations such as scene graphs or visual snapshots. However, existing approaches typically assume a stationary environment, whereas in real-world LN settings, human activities can cause the environment to evolve. With the stationary assumption violated, existing methods may fuse outdated prior observations with new observations, yet current benchmarks cannot reveal this failure mode. In this paper, we present EvoNav-Bench, which extends the GOAT-Bench style LN formulation in the context of evolving environments. Built on the ProcTHOR framework, EvoNav-Bench introduces environment modifications between navigation tasks, making prior experience useful but not fully reliable. This design enables controlled evaluation of how environment evolution affects LN agents that reuse prior scene observations. Using EvoNav-Bench, we benchmark three recent methods that build and reuse scene representations for navigation. We also compare three simple heuristic strategies for handling environment evolution: Frontier-Update, Fail-then-Update, and Stage-Reset. Our results show that existing methods are brittle under environment evolution, while the heuristic strategies enable a controlled analysis of how agents can adapt to scene changes and mitigate their impact."
+  },
+  {
+    "title": "CS-CLIP: Compositional Scene Graph-guided CLIP for Robust Compositional Reasoning",
+    "url": "http://arxiv.org/abs/2609.08242v1",
+    "arxiv_id": "2609.08242v1",
+    "authors": [
+      "SeongJun Jeong",
+      "Minjoon Jung",
+      "Woo Suk Choi",
+      "Youwon Jang",
+      "Byoung-Tak Zhang"
+    ],
+    "published": "2026-09-08T04:37:06+00:00",
+    "summary": "Vision-language models (VLMs) demonstrate strong performance across compositional reasoning benchmarks, which require reasoning over semantic perturbations of objects, attributes, relations, and their interactions. However, our controlled analysis reveals that existing compositionality-aware VLMs exhibit element-specific biases, often underperforming vanilla CLIP on certain compositional elements. To address this, we propose Compositional Scene Graph-guided CLIP (CS-CLIP), which uses scene graphs to identify compositional elements and construct structured negatives via selective masking. We further retain negatives that are most contradictory to the original caption, forcing the model to rely on compositional structure rather than surface cues. CS-CLIP achieves state-of-the-art compositional reasoning with robust performance across compositional elements. It also preserves general vision-language capabilities such as cross-modal retrieval and downstream visual reasoning, while requiring fewer training samples than prior methods."
+  },
+  {
+    "title": "Scene Graph-Driven Haptic Feedback for Safety Enhancement in Robotic Ophthalmic Surgery via Physically Simulated iOCT",
+    "url": "http://arxiv.org/abs/2609.07857v1",
+    "arxiv_id": "2609.07857v1",
+    "authors": [
+      "Danial Arbabi",
+      "Korab Hoxha",
+      "Angelo Henriques",
+      "Mirza Imamovic",
+      "M. Ali Nasseri"
+    ],
+    "published": "2026-09-07T18:16:37+00:00",
+    "summary": "Robotic ophthalmic surgery offers high precision but introduces a \"sensory gap\" by decoupling the surgeon from their instrument, resulting in a loss of tactile feedback. This paper presents a novel haptic feedback system for subretinal injection tasks leveraging Scene Graphs (SG). The system bridges the sensory gap by analyzing a physically simulated intraoperative Optical Coherence Tomography (iOCT) feed to construct a real-time surgical SG. The SG serves as a semantic abstraction layer for the surgical scene, which is then utilized by a deterministic, rule-based engine to generate state-dependent haptic feedback on a robotic input device. The system was evaluated in a user study (N=16) using an anthropomorphic head phantom and a custom-built surgical robot. Results demonstrate that the SG-driven haptic feedback improved surgical precision, reducing needle alignment error by 14% (p = 0.044) and improving System Usability Scale (SUS) scores by 8% (p = 0.015), while maintaining comparable task completion times. A needle trajectory analysis revealed the emergence of a safer \"Align-then-Approach\" strategy, in which our haptic negative reinforcement prompted users to fine-tune the tool's trajectory before approaching the retinal target. This work suggests that SGs can effectively serve as the direct computational foundation for real-time, safety-enhancing context-aware haptic feedback in robotic microsurgery."
+  },
+  {
+    "title": "Functional-SLAM: Interaction-Aware Mapping with Online Functional Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.07497v1",
+    "arxiv_id": "2609.07497v1",
+    "authors": [
+      "Xinggang Hu",
+      "Chenyangguang Zhang",
+      "Zihan Zhu",
+      "Ruida Zhang",
+      "Xiangkui Zhang",
+      "Xiangyang Ji"
+    ],
+    "published": "2026-09-07T13:46:56+00:00",
+    "summary": "Existing SLAM systems lack modeling of the functional relations required for fine-grained robotic interaction. Functional 3D scene graphs can represent relations between objects and interaction elements, but existing methods rely on offline reconstruction, making them inadequate for real-time interaction in real-world exploration. To address this limitation, we propose Functional-SLAM, the first framework that continuously and recursively maintains a functional scene graph as an online SLAM state. The framework combines anchor-keyframe geometry with functional-context constraints for persistent node maintenance, accumulates multi-frame evidence through temporal relations to commit stable functional edges, and supplements visual loop-closure candidates with functional topology in scenes with repetitive appearance or degraded texture. Experiments show that Functional-SLAM efficiently constructs stable functional maps online, substantially improving runtime over offline methods while maintaining highly competitive accuracy. Compared with peer SLAM systems, it further improves pose estimation accuracy through functional-topology-assisted loop closure. The code is publicly available at https://github.com/Hbelief1998/Functional-SLAM-CoRL_2026."
+  },
+  {
     "title": "Commonsense Reasoning in Computer Vision: Foundations, Recent Advancements, and Future Directions",
     "url": "http://arxiv.org/abs/2609.05257v1",
     "arxiv_id": "2609.05257v1",
