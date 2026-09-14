@@ -1,5 +1,28 @@
 [
   {
+    "title": "ProClosure: Hierarchical Room-Object Assignment using Progressive Boundary Closure from Monocular Video",
+    "url": "http://arxiv.org/abs/2609.12614v1",
+    "arxiv_id": "2609.12614v1",
+    "authors": [
+      "Vinoth Kumar Muthuraj",
+      "Soumyadeep Banik",
+      "Kushal Sharma",
+      "Hardik Jain"
+    ],
+    "published": "2026-09-11T09:11:47+00:00",
+    "summary": "A 3D scene graph groups objects into rooms. When a robot is asked to fetch an object from the kitchen, that grouping is what tells it where to look. An object recorded in the wrong room is not retrievable by a query naming the correct room. We introduce Progressive Boundary Closure, which recovers room layer from a monocular RGB video. A SLAM front end and an open-vocabulary segmenter supply a structural point cloud, camera trajectory and object tracks. The cloud is rasterised into a top-down map, rooms are recovered from it, and each object takes the room holding most of its extent. The difficulty lies in the map itself. Walls are recorded only where the camera looked, so a gap in the boundary may be a doorway or a stretch of wall that was never observed; nothing distinguishes the two. Prior methods treat both as passages, merging rooms that should remain separate. We observe that both require the same treatment: a room should not extend across either, so both are closed and need not be distinguished. Such an opening closes under a small amount of boundary growth, and few sightlines cross it, so points in different rooms rarely see one another. We use the first to recover rooms and the second to assign objects to them. Rooms are obtained by Progressively thickening the boundary inward and freezing each free-space region once it becomes enclosed, so every opening seals at its own scale rather than at a radius fixed in advance. Camera poses are used as seeds, which removes the sampling heuristic and makes the segmentation deterministic. Over 10 floors of 6 HM3D-Semantics scenes, scored against HOV-SG on identical top-down maps, we recover 74 rooms for 72 annotated regions (HOV-SG: 44), raising room F_1 from 0.741 to 0.890 at IoU 0.25 at some cost in precision, and object-to-room ARI from 0.488 to 0.696 (p=0.002, ahead on every floor)."
+  },
+  {
+    "title": "RelateAnything: Real-Time Open-Vocabulary Relation Prediction From Any Inputs",
+    "url": "http://arxiv.org/abs/2609.12552v1",
+    "arxiv_id": "2609.12552v1",
+    "authors": [
+      "Ma\u00eblic Neau"
+    ],
+    "published": "2026-09-11T07:57:41+00:00",
+    "summary": "Open-vocabulary detection accepts any class list at inference, and promptable segmentation returns regions without class names: the taxonomy has left the model and become an input. Relation prediction has not. Scene-graph models are still trained and evaluated on the 50 or 56 predicates of one annotation style, their relation head conditioned on object labels and so tied to one detector. Three obstacles explain this, none primarily modelling: no relation corpus is both free-text and verified, a label-conditioned architecture cannot accept a vocabulary it was not trained on, and the standard metric rewards agreement with the training corpus, so a larger vocabulary scores as a regression. We present RelateAnything, a 53M-parameter model taking an image and regions from any source and returning scored relations over a predicate vocabulary supplied at inference as strings. Object labels are never an input, so the region source can change without retraining, and the vocabulary is a bank of text embeddings, not a learned classifier. It runs at 20 ms/frame. Training over 19,103 predicates requires positive-unlabeled supervision and a text encoder that separates antonyms, which contrastive encoders embed at cosine 0.95. To supply the supervision we build RA-4M, 474k images and 4.3M relations over 10,102 free-text predicates, generated against numbered box markers and geometrically verified. To measure it we build OV-SGG-Bench, six axes scored across datasets that the priors standard recall rewards cannot satisfy. On three cross-dataset benchmarks and a fourth zero-shot, RelateAnything has 2.3-3.5x the mean recall of the strongest open-vocabulary method of comparable scale, margins that survive a real detector, and leads a 3B-VLM scene-graph model on both metrics at under 2% of its parameters. In-domain measurement overstates transfer gains ~5x. Model, corpus and benchmark are public."
+  },
+  {
     "title": "TrajFusionNet+: Transformer-Based Prediction of Pedestrian Crossing Intention via Fusion of Trajectory Representations and Scene Graphs",
     "url": "http://arxiv.org/abs/2609.10806v1",
     "arxiv_id": "2609.10806v1",
