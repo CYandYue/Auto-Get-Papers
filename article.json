@@ -1,5 +1,63 @@
 [
   {
+    "title": "MessyMem: Learning-from-Doing Memory for Mobile Manipulation",
+    "url": "http://arxiv.org/abs/2609.15976v1",
+    "arxiv_id": "2609.15976v1",
+    "authors": [
+      "Anuva Banwasi",
+      "William Muckelroy",
+      "Priya Sundaresan",
+      "Linfeng Zhao",
+      "Jeannette Bohg",
+      "Cherie Ho"
+    ],
+    "published": "2026-09-14T17:56:49+00:00",
+    "summary": "Mobile manipulators deployed across many rooms and visits should improve with experience: after discovering that a cabinet is locked or finding an object in a drawer, the robot should reuse that knowledge rather than start each task from scratch. Yet today's robots often treat each task as new: compact scene representations omit interaction-derived knowledge, raw video histories are difficult to query, and VLM planners reason at inference time without persistently updating what the robot knows. We present MessyMem, a persistent memory system that enables mobile manipulators to learn from experience and reuse that knowledge across future tasks. It maintains a spatially grounded 3D scene graph of objects and locations, augments it with properties and outcomes learned through interaction, and links visual observations for fine-grained recall. We evaluate MessyMem in simulation and on a real mobile manipulator. In a continuous 25-task simulation spanning over 3 hours, MessyMem achieves 80.0% task progress, outperforming the strongest ablation by 14.8 percentage points and the strongest external baseline by 28.9 points, while retrieving task-relevant evidence from thousands of stored keyframes and over an hour into the past."
+  },
+  {
+    "title": "Goal-Oriented Communications for Physical AI: Design and Testbed",
+    "url": "http://arxiv.org/abs/2609.15895v1",
+    "arxiv_id": "2609.15895v1",
+    "authors": [
+      "Shutong Chen",
+      "Wenkai Zhang",
+      "Adnan Aijaz",
+      "Miao Guo",
+      "Yansha Deng"
+    ],
+    "published": "2026-09-14T17:16:23+00:00",
+    "summary": "Physical AI relies on frequently-updated, latency-sensitive video stream to perceive, reason, and interact with the physical world, resulting in strict latency requirements with much higher data volumes that existing 5G networks cannot support. Goal-oriented communication (GoC) offers as a promising approach to solve this challenge by transmitting only task-relevant semantic representations. However, existing GoC frameworks were mainly evaluated in the simulations while their effectiveness has never been validated in a practical deployment of physical AI application. In this work, we develop an end-to-end GoC testbed for Physical AI, which connects a PiPER robot arm equipped with an RGB-D camera and a 5G modem to an NVIDIA Jetson AGX Orin edge server through a 5G OpenAirInterface network. We propose and implement three GoC frameworks that transmit 3D bounding boxes, 2D scene graphs, and 3D scene graphs, as three types of semantic representations, respectively. They share the common functional modules designed for closed-loop Physical AI applications, including semantic extraction, full stack 5G transmission, language model inference, digital twin validation, and robotic control. Extensive experiments on our testbed show that our GoC frameworks reduce the task completion time by up to 52.6% and improve task success probability by up to 45%, compared to the traditional framework that periodically transmits the raw image data. These results validate the practical effectiveness of our GoC framework and pave the way for efficient and reliable Physical AI applications over future 6G networks. Project website: https://sites.google.com/view/goc-physical-ai-testbed."
+  },
+  {
+    "title": "An Information-Space Perspective to Scene Graph Sufficiency for Robotic Task Planning",
+    "url": "http://arxiv.org/abs/2609.15587v1",
+    "arxiv_id": "2609.15587v1",
+    "authors": [
+      "Ba\u015fak Sak\u00e7ak",
+      "Francesco Verdoja"
+    ],
+    "published": "2026-09-14T13:55:41+00:00",
+    "summary": "Planning in complex environments requires task specifications grounded in representations that capture objects, relations, and affordances; scene graphs meet this need, but their size in large environments hinders efficient planning. While task-aware pruning and hierarchical abstractions have been explored, a general, task-centric formalization of what constitutes a sufficient scene graph for planning remains open. This paper provides such a formalization by modeling planning over scene graphs within an information-spaces framework through the definition of scene graph transition systems and relevant action semantics for navigation and manipulation. We then introduce derived scene graphs via information mappings that merge and prune nodes and induce quotient transition systems augmented with motion primitives to capture higher-level actions over merged graph nodes. Sufficiency is characterized by two conditions: (i) the information mapping yields a deterministic quotient, and (ii) the task is well-posed over derived traces, ensuring plans found on the derived model are feasible on the maximal system. We illustrate the framework using a task over an example environment, showing both sufficient and insufficient reduced scene graphs."
+  },
+  {
+    "title": "ESG: Generating Physically Consistent Dynamic 3D Scenes from Text Descriptions",
+    "url": "http://arxiv.org/abs/2609.15392v1",
+    "arxiv_id": "2609.15392v1",
+    "authors": [
+      "Xintong Fang",
+      "Zhiyuan Fang",
+      "Rengan Xie",
+      "Xuhong Zhang",
+      "Guoyuan An",
+      "Zeran Liu",
+      "Jingyan Zhang",
+      "Jiarui Guo",
+      "Yuchi Huo"
+    ],
+    "published": "2026-09-14T11:19:25+00:00",
+    "summary": "Recent progress in image and 3D scene generation has enabled increasingly realistic static environments, yet most methods remain confined to such static configurations. Generating dynamic scenes from natural language is fundamentally challenging: it requires joint reasoning over scene structure, temporal evolution, and physical feasibility, while ensuring reliable execution in modern physics engines. We present a unified framework for generating physically consistent dynamic 3D scenes from text, with outputs directly executable in Unreal Engine. Central to our approach is the \\emph{Evolutive Scene Graph} (ESG), which specifies entities with physical attributes, spatial relations, and event-driven timelines in a machine-checkable form. Given a prompt, a large language model constructs and validates a complete ESG; spatial layouts are grounded via energy-minimized gradient optimization; timeline-constrained physical parameters are then optimized through differentiable simulation to satisfy user-specified events; and the resulting scene is compiled into an engine-executable class. Experiments on 10 scenes across three complexity levels show that our method achieves $16.4/18$ mean event completion, outperforming Scene Language, the strongest engine-executable baseline (SimWorld), and our ablation without physical optimization by a clear margin in event completion and parameter accuracy."
+  },
+  {
     "title": "ProClosure: Hierarchical Room-Object Assignment using Progressive Boundary Closure from Monocular Video",
     "url": "http://arxiv.org/abs/2609.12614v1",
     "arxiv_id": "2609.12614v1",
