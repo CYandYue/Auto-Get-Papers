@@ -1,5 +1,49 @@
 [
   {
+    "title": "Visual Compliance via Executable Safety Rule Entailment",
+    "url": "http://arxiv.org/abs/2609.18328v1",
+    "arxiv_id": "2609.18328v1",
+    "authors": [
+      "Jisoo Kim",
+      "TaeYoon Kwack",
+      "Jinwoo Jang",
+      "Honguk Woo"
+    ],
+    "published": "2026-09-16T08:53:09+00:00",
+    "summary": "Recent advances in LLMs and VLMs have enabled safety systems to reason beyond simple risk patterns toward more contextual and semantic safety concerns. However, as risk patterns continue to evolve and safety rules become more complex, existing training-based end-to-end safeguards face persistent challenges in adaptability and explainable reasoning over complex safety rules. To address these challenges, we propose GuardEn (Guarding by Safety Rule Entailment), an executable safeguard framework that decomposes safety policies into atomic propositions through Safety-Rule Compilation, modeling their composition as executable code. At test time, Scene-Grounded Execution instantiates these atomic propositions with contextual visual information derived from scene graphs, enabling rule-grounded and interpretable safety reasoning. Experiments on SafetyVisionBench demonstrate the effectiveness of programmable safeguard for complex visual safety assessment, achieving an average improvement of 9.8 F1 points over the strongest baseline."
+  },
+  {
+    "title": "Finder: Agentic Closed-Loop Object Finding for Embodied Grounding",
+    "url": "http://arxiv.org/abs/2609.18058v1",
+    "arxiv_id": "2609.18058v1",
+    "authors": [
+      "Shixiong Xu",
+      "Zhiyuan Chen",
+      "Song Ding",
+      "Rui Luo",
+      "Xiaowei Liang",
+      "Dongxu Miao",
+      "Zhiying Du"
+    ],
+    "published": "2026-09-16T03:02:45+00:00",
+    "summary": "Finding the object referred to by language in a partially observed 3D scene is a core capability for embodied agents. Existing approaches either couple object search with online exploration, which can be costly when relevant observations have already been captured, or query pre-built open-vocabulary maps and scene graphs in a static, one-shot fashion. We present Finder, an agentic closed-loop object-finding primitive for embodied grounding. Instead of treating grounding as passive retrieval from a fixed scene representation, Finder maintains a typed loop state that links query-conditioned planning, scoped evidence gathering, candidate verification, and accept/continue/abort control. When evidence is incomplete or ambiguous, the loop can redirect subsequent perception and comparison rather than simply returning the top retrieved object. On open-vocabulary embodied Object Retrieval in Habitat/HM3D and real-world RGB-D scenes, Finder improves the averaged 1m success rate by 15.75 points over strong baselines. The same primitive also transfers to sequential object grounding and embodied object-centric question answering, improving spatial and temporal localization without changing the inner grounding protocol. Project page: https://finder-vln.github.io."
+  },
+  {
+    "title": "HINT-Plan: Human Intention-Aware Robot Task Planning in Context-Rich Environments using Vision Language Models",
+    "url": "http://arxiv.org/abs/2609.17771v1",
+    "arxiv_id": "2609.17771v1",
+    "authors": [
+      "Yuchen Liu",
+      "Luigi Palmieri",
+      "Lujun Li",
+      "Radu State",
+      "Ilche Georgievski",
+      "Marco Aiello"
+    ],
+    "published": "2026-09-15T19:24:35+00:00",
+    "summary": "Approaches to incorporating human awareness into mobile robot decision-making mainly focus on collision avoidance in low-level motion planning, often overlooking the challenges posed by human presence and high-level behavior. To address this vacancy, we present HINT-Plan, a novel approach to integrate human intention prediction into robot task planning. HINT-Plan employs Vision Language Models (VLMs) to anticipate high-level human intentions from third-person image observations, convert them into goal states, and solve joint task-planning problems. To effectively enable scene awareness in context-rich environments, we use hierarchical Scene Graphs (SGs) as high-level representations of the environment, and translate environmental topology and actionable knowledge into formal planning language to ensure executable plans. Evaluated in a photorealistic simulation, HINT-Plan achieves an overall success rate of 69.71% in joint human-robot task planning, substantially outperforming the baselines by up to 35.29%, while also reducing functional conflicts. The results show the effectiveness of explicitly incorporating inferred human intentions into formal multi-agent task planning for proactive human-aware robot decision-making."
+  },
+  {
     "title": "MessyMem: Learning-from-Doing Memory for Mobile Manipulation",
     "url": "http://arxiv.org/abs/2609.15976v1",
     "arxiv_id": "2609.15976v1",
