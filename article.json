@@ -1,5 +1,78 @@
 [
   {
+    "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents",
+    "url": "http://arxiv.org/abs/2609.20673v1",
+    "arxiv_id": "2609.20673v1",
+    "authors": [
+      "Dennis Rotondi",
+      "Abdelrhman Werby",
+      "Kai O. Arras"
+    ],
+    "published": "2026-09-17T16:48:05+00:00",
+    "summary": "To operate effectively in human environments, robots must identify articulated objects, segment their movable and interactive parts, and estimate their kinematic models. Existing articulated scene representations typically recover kinematics from observed interactions, while methods operating on static scans often decouple articulation from functional interactive elements. We present FunArt, a framework that constructs articulation-aware functional 3D scene graphs from posed RGB-D observations captured in a single static configuration. FunArt reconstructs object instances, converts their fused geometry directly into the O-Voxel representation of TRELLIS.2, and exploits its frozen, sparse-compression VAE as a structural prior. A lightweight query-based decoder combines compact object-level latents with dense, surface-aligned features to jointly segment movable parts and functional interactive elements while estimating motion type, axis, origin, and range. On the Articulate3D dataset, FunArt achieves state-of-the-art performance across movable-part segmentation, articulation estimation, and functional-element segmentation, both with and without ground-truth object input. In the end-to-end setting, it outperforms the strongest baselines by 1.5 AP_{50} points for movable parts, 2.8 AP_{50} points under joint origin-and-axis constraints, and 6.7 AP_{50} points for functional elements. These results demonstrate that generative 3D latents encode actionable structural cues that can initialize robotic perception and planning before physical interaction."
+  },
+  {
+    "title": "SmellDiffusion: Diffusion-Based Quadruped Navigation with Olfactory Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.20624v1",
+    "arxiv_id": "2609.20624v1",
+    "authors": [
+      "Faith Ogunwoye",
+      "Iana Zhura",
+      "Hajira Amjad",
+      "Timofei Kozlov",
+      "Didar Seyidov",
+      "Dmitrii Plotnikov",
+      "Fedor Fedorov",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2026-09-17T16:09:04+00:00",
+    "summary": "A robot sent to a named gas leak must preserve gas identity, estimate the source, and navigate to the resulting goal. We present SmellDiffusion, a simulation pipeline that represents species-specific gas zones in an open-vocabulary olfactory scene graph and shares the selected goal between classical and diffusion planners. Its key components are a peak-local geometric gate for selective source correction and diffusion-based, gas-guided trajectory generation. Among 424 unique source-wind configurations in solved flow, 28 have a concentration peak displaced more than 0.5m from the source. A source-independent geometric gate, calibrated only on the training split and evaluated at the observed peak, detects 9 of 10 held-out displacements at 0.64 precision. Gating a precomputed forward-matching correction reduces mean error on the displaced cases from 1.468m to 0.592m (60%), using matching for only 14/204 cases. All-case mean error falls from 0.205m to 0.180m. All planners receive the same scene-graph source estimate as their goal. In a controlled comparison, best-of-ten diffusion achieves mean gas exposure comparable to gas-guided A* (0.0476 versus 0.0455). A single diffusion proposal takes 41.7ms, compared with 72.3ms for gas-guided A*, although best-of-ten sequential sampling increases total runtime. Plain A* also reaches the same goal and remains the fastest and shortest-path method. Six matched Gazebo runs give mean robot-to-source errors of 0.39m for A* and 0.31m for diffusion."
+  },
+  {
+    "title": "CitySTAR: Structured and Topology-Aware Reasoning for Open-Vocabulary Urban 3D Grounding",
+    "url": "http://arxiv.org/abs/2609.19911v1",
+    "arxiv_id": "2609.19911v1",
+    "authors": [
+      "Shuai Zhang",
+      "Hongye Hou",
+      "Qinghe Liu",
+      "Zhuoxiao Li",
+      "Dongli Wu",
+      "Jing Ou",
+      "Yuan Liu",
+      "Wufan Zhao"
+    ],
+    "published": "2026-09-17T08:53:13+00:00",
+    "summary": "3D grounding aims to localize target entities in complex scenes from natural language and plays a fundamental role in embodied perception and spatial reasoning. However, existing approaches mostly rely on feature similarity or direct matching, making it difficult to connect natural-language intent with the implicit semantic and geometric structures hidden in billion-scale urban point clouds. We reformulate city-scale 3D grounding as structured constraint reasoning, where description semantics are organized into computable cross-modal constraints over open-vocabulary 3D entities, attributes, and spatial relations. We present CitySTAR, a training-free framework for reasoning-driven urban 3D grounding. CitySTAR lifts raw billion-scale urban point clouds into a query-ready scene graph of open-vocabulary 3D instances, with CodeLLM-driven tools supplying multimodal evidence for node attributes and 3D spatial relations. It then models target-context topology with paired hypergraphs and performs bidirectional topology verification for structural disambiguation. Finally, a Reflective Cross-modal Grounding module integrates topology consistency and candidate-centered 2D visual evidence to make decisions over a metric-aware 3D context graph. To further support this setting, we introduce CitySTAR-3D, an enhanced benchmark that improves semantic coverage, instance completeness, bounding-box fidelity, and spatial-relation complexity in city-scale 3D grounding. Extensive experiments show that CitySTAR consistently improves open-world urban 3D grounding while maintaining strong interpretability and generalization."
+  },
+  {
+    "title": "SnapPhysics: A Physics-Aware Scene Graph from a Single View for Interactive Mixed Reality Scenes",
+    "url": "http://arxiv.org/abs/2609.19815v1",
+    "arxiv_id": "2609.19815v1",
+    "authors": [
+      "Suji Kang",
+      "Seok-Young Kim",
+      "Young Bin Kim",
+      "Taewook Ha",
+      "Dieter Schmalstieg",
+      "Shohei Mori",
+      "Woontack Woo"
+    ],
+    "published": "2026-09-17T07:26:56+00:00",
+    "summary": "We propose SnapPhysics, a training-free framework that reconstructs 3D objects and estimates their physical properties such as mass, friction, and center of gravity from a single image. For physically coherent interactions in mixed reality (MR), such properties are as important as geometry. Prior approaches infer them by analyzing object dynamics in video, which is computationally costly, or by querying vision-language models (VLMs) on single images, which lacks geometric grounding and inter-object relationships. We address these limitations by combining instance-level 3D reconstruction and spatial alignment with a physics-aware scene graph that encodes these relationships and per-object metric geometry as structured context for VLM-based property reasoning. Experiments on 3D-FRONT show that SnapPhysics improves scene-level F-Score by 18.6% over the best learning-based method, and on real captured scenes with ground-truth mass, it reduces the mean absolute log difference error (mALDE) by up to 20.5% and improves log-scale correlation ($r^2_{\\mathrm{ls}}$) by up to 19.6% over VLM-only estimation. SnapPhysics enables physically interactive MR experiences without manual parameter tuning. Project page: https://snapphysics-ismar2026.github.io/."
+  },
+  {
+    "title": "Vehicle Trajectory Prediction via Neural Fusion of Multiple EKF-Based Trajectory Candidates",
+    "url": "http://arxiv.org/abs/2609.19813v1",
+    "arxiv_id": "2609.19813v1",
+    "authors": [
+      "Seong-Jun Kim",
+      "Seung-Hyun Kong"
+    ],
+    "published": "2026-09-17T07:24:42+00:00",
+    "summary": "Predicting the future trajectories of surrounding vehicles in autonomous driving is important for collision risk assessment and safe ego-vehicle path planning. Conventional neural network-based trajectory predictors typically achieve strong prediction performance by exploiting agent history, dynamic scene graphs, and semantic maps. However, in specific motion regimes such as acceleration, deceleration, and turning, these predictors may fail to reflect physically feasible trajectories. To address this issue, this study proposes a framework that fuses the output of Trajectron++, a neural network-based trajectory predictor, with extended Kalman filter (EKF)-based multiple trajectory candidates at a late stage. On the nuScenes dataset, the proposed method reduces the average displacement error and final displacement error of the Trajectron++ robot baseline by 13.7% and 14.6%, respectively, without modifying the baseline architecture. These results indicate that EKF-based trajectory candidates can effectively complement neural trajectory prediction through learned fusion."
+  },
+  {
     "title": "Visual Compliance via Executable Safety Rule Entailment",
     "url": "http://arxiv.org/abs/2609.18328v1",
     "arxiv_id": "2609.18328v1",
