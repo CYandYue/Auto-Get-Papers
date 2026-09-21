@@ -1,5 +1,23 @@
 [
   {
+    "title": "VideoReloc: Long-Term Indoor Video Relocalization against a Kilobyte-Scale Semantic Scene Graph",
+    "url": "http://arxiv.org/abs/2609.21804v1",
+    "arxiv_id": "2609.21804v1",
+    "authors": [
+      "Qianru Li",
+      "Xuyang Chen",
+      "Xuqin Wang",
+      "Zhenghao Zhang",
+      "Hongyi Luo",
+      "Tao Wu",
+      "Daniel Cremers",
+      "Lu Liu",
+      "Yanfeng Zhang"
+    ],
+    "published": "2026-09-18T14:16:41+00:00",
+    "summary": "Given a compact semantic scene graph, long-term indoor video relocalization estimates a map-frame trajectory after lighting and furniture changes. Visual methods rely on appearance and become unreliable under these changes; localizing one frame at a time from object classes and geometry instead leaves sparse, ambiguous evidence. We introduce VideoReloc, whose adaptive clips use odometry to gather spatial evidence until object and motion criteria are met, adapting query length to the observed scene. Its run-level decision rechecks conflicting placements using evidence accumulated across connected clips, stabilizing the trajectory beyond adjacent-clip tracking. Hypothesis-first registration proposes poses from object triplets and verifies each using clip-wide object centers and box surfaces. Orientation-aware refinement uses box faces, gravity and wall directions to resolve ambiguity in camera orientation and refine the full pose. This reframes sparse-map relocalization as verification of spatially extended video queries, moving discriminative support from stored appearance to temporal context and permitting a 100 kB map of class-labelled boxes. On RIO10 and ReplicaCAD, the all-frame localization success rate at 1 m/10$^\\circ$ is 73.5% and 61.1% under causal evaluation, rising to 90.6% and 74.8% with clip closure. The evaluated per-frame scene coordinate regressors reach up to 47.6% and 49.8%, respectively, with maps of 12.6-42 MB. Project page: https://videoreloc.github.io"
+  },
+  {
     "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents",
     "url": "http://arxiv.org/abs/2609.20673v1",
     "arxiv_id": "2609.20673v1",
@@ -15,6 +33,23 @@
     "title": "SmellDiffusion: Diffusion-Based Quadruped Navigation with Olfactory Scene Graphs",
     "url": "http://arxiv.org/abs/2609.20624v1",
     "arxiv_id": "2609.20624v1",
+    "authors": [
+      "Faith Ogunwoye",
+      "Iana Zhura",
+      "Hajira Amjad",
+      "Timofei Kozlov",
+      "Didar Seyidov",
+      "Dmitrii Plotnikov",
+      "Fedor Fedorov",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2026-09-17T16:09:04+00:00",
+    "summary": "A robot sent to a named gas leak must preserve gas identity, estimate the source, and navigate to the resulting goal. We present SmellDiffusion, a simulation pipeline that represents species-specific gas zones in an open-vocabulary olfactory scene graph and shares the selected goal between classical and diffusion planners. Its key components are a peak-local geometric gate for selective source correction and diffusion-based, gas-guided trajectory generation. Among 424 unique source-wind configurations in solved flow, 28 have a concentration peak displaced more than 0.5m from the source. A source-independent geometric gate, calibrated only on the training split and evaluated at the observed peak, detects 9 of 10 held-out displacements at 0.64 precision. Gating a precomputed forward-matching correction reduces mean error on the displaced cases from 1.468m to 0.592m (60%), using matching for only 14/204 cases. All-case mean error falls from 0.205m to 0.180m. All planners receive the same scene-graph source estimate as their goal. In a controlled comparison, best-of-ten diffusion achieves mean gas exposure comparable to gas-guided A* (0.0476 versus 0.0455). A single diffusion proposal takes 41.7ms, compared with 72.3ms for gas-guided A*, although best-of-ten sequential sampling increases total runtime. Plain A* also reaches the same goal and remains the fastest and shortest-path method. Six matched Gazebo runs give mean robot-to-source errors of 0.39m for A* and 0.31m for diffusion."
+  },
+  {
+    "title": "SmellDiffusion: Diffusion-Based Quadruped Navigation with Olfactory Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.20624v2",
+    "arxiv_id": "2609.20624v2",
     "authors": [
       "Faith Ogunwoye",
       "Iana Zhura",
