@@ -1,5 +1,62 @@
 [
   {
+    "title": "Relationally Grounded Latent World Models for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2609.24626v1",
+    "arxiv_id": "2609.24626v1",
+    "authors": [
+      "Fabian Schmidt",
+      "Markus Enzweiler",
+      "Abhinav Valada"
+    ],
+    "published": "2026-09-21T14:10:06+00:00",
+    "summary": "Latent world models learn predictive representations for autonomous driving, but the relational semantics these states preserve often remain implicit. We investigate whether traffic scene graphs can serve as privileged semantic supervision for latent world representations. Building on LAW, we construct actor-centric scene graphs from nuScenes 3D annotations, encode their serialized relational structure using a frozen text embedding model, and align the visual latent representations with this semantic target during training. We remove the supervision branch at inference, so it requires neither scene graphs nor 3D annotations and adds no test-time computation. On nuScenes, our method reduces average trajectory L2 error from 0.661 to 0.622 (5.9%) and collision rate from 0.456 to 0.217 (52.4%) relative to our retrained LAW baseline. It also outperforms an unstructured caption-style semantic target, supporting the benefit of explicit relational structure for latent world-model representation learning."
+  },
+  {
+    "title": "A Topological Representation with Object-Path Graphs for Open-Vocabulary Instance Navigation",
+    "url": "http://arxiv.org/abs/2609.24189v1",
+    "arxiv_id": "2609.24189v1",
+    "authors": [
+      "Linwei Zheng",
+      "Daojie Peng",
+      "Bingtao Wang",
+      "Haoang Li",
+      "Jun Ma"
+    ],
+    "published": "2026-09-21T07:01:14+00:00",
+    "summary": "Vision-language navigation requires embodied agents to navigate environments using natural language instructions and visual observations. Existing approaches typically decompose navigation into sequential language-guided decisions or rely on online exploration without prior environmental knowledge. Scene graph representations offer compact semantic memory but remain decoupled from downstream navigation, which still depends on dense metric maps. To close this gap, we propose an object--path graph that unifies open-vocabulary semantic reasoning with topological navigation. The proposed representation jointly supports semantic grounding, graph-based localization, and navigation within a single lightweight topological framework. Building on this graph, we introduce a navigation strategy that combines global path planning with local inter-node execution through lightweight node localization and semantic visual servoing, enabling navigation directly over the graph without dense metric reconstruction. Experiments on HM3D and Replica demonstrate competitive performance in open-vocabulary object grounding through the proposed hierarchical graph structure, while achieving effective navigation performance. Real-world robot experiments further validate the practicality of the proposed framework."
+  },
+  {
+    "title": "FlockDiffusion: Assignment-Conditioned Diffusion for Multi-Drone Task Allocation and Completion",
+    "url": "http://arxiv.org/abs/2609.23745v1",
+    "arxiv_id": "2609.23745v1",
+    "authors": [
+      "Iana Zhura",
+      "Satenik Akopyan",
+      "Roohan Ahmed Khan",
+      "Miguel Altamirano Cabrera",
+      "Aleksey Fedoseev",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2026-09-20T16:46:42+00:00",
+    "summary": "Autonomous multi-drone navigation requires fleets to service distributed objectives in cluttered environments under tight computational budgets. Efficient coordination depends on task bundling, where each drone visits multiple objectives along its route. Separate solvers for cost estimation, assignment, and execution incur redundant graph search and produce long, abrupt paths. We propose FlockDiffusion, a learned framework combining a scene graph encoder, an explicit allocation head, an assignment conditioned diffusion transformer, and a closed form trajectory decoder. An autoregressive teacher provides offline supervision for parallel fleet trajectory generation. PyBullet ablations show that bundling increases task completion from 50% to 100%, while our complete teacher further reduces route cost by 8.4% relative to MAGNNET with bundling. In the optimized scalability benchmark, evaluated on 100 scenes per density with ten drones, FlockDiffusion achieves 6.2 to 7.6 times faster inference and approximately 37% shorter routes than the classical pipeline. As nominal task counts increase from 20 to 40, latency rises from 7.8 to 11.1 ms, compared with 48.0 to 75.8 ms for the baseline. In a separate evaluation across five Gazebo environments, FlockDiffusion achieves 100% planner coverage and reduces planned route cost by 15.4% relative to the baseline with bundling. These results demonstrate efficient planning under increasing task density in configurations that are demanding to reproduce with physical drone fleets."
+  },
+  {
+    "title": "Probabilistic Scene Graphs: Hierarchical Representation and Real-time System",
+    "url": "http://arxiv.org/abs/2609.23144v1",
+    "arxiv_id": "2609.23144v1",
+    "authors": [
+      "Waqas Ali",
+      "Michele Antonazzi",
+      "Timon Homberger",
+      "Thien-Minh Nguyen",
+      "Lukas Rosenberger Schmid",
+      "Patric Jensfelt",
+      "Yixi Cai"
+    ],
+    "published": "2026-09-19T17:21:58+00:00",
+    "summary": "3D scene graphs provide semantically rich and hierarchical representations for robot perception. However, existing systems do not maintain uncertainty as an explicit belief or propagate it through the operations that construct and refine the graph. We introduce Probabilistic Scene Graph (PSG), a generalization of the conventional scene graph that represents a posterior over possible graphs, factorized into a discrete graph structure of entities, relations, and semantic attributes, and continuous states that ground them spatially, with uncertainty maintained over both components. Geometry is carried directly by the nodes rather than selected from a separately constructed metric map, so a metric map, where needed, follows from the graph rather than preceding it. We instantiate PSG's probabilistic spatial grounding with hierarchical graphs of Gaussians (HGG): each object primitive is represented by a full-covariance Gaussian under a Normal-Inverse-Wishart belief, and the same parametrization applied recursively within a node yields a geometry graph that resolves its surface at finer resolution. We then build a mapping pipeline that preserves these beliefs throughout graph construction and refinement: a purely graph-based coarse-to-fine alignment registers observations by comparing node beliefs, while a nested Expectation-Maximization and factor-graph optimization jointly refines poses, object parameters, and internal geometry. Across six datasets spanning indoor RGB-D, outdoor LiDAR, and cross-modality deployment, HGG operates at sensor rate with near-constant memory and achieves state-of-the-art object accuracy and zero-shot graph alignment."
+  },
+  {
     "title": "VideoReloc: Long-Term Indoor Video Relocalization against a Kilobyte-Scale Semantic Scene Graph",
     "url": "http://arxiv.org/abs/2609.21804v1",
     "arxiv_id": "2609.21804v1",
