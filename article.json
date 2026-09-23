@@ -1,5 +1,35 @@
 [
   {
+    "title": "Hierarchical Floorplan-Guided Vision-Language Exploration for Embodied Question Answering",
+    "url": "http://arxiv.org/abs/2609.26360v1",
+    "arxiv_id": "2609.26360v1",
+    "authors": [
+      "Albert Gassol Puigjaner",
+      "Kostas Alexis"
+    ],
+    "published": "2026-09-22T13:02:54+00:00",
+    "summary": "Embodied Question Answering (EQA) requires an agent to explore a previously unseen environment, gather relevant information, and answer questions about the scene. Recent approaches leverage Vision-Language Models (VLMs) together with semantic maps or scene graphs to guide exploration. However, exploration is typically driven only by local observations, while structural priors about the environment remain largely unused. We propose HFLEX-EQA, a hierarchical EQA framework that combines online scene graph construction, VLM- based planning, semantic frontier exploration, and floorplan priors. The system incrementally builds a hierarchical scene graph and an open-vocabulary occupancy map from RGB-D observations, enabling a VLM to jointly reason over the scene graph, task-relevant visual observations, exploration history, and an estimated topological floorplan. Furthermore, we introduce a room-discovery strategy that leverages the floorplan and open-vocabulary frontier semantics to guide exploration toward semantically relevant yet currently unobserved room types. We evaluate HFLEX-EQA on the OpenEQA and ExploreEQA benchmarks and demonstrate deployment on a quadruped robot in real indoor environments. Our results demonstrate the benefit of combining VLM-based hierarchical planning with structural floorplan priors for the EQA task."
+  },
+  {
+    "title": "SurgGraph: Quantitative Laparoscopic Video Understanding via Geometry-Grounded Scene Graphs",
+    "url": "http://arxiv.org/abs/2609.25651v1",
+    "arxiv_id": "2609.25651v1",
+    "authors": [
+      "Jingying Wang",
+      "Rosiana Natalie",
+      "Marquise D Singleterry",
+      "Filippos Bellos",
+      "Brian George",
+      "Gurjit Sandhu",
+      "Jason J Corso",
+      "Anhong Guo",
+      "Vitaliy Popov",
+      "Xu Wang"
+    ],
+    "published": "2026-09-22T04:02:47+00:00",
+    "summary": "Surgical videos are a primary resource for teaching trainees anatomy, tool usage, and procedural skills. Yet learning from them at scale requires systems that understand surgical scenes. Existing approaches fall short: vision-language models lack fine-grained domain reasoning, task-specific models do not generalize, and prior scene graphs omit clinically meaningful detail. We present SurgGraph, a training-free pipeline that generates quantitative scene graphs from surgical videos. Operating on segmentation masks and depth maps, SurgGraph encodes each clinically meaningful relation (attachment, occlusion, separation, tool actions) as a <subject, verb, object, value> tuple whose numeric value quantifies the relation's extent over time. Technical evaluations show more precise scene understanding than state-of-the-art surgical VLM baselines. We then build SurgGraphQA, a proof-of-concept learning application that retrieves meaningful and boundary-case exemplars and generates visual explanations and feedback. A study with 17 medical students and 2 resident surgeons shows significant learning gains, demonstrating its educational value."
+  },
+  {
     "title": "Relationally Grounded Latent World Models for Autonomous Driving",
     "url": "http://arxiv.org/abs/2609.24626v1",
     "arxiv_id": "2609.24626v1",
