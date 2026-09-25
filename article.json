@@ -1,5 +1,18 @@
 [
   {
+    "title": "CinematicVQA: Benchmarking Film-Grammar Reasoning in Large Vision-Language Models",
+    "url": "http://arxiv.org/abs/2609.28813v1",
+    "arxiv_id": "2609.28813v1",
+    "authors": [
+      "Shuo Xing",
+      "Pooja Verlani",
+      "Balu Adsumilli",
+      "Zhengzhong Tu"
+    ],
+    "published": "2026-09-23T21:47:34+00:00",
+    "summary": "Cinematography, the craft of visual storytelling through framing, lighting, and camera operation, fundamentally shapes how audiences perceive and emotionally engage with video content. While Large Vision Language Models (LVLMs) have made remarkable progress in video question answering, existing benchmarks primarily focus on identifying low-level techniques rather than understanding their storytelling impact. To address this, we introduce CinematicVQA, the first-of-its-kind benchmark for cinematic video understanding that goes beyond technique recognition to evaluate film-grammar reasoning, utilizing our introduced Cinematic Scene Graph (CSG), a structured representation that links filming techniques to their perceptual effects and narrative functions. Through comprehensive evaluation of state-of-the-art LVLMs, we reveal a striking semantic gap: models consistently perform higher on describing visual presentations than on identifying the underlying techniques. Surprisingly, Chain-of-Thought prompting fails to provide consistent gains and degrades performance for most models, suggesting that current LVLMs lack sufficient cinematic domain knowledge to benefit from step-by-step reasoning. Fine-tuning on \\textsc{CinematicVQA-train} yields consistent improvements, particularly for narrative function and multi-hop reasoning. Overall, \\textsc{CinematicVQA} serves both as a rigorous benchmark for cinematic evaluation in LVLMs and as a practical dataset for training more film-aware video models."
+  },
+  {
     "title": "Kairos: Grounded Forecasting of Presence and Directional Flow in 4D Scene Graphs",
     "url": "http://arxiv.org/abs/2609.27467v1",
     "arxiv_id": "2609.27467v1",
