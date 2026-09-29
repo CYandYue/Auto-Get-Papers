@@ -1,5 +1,75 @@
 [
   {
+    "title": "Action Sequence Transfer via LLMs for Heterogeneous Environments",
+    "url": "http://arxiv.org/abs/2609.34730v1",
+    "arxiv_id": "2609.34730v1",
+    "authors": [
+      "Choongho Chung",
+      "DongHwan Shin",
+      "Sung-Hee Lee"
+    ],
+    "published": "2026-09-28T09:30:21+00:00",
+    "summary": "We present an action sequence transfer system that adaptively transfers user action sequences across different target spaces. Given an input action sequence from a source space and scene graph representations of both the source and target environments, our system predicts a corresponding action sequence in the target space by adapting to the spatial and object constraints of the new environment. To achieve this, we leverage multi-level representations of user activity to generalize actions at varying levels of abstraction. To demonstrate our system, we collect a new scene graph-based dataset derived from the Ego4D GoalStep dataset for evaluation. Results indicate that our system can generate valid action sequences even between spaces with drastically different object configurations."
+  },
+  {
+    "title": "Program-Verified Self-Evolution for Vision-Language Models",
+    "url": "http://arxiv.org/abs/2609.33855v1",
+    "arxiv_id": "2609.33855v1",
+    "authors": [
+      "Ahmed Heakl",
+      "Sungik Choi",
+      "Moontae Lee",
+      "Salman Khan"
+    ],
+    "published": "2026-09-27T19:13:38+00:00",
+    "summary": "Self-evolving vision-language models train on questions they generate from unlabeled images. Since these questions have no gold answers, prior methods label them by majority vote over sampled answers or by a model judge. In a human evaluation, we find that 24\\% of majority-vote labels and 18\\% of model-judge labels produced during self-evolution are wrong. To address this problem, we present Verifiable QA Generation for Self-Evolving Models (VQS), which changes how the model judges answers. Instead of voting on an answer, the model parses each image into a structured record, such as a scene graph, a chart table, or a diagram graph. Fixed programs then write a question from the record and compute its answer. The model still acts as a visual checker, but it only confirms the individual facts the program reads, one short claim at a time. These claim-level checks select the parser's training targets, so the parser also improves without labels. Human raters find 94\\% of VQS answers correct, against 76\\% for majority voting. Across ten benchmarks, VQS improves Qwen3-VL by up to 3.18 points at the 2B, 4B, and 8B scales and outperforms the strongest self-evolving baseline at each. Gains keep growing over three training rounds, reaching 3.84 points at 2B. Code is released at https://github.com/ahmedheakl/VQS"
+  },
+  {
+    "title": "PORTER: Edge-Cloud Residency for Persistent 3D Scene Graph Memory",
+    "url": "http://arxiv.org/abs/2609.33258v1",
+    "arxiv_id": "2609.33258v1",
+    "authors": [
+      "Yue Chang",
+      "Yifan Tian",
+      "Jiajing Peng",
+      "Dazhi Huang",
+      "Rufeng Chen",
+      "Zhaofan Zhang",
+      "Li Chen",
+      "Sihong Xie"
+    ],
+    "published": "2026-09-27T05:59:55+00:00",
+    "summary": "Recent task-driven and just-in-time 3D Scene Graph (3DSG) methods reduce per-task representations by constructing or activating only task-relevant information. Yet sparse per-task working sets do not bound onboard memory usage over a robot's lifetime: as tasks change, payloads accumulated for earlier tasks may become irrelevant to the current task but can be useful again in future tasks. Over repeated task switches and expanding environments, retaining such reusable payloads causes local memory to grow, whereas discarding them entirely can lead to costly repeated construction of the same payloads later. We introduce PORTER, which decouples persistence from residency: lightweight anchors remain in the limited memory of the edge robot while heavy object payloads migrate between the edge and the cloud. Relevance alone is insufficient for deciding residency because multiple relevant payloads may provide redundant information. We therefore decompose each task into functional requirements and introduce Irreplaceable Support Erasure (ISE), which measures the loss in requirement coverage caused by offloading. ISE discounts replaceable support and penalizes losses more strongly when the remaining coverage of a requirement is weak. PORTER constructs a budget-aware local working set by repeatedly offloading the payload with the smallest marginal ISE per byte. Experiments on JITOMA-Bench evaluate PORTER across four 3DSG builders. Under progressive compression, pooled relative mR@3 remains at 100% through 91% payload-byte offloading."
+  },
+  {
+    "title": "Scanning While Imagining: A Scene-Graph World Model for Robotic Ultrasound Navigation",
+    "url": "http://arxiv.org/abs/2609.32837v1",
+    "arxiv_id": "2609.32837v1",
+    "authors": [
+      "Xuesong Li",
+      "Shuai Chen",
+      "Feng Li",
+      "Zhongliang Jiang",
+      "Nassir Navab",
+      "Yuan Bi"
+    ],
+    "published": "2026-09-26T18:10:52+00:00",
+    "summary": "Ultrasound (US) acquisition depends on the operator's ability to interpret anatomy and anticipate how the view will change with probe motion. Many robotic US navigation methods select actions without explicitly predicting these anatomical changes. We propose SonoGraph-WM, an action- and goal-conditioned world model for anticipatory probe navigation. The model represents anatomy as scene graphs (SGs), capturing visible structures, their geometry, and spatial relationships without synthesizing US images. Given a history of SGs and probe poses, a unified Transformer jointly predicts future SGs and poses. A receding-horizon planner recursively imagines candidate trajectories, selects the shortest predicted path reaching a goal graph, and follows it over a short execution horizon before replanning from new observations. To reduce reliance on tracked and anatomically annotated US sequences, we generate aligned SG--pose training data from computed tomography (CT) label maps along surface-constrained probe trajectories. On four held-out CT cases, spatial relation F1 remains above 93% over 20 prediction steps, and closed-loop navigation achieves 77.50% and 75.00% success for the gallbladder and pancreas, respectively, using annotation-derived SGs. In robot--phantom navigation experiments with label-map-derived SGs, the planner reached the target view in 73.7% of trials. These findings support CT-supervised anatomical world modeling for probe planning and highlight the importance of frequent observation updates for reliable navigation. Project Page: https://noseefood.github.io/us-sonograph-wm/"
+  },
+  {
+    "title": "From Scene Graphs to Answers: Selective Neuro-Symbolic Reasoning for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2609.32645v1",
+    "arxiv_id": "2609.32645v1",
+    "authors": [
+      "Yiyao Wang",
+      "Pei Liu",
+      "Fangzhou Liu",
+      "Jun Ma"
+    ],
+    "published": "2026-09-26T14:05:37+00:00",
+    "summary": "Autonomous-driving question answering requires reasoning over structured scene information, yet existing vision-language approaches largely delegate heterogeneous reasoning operations to a single neural inference process. We argue that this uniform strategy overlooks a fundamental distinction: some queries admit exact symbolic solutions, while others require semantic interpretation. We introduce a query-adaptive neuro-symbolic reasoning framework that explicitly allocates computation according to the nature of the query. At its core is a hierarchical Spatiotemporal Scene Graph (STSG) that separates persistent object identities from frame-specific states and represents spatial relations and temporal transitions as explicit directed structures. Given a query, a symbolic executor first attempts to resolve it through exact graph operations; only when symbolic execution abstains is an LLM invoked for semantic reasoning. For these unresolved queries, query-conditioned graph retrieval and evidence filtering preserve relation direction, temporal locality, and object semantics, providing the LLM with compact and verified task-relevant evidence. This design shifts the role of the LLM from a universal reasoning engine to a targeted semantic reasoner, while allowing deterministic computation to be handled exactly and efficiently. We evaluate the framework on 5,916 NuScenes-QA questions across all ten scenes of nuScenes v1.0-mini under an oracle-perception setting. The complete system achieves 80.63 percent overall accuracy with GPT-5.4-mini, improving over the corresponding LLM-only configuration by 5.48 percentage points; with DeepSeek-V4-Flash, the improvement reaches 6.64 points. The largest gains occur on counting questions, with improvements of 10.20 and 12.61 points, respectively. These results show that selective reasoning improves both accuracy and inference efficiency."
+  },
+  {
     "title": "GraphWrit3R: End-to-End 3D Scene Graph Writing",
     "url": "http://arxiv.org/abs/2609.31595v1",
     "arxiv_id": "2609.31595v1",
