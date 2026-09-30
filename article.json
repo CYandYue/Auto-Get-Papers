@@ -1,5 +1,18 @@
 [
   {
+    "title": "Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments",
+    "url": "http://arxiv.org/abs/2609.37419v1",
+    "arxiv_id": "2609.37419v1",
+    "authors": [
+      "Mario Alberto Valdes Saucedo",
+      "Akash Patel",
+      "Christoforos Kanellakis",
+      "George Nikolakopoulos"
+    ],
+    "published": "2026-09-29T12:49:00+00:00",
+    "summary": "The autonomous extraction of deep mineral deposits in abandoned underground mines is fundamentally a multi-agent integration problem. No single platform simultaneously offers the mobility to traverse kilometers of degraded drifts and the sensing payload required to characterize an ore body. This article presents the onboard perception pipeline that bridges two heterogeneous agents within the PERSEPHONE autonomous mining mission. Which consist of a lightweight Explorer robot that maps an unknown mine and generates a 3D scene graph of inspection targets, by running a zero-shot, vision-language semantic segmentation stack that detects mineral deposits directly from natural-language prompts. The map and the graph are then handed to a second Inspector robot, which carries an advanced sensing payload and uses them to plan close-range inspection viewpoints. We detail the complete pipeline, with emphasis on the geometric abstraction that turns raw detections into actionable inspection targets, spanning per-view bounding-box generation, cross-view box merging, plane fitting, and polygon extraction, and we report an extensive field validation in a subterranean test facility and in an active magnesite mine, covering both iron-vein and magnesite mineralization under realistic, perceptually degraded conditions."
+  },
+  {
     "title": "Action Sequence Transfer via LLMs for Heterogeneous Environments",
     "url": "http://arxiv.org/abs/2609.34730v1",
     "arxiv_id": "2609.34730v1",
