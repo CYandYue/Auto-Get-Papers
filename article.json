@@ -1,5 +1,76 @@
 [
   {
+    "title": "TACTIC: Temporal and Context-Aware LLM Tactical Planning for Roadside LiDAR Attacks",
+    "url": "http://arxiv.org/abs/2609.39969v1",
+    "arxiv_id": "2609.39969v1",
+    "authors": [
+      "Yiming Gao",
+      "Shaocheng Luo"
+    ],
+    "published": "2026-09-30T15:33:46+00:00",
+    "summary": "Physical LiDAR attacks are often evaluated using fixed primitives and manually selected parameters, despite their strong dependence on surrounding traffic. We present TACTIC, a scene-aware framework that uses a multimodal large language model (MLLM) to coordinate state-adaptive roadside LiDAR attacks. Under a gray-box threat model, TACTIC relies only on an attacker-operated roadside perception stack, without accessing the victim LiDAR's native point clouds or internal processing. Local perception provides metric vehicle states, while the MLLM combines these measurements with roadside imagery to infer relational traffic context and construct a semantic scene graph. Based on this representation, TACTIC selects and configures two complementary primitives: \\emph{push-away}, which shifts the perceived range of a lead vehicle, and \\emph{phantom-obstacle braking}, which triggers emergency braking through obstacle injection. Measured traffic states and empirically calibrated constraints ground the generated tactics in physically feasible operating regions. To accommodate MLLM latency, TACTIC overlaps reasoning and execution asynchronously while high-rate local perception detects scene changes and triggers replanning. Across 280 randomized CARLA trials, the full policy achieves a 100% collision rate, compared with 35% for a fixed rule, 60% for random selection, and 75% for a restricted LLM using mode selection with default parameters. Joint physical-and-image input achieves 100% success, versus 65% with physical measurements alone and 75% with imagery alone, while asynchronous $\u0394$ refresh reduces scene-mutation response from 7.4 s to 2.0 s. These results show that scene-dependent tactical planning can expose context-sensitive LiDAR failure modes that fixed attack policies may miss."
+  },
+  {
+    "title": "From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation",
+    "url": "http://arxiv.org/abs/2609.39670v1",
+    "arxiv_id": "2609.39670v1",
+    "authors": [
+      "Weixiang Guo",
+      "Rui Jin",
+      "Haotian Jin",
+      "Xinhang Xu",
+      "Ruiyang Liu",
+      "Haoran Zhao",
+      "Yi Wang",
+      "Weiqi Gai",
+      "Kun Cao",
+      "Lihua Xie"
+    ],
+    "published": "2026-09-30T13:05:17+00:00",
+    "summary": "Vision-language-action (VLA) models enable task-conditioned interaction, but extending them to scene-scale aerial manipulation remains challenging due to costly whole-body demonstrations, latency-induced action-state misalignment, and cross-site behavior composition. We present a unified framework for synthetic policy training and scene-scale execution on articulated uncrewed aerial manipulators (UAMs). A scene-reconfigurable pipeline synthesizes task-conditioned, kinodynamically feasible trajectories and synchronized multiview observations for VLA training without physical-platform demonstrations. Measured-progress-aligned realization (MPAR) aligns asynchronously returned action chunks with measured execution progress and realizes them as continuous, dynamically feasible trajectories. A relational Scene Graph grounds language goals to object instances and feasible interaction regions, while topology-guided transfer connects local behaviors across sites. Local VLA skills achieve 39/60 successes (65.0%) in simulation under oracle target and feasible-handoff conditions. Under 500-ms added latency, with and without a transient command-update stall, MPAR reduces median takeover phase error by 0.212 s over nominal-time alignment. The complete system completes 21/50 simulated multi-site missions (42.0%) and is further validated on a physical articulated UAM."
+  },
+  {
+    "title": "ChronoGraph: Functional 4D Scene Graphs with Vision-Language Models for Interaction Understanding and Grounded Planning",
+    "url": "http://arxiv.org/abs/2609.39665v1",
+    "arxiv_id": "2609.39665v1",
+    "authors": [
+      "Chenyangguang Zhang",
+      "Malgorzata Gwiazda",
+      "Guanlong Jiao",
+      "Yuanchen Ju",
+      "Federico Tombari",
+      "Koushil Sreenath",
+      "Marc Pollefeys",
+      "Sunghwan Hong"
+    ],
+    "published": "2026-09-30T13:03:45+00:00",
+    "summary": "Embodied agents must determine where to act, anticipate the resulting scene changes, and interpret observed outcomes to guide subsequent actions. This requires connecting 4D interaction understanding, which explains how past actions changed the scene, with spatially grounded planning, which determines how and where to act toward a goal and anticipates the resulting scene changes. We introduce ChronoGraph, a functional 4D scene graph that links actions on affordance parts to semantic and geometric state changes. By representing observed and anticipated transitions in the same form, it provides a shared basis for understanding and planning. We construct ChronoGraphBench through an automatic data engine that converts human-interaction videos and simulated robot trajectories into graph-annotated questions for training and evaluating Vision-Language Models (VLMs) on both tasks. Using these annotations, we train ChronoGraphVLM by adapting pretrained VLMs in two stages. Graph-as-Chain-of-Thought supervised fine-tuning teaches the models to reconstruct observed transitions and predict future ones as graph traces before answering. Subsequent joint 4D graph reinforcement learning directly rewards graph properties and answer correctness. Experiments across model scales show improvements over the corresponding pretrained baselines and zero-shot transfer to VLM4D. Real-world demonstrations further show that graph-based planning and affordance grounding support mobile manipulation through existing robot skills without additional fine-tuning."
+  },
+  {
+    "title": "CAST: Causal Advantage-Structured Training with Spatially Grounded Compositional Rewards for Diffusion Models",
+    "url": "http://arxiv.org/abs/2609.39441v1",
+    "arxiv_id": "2609.39441v1",
+    "authors": [
+      "Shu Yu",
+      "Chaochao Lu"
+    ],
+    "published": "2026-09-30T10:16:58+00:00",
+    "summary": "Online reinforcement learning has been extended to flow matching for diffusion model (DM) image generation. However, this paradigm faces three limitations: (1) Window selection. Existing methods manually set the stochastic differential equation (SDE) sampling window, i.e., the denoising steps where exploration noise is injected. We instead determine it from each model's denoising trajectory. (2) Reward saturation. Current methods rely on scoring models trained on human annotations; we find that such scores are extremely high and nearly indistinguishable on the latest SOTA open-source DMs, making advantage estimation largely ineffective. (3) Sample inefficiency. A single scalar reward collapses different failure modes into almost identical scores, leaving minimal gradient guidance for targeted improvement. To address these issues, we propose CAST (Causal Advantage-Structured Training), an RL fine-tuning method for pretrained DMs, which (1) identifies the denoising step at which each model fixes the objects and their spatial arrangement in the image and uses that timing to set the SDE window, (2) decomposes each prompt via Causal Scene Graphs (CSG) into verifiable-atoms, i.e., minimal semantic units such as an object, count, attribute, or spatial relation that can each be checked independently, and rewards each atom separately, and (3) projects the signed atom-level advantages into pixel space through teacher-forced attention and uses them to spatially weight the SDE policy objective. We fine-tune two of the strongest open-source DMs, FLUX.2-dev and Qwen-Image-2512, with CAST, and evaluate them on GenEval 2, a compositional benchmark, and on Qwen-Image-Bench for overall quality. Within almost the same training budget, CAST's improvement over the base model on the most challenging GenEval 2 prompts is up to 3.07x that of Flow-GRPO, while overall generation quality also improves."
+  },
+  {
+    "title": "Concurrent Semantic Search and Mission Execution for LTL Missions in Unknown Environments",
+    "url": "http://arxiv.org/abs/2609.39153v1",
+    "arxiv_id": "2609.39153v1",
+    "authors": [
+      "Fernando Salanova Gaspar",
+      "David Morilla Cabello",
+      "Cristian Mahulea Poleuca",
+      "Eduardo Montijano Mu\u00f1oz"
+    ],
+    "published": "2026-09-30T07:18:41+00:00",
+    "summary": "Planning complex missions in unknown environments requires robots to reason simultaneously about what they should do and what they still need to discover. Existing approaches for solving LTLf missions typically assume a known environment, or separate the exploration of the environment from the execution of the mission, while semantic exploration methods look for one target at a time and ignore the mission being executed.   To fill this gap, our main contribution is an adaptive high-level planning method that interleaves a task-driven semantic search with the execution of the mission, advancing both in a non-myopic manner.   Our method leverages two representations built online, a metric-semantic scene graph, built with a Vision Language Model (VLM), that provides the evidence needed to locate the objects the mission refers to, and the deterministic finite automaton (DFA) encoding the mission, that indicates which of them matter at each mission state. At every planning stage, our planner selects the waypoints that are most valuable for both the semantic search and the advancement of the mission, valuing them over the remaining mission stages in order to avoid blocking states. The selected waypoints are then ordered in a single high-level plan, which is recomputed as new information arrives.   In photorealistic indoor environments over five mission types, our method completes more missions than the compared approaches while having to cover less of the environment, and it does so with shorter paths and complying with the restrictions imposed by the mission."
+  },
+  {
     "title": "Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments",
     "url": "http://arxiv.org/abs/2609.37419v1",
     "arxiv_id": "2609.37419v1",
