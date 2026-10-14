@@ -1,5 +1,57 @@
 [
   {
+    "title": "A Differentiable 3D Scene Graph Metric via Contextual Hellinger Triplet Geometry",
+    "url": "http://arxiv.org/abs/2610.17705v1",
+    "arxiv_id": "2610.17705v1",
+    "authors": [
+      "U-Chae Jun",
+      "Yoonhyuk Choi",
+      "Jiwoo Kang"
+    ],
+    "published": "2026-10-13T04:35:34+00:00",
+    "summary": "3D scene graph prediction is commonly supervised with local object and predicate classification losses. Although effective for slot-wise label prediction, this formulation does not provide a graph-level semantic distance between a predicted scene graph and its ground truth: semantically mild label errors and structurally disruptive relational errors can be treated similarly, and subject-predicate-object facts are not compared as scene-level units. We propose Contextual Hellinger Triplet Geometry, a graph-level supervision objective that measures the semantic and structural discrepancy between 3D scene graphs. Our key idea is to reinterpret the conventional classifier outputs of a 3D scene graph predictor as an aligned probabilistic scene graph field, where object and predicate predictions jointly define contextual subject-predicate-object facts. This formulation yields a differentiable metric-based training objective with an efficient factorized implementation and can be applied to existing 3D scene graph prediction architectures without modifying their network design. Experiments on 3DSSG demonstrate that our supervision improves downstream graph-conditioned 3D scene generation, while ablation studies confirm the complementary roles of the proposed graph-level terms and user studies show better graph descriptiveness, relation plausibility, and structural preservation."
+  },
+  {
+    "title": "SWORD: Scene-Grounded Wasserstein Object-Relation Distance for 3D Scene Graph Prediction",
+    "url": "http://arxiv.org/abs/2610.17692v1",
+    "arxiv_id": "2610.17692v1",
+    "authors": [
+      "U-Chae Jun",
+      "Jaeeun Ko",
+      "Yoonhyuk Choi",
+      "Jiwoo Kang"
+    ],
+    "published": "2026-10-13T04:18:23+00:00",
+    "summary": "3D scene graph prediction is commonly optimized with object-node and relation-edge classification losses. These objectives encourage exact object and relation label recovery, but they do not directly optimize semantic proximity to the ground-truth scene graph: two wrong graphs can receive comparable penalties even when one is much closer in object roles and relation contexts. A direct graph-distance loss is difficult in general, since graph matching and graph edit distance require correspondence search and edit-cost design. Our key observation is that prior supervised 3D scene graph prediction protocols are conducted on fixed object-node indices and supervised edge slots. This can turn a scene graph comparison into a well-defined aligned graph-distance problem. To this end, we propose SWORD, a Scene-Grounded Wasserstein Object-Relation Distance that builds block-normalized object and relation ground distance metrics from training scene graph annotations through a deterministic base-to-context order, without external semantic priors. SWORD lifts these metrics to Wasserstein distances over aligned node and null-augmented edge marginals, providing semantic graph-distance supervision beyond exact-label penalties while preserving the ground-truth graph as the unique zero-distance solution in aligned marginal probability space. We prove that SWORD is a strict metric on aligned marginal probabilistic scene graphs, preserves scene-graph-grounded substitution ordering, controls additive graph-grounded semantic observables, and yields a surrogate upper-bounding decoded semantic error."
+  },
+  {
+    "title": "ATOM: Abstract Transition and Option Modeling - Experience-Informed Hierarchical Navigation",
+    "url": "http://arxiv.org/abs/2610.17555v1",
+    "arxiv_id": "2610.17555v1",
+    "authors": [
+      "Changxuan Yao",
+      "Panagiotis Tsiotras"
+    ],
+    "published": "2026-10-13T01:24:02+00:00",
+    "summary": "We propose ATOM (Abstract Transition and Option Modeling), a hierarchical navigation framework that combines higher-level graph planning with reusable lower-level option policies for efficient repeated navigation in large-scale 3D environments represented by hierarchical structures such as 3D scene graphs (3DSGs). ATOM operates on a hierarchical graph representation, implemented using, for instance, the Rooms and Places layers of a 3DSG, where each directed abstract transition is associated with a navigation option. For each transition, ATOM computes and stores a reusable option policy along with its state-dependent cost-to-go. Across repeated navigation tasks, ATOM maintains a smoothed empirical distribution over option initiation states and uses it to progressively refine the corresponding abstract transition cost. Ablation studies show that ATOM reduces cumulative repeated-planning time by 97.5% relative to a monolithic MDP baseline while maintaining trajectories within approximately 7% of a Global Places A* shortest-path reference. Experience-informed refinement further reduces abstract transition-cost estimation error by 10.3%. Physical experiments validate ATOM on an F1Tenth vehicle, successfully completing all five navigation queries with 43% of inter-region option executions reusing previously generated solutions."
+  },
+  {
+    "title": "GHOST: Geometry-Constrained Hybrid Diffusion for Open-Vocabulary 3D Scene Graph Generation",
+    "url": "http://arxiv.org/abs/2610.16455v1",
+    "arxiv_id": "2610.16455v1",
+    "authors": [
+      "Changqun Feng",
+      "Wangxiandi Yin",
+      "Xin Hu",
+      "Ruiting Dai",
+      "Feiyang Yang",
+      "Jielei Wang",
+      "Tao He"
+    ],
+    "published": "2026-10-12T09:17:28+00:00",
+    "summary": "3D scene graph generation requires understanding both object semantics and metric spatial relations. However, existing open-vocabulary methods often struggle with spatial predicates because language similarity reflects semantic co-occurrence rather than explicit geometry. We propose GHOST, a Geometry-constrained Hybrid diffusion framework for Open-vocabulary 3D Scene graph generaTion. GHOST jointly models continuous node geometry and discrete edge predicates, following a geometry-to-constraint-to-predicate denoising process to ensure geometrically consistent relation prediction. It introduces language-grounded constraint induction, which maps predicate embeddings to differentiable geometric constraints that guide both layout refinement and predicate reweighting. A Geometry-Topology Collaborative Denoiser further couples node and edge reasoning through noise-adaptive interaction and orientation-aware modeling. Experiments on 3DSSG demonstrate state-of-the-art performance in both closed-set and open-vocabulary settings, including over 17-point gains over RelationField on spatial predicates."
+  },
+  {
     "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
     "url": "http://arxiv.org/abs/2610.13910v1",
     "arxiv_id": "2610.13910v1",
