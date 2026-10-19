@@ -1,5 +1,19 @@
 [
   {
+    "title": "Foundation-Model-Driven 3D Scene Graphs for Mobile Manipulation",
+    "url": "http://arxiv.org/abs/2610.23622v1",
+    "arxiv_id": "2610.23622v1",
+    "authors": [
+      "Dominic Maggio",
+      "Lorenzo Shaikewitz",
+      "Aryan Naveen",
+      "Kris Hauser",
+      "Luca Carlone"
+    ],
+    "published": "2026-10-16T15:32:09+00:00",
+    "summary": "Geometric and Semantic Foundation models are becoming increasingly popular tools for generating spatial maps for robots. Recent work (e.g., FOUND-IT) has leveraged these tools to construct real-time, task-driven, and open-set 3D scene graphs from a single uncalibrated camera. However, while classical robot mapping techniques have undergone extensive system demonstrations, limited work has been done to develop both the fundamental and the systems wide advancements needed to integrate these new types of robot spatial memory into a full, useable autonomy pipeline. In this paper, we bridge this gap, and in doing so we also evaluate the effectiveness and limitations of this type of 3D memory. Towards this end, we integrate FOUND-IT into a mobile manipulator platform and demonstrate it is well-suited to support multiple objectives such as object change detection, support for multiple mapping sessions, determination of navigable paths, and directly support object grasping for the task of scene re-arrangement. Furthermore, we provide nuanced insights into the effectiveness and limitations of a monocular, foundation-model-driven 3D scene graph construction system using observations from rigorous on-robot experiments. Code is available at https://github. com/MIT-SPARK/FOUND-IT."
+  },
+  {
     "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
     "url": "http://arxiv.org/abs/2610.20091v1",
     "arxiv_id": "2610.20091v1",
