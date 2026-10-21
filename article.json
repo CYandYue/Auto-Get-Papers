@@ -1,5 +1,63 @@
 [
   {
+    "title": "Spherical Geometry-Aware Panoptic Scene Graph Generation for Equirectangular Panoramas",
+    "url": "http://arxiv.org/abs/2610.28033v1",
+    "arxiv_id": "2610.28033v1",
+    "authors": [
+      "Zhe Wu",
+      "Xiaoyan Fei",
+      "Xinyi Jiang",
+      "Yanxu Wei",
+      "Junming Rao",
+      "Yihong Yan",
+      "Xuewei Li"
+    ],
+    "published": "2026-10-20T11:23:03+00:00",
+    "summary": "Panoptic scene graph generation (PSGG) represents scene entities with segmentation masks and directed relations. Equirectangular projection (ERP) panoramas challenge PSGG through distortion, latitude-dependent pixel areas, and an artificial seam. We propose a two-stage spherical geometry-aware framework that fuses overlapping perspective-view predictions using observation reliability, spherical overlap, and angular proximity. Relation reasoning combines spherical-area-aware aggregation, weighted no-relation supervision, and dual-longitude score fusion. We also construct a dataset of 340 high-resolution panoramas with 10,571 nodes and 6,632 directed relations. Against corresponding baselines, spherical fusion improves PQ by 36.03% under matched views, while relation reasoning improves mR@50 by 11.20% under PredCls with ground-truth masks and object labels. The full framework improves mR@50 by 52.99% under SGDet with predicted panoptic segments. These results demonstrate the value of spherical geometry for panoramic PSGG."
+  },
+  {
+    "title": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
+    "url": "http://arxiv.org/abs/2610.27696v1",
+    "arxiv_id": "2610.27696v1",
+    "authors": [
+      "Jinghan Gao",
+      "Siyu Wang",
+      "Dongyu Feng",
+      "Yiyuan Pan",
+      "Rong Xiong"
+    ],
+    "published": "2026-10-20T06:15:59+00:00",
+    "summary": "3D scene graphs support language-guided navigation by organizing physical entities and their containment and spatial relations into hierarchical maps. Building such structured maps requires a scene representation that consistently distinguishes semantic regions and object instances across viewpoints. To this end, we present PanoGraphGS, a unified framework that integrates panoptic 3D Gaussian representation learning with hierarchical 3D scene graph construction. The framework learns semantic and instance features on shared Gaussian geometry. Prototype-based semantic learning and association-based instance learning produce consistent panoptic predictions across viewpoints. The learned representation supports novel-view panoptic segmentation and direct Gaussian-level panoptic decoding. A semantic-aware scene graph module further recovers a floor-room-stuff-object hierarchy with containment and spatial relations. We further release NaviGS, a real-world dataset for panoramic scene understanding. The dataset provides 3DGS, mesh, RGB, semantic, and depth data. For 3D scene graph identification, PanoGraphGS outperforms the strongest evaluated baseline in object-node accuracy by more than 50\\% points on average across Replica and NaviGS. PanoGraphGS also achieves state-of-the-art performance among the evaluated methods in 2D panoptic segmentation. These results demonstrate the effectiveness of PanoGraphGS in both hierarchical 3D scene understanding and 2D panoptic segmentation. The project website is available at: https://github.com/gaojh0333/PanoGraphGS."
+  },
+  {
+    "title": "Cross-Visibility-Gap Identity Persistence for 4D Scene Graphs",
+    "url": "http://arxiv.org/abs/2610.27505v1",
+    "arxiv_id": "2610.27505v1",
+    "authors": [
+      "Jiahui Hu",
+      "Li Gao",
+      "Yu Liu",
+      "Pengzhan Zhou"
+    ],
+    "published": "2026-10-20T02:20:34+00:00",
+    "summary": "4D scene graphs require persistent object identity when an object disappears inside an opaque carrier and later reappears as a fresh detection. When appearance and target-centric motion are unavailable, identity recovery must rely on relational history. We formulate cross-visibility-gap identity persistence as historical-node recovery through a remembered target--carrier binding.   We introduce CVG-SGM, a perception-frontend-compatible transfer--maintain--read memory. Geometry-weighted cross-node interaction transfers target-specific evidence into carrier states, a shared per-node GRU maintains this information during transport, and a two-time readout combines stored carrier--identity compatibility with current detection--carrier geometry to recover the historical identity.   In the controlled one-identity-per-carrier setting, CVG-SGM achieves 1.000 re-link accuracy, compared with 0.570 for both no-memory and parameter-count-matched no-write controls. It also generalizes to scene-disjoint, unseen longer visibility gaps. On real RGB-D/SAM2 feature-level episodes, it correctly re-links 36/36 held-out detections, compared with 28/36 for the strongest fixed carrier--identity control. Counterfactual carrier-memory swaps redirect predictions according to the swapped bindings, supporting the role of stored relational information in identity recovery. The current approach remains limited by shared-carrier identity ambiguity and does not provide end-to-end raw-video re-identification."
+  },
+  {
+    "title": "LVMem: Image-Augmented Memory for Long-Horizon Question Answering",
+    "url": "http://arxiv.org/abs/2610.27104v1",
+    "arxiv_id": "2610.27104v1",
+    "authors": [
+      "Victoria Khoruzhaya",
+      "Maksim Kalmykov",
+      "Tuong Do Minh",
+      "Tatiana Zemskova",
+      "Yixin Zhu",
+      "Dmitry Yudin"
+    ],
+    "published": "2026-10-19T18:01:56+00:00",
+    "summary": "Reliable language-guided perception is essential for embodied agents, where questions about objects, events, and their locations must be answered from long observation histories. Unlike conventional visual question answering, realistic robotic settings require reasoning over extended temporal horizons and persistent scene memory. We build upon the view-based memory paradigm and propose an efficient framework for long-horizon spatio-temporal question answering. While existing view-based systems typically store either text captions or visual embeddings, we extend the ReMEmbR-style memory with image paths that link each stored description to its original visual content. To make the stored annotations more informative, we replace uniform sampling during memory construction with an optical-flow-based frame selection strategy (PSFR) and store an object-centric descriptive scene representation instead of plain captions. We further equip a VLM-based agent with an adaptive retrieval tool that returns the image associated with the most relevant caption, allowing the agent to decide when visual inspection is needed. On the OC-NaVQA benchmark, LVMem outperforms ReMEmbR on binary and positional metrics with both backbones and matches or exceeds a 4D scene graph DAAAM baseline on binary accuracy, while operating on a lightweight view-based memory that requires no explicit graph construction."
+  },
+  {
     "title": "Bridging In-Situ Visualization to Game Engines: From ParaView Catalyst via ANARI to Unreal Engine",
     "url": "http://arxiv.org/abs/2610.26247v1",
     "arxiv_id": "2610.26247v1",
