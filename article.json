@@ -1,5 +1,20 @@
 [
   {
+    "title": "OMAR: Open-World Multi-Attribute Reasoning for Scene-Conditioned Shelf Organization",
+    "url": "http://arxiv.org/abs/2610.29761v1",
+    "arxiv_id": "2610.29761v1",
+    "authors": [
+      "Benedikt Kreis",
+      "Rohit Menon",
+      "Benno Wingender",
+      "Muhammad Ehsan Ullah",
+      "Nils Dengler",
+      "Maren Bennewitz"
+    ],
+    "published": "2026-10-21T13:59:13+00:00",
+    "summary": "With the advent of foundation models, robots are increasingly capable of understanding and executing explicitly specified human tasks. Extending these capabilities to open-ended tasks, however, requires robots to infer appropriate actions from the observed scene. Household organization exemplifies this challenge, as robots must often act without detailed instructions, predefined object vocabularies, or known object-receptacle associations. While robots may follow instructions or learn organization preferences from demonstrations, inferring the latent organization of an occasionally changing scene and placing a novel object consistently with it remains challenging. We propose an open-world multi-attribute reasoning pipeline that grounds unknown objects across views and constructs an instance-level 3D scene graph for placement reasoning. First, a vision-language model proposes labels together with attributes such as content and packaging type, which are grounded through segmentation, depth, and multi-view association. Then, an LLM reasons over this representation to infer the latent shelf organization and rank scene-consistent object placements without explicitly user-provided preferences. The resulting placement rankings guide subsequent geometric and kinematic feasibility checks for execution. Our experimental evaluation shows that our approach leads to improved instance mapping and placement coherence over single-view language-grounding and geometry-only baselines, enabling autonomous placement of previously unseen objects without predefined object-receptacle mappings or class-specific retraining."
+  },
+  {
     "title": "Spherical Geometry-Aware Panoptic Scene Graph Generation for Equirectangular Panoramas",
     "url": "http://arxiv.org/abs/2610.28033v1",
     "arxiv_id": "2610.28033v1",
