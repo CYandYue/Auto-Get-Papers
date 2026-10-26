@@ -28,6 +28,21 @@
     "summary": "Generated robot videos can look convincing while depicting the wrong interac- tion: a different object is moved, a grasp disappears, or a placement ends out- side its destination. We introduce RGraph-Eval, a reference-based framework that makes these discrepancies explicit through task-grounded temporal scene graphs. Unlike approaches that construct separate evidence representations for different evaluation dimensions, we organize task entities, interactions, and motion within a unified, interpretable scene graph representation. A foundation-model pipeline identifies manipulation roles, grounds persistent object masks, infers and verifies state transitions and action intervals, and reconstructs manipulated- object motion in three dimensions. Applying this representation to a generated video and a reference demonstration supports an interpretable RGraph-Eval score with visible-object, relation-change, and 3D path-shape components. We also introduce ShareRobot-SG, a collection of 1,000 manipulation scenes from ten ShareRobot sources annotated with the multimodal representation. Our eval- uation separates graph-generation quality from agreement with human video judgments, and includes comparisons with adapted SVG2 and SG-Ego, a bench- mark of three video generators. The framework connects robot-video assessment to the observable entities and interactions underlying a task, while making the graph annotations reusable beyond evaluation. Code will be publicly available at https://github.com/SashaDance/rgraph-eval."
   },
   {
+    "title": "RGraph-Eval: Task-Grounded Scene Graphs for Evaluating Robot Video Generation",
+    "url": "http://arxiv.org/abs/2610.31121v2",
+    "arxiv_id": "2610.31121v2",
+    "authors": [
+      "Aleksandr Lazarev",
+      "Sofia Zimina",
+      "Roman Kuznetsov",
+      "Tatiana Zemskova",
+      "Iaroslav Koshelev",
+      "Dmitry Yudin"
+    ],
+    "published": "2026-10-22T11:39:01+00:00",
+    "summary": "Generated robot videos can look convincing while depicting the wrong interaction: a different object is moved, a grasp disappears, or a placement ends outside its destination. We introduce RGraph-Eval, a reference-based framework that makes these discrepancies explicit through task-grounded temporal scene graphs. Unlike approaches that construct separate evidence representations for different evaluation dimensions, we organize task entities, interactions, and motion within a unified, interpretable scene graph representation. A foundation-model pipeline identifies manipulation roles, grounds persistent object masks, infers and verifies state transitions and action intervals, and reconstructs manipulated-object motion in three dimensions. Applying this representation to a generated video and a reference demonstration supports an interpretable RGraph-Eval score with visible-object, relation-change, and 3D path-shape components. We also introduce ShareRobot-SG, a collection of 1,000 manipulation scenes from ten ShareRobot sources annotated with the multimodal representation. Our evaluation separates graph-generation quality from agreement with human video judgments and includes comparisons with adapted SVG2 and SG-Ego, as well as a benchmark of three video generators. The framework connects robot-video assessment to the observable entities and interactions underlying a task while making the graph annotations reusable beyond evaluation. Code will be publicly available at https://github.com/SashaDance/rgraph-eval."
+  },
+  {
     "title": "CMAR-search: Commonsense and Memory Augmented Reasoning for Object Search in Dynamic Interactive Environments",
     "url": "http://arxiv.org/abs/2610.30606v1",
     "arxiv_id": "2610.30606v1",
