@@ -1,5 +1,34 @@
 [
   {
+    "title": "Understanding Backdoor Attacks in Scene Graph Generation via Global Context Pathway",
+    "url": "http://arxiv.org/abs/2611.04379v1",
+    "arxiv_id": "2611.04379v1",
+    "authors": [
+      "Xiaoguang Chang",
+      "Tuo Chen",
+      "Chengze Jiang",
+      "Teng Wang",
+      "Changyin Sun"
+    ],
+    "published": "2026-11-03T06:05:22+00:00",
+    "summary": "Scene Graph Generation (SGG) produces structured scene representations, yet its training-time backdoor risk remains unexplored. Unlike classification, SGG exposes a pair-level attack surface that enables selective corruption of relations involving a designated object category. However, because SGG largely relies on localized evidence, globally placed triggers may face difficulty in manipulating such predictions. Recent SGG architectures increasingly incorporate global context to improve scene modeling, which may in turn facilitate such attacks. In this paper, we systematically study this backdoor risk and investigate the role of the global context pathway in backdoor behavior. Concretely, we first instantiate this attack with an effective method, and propose a three-axis evaluation protocol to characterize backdoor behavior. Experiments on Visual Genome with representative open-vocabulary and closed-set SGG models demonstrate the effectiveness of the attack. Mechanistic analyses reveal that the explicit global context pathway serves as a major carrier of the backdoor effect across the evaluated SGG models. In particular, replacing the poisoned global context representation with its clean counterpart during inference sharply suppresses the attack, yielding 100% and 97% reductions in attack success for the OvSGTR family and RelationFormer, respectively. Moreover, training-time interventions in the OvSGTR family show that suppressing trigger signals in this pathway either reduces attack success or substantially degrades utility. Together, these findings suggest that explicit global context designs may pose a backdoor risk in SGG architectures."
+  },
+  {
+    "title": "CounterSketch: Physics-Grounded Counterfactual Reasoning for Sketch-to-Video Generation",
+    "url": "http://arxiv.org/abs/2611.04244v1",
+    "arxiv_id": "2611.04244v1",
+    "authors": [
+      "Hien Trinh",
+      "Tan-Hiep To",
+      "Dinh-Khoi Vo",
+      "Tam V. Nguyen",
+      "Minh-Triet Tran",
+      "Trung-Nghia Le"
+    ],
+    "published": "2026-11-03T03:27:35+00:00",
+    "summary": "Counterfactual sketch animation explores how a static sketch evolves under a hypothetical intervention. We present CounterSketch, a physics-grounded framework that transforms natural-language ``What if...?'' queries into physically plausible sketch animations. The framework integrates VLM-guided scene grounding, causal event-chain reasoning, constraint-based trajectory generation, and verification. It models physical transitions to update the scene graph, computes continuous object trajectories, and validates them against physical, geometric, and semantic constraints. The verified trajectories are then projected into object-level motion bounding boxes to guide downstream sketch-video synthesis. Experiments on CounterSketchBench (80 questions) demonstrate that physics-grounded trajectories provide stronger motion guidance than direct VLM predictions."
+  },
+  {
     "title": "Do Embodied VLMs Actually Use Their Scene-Graph Memory?",
     "url": "http://arxiv.org/abs/2611.02056v1",
     "arxiv_id": "2611.02056v1",
