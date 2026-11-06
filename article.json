@@ -1,5 +1,42 @@
 [
   {
+    "title": "Embodied RAG++: Retrieval-Augmented Generation From What Exists to What Works in Embodied Scenes",
+    "url": "http://arxiv.org/abs/2611.07517v1",
+    "arxiv_id": "2611.07517v1",
+    "authors": [
+      "Fan Yang",
+      "Tatsuya Kikuzuki",
+      "Jun Liang",
+      "Jun Liu",
+      "Wenkai Li",
+      "Ryosuke Kawamura",
+      "Ananya Hazarika",
+      "Prajit KrisshnaKumar",
+      "Shaunak Mehta",
+      "Yuushi Toyoda"
+    ],
+    "published": "2026-11-05T06:26:12+00:00",
+    "summary": "To serve a request in a human environment, a robot system must find an object that satisfies a functional requirement and a robot that can feasibly reach it. Scene graphs record which objects exist and where, but they often omit capabilities documented only in product manuals. Retrieval-augmented generation methods can read such manuals, yet they rarely reason jointly over object capabilities, physical instances, robot states, and dynamic connectivity. We introduce E2W-Bench, the Exists-to-Works Benchmark, which links dynamic hybrid scene graphs with real product manuals to evaluate capability-grounded robot--object assignment under availability, mobility, vertical-reach, and connector constraints. We also present Embodied RAG++, a spatially grounded retrieval framework that scopes retrieval to the manuals linked to candidate objects, caches extracted capabilities per product model, and resolves robot--object feasibility through deterministic spatial reasoning. On E2W-Bench, Embodied RAG++ reaches a pair accuracy of 0.90 with Qwen2.5-32B and 1.00 with Llama3.3-70B, compared with at most 0.30 and 0.55 for the baselines, while requiring the shortest preprocessing time among the retrieval-based methods and tying for the lowest total token count."
+  },
+  {
+    "title": "PSGAgent: Enhancing MLLMs' Dynamic Visual Perception for Panoptic Scene Graph Generation via Agentic Reasoning",
+    "url": "http://arxiv.org/abs/2611.07408v1",
+    "arxiv_id": "2611.07408v1",
+    "authors": [
+      "Qingyun Liu",
+      "Yuankun Liu",
+      "Jiaye Feng",
+      "Jie Huang",
+      "Zonghong Dai",
+      "Haochen Li",
+      "Jingkun Wang",
+      "Weiping Li",
+      "Tong Mo"
+    ],
+    "published": "2026-11-05T04:02:16+00:00",
+    "summary": "Panoptic Scene Graph generation (PSG) requires holistic yet fine-grained reasoning over complex relations among objects. However, current Multimodal Large Language Models (MLLMs) applied to PSG suffer from a perception bottleneck: they function as static observers limited by fixed-resolution views. As a result, models often overlook critical relations involving small or peripheral objects and struggle to differentiate ambiguous predicates in complex scenes. To address these limitations, we propose PSGAgent, an agentic framework that enhances visual perception for PSG through a think-act-observe loop. PSGAgent allows MLLMs to dynamically refine their visual perception using two tools: a Region Zoom-In Tool for local exploration of small or boundary relations and a Visual Highlight Tool for relation-focused segmentation that filters out irrelevant contextual noise. To optimize decision-making, we construct a two-stage training pipeline. First, we create a high-quality, error-aware Multimodal Chain-of-Thought (M-CoT) dataset that provides robust supervision for cold-start learning. Then, we design a novel hierarchical reward mechanism integrated with Group Sequence Policy Optimization (GSPO) to enable strategic and adaptive tool usage. Extensive experiments on the PSG benchmark show that PSGAgent achieves SOTA performance, demonstrating strong capability in both holistic and fine-grained scene understanding."
+  },
+  {
     "title": "Coupled Scene Graph Anticipation: When With-Constraint Recall Hides Structural Inconsistency",
     "url": "http://arxiv.org/abs/2611.06738v1",
     "arxiv_id": "2611.06738v1",
