@@ -1,5 +1,45 @@
 [
   {
+    "title": "SpaceMCP: Vision Language Model Spatial Reasoning via Model Context Protocol",
+    "url": "http://arxiv.org/abs/2611.15680v1",
+    "arxiv_id": "2611.15680v1",
+    "authors": [
+      "Ameen Izhac",
+      "Nobuko Yoshida",
+      "Ronald Clark"
+    ],
+    "published": "2026-11-11T16:21:39+00:00",
+    "summary": "Despite impressive advances in large language models (LLM), vision-language models (VLM) still exhibit limited spatial reasoning capabilities. Recent progress in feed-forward 3D reconstruction has enabled precise, real-time geometric understanding from visual inputs. In this work, we propose SpaceMCP, a framework that leverages these advances to introduce an MCP-style paradigm for spatial reasoning. Our approach augments a VLM with structured function calls, allowing it to query a scene graph for spatial information such as distances, object positioning, and camera properties. The scene graph is constructed in real time using feed-forward 3D reconstruction to recover metric geometry, combined with open-vocabulary segmentation to identify and localize relevant objects within the scene. Paired with the VLM's strong reasoning capabilities, the VLM is able to combine this primitive information to solve more complex spatial tasks. Without any training, SpaceMCP achieves state-of-the-art results on VSI-Bench, MMSI-Bench and VSTI-Bench, outperforming recent spatially post-trained VLMs and improving its base VLM by 15-22 points per benchmark. We argue that, given the contrast between the relatively slow progress in native VLM spatial reasoning and the rapid advances in feed-forward 3D computer vision, this paradigm offers a promising path forward for enabling robust spatial reasoning."
+  },
+  {
+    "title": "IncR-3DSGG: Incremental Posed RGB Image Based 3D Scene Graph Generation via Privileged Depth Supervision",
+    "url": "http://arxiv.org/abs/2611.15429v1",
+    "arxiv_id": "2611.15429v1",
+    "authors": [
+      "Mrunmai Phatak",
+      "Daniel Kienzle",
+      "Roman K\u00fcble",
+      "J\u00f6rg H\u00e4hner",
+      "Rainer Lienhart"
+    ],
+    "published": "2026-11-11T12:58:50+00:00",
+    "summary": "Scene graphs provide a compact, structured representation of environments by capturing objects and their spatial or semantic relationships in a form suitable for embodied agents. Existing 3D scene graph generation methods often rely on depth sensing at inference, either to associate object instances across views via point cloud overlap or to compute inter-object relations from geometric cues, limiting deployment to platforms with depth sensors. We propose IncR-3DSGG, which builds 3D scene graphs incrementally from posed\\footnote{RGB images with camera extrinsics estimated by an off-the-shelf visual SLAM system.} RGB images, eliminating the use of depth sensors at inference. Our method leverages a Parametric Relation Predictor (PRP) that learns to estimate pairwise distances and relative angles between objects from 2D visual features and 2D geometric cues, using 3D geometric supervision available only during training. These learned pairwise measurements are fused across views through Pose Graph Optimization (PGO)~\\cite{grisetti2010tutorial} to recover metrically grounded 3D object positions and build a globally consistent 3D scene graph incrementally. On the real-world 3RScan~\\cite{wald2019rio} dataset, our method attains $52.2$ mean object recall and $30.8$ mean predicate recall under the 3DSSG~\\cite{wald2020learning} evaluation protocol, against $27.0$ and $17.6$ for MonoSSG~\\cite{wu2023incremental}, while using no depth or reconstructed geometry at inference. This shows that relations and metrically grounded 3D object representations can be predicted from posed RGB images alone."
+  },
+  {
+    "title": "ChartGalaxy++: A Richly Annotated Dataset for Chart Understanding and Generation",
+    "url": "http://arxiv.org/abs/2611.15418v1",
+    "arxiv_id": "2611.15418v1",
+    "authors": [
+      "Duan Li",
+      "Zheng Wang",
+      "Jiangning Zhu",
+      "Yuhui Yuan",
+      "Shixia Liu"
+    ],
+    "published": "2026-11-11T12:47:17+00:00",
+    "summary": "Infographic charts communicate data through cohesive compositions of visual elements such as charts, text, and images. Existing infographic chart datasets primarily annotate individual elements with bounding boxes and category labels. Such element-level annotations do not capture hierarchical and spatial relationships, limiting their use for understanding how elements are organized and related within an infographic and for generating well-organized designs. To address this limitation, we introduce ChartGalaxy++, a richly annotated dataset of 217,195 infographic charts. At the core of this dataset is a scene graph representation, in which nodes represent visual elements and semantic groups, and edges encode their hierarchical and spatial relationships. For real infographics, we construct scene graphs by detecting and progressively grouping visual elements; for synthetic ones, we derive them directly from the generation process. We demonstrate the utility of ChartGalaxy++ through three applications: 1) image-to-scene-graph prediction, 2) scene-graph-augmented infographic question answering, and 3) evaluation of scene graph preservation in image generation. Together, these applications highlight the value of ChartGalaxy++ for advancing chart understanding and generation."
+  },
+  {
     "title": "Persistent Metric-Semantic Maritime Scene Memory from Open-Vocabulary 3D Scene Graphs",
     "url": "http://arxiv.org/abs/2611.13903v1",
     "arxiv_id": "2611.13903v1",
