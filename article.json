@@ -1,5 +1,41 @@
 [
   {
+    "title": "JointGV: Structure-Aware Correction of Visual World Models with Parallel Graph Dynamics for Long-Horizon Modeling",
+    "url": "http://arxiv.org/abs/2611.22543v1",
+    "arxiv_id": "2611.22543v1",
+    "authors": [
+      "Tian Lyu",
+      "Yichen Jiang",
+      "Ziyuan Cheng",
+      "Yunda Yan",
+      "Xiangyu Pan",
+      "Junjie Jiang",
+      "Jialin Yu",
+      "Boyu Ning",
+      "Pietro Li\u00f2",
+      "Fan Mo"
+    ],
+    "published": "2026-11-17T10:33:21+00:00",
+    "summary": "Visual world models predict future visual states conditioned on actions, but recursive errors in entity poses and spatial relations limit their long-horizon prediction for robot planning and control. We ask whether a separately predicted relational state can correct this drift without restructuring the visual model. This is challenging because graph nodes and visual states share neither elements nor a feature space. We propose Joint Graph--Visual Dynamics Correction (JointGV), a plug-in based on a cross-granularity dynamics hypothesis: despite their different representations, graph-node and visual-state changes describe the same physical transition. JointGV rolls out a task-conditioned scene graph alongside the visual world model, couples their predicted changes, and combines the resulting graph-motion context with graph-predicted node positions to compute a bounded residual. Graph-learning and correction gradients do not propagate into the original visual dynamics. We attach JointGV to DINO-WM (spatial tokens) and DreamerV3 (a global latent state), evaluating both on DMC Cheetah Run and Walker Walk across three seeds and extending the evaluation to contact-rich manipulation with DMC Finger Turn Hard. Across 32-step rollouts, JointGV improves structural and visual-prediction accuracy, reducing joint-position error by 11--28\\%. For spatial tokens, learned graph--visual change coupling gives lower error than broadcasting the same mean graph-motion context to every token, particularly when non-adjacent parts appear close together in the image. On real-robot inverted-pendulum sequences, JointGV reduces DINO-WM's 32-step pole-angle error from $12.56^\\circ$ to $6.69^\\circ$ and improves DreamerV3 and LeWorldModel as well. In simulated inverted-pendulum control, an actor trained with JointGV-corrected rollouts completes 46 of 50 episodes, compared with none using the original rollouts."
+  },
+  {
+    "title": "Beyond Appearance: Where Forest Visual Place Recognition Actually Fails",
+    "url": "http://arxiv.org/abs/2611.21996v1",
+    "arxiv_id": "2611.21996v1",
+    "authors": [
+      "Blake Matheson",
+      "Ben McShanag",
+      "Isabella Moffat",
+      "Michael Milford",
+      "Peyman Moghadam",
+      "Dana Kuli\u0107",
+      "Somayeh Hussaini",
+      "Kavindie Katuwandeniya"
+    ],
+    "published": "2026-11-16T23:28:17+00:00",
+    "summary": "Visual place recognition (VPR) in forest environments remains challenging because repetitive vegetation, and changes in illumination, season, and viewpoint can make distinct places appear similar and revisited places appear substantially different. In this paper, we investigate whether temporal, linguistic, structural, and geometric context can improve on an appearance-only descriptor, and what limits each representation when it does not. Using MegaLoc as the appearance-based baseline on the WildCross benchmark, we evaluate score-space and descriptor-space sequence matching, vision-language captions and reranking, scene-graph representations, and depth-derived stem graphs across same-direction revisits, extended routes, and reverse traversals. On a same-direction revisit, both sequence matching strategies reach similar Recall@1 (94.1% vs. 91.5%), but recall at 100% precision rises from 50.9% (single-frame MegaLoc) to 71.6% in score space and falls to 36.5% in descriptor space. The remaining context representations provide no consistent improvement over the appearance-based baseline. Same-place captions show limited place-specific discrimination, reranking is constrained by the initial candidate shortlist, and stem-graph matching remains weak even with LiDAR depth."
+  },
+  {
     "title": "SpaceMCP: Vision Language Model Spatial Reasoning via Model Context Protocol",
     "url": "http://arxiv.org/abs/2611.15680v1",
     "arxiv_id": "2611.15680v1",
