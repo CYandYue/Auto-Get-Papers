@@ -1,5 +1,30 @@
 [
   {
+    "title": "Visual-State Graph Memory for Streaming Video Understanding",
+    "url": "http://arxiv.org/abs/2611.32369v1",
+    "arxiv_id": "2611.32369v1",
+    "authors": [
+      "Ailar Mahdizadeh",
+      "Pritam Sarkar",
+      "Xiangteng He",
+      "Leonid Sigal"
+    ],
+    "published": "2026-11-24T10:39:44+00:00",
+    "summary": "In streaming video understanding, the evidence needed to answer a question may have already left the recent-frame window. Keeping all frames does not scale with video length, while dropping older frames limits the model's ability to reason about the past. We propose Visual-State Graph (VSG), a training-free memory that stores the state of a stream rather than the raw sequence of frames. VSG represents the stream as a graph of objects and their relations, together with a log of events; similar to a dynamically evolving scene graph. An object observed repeatedly is represented by one persistent node, with a timestamped history of how its state changes. To determine whether a newly mentioned object already exists in the graph, we compare the relations it takes part in with those of stored objects. We build this memory as the video arrives, before the questions are known. When a question arrives, we retrieve relevant objects and events alongside recent frames under a fixed input budget. Our evaluation spans four streaming-video benchmarks and seven open-source vision-language models ranging from 7B to 32B parameters. Under matched input budgets, VSG improves reasoning about the past while preserving real-time understanding."
+  },
+  {
+    "title": "Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment",
+    "url": "http://arxiv.org/abs/2611.32022v1",
+    "arxiv_id": "2611.32022v1",
+    "authors": [
+      "Shubh Garg",
+      "Pratham Arora",
+      "Debabrata Ghosh"
+    ],
+    "published": "2026-11-24T06:04:43+00:00",
+    "summary": "Bi-temporal satellite imagery is central to disaster assessment: deciding what was damaged requires comparing a pre-event scene with its post-event counterpart. A vision-language model (VLM) can nonetheless appear to answer change questions while relying mainly on the post-event image or on the prompt's temporal framing. We present a controlled diagnostic of temporal grounding and apply it to one lightweight VLM, InternVL3-2B, on DisasterM3: 1,659 optical and SAR image pairs from 41 events and nine disaster types, in event-disjoint partitions, with 9,031 reasoning questions. We compare post-only input, the true pre/post pair, the post image repeated twice, reversed image order, and an unrelated pre-event image. The true pair scores $+0.5$ accuracy points above the repeated-post control (95\\% paired bootstrap CI $[-0.2, +1.2]$), and reversing the order changes accuracy by $-0.2$ points ($[-0.8, +0.5]$). Under this protocol we therefore find no measurable benefit from the content of the true pre-event image and little sensitivity to temporal order. The model is not blind to the first image, however: the true pair scores $2.5$ points above a pair whose pre-event image comes from another event ($[+1.6, +3.4]$). State-transition and multi-hop questions remain hard, and optical and SAR inputs show different profiles. We outline temporal scene graphs as a testable next step, not a validated solution, and argue that temporal benchmarks for Earth observation should report whether answers depend on the intended evidence, not only how often they are right."
+  },
+  {
     "title": "Graph2Scene: Relation-Aware Text-to-Image Generation with Graph-Guided Diffusion Model",
     "url": "http://arxiv.org/abs/2611.30964v1",
     "arxiv_id": "2611.30964v1",
