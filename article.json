@@ -1,5 +1,50 @@
 [
   {
+    "title": "How Well Do Vision-Language Scene Graphs Serve as Memory for Embodied Question Answering?",
+    "url": "http://arxiv.org/abs/2611.34745v1",
+    "arxiv_id": "2611.34745v1",
+    "authors": [
+      "Divyansh Pandey",
+      "Shubh Garg",
+      "Vedant Khandelwal",
+      "Niyati Rawal",
+      "Amit Sheth"
+    ],
+    "published": "2026-11-25T17:23:01+00:00",
+    "summary": "Embodied QA needs memory, but answer accuracy mixes retained evidence, reading errors and question priors. For a simulated multi-room scene-graph pipeline we define answerability: the fraction of questions a fixed rule-based reader answers correctly from the graph alone. The baseline recovers 24.1% of visible object types and its room labels flicker. Four targeted repairs double recall, raise answerability from 27.2% to 37.4%, and improve retrained QA from 71.4% to 75.9%, yet better object F1 can lower answerability. A question-type prior beats this reader on every predicted graph. In one real-video test, graph memory lowers accuracy. These exploratory findings favour scoring retained evidence alongside accuracy."
+  },
+  {
+    "title": "Off the Driven Path: Transferable Road Understanding in Driving VLAs",
+    "url": "http://arxiv.org/abs/2611.33878v1",
+    "arxiv_id": "2611.33878v1",
+    "authors": [
+      "Lena Wild",
+      "Christian Helten",
+      "Katie Z Luo",
+      "Jakob Thumm",
+      "Rafael Valencia",
+      "Patric Jensfelt",
+      "Marco Pavone"
+    ],
+    "published": "2026-11-25T06:55:58+00:00",
+    "summary": "End-to-end driving policies increasingly operate without explicit HD maps at inference, raising the question of what road knowledge they actually internalize. To probe this knowledge through model outputs, we introduce Road-KSU, a framework that automatically converts HD maps and actor annotations into a road-centric scene graph. From this, we derive road-focused question answering and reasoning targets, complemented by map-based trajectory compliance metrics. Pairing Road-KSU with geographically disjoint splits yields a $2 \\times 2$ evaluation crossing output modality (language vs. action) with place familiarity (seen vs. unseen roads). On NAVSIM, 95% of test samples lie within 10m of a training sample, and scores of 13 published planners on turns rise steeply with the number of training drives through the test location, pointing to memorized road geometry. Retraining on geographically disjoint splits and probing with Road-KSU confirm that action-space performance degrades most on unfamiliar turns, with failures dominated by geometric compliance. Language accuracy, however, drops on road-centric VQA on straight and curved roads alike, and remains stable on dynamic scene content. Scaling the training data further reveals a double dissociation: more drives through the same places improve driving on unseen roads but leave road question answering unchanged, whereas spreading a fixed data budget over more places increases road question answering with little change in driving performance. These findings show that improved driving scores need not imply broader road understanding on unseen roads, and identify geographic diversity as key to transferable road knowledge."
+  },
+  {
+    "title": "3D CoCa v3: Contrastive Learners with Scene Graphs for Urban Scene Understanding",
+    "url": "http://arxiv.org/abs/2611.33835v1",
+    "arxiv_id": "2611.33835v1",
+    "authors": [
+      "Nannan Zhang",
+      "Ting Huang",
+      "Zeyu Zhang",
+      "Haoyu Chen",
+      "Yanjie Zhu",
+      "Hao Tang"
+    ],
+    "published": "2026-11-25T06:03:25+00:00",
+    "summary": "Understanding large-scale 3D urban scenes requires representations that capture both multi-scale geometric structures and complex spatial relationships. However, existing 3D vision-language methods primarily emphasize global semantic alignment or object-level representations, leaving structured relational modeling underexplored within unified contrastive and generative frameworks. In this paper, we present 3D CoCa v3, a scene-graph-enhanced contrastive and generative framework for urban 3D scene understanding. Our framework features a Pyramid Vision Encoder for multi-scale geometric representation learning and a language-model-based decoder with question-guided caption retrieval and visual cross-attention. We further introduce MSG-based relational descriptions to enrich contrastive 3D-language alignment with structured spatial relationships. To support semantic and relational supervision, we construct City3D-9.6K, a multi-view urban vision-language dataset with aligned visual-geometric observations, scene captions, and scene graphs. Extensive experiments on City-3DQA demonstrate that 3D CoCa v3 achieves 88.35% and 64.79% overall top-1 accuracy on the sentence-wise and city-wise splits, surpassing 3D CoCa v2 by 20.88 and 3.57 percentage points, respectively. Furthermore, 3D CoCa v3 achieves the best performance on GeoEval3D, demonstrating its effectiveness in urban spatial reasoning and geometric understanding. Code is available at https://github.com/AIGeeksGroup/3DCoCav3."
+  },
+  {
     "title": "Visual-State Graph Memory for Streaming Video Understanding",
     "url": "http://arxiv.org/abs/2611.32369v1",
     "arxiv_id": "2611.32369v1",
